@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\caption{GROUP BY extension in the extension campaign, summed over the three datasets: compiled and oracle relations per rule family, the smallest per-dataset precision and recall, executed checks passed in DuckDB, exact per-row attacks released at tolerance $10^{-12}$ with no fallback and no unverified release, and the largest sweep count of those releases.}
+\label{tab:ext-groupby}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Family & Compiled & Oracle & Prec. & Rec. & Checks & Attacks & Sweeps \\
+\midrule
+Grouped partition union (R1) & 170 & 170 & 1.000 & 1.000 & 36/36 & 180/180 & 50 \\
+Partition union, new assets (R1) & 74 & 74 & 1.000 & 1.000 & 36/36 & 168/168 & 2 \\
+Roll-up (R4) & 504 & 504 & 1.000 & 1.000 & 36/36 & 180/180 & 1 \\
+Slice (R5) & 338 & 338 & 1.000 & 1.000 & 36/36 & 180/180 & 1 \\
+Group filter (R6) & 338 & 338 & 1.000 & 1.000 & 36/36 & 180/180 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,294 @@
+% Extended version of the Arbiter PVLDB submission, for the artifact repository.
+% It holds the full proofs, the model hyperparameters, the results that the paper
+% summarizes, and the extension campaign in full. Numbering follows the paper.
+% Build: pdflatex twice, from this folder.
+\documentclass[10pt]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{../assets/}}
+% The paper's figure files carry acmart's alt-text command; this document ignores it.
+\newcommand{\Description}[1]{}
+
+\newcommand{\tol}{\varepsilon}
+\newcommand{\pvec}{\mathbf{p}}
+\newcommand{\qvec}{\mathbf{q}}
+\newcommand{\xvec}{\mathbf{x}}
+\newcommand{\Amat}{\mathbf{A}}
+\newcommand{\bvec}{\mathbf{b}}
+\newcommand{\avec}{\mathbf{a}}
+\newcommand{\cvec}{\mathbf{c}}
+\newcommand{\lam}{\boldsymbol{\lambda}}
+\newcommand{\relset}{\mathcal{R}}
+\newcommand{\ans}{\mathrm{ans}}
+\newcommand{\dist}{\mathrm{dist}}
+
+% Statements carry the paper's numbers, so they are typeset with fixed labels.
+\newenvironment{paperstatement}[1]{\par\medskip\noindent\textbf{#1.}\itshape\ }{\par\medskip}
+
+\title{Arbiter: Release-Time Enforcement of Query Prices in Data Markets\\[4pt]
+\large Extended Version: Full Proofs, Additional Results, and the Extension Campaign}
+\author{Zaheer Ahmad Gondal, Xiaofeng Ding, Attiq Ur Rehman, and Jamil Ahmad Memon\\
+Huazhong University of Science and Technology, Wuhan, China}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent This document accompanies the PVLDB submission of the same title and is part of its artifact repository. Lemma, theorem, proposition, section, equation, and figure numbers refer to the paper, and the tables of this document carry their own numbers. Every number below comes from \texttt{scripts/facts.json} (audited, closure, hardening, and revision campaigns) or \texttt{scripts/facts\_step2.json} (extension campaign), which record the evidence file that produced it, and every table is generated from the evidence files by \texttt{scripts/make\_floats.py} or \texttt{scripts/make\_step2.py}.
+
+\section{Notation}
+A snapshot at epoch $e$ is a sparse system $\Amat_e\pvec \le \bvec_e$ with rows $\avec_j^{\top}\pvec \le b_j$ for $j = 1,\dots,m$ over $n$ asset prices. The encoded feasible set is $\mathcal{C}_e = \{\pvec : \Amat_e\pvec \le \bvec_e\}$, and the maximum violation is $\rho_e(\pvec) = \max(0, \max_j \{\avec_j^{\top}\pvec - b_j\})$ (Equation~2). The residual of row $j$ is $\delta_j(\pvec) = \avec_j^{\top}\pvec - b_j$. Active-row repair (Section~5.2) starts each sweep by computing every residual, orders the rows with $\delta_j > \tol$ by descending residual, and visits at most $B$ of them. A visited row that is still violated receives the update of Equation~5,
+\begin{equation*}
+\pvec \leftarrow \pvec - \eta\,\frac{\delta_j(\pvec)}{\lVert\avec_j\rVert_2^2}\,\avec_j, \qquad 0 < \eta \le 1 .
+\end{equation*}
+Repair stops when no row is violated, when a sweep changes nothing, or after $K$ sweeps. We write $\dist(\pvec,\mathcal{C}) = \min_{\cvec \in \mathcal{C}} \lVert\pvec - \cvec\rVert_2$, $\alpha = \max_j \lVert\avec_j\rVert_2$, $\omega = \min_j \lVert\avec_j\rVert_2$, and $x^{+} = \max(x, 0)$.
+
+\section{Full Proofs}
+
+\subsection{Rule soundness}
+A bag is a multiset of tuples. Selection $\sigma_\phi$ keeps each tuple that satisfies $\phi$ with its multiplicity, projection $\pi_X$ maps each tuple to its restriction to the columns $X$ and keeps multiplicities, and $\uplus$ adds multiplicities. A tuple whose predicate column is NULL satisfies no interval or category predicate under SQL's three-valued logic, so it belongs to none of the selections below. A grouped aggregate with grouping column $g$ and predicate $\phi$ returns, for each value $v$ of $g$ that occurs in $\sigma_\phi(T)$, one row $(v, \mathrm{agg}(G_v))$, where the group $G_v$ is the bag of tuples of $\sigma_\phi(T)$ whose value of $g$ is $v$. SQL places all tuples whose value of $g$ is NULL in one group, so the groups partition $\sigma_\phi(T)$. $\mathrm{COUNT}(*)$ of a group is its size, and $\mathrm{SUM}(m)$ adds the group's non-NULL values of $m$ and is NULL when there are none.
+
+\begin{paperstatement}{Lemma 4.1 (rule soundness)}
+On every instance of $T$, the answers of the parts of an emitted decomposition $(t,l,r)$ determine $\ans(t)$: by bag union for row sets, and by addition for $\mathrm{COUNT}$ and $\mathrm{SUM}$, group by group for grouped aggregates, where a part whose $\mathrm{SUM}$ is NULL because no row contributes a value, or a group missing from one part, counts as zero, and the target's value is NULL or missing exactly when both parts lack a value. For an emitted derivation $(d,s)$, $\ans(s)$ determines $\ans(d)$ through the operations that R2 to R6 state.
+\end{paperstatement}
+
+\begin{proof}
+\emph{Rule R1.} The three queries share a surface, so they read the same table $T$, return the same output list $X$, or the same grouping column, aggregate, and measure, and filter on the same column $c$. The predicate of $q_t$ is the disjoint union of the predicates of $q_l$ and $q_r$: either one split point $s$ with $a < s < b$ divides the interval $[a, b)$ of $q_t$ into $[a, s)$ and $[s, b)$, or the category set of $q_t$ is the disjoint union of the category sets of $q_l$ and $q_r$. A tuple $u$ with a non-NULL value of $c$ therefore satisfies $\phi_t$ if and only if it satisfies exactly one of $\phi_l$ and $\phi_r$, and a tuple with a NULL value satisfies none of the three. Hence $\sigma_{\phi_t}(T) = \sigma_{\phi_l}(T) \uplus \sigma_{\phi_r}(T)$, with every multiplicity of $T$ counted in exactly one bag on the right. For row sets, $\pi_X(R_1 \uplus R_2) = \pi_X(R_1) \uplus \pi_X(R_2)$ for all bags, so $\ans(t) = \ans(l) \uplus \ans(r)$. For $\mathrm{COUNT}(*)$, the count of a disjoint union is the sum of the counts. $\mathrm{SUM}$ adds the non-NULL measure values of its input and returns NULL when there are none. If both parts contain a non-NULL value, the target's sum is the sum of the two parts' sums. If exactly one part does, the target's sum equals that part's sum, and the other part returns NULL, which counts as zero. If neither part does, the target returns NULL and so do both parts. For grouped aggregates, selection keeps the value of $g$, so $G_v(t) = G_v(l) \uplus G_v(r)$ for every value $v$, including NULL. A key occurs in $\ans(t)$ if and only if it occurs in $\ans(l)$ or $\ans(r)$, and the argument above applies to each key, with a key missing from one part treated as an empty group of that part. The identities hold in exact arithmetic; DuckDB's floating-point sums agree within the tolerances of Section~4.3.
+
+\emph{Rule R2.} The queries $q_d$ and $q_s$ read $T$ with the same predicate $\phi$, and $X_d \subset X_s$. For every bag $R$, $\pi_{X_d}(\pi_{X_s}(R)) = \pi_{X_d}(R)$, because both sides map each tuple of $R$ to the same restriction and keep its multiplicity. With $R = \sigma_\phi(T)$, $\ans(d) = \pi_{X_d}(\ans(s))$.
+
+\emph{Rule R3.} The predicates of $q_d$ and $q_s$ use the same kind and column $c$, $\phi_d$ is a sub-interval or a proper category subset of $\phi_s$, $X_d \subseteq X_s$, and $c \in X_s$. Every tuple that satisfies $\phi_d$ satisfies $\phi_s$, so $\sigma_{\phi_d}(T) = \sigma_{\phi_d}(\sigma_{\phi_s}(T))$. Because $\phi_d$ reads only $c$, which $\pi_{X_s}$ keeps, $\sigma_{\phi_d}(\pi_{X_s}(R)) = \pi_{X_s}(\sigma_{\phi_d}(R))$ for every bag $R$. Therefore
+\begin{equation*}
+\pi_{X_d}\bigl(\sigma_{\phi_d}(\ans(s))\bigr)
+= \pi_{X_d}\bigl(\pi_{X_s}(\sigma_{\phi_d}(\sigma_{\phi_s}(T)))\bigr)
+= \pi_{X_d}\bigl(\sigma_{\phi_d}(T)\bigr) = \ans(d),
+\end{equation*}
+where the middle step uses the identity of R2.
+
+\emph{Rule R4.} The ungrouped aggregate $q_d$ has the table, aggregate, measure, and predicate $\phi$ of the grouped $q_s$, so $\ans(d)$ aggregates $\sigma_\phi(T) = \biguplus_v G_v(s)$. Its $\mathrm{COUNT}(*)$ is the sum of the group counts, which is zero when $\ans(s)$ has no rows. Its $\mathrm{SUM}$ is the sum of the non-NULL group sums, and it is NULL exactly when every group sum is NULL or $\ans(s)$ has no rows.
+
+\emph{Rules R5 and R6.} The predicate $g \in S$ holds for a tuple exactly when its value of $g$ is a non-NULL member of $S$. If $q_s$ has no predicate, then $\sigma_{g \in S}(T) = \biguplus_{v \in S} G_v(s)$, where $G_v(s)$ is empty when $v$ does not occur. If the predicate of $q_s$ is a category set $P$ on $g$ and $S \subset P$, every tuple with $g \in S$ satisfies $P$, so the same identity holds. For R5, the ungrouped $q_d$ aggregates this union, so its value is the sum of the values of the groups of $\ans(s)$ with keys in $S$, with the NULL rule of R4. For R6, $q_d$ groups $\sigma_{g \in S}(T)$ by $g$, and each of its groups equals $G_v(s)$ for the same $v \in S$, so $\ans(d)$ consists of the rows of $\ans(s)$ whose key lies in $S$.
+\end{proof}
+
+A buyer who holds $\ans(l)$ and $\ans(r)$, or $\ans(s)$, computes $\ans(t)$, or $\ans(d)$, without querying the database. A price with $p_t > p_l + p_r$ or $p_d > p_s$ would therefore sell the same information for less, so every row that the compiler emits states a necessary condition for arbitrage freedom.
+
+\subsection{Chain audit}
+\emph{Soundness of a chain.} Let $q_t$ have the half-open interval $[a, b)$ on column $c$, and let $q_{l_1},\dots,q_{l_k}$ share its surface with intervals $[x_{i-1}, x_i)$ for $a = x_0 < x_1 < \dots < x_k = b$. Every non-NULL value of $c$ in $[a, b)$ lies in exactly one of the parts, and a NULL value lies in none, so $\sigma_{[a,b)}(T) = \biguplus_{i=1}^{k} \sigma_{[x_{i-1},x_i)}(T)$. Projection, grouping, $\mathrm{COUNT}$, and $\mathrm{SUM}$ distribute over this disjoint union as in the proof of R1, applied $k - 1$ times, so the parts determine $\ans(t)$, and the row $p_t - \sum_{i=1}^{k} p_{l_i} \le 0$ is necessary for arbitrage freedom.
+
+\emph{Cheapest chain.} Fix the surface of $q_t$ and form the directed graph whose nodes are $a$, $b$, and the endpoints of the surface's other intervals inside $[a, b)$, with one edge from $x$ to $y$ of weight $p_j$ for each such interval $[x, y)$ of an asset $q_j$. Every edge goes from a smaller to a larger endpoint, so the graph is acyclic, and the chains of parts that tile $[a, b)$ correspond one to one to the directed paths from $a$ to $b$, with chain cost equal to path weight. The audit computes the minimum path weight by dynamic programming over the endpoints in increasing order, which is exact for any real weights, including slightly negative prices that a released vector may hold within the tolerance. The audit flags the cheapest chain, with $k$ parts, when $p_t$ exceeds its cost by more than $k\tol$. Lazy enforcement appends each flagged chain as a row with $k + 1$ coefficients through the snapshot's append path, which leaves the existing rows unchanged, and gates the vector again. Proposition~6.7 then applies with $\alpha = \sqrt{k_{\max} + 1}$ for the longest appended chain; in the extension campaign, chains have at most five parts, so $\alpha \le \sqrt{6}$.
+
+\subsection{Price floors}
+Let the list prices $\ell$ satisfy every row and let $f \ge 0$. For a decomposition row, $\ell_t \le \ell_l + \ell_r$ gives $\max(\ell_t, f) \le \max(\ell_l + \ell_r, f) \le \max(\ell_l, f) + \max(\ell_r, f)$: the first step holds because $x \mapsto \max(x, f)$ is nondecreasing, and the second because $\ell_l, \ell_r \ge 0$. For a derivation row, $\ell_d \le \ell_s$ gives $\max(\ell_d, f) \le \max(\ell_s, f)$, and every floored price is nonnegative. The floored vector therefore satisfies every row, every target list price becomes at least $f$, and Corollary~6.4 bounds each leftover saving by $\tol / f$ relative to list price.
+
+\subsection{Encoded arbitrage safety}
+
+\begin{paperstatement}{Assumption 6.1 (trusted boundary)}
+(i) The compiler maps each request to its intended asset and emits only relations that satisfy rules R1 to R6. (ii) The snapshot store returns an immutable $(\Amat_e,\bvec_e)$ for epoch $e$. (iii) The verifier evaluates every row on finite binary64 values. (iv) Commit compares the token with the current state and performs the release in one atomic step. (v) SHA-256 is collision resistant, and the HMAC secret is known only to the service.
+\end{paperstatement}
+
+\begin{paperstatement}{Lemma 6.2 (post-check implication)}
+If the verifier accepts a finite vector $\pvec$ for $(\Amat_e,\bvec_e)$, then $\avec_j^{\top}\pvec - b_j \le \tol$ for every row $j$.
+\end{paperstatement}
+\begin{proof}
+The verifier recomputes all $m$ residuals and accepts only if $\rho_e(\pvec) \le \tol$ (Equation~2), so no residual exceeds $\tol$.
+\end{proof}
+
+\begin{paperstatement}{Theorem 6.3 (no encoded arbitrage above tolerance)}
+Under Assumption 6.1, suppose the commit releases an answer with vector $\pvec$ and a token for epoch $e$. Then $p_t - p_l - p_r \le \tol$ for every decomposition $(t,l,r) \in \relset_e$, and $p_d - p_s \le \tol$ for every derivation $(d,s) \in \relset_e$.
+\end{paperstatement}
+\begin{proof}
+A release requires a commit that re-verifies $\pvec$ against the current snapshot, and the token's snapshot digest identifies $(\Amat_e,\bvec_e)$. By Lemma 6.2, every row residual is at most $\tol$. The compiler emits for $(t,l,r)$ a row with coefficient $+1$ on $p_t$, $-1$ on $p_l$ and $p_r$, and bound 0, and for $(d,s)$ a row with $+1$ on $p_d$, $-1$ on $p_s$, and bound 0. Each residual therefore equals the saving of its relation. A chain row appended by the audit has $+1$ on its target and $-1$ on each part, so its saving is also at most $\tol$.
+\end{proof}
+
+\subsection{State and request binding}
+
+\begin{paperstatement}{Lemma 6.5 (stale-token rejection)}
+Under Assumption 6.1, a token issued for epoch $e$ cannot authorize a release after the state advances to $e' \ne e$.
+\end{paperstatement}
+\begin{proof}
+Epoch equality is a required commit predicate, so it is false when $e' \ne e$ and the commit retains the answer. Atomicity prevents a state change between a successful comparison and the release.
+\end{proof}
+
+\begin{paperstatement}{Lemma 6.6 (single bound release)}
+Under Assumption 6.1, a token authorizes at most one release, and only for the request, asset, quoted price, price vector, and answer bytes it names.
+\end{paperstatement}
+\begin{proof}
+Every request field, the price-vector digest, the buffer identifier, and the answer digest are inside the HMAC, so changing any of them without the secret invalidates the token. Commit compares each field with the presented request and buffer, and it compares the quote with the vector coordinate of the requested asset. The release transaction inserts the token, the request, and the buffer under uniqueness constraints, so a second commit of any of them aborts.
+\end{proof}
+
+\subsection{Convergence of active-row repair}
+For a nonempty polyhedron $\mathcal{C}_e$, Hoffman's bound~[6] gives a constant $\mu$ that depends only on the rows of $\Amat_e$, such that
+\begin{equation*}
+\dist(\pvec,\mathcal{C}_e) \le \mu \max_j \frac{\delta_j(\pvec)^{+}}{\lVert\avec_j\rVert_2} \quad \text{for every } \pvec .
+\end{equation*}
+Every halfspace $H_j = \{\pvec : \avec_j^{\top}\pvec \le b_j\}$ contains $\mathcal{C}_e$, and $\dist(\pvec,H_j) = \delta_j(\pvec)^{+}/\lVert\avec_j\rVert_2$, so $\dist(\pvec,\mathcal{C}_e) \ge \max_j \dist(\pvec,H_j)$ and therefore $\mu \ge 1$ whenever some $\pvec$ lies outside $\mathcal{C}_e$.
+
+\begin{paperstatement}{Proposition 6.7 (convergence of active-row repair)}
+Assume that $\mathcal{C}_e$ is nonempty and that arithmetic is exact, and let $\gamma = \eta(2-\eta)\,\omega^2/(\alpha^2\mu^2)$. For any step $0 < \eta \le 1$ and any active-row budget $B \ge 1$, every sweep that starts at $\pvec^{(k)}$ with $\rho_e(\pvec^{(k)}) > \tol$ ends at a vector with $\dist(\pvec^{(k+1)},\mathcal{C}_e)^2 \le (1-\gamma)\,\dist(\pvec^{(k)},\mathcal{C}_e)^2$. Repair therefore reaches $\rho_e \le \tol$ within $\lceil (2/\gamma) \ln^{+}(\alpha\,\dist(\pvec^{(0)},\mathcal{C}_e)/\tol) \rceil$ sweeps, where $\ln^{+} x = \max(\ln x, 0)$.
+\end{paperstatement}
+
+\begin{proof}
+\emph{Step 1: one update.} Let $\delta_j = \delta_j(\pvec) > 0$ and $\pvec' = \pvec - \eta\,\delta_j\,\avec_j/\lVert\avec_j\rVert_2^2$. For every $\cvec \in \mathcal{C}_e$, $\avec_j^{\top}\cvec \le b_j$, so $\avec_j^{\top}(\pvec - \cvec) \ge \delta_j$. Expanding the square,
+\begin{equation*}
+\lVert\pvec' - \cvec\rVert_2^2 = \lVert\pvec - \cvec\rVert_2^2 - \frac{2\eta\,\delta_j\,\avec_j^{\top}(\pvec - \cvec)}{\lVert\avec_j\rVert_2^2} + \frac{\eta^2\delta_j^2}{\lVert\avec_j\rVert_2^2}
+\le \lVert\pvec - \cvec\rVert_2^2 - \frac{\eta(2-\eta)\,\delta_j^2}{\lVert\avec_j\rVert_2^2} .
+\end{equation*}
+With $\cvec$ the projection of $\pvec$ onto $\mathcal{C}_e$, this gives $\dist(\pvec',\mathcal{C}_e)^2 \le \dist(\pvec,\mathcal{C}_e)^2 - \eta(2-\eta)\,\delta_j^2/\lVert\avec_j\rVert_2^2$. In particular, no update increases the distance, because $\eta(2-\eta) > 0$.
+
+\emph{Step 2: the rest of a sweep.} Repair updates a visited row only while its current residual exceeds $\tol > 0$, and it leaves $\pvec$ unchanged otherwise. By Step 1, the distance to $\mathcal{C}_e$ never increases during a sweep.
+
+\emph{Step 3: the first update of a sweep.} If $\rho_e(\pvec^{(k)}) > \tol$, the violated set is nonempty, and the first visited row $j^{*}$ has the largest residual $\delta = \max_j \delta_j(\pvec^{(k)}) = \rho_e(\pvec^{(k)}) > \tol$. No update precedes it in the sweep, so its residual is still $\delta$ when repair visits it, and repair applies the update. Let $\pvec^{(k)}_1$ be the result. By Step 1 and $\lVert\avec_{j^{*}}\rVert_2 \le \alpha$,
+\begin{equation*}
+\dist(\pvec^{(k)}_1,\mathcal{C}_e)^2 \le \dist(\pvec^{(k)},\mathcal{C}_e)^2 - \frac{\eta(2-\eta)\,\delta^2}{\alpha^2} .
+\end{equation*}
+
+\emph{Step 4: Hoffman's bound.} Every row has $\delta_j(\pvec^{(k)})^{+} \le \delta$ and $\lVert\avec_j\rVert_2 \ge \omega$, so $\max_j \delta_j(\pvec^{(k)})^{+}/\lVert\avec_j\rVert_2 \le \delta/\omega$ and Hoffman's bound gives $\delta \ge \omega\,\dist(\pvec^{(k)},\mathcal{C}_e)/\mu$. Substituting into Step 3 and applying Step 2 to the remaining updates of the sweep,
+\begin{equation*}
+\dist(\pvec^{(k+1)},\mathcal{C}_e)^2 \le \dist(\pvec^{(k)}_1,\mathcal{C}_e)^2 \le \Bigl(1 - \frac{\eta(2-\eta)\,\omega^2}{\alpha^2\mu^2}\Bigr)\dist(\pvec^{(k)},\mathcal{C}_e)^2 = (1-\gamma)\,\dist(\pvec^{(k)},\mathcal{C}_e)^2 .
+\end{equation*}
+
+\emph{Step 5: residuals and distance.} For every $\pvec$, let $\cvec$ be its projection onto $\mathcal{C}_e$. Then $\delta_j(\pvec) \le \avec_j^{\top}\pvec - \avec_j^{\top}\cvec \le \lVert\avec_j\rVert_2\,\lVert\pvec - \cvec\rVert_2 \le \alpha\,\dist(\pvec,\mathcal{C}_e)$ for every row, so $\rho_e(\pvec) \le \alpha\,\dist(\pvec,\mathcal{C}_e)$.
+
+\emph{Step 6: sweep count.} The constant $\gamma$ lies in $(0, 1]$ because $\mu \ge 1$, $\omega \le \alpha$, and $\eta(2-\eta) \le 1$. If repair has not stopped after $k$ sweeps, each of them started with $\rho_e > \tol$, so Step 4 gives $\dist(\pvec^{(k)},\mathcal{C}_e)^2 \le (1-\gamma)^k\,\dist(\pvec^{(0)},\mathcal{C}_e)^2 \le e^{-\gamma k}\,\dist(\pvec^{(0)},\mathcal{C}_e)^2$. By Step 5, $\rho_e(\pvec^{(k)}) \le \alpha\,e^{-\gamma k/2}\,\dist(\pvec^{(0)},\mathcal{C}_e)$, which is at most $\tol$ once $k \ge (2/\gamma)\ln(\alpha\,\dist(\pvec^{(0)},\mathcal{C}_e)/\tol)$. If $\alpha\,\dist(\pvec^{(0)},\mathcal{C}_e) \le \tol$, Step 5 already gives $\rho_e(\pvec^{(0)}) \le \tol$ and no sweep runs. A sweep with $\rho_e > \tol$ always changes the vector (Step 3), so the stopping rule for an unchanged sweep never ends repair early.
+\end{proof}
+
+\paragraph{Remarks.}
+The argument uses only the first update of each sweep, so it holds for every budget $B \ge 1$ and every order of the remaining visited rows; it also holds for every step $0 < \eta < 2$. The classical relaxation method of Agmon~[1] projects onto a farthest halfspace and converges at a geometric rate; a sweep of active-row repair starts with the largest residual instead of the largest distance, which costs at most the factor $\omega/\alpha$ in Step 3. For the compiled rows of the paper, every row has one to three coefficients of magnitude one, so $\omega = 1$ and $\alpha = \sqrt{3}$, and $\pvec = \mathbf{0}$ satisfies every decomposition, derivation, nonnegativity, cap, and chain row, so $\mathcal{C}_e$ is nonempty. The proposition does not bound $\mu$, which can be large, and it does not compare the repaired vector with the Euclidean projection of Equation~4. In binary64 arithmetic, the verifier, not this proposition, decides acceptance.
+
+\subsection{Bracketing the exact projection}
+\label{sec:bracket}
+Let $f(\pvec) = \frac{1}{2}\lVert\pvec - \pvec^{(0)}\rVert_2^2$ and let $\pvec^{\star}$ minimize $f$ over $\mathcal{C}_e$ (Equation~4). For multipliers $\lam \ge 0$, the Lagrange dual function is
+\begin{equation*}
+g(\lam) = \min_{\pvec}\, f(\pvec) + \lam^{\top}(\Amat_e\pvec - \bvec_e) = \lam^{\top}(\Amat_e\pvec^{(0)} - \bvec_e) - \tfrac{1}{2}\lVert\Amat_e^{\top}\lam\rVert_2^2 ,
+\end{equation*}
+attained at $\pvec = \pvec^{(0)} - \Amat_e^{\top}\lam$, and weak duality gives $g(\lam) \le f(\pvec^{\star})$. Hence $L = \sqrt{2 g(\lam)} \le \lVert\pvec^{\star} - \pvec^{(0)}\rVert_2$ whenever $g(\lam) > 0$. For every $\qvec \in \mathcal{C}_e$, $U = \lVert\qvec - \pvec^{(0)}\rVert_2 \ge \lVert\pvec^{\star} - \pvec^{(0)}\rVert_2$. Because $f$ is 1-strongly convex and $\pvec^{\star}$ minimizes it over the convex set $\mathcal{C}_e$, $f(\qvec) - f(\pvec^{\star}) \ge \frac{1}{2}\lVert\qvec - \pvec^{\star}\rVert_2^2$, so $\lVert\qvec - \pvec^{\star}\rVert_2 \le \Delta = \sqrt{2(f(\qvec) - g(\lam))}$. The output $\xvec$ of a method then satisfies $\lVert\xvec - \pvec^{\star}\rVert_2 \in [\lVert\xvec - \qvec\rVert_2 - \Delta, \lVert\xvec - \qvec\rVert_2 + \Delta]$, and its L2 change ratio $\lVert\xvec - \pvec^{(0)}\rVert_2 / \lVert\pvec^{\star} - \pvec^{(0)}\rVert_2$ lies in $[\lVert\xvec - \pvec^{(0)}\rVert_2 / U, \lVert\xvec - \pvec^{(0)}\rVert_2 / L]$.
+
+\emph{Choosing $\lam$.} Candidates are the dual vectors that Clarabel returns, and multipliers recovered from the best near-feasible output $\xvec$: a least-squares solution of the stationarity condition $\pvec^{(0)} - \xvec = \Amat_e^{\top}\lam$ restricted to the rows with residual at least $-10^{-9}$, computed with LSMR and clipped at zero. Every $\lam \ge 0$ gives a valid bound, so a poor recovery only weakens $L$. When the best candidate leaves a relative gap above $10^{-8}$ to the best objective, Hildreth's dual coordinate ascent~[5], warm-started from it and capped at 3~s, raises $g(\lam)$; each coordinate step increases $g$ and keeps $\lam \ge 0$.
+
+\emph{Choosing $\qvec$.} Candidates are the outputs whose computed residuals are all at most zero, the point $\ell + \mathrm{median}(\ell)$, which satisfies every decomposition row with slack $\mathrm{median}(\ell)$ and every derivation and nonnegativity row strictly, and blends of each other output toward each strictly feasible candidate, with the smallest step that makes every computed residual nonpositive. Both bounds are evaluated in binary64 arithmetic, so the narrowest brackets of Section~\ref{sec:ext-projection} are at the level of rounding error.
+
+\section{Model Hyperparameters}
+All three model families come from scikit-learn 1.6.1, and their hyperparameters are fixed in the code; no search was run. Each model is a pipeline that standardizes five numeric query features (output count, category count, interval width, SQL length, and log estimated rows) and one-hot encodes five categorical ones (table, query shape, predicate kind, aggregate, and the generator's template family). The target is the seller's list price. The median predictor is a \texttt{DummyRegressor} that returns the median list price of its training folds. Histogram gradient boosting uses a learning rate of 0.05, 300 iterations, 31 leaves, and an L2 penalty of $10^{-3}$. The multilayer perceptron has two hidden layers of 32 and 16 tanh units and trains with Adam at a learning rate of $5 \times 10^{-4}$, a batch size of 128, and an L2 penalty of $10^{-3}$, with early stopping on 15\% of the training data, a patience of 40 iterations, and at most 1{,}000 iterations. The code records two earlier choices for the perceptron: tanh replaced ReLU after one held-out fold on UCI Adult produced prices two orders of magnitude outside the label range, and Adam with early stopping replaced L-BFGS because L-BFGS scaled poorly at 4{,}096 assets. Training uses five-fold cross-validation grouped by SQL template, and seeds 11, 23, 37, 51, and 73 give 45 proposals. The extension campaign retrains the same three families, with the same hyperparameters, on the workload with grouped assets and on each floored policy.
+
+\section{Base-Workload Results Summarized in Section 9}
+
+\subsection{Buyer-history snapshots}
+Section~9.1 prices the next purchase of 10 returning buyers per history size, dataset, and proposal (the list prices and one gradient-boosting proposal). Owning 16, 64, or 256 answers makes 26 to 969 further answers derivable, and 41 to 640 decompositions are rewritten over missing parts; owned and derivable answers leave the buyer's vector. All 360 history snapshots are released without fallback, the residual variant within 115 sweeps and the list-cap variant within 377. Table~\ref{tab:history} gives every cell.
+
+\input{../floats/tables/tab_history}
+
+\subsection{Seller price shapes}
+We vary the seller's policy instead of a buyer model. Besides the linear policy of Equation~6, a concave policy applies a square root to the extent, and a tiered policy charges each asset the largest extent in its tier. We requested eight equal-count tiers, and ties leave seven, seven, and five distinct tiers on the three datasets. We rescale both alternatives to the linear mean. The linear and concave policies violate no row of their own snapshots. The tiered policy violates 539, 330, and 122 rows on NYC Taxi, TPC-H SF1, and UCI Adult, with residuals up to 1.08, because rounding up to tier levels breaks the additivity that decomposition rows require. The tiered-shape attacks therefore start from the gate-repaired tiered policy. We retrain all three model families on each shape, which gives pooled $R^2$ from $-0.59$ for the median predictor to 0.9999 for gradient boosting. All 135 retrained proposals and all 540 shape attacks are released without fallback within 73 sweeps. The release decision therefore does not depend on the seller policy being feasible by construction.
+
+\subsection{Scale and snapshot cost}
+Figure~2 of the paper plots the gate and the baselines against snapshot size on attack candidates that violate 1 to 51 rows (median 7). Arbiter's median grows from 0.19 to 0.21~ms at 128 assets to 0.80 to 0.85~ms at 4{,}096 assets, with a p95 at or below 1.02~ms. Check only takes 0.04 to 0.41~ms, so repair adds 0.15 to 0.44~ms to verification at the median. Full cyclic repair needs up to 18 sweeps over all rows and reaches 56 to 110~ms at 4{,}096 assets, with a p95 up to 958~ms; its latency follows the number of candidates that need more than one sweep, so it is not monotone in size. OSQP with $\epsilon_{\mathrm{abs}} = 10^{-12}$ verifies every candidate and takes 117 to 156~ms at 4{,}096 assets. With the audited stopping rule, $\epsilon_{\mathrm{abs}} = 10^{-9}$, OSQP takes 82 to 123~ms, but its output passes verification at $10^{-12}$ in only 75\% to 100\% of the trials in a cell. At 128 assets, the paired speedups are 5.3 to 5.9 over full cyclic repair and 8.8 to 9.9 over OSQP; at 4{,}096 assets, the paper gives them with their intervals, which are wide against full cyclic repair because its latency per candidate follows its sweep count. Building a 4{,}096-asset snapshot takes 228 to 244~ms at the median; its numeric CSR arrays occupy 454 to 481~KB, and diagnostic row metadata brings the snapshot to 4.9 to 5.1~MB. In the audited campaign, appending relations was 2.1 times faster than a rebuild and gave an identical row multiset in 90 of 90 trials.
+
+\subsection{Model proposals in the revision campaign}
+Table~\ref{tab:heavy} gives the revision campaign's comparison on the 45 model proposals, which the paper replaces with the extension campaign's comparison (Section~\ref{sec:ext-projection} here). Arbiter's median is 64.9 to 84.5~ms. The paired speedups over full cyclic repair are 11.2 [10.5, 17.4] on NYC Taxi, 17.0 [9.54, 31.2] on TPC-H SF1, and 14.4 [8.41, 28.5] on UCI Adult. OSQP at $10^{-12}$ takes 0.45 to 9.2~s at the median and stops at its 20{,}000-iteration limit in 54 of 135 trials, and the verifier passed all 135 results. OSQP with the audited stopping rule passes verification in only 30 of 135 trials. The paired speedups over OSQP at $10^{-12}$ are 7.06 [3.74, 7.17], 111 [3.97, 296], and 54.7 [2.22, 248]. In the fallback configuration, OSQP took up to 12.6~s on these proposals. The L1 norm of Arbiter's price change is a median 1.06 times that of the OSQP solution of Equation~4 (range 1.02 to 1.11 over the 45 proposals) and 1.00 times that of full cyclic repair.
+
+\input{../floats/tables/tab_heavy}
+
+\subsection{Protocol campaigns}
+Table~\ref{tab:protocol} reports the protocol campaigns, rerun at $10^{-12}$; a case passes when the gate releases exactly when the specification requires. The 66 token and commit faults, 22 per dataset, cover tampering, stale epochs, replays, non-finite values, solver and fallback failures, and snapshot mutation after verification. The 600 stale-epoch race trials run two schedules of 100 trials per dataset: in the simultaneous schedule, 45 trials released and every outcome matched its epoch order, and in the update-before-commit schedule, none released. The 63 request-binding faults, 21 per dataset, cover swapped fields and buffers, expired, replayed, and cross-request tokens, and service restarts. The 300 cross-service races run two schedules of 50 trials per dataset, and the six delivery checks are two per dataset. On the 2-vCPU hosts of the audited campaign, at $10^{-7}$ and excluding query execution, the in-memory gate and commit took 6.77 to 7.38~ms at the median, the request-bound durable commit 17.0 to 17.5~ms at the median and 18.7 to 20.7~ms at the p95, and the single-stage path 20.5 to 28.4~ms for scalar to medium answers and 761~ms for a 3.47~MB answer. Serializing and digesting that answer took 664~ms at the median.
+
+\input{../floats/tables/tab_protocol}
+
+\subsection{Active-row budget under dense violations}
+We gate 18 dense candidates per setting, with 8 to 199 violated rows, under budgets of 1, 4, 8, 16, 32, and 64 rows per sweep (Table~\ref{tab:ext-budget}). At $10^{-12}$ with 80 sweeps, budgets of 1, 4, and 8 leave 3, 2, and 1 candidates unverified by the active path, and budgets of 16 or more leave none. With 400 sweeps, only the budget of 1 leaves a candidate unverified. At $10^{-7}$ with 80 sweeps, budgets of 1 and 4 leave 3 and 1, as in the audited campaign. The fail-safe tier verified every candidate that the active path left unverified: full cyclic repair resolved five of the six at $(10^{-12}, 80)$, and OSQP resolved the sixth. The budget therefore changes how often the gate falls back, never what it accepts.
+
+\input{tab_dense_budget}
+
+\subsection{Fallback kernel}
+On the six candidates that needed fallback at $(10^{-12}, 80)$, the violated-only kernel is 77 to 142 times faster than a full scan when both run up to 80 sweeps, with medians of 1.9 to 12.6~ms against 165 to 1{,}148~ms, and both verify all six. With 20 sweeps, the violated-only kernel verifies only 3 of the 6 and the full scan 5 of the 6. A 20-sweep fallback budget is therefore too small at $10^{-12}$, so we set the budget to 80. In the fail-safe tier, OSQP verified the cases that the shorter budget missed.
+
+\subsection{Sweep budget and recomputation}
+The largest sweep counts were 63 for natural proposals at $10^{-12}$, 136 for declaration-coverage gates, 73 for shape proposals, 115 for residual history snapshots, and 377 for list-cap snapshots. A budget of 80, sized for $10^{-7}$, would have sent 80.6\% of residual history gates and 41.1\% of list-cap gates to fallback. Recomputing a 4{,}096-asset seller policy takes 1.84 to 2.55~ms at the median over 200 repetitions, depending on the shape, and verifying a supplied vector takes 0.43 to 0.47~ms. Recomputation cannot replace verification: the tiered policy recomputes to an infeasible vector, and the boundary cannot recompute a price that a contract or an external service supplies.
+
+\subsection{Tolerance and price scale}
+A fixed absolute tolerance changes its meaning when prices are rescaled: if all prices are multiplied by 100, the same $\tol$ becomes 100 times stricter relative to every price. The floor study of Section~\ref{sec:ext-floors} varies the smallest list price directly.
+
+\section{The Extension Campaign}
+
+\subsection{Environment and protocol}
+The extension campaign ran in one Colab session on one host with an AMD EPYC 7B12, eight logical CPUs, and 54.8~GB of memory, with Python 3.13.16, NumPy 2.1.3, pandas 2.2.3, SciPy 1.16.3, scikit-learn 1.6.1, OSQP 1.0.4, Clarabel 0.11.1~[4], DuckDB 1.3.2, and SQLGlot 27.0.0. It ran 28 checkpointed parts in 3{,}918~s of stage time and passed all 45 of its quality checks, 40 of them fatal integrity checks, and the audited package was byte-identical after the campaign. Before any experiment, it regenerated the audited 4{,}096-asset workloads, their 28{,}497 relations, and their snapshot digests exactly. The projection study times every method over 3 repetitions after one warm-up, in rotated method order. Scale-out cells time Arbiter and check only over 10 repetitions after 3 warm-ups, and full cyclic repair, OSQP, and Clarabel over 3 repetitions after one. Speedups are paired over units, with 95\% percentile-bootstrap intervals over 10{,}000 resamples, as in the paper. We compare these timings only with each other.
+
+\subsection{GROUP BY extension}
+\emph{Workload.} A deterministic generator derives grouped aggregates from the audited catalog statistics in groups that close under the new rules: a grouped answer over all rows with its ungrouped total; a grouped interval partition, a target and two parts, with their three ungrouped totals; and a grouped category partition on the grouping column with its three ungrouped totals. Groups are taken from the tables in turn, with up to three grouping columns per table, and assets that already exist are not duplicated. This gives 704 new assets (164 on NYC Taxi, 352 on TPC-H SF1, and 188 on UCI Adult), 504 of them grouped, and 1{,}424 new relations: 170 grouped partition unions, 74 partition unions among new ungrouped assets, 504 roll-ups, 338 slices, and 338 group filters. A grouped answer costs 12\% more than its ungrouped total under Equation~6, and the base workload's normalization reproduces every base price exactly.
+
+\emph{Validation.} Table~\ref{tab:ext-groupby} summarizes the compiler checks. The extended parser passes all 32 fixed strings of its self-test: six supported shapes, 25 fail-closed shapes, and a renderer round trip. The fail-closed shapes are two grouping columns, \texttt{HAVING}, \texttt{AVG}, \texttt{ORDER BY}, \texttt{LIMIT}, \texttt{DISTINCT}, \texttt{ROLLUP}, \texttt{CUBE}, \texttt{GROUPING SETS}, \texttt{GROUP BY ALL}, a positional key, a selected column other than the key, an alias on the key, the aggregate before the key, two aggregates, \texttt{COUNT(DISTINCT)}, \texttt{SUM(DISTINCT)}, an expression inside \texttt{SUM}, \texttt{FILTER}, a predicate outside the supported forms, a schema-qualified table, a subquery, a common table expression, a join, and a set operation. The base assets parse exactly as in the audited compile, and every new asset parses to its construction descriptor. An independent pairwise oracle, which compares every grouped asset with every aggregate asset of its dataset from construction descriptors, matches the compiler's 1{,}424 relations exactly. All 180 executed checks pass in DuckDB on the real data. Each check composes in SQL the answers that a relation names, as a buyer who holds them would, and compares the result with the priced query's answer group by group, counts exactly and sums within a relative $10^{-10}$ and an absolute $10^{-8}$. The 17 audited unsupported queries of the form \texttt{SELECT g, COUNT(*) AS n FROM t GROUP BY g} now compile to grouped assets, and the other 122 unsupported queries are still rejected.
+
+\emph{Release.} The three families, retrained over the extended workload, reach pooled out-of-fold $R^2$ from $-0.50$ to $-0.45$ for the median predictor, 0.990 to 0.993 for gradient boosting, and 0.9988 to 0.9996 for the perceptron. Their 45 proposals violate 0 to 3{,}494 rows (median predictor), 2{,}063 to 4{,}209 rows (gradient boosting), and 3{,}287 to 4{,}809 rows (perceptron) before the gate, up to 184 of them from the new families. The gate releases all 45 within 56 sweeps and without fallback, with median gate times of 88.3, 61.4, and 63.4~ms on NYC Taxi, TPC-H SF1, and UCI Adult. The 888 exact per-row attacks on the new families, with budgets of 10\%, 25\%, and 50\% and up to 20 rows per family, dataset, and budget, violate 1 to 21 rows. The gate releases all of them without fallback, at a median of 0.39~ms and a p95 of 0.48~ms; grouped partition unions need up to 50 sweeps, and the other families at most two. Every released vector passed independent verification.
+
+\input{tab_ext_groupby}
+
+\subsection{Chain audit}
+\emph{Targets.} For every interval surface, candidate targets span five, six, or eight adjacent catalog boundary intervals. A candidate is admitted when it is not an asset, no two assets of its surface tile it, it does not complete a two-part split of an admitted target, and a chain of three or more existing intervals tiles it, taking surfaces in turn up to 60 targets per dataset. R1 emits no row for any of the 180 targets, list prices that include them verify, and the audit flags nothing on list prices.
+
+\emph{Results.} Table~\ref{tab:ext-chains} summarizes the audit. Each attack raises one target's price within the box of Equation~3, with budgets of 10\%, 25\%, and 50\%. The gate releases all 540 attacked vectors, because no declared row covers the chain, and the audit detects all 540. The cheapest flagged chain has three to five parts. Lazy enforcement needed two rounds for 76 attacks, three for 410, four for 43, and five for 11, so three at the median, and the audit flags nothing after enforcement; every final release passed verification. The first gate takes 0.34~ms at the median, and the whole enforcement takes 222~ms at the median and 468~ms at most. One audit pass over all 1{,}331 to 1{,}389 interval assets of a dataset takes 18 to 23~ms at the median.
+
+\emph{Audit mode.} For 15 proposals per dataset, the gate releases a vector against a declaration of decompositions only (D) or of projections and filters only (P+F), and the audit then checks the release against the complete snapshot. It flags 45 of 45 releases under D and 30 of 45 under P+F, at 0.20 to 0.22~ms per check at the median.
+
+\input{tab_ext_chains}
+
+\subsection{Price floors}
+\label{sec:ext-floors}
+Table~\ref{tab:ext-floors} reports the floor study. Floors of $10^{-6}$, $10^{-4}$, and $10^{-2}$ units raise 1{,}524, 6{,}272, and 7{,}033 list prices over the three datasets, and every floored list-price vector verifies at $10^{-12}$. The three families are retrained on each floored policy, and the gate runs their 45 proposals at three tolerances: all 405 gate calls release without fallback, within 63 sweeps. Every leftover saving lies within the bound $\tol/\ell_{\min} = \tol/f$ of Corollary~6.4. At $10^{-7}$, a floor of $10^{-6}$ units still leaves 30 of 45 releases above 1\% and all 45 above 0.1\%, a floor of $10^{-4}$ units keeps every saving at or below 0.09996\%, under its bound of 0.1\%, and a floor of $10^{-2}$ units keeps every saving below 0.001\%. With one unit set to USD~2{,}176, the median price of the one-off data products among 4{,}162 priced products from 443 providers on commercial data marketplaces~[2], the floors are USD~0.0022, USD~0.22, and USD~21.76.
+
+\input{tab_ext_floors}
+
+\subsection{Distance to the exact projection}
+\label{sec:ext-projection}
+Table~\ref{tab:ext-projection} gives latency and price change on the 45 proposals, 15 per dataset; every output of every method passed verification at $10^{-12}$. The bracket of Section~\ref{sec:bracket} had a relative width $U/L - 1$ of at most $2.24 \times 10^{-7}$ and a median of $1.25 \times 10^{-13}$, and it took at most 3.06~s per proposal. Refined Clarabel duals gave the lower bound for 35 proposals, unrefined Clarabel duals for 5, and refined multipliers recovered from the OSQP solution for 5; blends of the OSQP solution toward a Clarabel solution gave the upper bound for 35 proposals, the OSQP solution itself for 5, and a blend between the two Clarabel solutions for 5.
+
+Arbiter's L2 price change is a median 1.08, 1.03, and 1.11 times that of $\pvec^{\star}$ for the median predictor, gradient boosting, and the perceptron, 1.003 to 1.17 overall, and full cyclic repair's is 1.09, 1.02, and 1.08 times, 1.004 to 1.13 overall. Active-row repair therefore does not return $\pvec^{\star}$, as Section~5.2 of the paper states, but its price change is at most 1.17 times the minimum on every proposal. The median distance from Arbiter's output to $\pvec^{\star}$ is at most 0.032 units. OSQP's output lies within $6.2 \times 10^{-5}$ units of $\pvec^{\star}$, with a median of $1.1 \times 10^{-7}$, although OSQP stops at its 20{,}000-iteration limit in 54 of 135 trials. Clarabel at its default tolerance stops with status Solved in all 135 trials, within 21 iterations, and its outputs lie a median $1.9 \times 10^{-4}$ units from $\pvec^{\star}$. That deviation is small against most projection distances but not against those of the 10 median-predictor proposals of NYC Taxi and UCI Adult, $1.9 \times 10^{-5}$ and $5.6 \times 10^{-6}$ units, where Clarabel's change is 2.39 and 6.70 times the minimum. At a gap tolerance of $10^{-12}$, Clarabel stops with insufficient progress in 105 of 135 trials, within 29 iterations, and returns vectors that pass verification but change prices a median 1.84 and at most 2{,}238 times as much as $\pvec^{\star}$. The L1 norm of Arbiter's price change is a median 1.06 times that of OSQP, with a range of 1.02 to 1.11, as in the revision campaign.
+
+The paired speedups of Arbiter on NYC Taxi, TPC-H SF1, and UCI Adult are 4.21 [3.04, 4.26], 2.12 [1.42, 5.70], and 19.0 [18.8, 32.4] over Clarabel at its default tolerance; 2.75 [2.01, 3.07], 1.76 [1.72, 4.49], and 23.7 [14.3, 25.0] over Clarabel at $10^{-12}$; 6.50 [3.44, 6.74], 105 [3.73, 292], and 51.8 [2.13, 237] over OSQP; and 11.6 [11.3, 18.6], 17.6 [9.88, 33.0], and 15.3 [8.77, 30.9] over full cyclic repair. OSQP took up to 8.04~s on these proposals.
+
+\input{tab_ext_projection}
+
+\subsection{Scale-out}
+The audited generator produces 8{,}192 assets per dataset and 12{,}288 assets on TPC-H SF1 and UCI Adult. At 4{,}096 assets it reproduces the audited workloads, relations, and snapshot digests exactly, and the compiler matches the oracle with precision and recall 1.0 on every workload. Two combined workloads join the three datasets' snapshots at 4{,}096 and 8{,}192 assets each. Every method receives the same exact per-row attack candidates with a budget of 25\%: four per relation family and dataset, 12 per workload, and two per family and dataset in the combined workloads, 18 per workload. The candidates violate 3 to 81 rows. Table~\ref{tab:ext-scale} gives every workload. Arbiter's median is 0.97~ms on the combined 12{,}288-asset workload and 1.93~ms on the combined 24{,}576-asset workload, whose snapshot holds 62{,}826 relations in 87{,}402 rows with 163{,}926 nonzeros. The largest p95, 9.77~ms, is that of the largest workload, and Arbiter needs at most 30 sweeps on any candidate. Every output of every method passed verification.
+
+\input{tab_ext_scale}
+
+\section{Full Comparison of Pricing Approaches}
+Table~1 of the paper is a shortened form of Table~\ref{tab:ext-systems}, which keeps four further approaches and two further columns. The citations for each approach are those of the paper.
+
+\begin{table}[h]
+\centering
+\caption{Scope and guarantees of pricing approaches. Pricing theory checks the seller's own price points for consistency when the seller defines them. Only Arbiter checks every supplied vector at release and issues a release token.}
+\label{tab:ext-systems}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}p{2.2cm}p{2.9cm}p{3.0cm}p{2.0cm}p{3.1cm}p{0.9cm}@{}}
+\toprule
+Approach & Priced object or scope & Native construction & History state & Primary property & Token \\
+\midrule
+Pricing theory & Queries over priced views & Unique extension of view prices & Not central & Arbitrage and discount freeness & No \\
+QueryMarket & Conjunctive join queries & Integer program over views & Purchase history & Information-aware price & No \\
+QIRANA & Broad SQL with aggregates & Support sets, weighted coverage & Yes & Arbitrage-free price function & No \\
+Revenue pricing & Seller query workload & Constrained revenue optimization & Market sequence & Seller revenue & No \\
+PRIDE & Repeated feature-based offers & Online value and discount learning & Temporal state & Revenue and regret & No \\
+ARIA & Select-project-join and simple aggregates & Tuple information gain & Not reported & Scalable arbitrage freedom & No \\
+Dealer & Models at chosen privacy levels & Model menu and compensation & Market state & Revenue, privacy, Shapley & No \\
+DataPrice & Complete dataset listings & Metadata-based recommendation & No & Price recommendation & No \\
+Arbiter & Single-table SQL fragment with one-column \texttt{GROUP BY} & None; checks a supplied price & Per-buyer snapshot & Encoded relations hold & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{References}
+\begin{enumerate}
+\item S. Agmon. The Relaxation Method for Linear Inequalities. \emph{Canadian Journal of Mathematics}, 6:382--392, 1954. doi:10.4153/cjm-1954-037-2.
+\item S. A. Azcoitia, C. Iordanou, and N. Laoutaris. Understanding the Price of Data in Commercial Data Marketplaces. In \emph{2023 IEEE 39th International Conference on Data Engineering (ICDE)}, pages 3718--3728, 2023. doi:10.1109/ICDE55515.2023.00300.
+\item H. H. Bauschke and J. M. Borwein. On Projection Algorithms for Solving Convex Feasibility Problems. \emph{SIAM Review}, 38(3):367--426, 1996. doi:10.1137/S0036144593251710.
+\item P. Goulart. Clarabel, Version 0.11.1. Rust and Python package, Apache License 2.0, June 2025. \url{https://github.com/oxfordcontrol/Clarabel.rs}, accessed October 24, 2026.
+\item C. Hildreth. A Quadratic Programming Procedure. \emph{Naval Research Logistics Quarterly}, 4(1):79--85, 1957. doi:10.1002/nav.3800040113.
+\item A. J. Hoffman. On Approximate Solutions of Systems of Linear Inequalities. \emph{Journal of Research of the National Bureau of Standards}, 49(4):263--265, 1952.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Datasets and compiled workload, 4{,}096 supported SQL assets each. Base rows: rows of the tables the workload reads (three for TPC-H SF1). Uns.: rejected unsupported queries. Decomp., Proj., Filter: compiled relations by family. Rows: snapshot rows, including one nonnegativity row per asset (24{,}556 to 26{,}160 nonzeros).}
+\label{tab:data}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Dataset & Base rows & Uns. & Decomp. & Proj. & Filter & Rows \\
+\midrule
+NYC Taxi & 2{,}964{,}624 & 31 & 2{,}243 & 4{,}400 & 2{,}804 & 13{,}543 \\
+TPC-H SF1 & 7{,}651{,}215 & 70 & 2{,}060 & 4{,}082 & 3{,}058 & 13{,}296 \\
+UCI Adult & 48{,}842 & 38 & 2{,}364 & 4{,}610 & 2{,}876 & 13{,}946 \\
+\bottomrule
+\end{tabular}
+\end{table}

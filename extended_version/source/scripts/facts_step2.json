@@ -1,0 +1,1347 @@
+{
+  "env": {
+    "source": "environment.json",
+    "value": {
+      "cpu": "AMD EPYC 7B12",
+      "cpus": 8,
+      "memory_gb": 54.750404608,
+      "notebook": "08_Arbiter_Step2_Campaign_v1_1.ipynb",
+      "packages": {
+        "clarabel": "0.11.1",
+        "duckdb": "1.3.2",
+        "matplotlib": "3.10.0",
+        "numpy": "2.1.3",
+        "osqp": "1.0.4",
+        "pandas": "2.2.3",
+        "scikit-learn": "1.6.1",
+        "scipy": "1.16.3",
+        "sqlglot": "27.0.0"
+      },
+      "python": "3.13.16"
+    }
+  },
+  "run": {
+    "source": "part_provenance.csv; stage_quality_checks.csv",
+    "value": {
+      "checks": 45,
+      "failed_checks": 0,
+      "fatal_checks": 40,
+      "parts": 28,
+      "sessions": 1,
+      "stage_seconds": 3917.7905167840017,
+      "valid_parts": 28
+    }
+  },
+  "s21_assets": {
+    "source": "s21_summary.csv",
+    "value": {
+      "grouped_total": 504,
+      "new_by_dataset": {
+        "NYC Taxi 2024-01": 164,
+        "TPC-H SF1": 352,
+        "UCI Adult": 188
+      },
+      "new_total": 704
+    }
+  },
+  "s21_attacks": {
+    "source": "s21_attacks.csv",
+    "value": {
+      "by_family": {
+        "group_filter": 180,
+        "group_rollup": 180,
+        "group_slice": 180,
+        "grouped_partition_union": 180,
+        "partition_union_new_assets": 168
+      },
+      "count": 888,
+      "fallback": 0,
+      "max_residual_after": 9.311605306261406e-13,
+      "p50_ms": 0.39272,
+      "p95_ms": 0.47664135,
+      "released": 888,
+      "sweeps_max": 50,
+      "unsafe": 0,
+      "violations_max": 21,
+      "violations_min": 1
+    }
+  },
+  "s21_base": {
+    "source": "s21_summary.csv",
+    "value": {
+      "parse_unchanged": true,
+      "prices_unchanged": true,
+      "relations_unchanged": true
+    }
+  },
+  "s21_executed": {
+    "source": "s21_executed_checks.csv",
+    "value": {
+      "checks": 180,
+      "passed": 180,
+      "per_family_dataset": 12
+    }
+  },
+  "s21_gate_p50_by_dataset": {
+    "source": "s21_proposals_gate.csv",
+    "value": {
+      "NYC Taxi 2024-01": 88.330121,
+      "TPC-H SF1": 61.392497,
+      "UCI Adult": 63.421477
+    }
+  },
+  "s21_model_r2": {
+    "source": "s21_model_pooled.csv",
+    "value": {
+      "dummy_median": {
+        "max": -0.4509409513253939,
+        "min": -0.49696822308514044
+      },
+      "hist_gradient_boosting": {
+        "max": 0.9928164270249508,
+        "min": 0.9895498594217721
+      },
+      "mlp": {
+        "max": 0.9996492440584182,
+        "min": 0.9988076221726588
+      }
+    }
+  },
+  "s21_negatives": {
+    "source": "s21_negative_audit.csv",
+    "value": {
+      "now_supported": 17,
+      "passed": 139,
+      "still_rejected": 122,
+      "total": 139
+    }
+  },
+  "s21_oracle": {
+    "source": "s21_compiler_metrics.csv",
+    "value": {
+      "oracle_relations": 1424,
+      "precision_min": 1.0,
+      "recall_min": 1.0
+    }
+  },
+  "s21_parser_self_test": {
+    "source": "s21_parser_self_test.csv",
+    "value": {
+      "cases": 32,
+      "passed": 32
+    }
+  },
+  "s21_proposals": {
+    "source": "s21_proposals_gate.csv",
+    "value": {
+      "count": 45,
+      "fallback": 0,
+      "gate_p50_ms": 84.872625,
+      "max_residual_after": 9.995910349447357e-13,
+      "new_family_rows_max": 184,
+      "released": 45,
+      "sweeps_max": 56,
+      "unsafe": 0,
+      "violations_max": 4809,
+      "violations_min": 0
+    }
+  },
+  "s21_relations": {
+    "source": "s21_summary.csv",
+    "value": {
+      "by_family": {
+        "group_filter": 338,
+        "group_rollup": 504,
+        "group_slice": 338,
+        "grouped_partition_union": 170,
+        "partition_union_new_assets": 74
+      },
+      "total": 1424
+    }
+  },
+  "s21_violations_by_model": {
+    "source": "s21_proposals_gate.csv",
+    "value": {
+      "dummy_median": {
+        "max": 3494,
+        "min": 0
+      },
+      "hist_gradient_boosting": {
+        "max": 4209,
+        "min": 2063
+      },
+      "mlp": {
+        "max": 4809,
+        "min": 3287
+      }
+    }
+  },
+  "s22": {
+    "source": "s22_summary.csv; s22_attacks.csv; s22_audit_mode.csv",
+    "value": {
+      "attacks": 540,
+      "audit_mode_D": 45,
+      "audit_mode_PF": 45,
+      "audit_mode_flagged": 75,
+      "audit_mode_flagged_D": 45,
+      "audit_mode_flagged_PF": 30,
+      "audit_mode_p50_ms_max": 0.220665,
+      "audit_mode_p50_ms_min": 0.20343225,
+      "audit_mode_releases": 90,
+      "audit_p50_ms_max": 22.627333999999998,
+      "audit_p50_ms_min": 18.19895,
+      "detected": 540,
+      "first_gate_ms_p50": 0.34052550000000004,
+      "flagged_after": 0,
+      "interval_assets_max": 1389,
+      "interval_assets_min": 1331,
+      "list_flags": 0,
+      "parts_max": 5,
+      "parts_min": 3,
+      "r1_rows": 0,
+      "released_first": 540,
+      "rounds_counts": {
+        "2": 76,
+        "3": 410,
+        "4": 43,
+        "5": 11
+      },
+      "rounds_max": 5,
+      "rounds_median": 3.0,
+      "rounds_min": 2,
+      "targets": 180,
+      "total_ms_max": 467.68490699999995,
+      "total_ms_p50": 221.803023,
+      "unsafe": 0
+    }
+  },
+  "s23": {
+    "source": "s23_summary.csv; s23_policy.csv",
+    "value": {
+      "all_bounds_hold": true,
+      "all_calls": 405,
+      "all_released": 405,
+      "assets_floored": {
+        "('NYC Taxi 2024-01', 0.0001)": 2615,
+        "('NYC Taxi 2024-01', 0.01)": 2643,
+        "('NYC Taxi 2024-01', 1e-06)": 1388,
+        "('TPC-H SF1', 0.0001)": 1038,
+        "('TPC-H SF1', 0.01)": 1711,
+        "('TPC-H SF1', 1e-06)": 136,
+        "('UCI Adult', 0.0001)": 2619,
+        "('UCI Adult', 0.01)": 2679,
+        "('UCI Adult', 1e-06)": 0
+      },
+      "cells": {
+        "0.0001|1e-07": {
+          "bound": 0.0009999999999999998,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 0.0009995755742819292,
+          "released": 45,
+          "sweeps_max": 29,
+          "target_list_min": 0.0001,
+          "target_list_min_usd": 0.21760000000000002,
+          "tolerance_usd": 0.00021759999999999998
+        },
+        "0.0001|1e-09": {
+          "bound": 1e-05,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 9.995328709676288e-06,
+          "released": 45,
+          "sweeps_max": 43,
+          "target_list_min": 0.0001,
+          "target_list_min_usd": 0.21760000000000002,
+          "tolerance_usd": 2.176e-06
+        },
+        "0.0001|1e-12": {
+          "bound": 9.999999999999999e-09,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 9.993842354505536e-09,
+          "released": 45,
+          "sweeps_max": 63,
+          "target_list_min": 0.0001,
+          "target_list_min_usd": 0.21760000000000002,
+          "tolerance_usd": 2.176e-09
+        },
+        "0.01|1e-07": {
+          "bound": 9.999999999999999e-06,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 9.997122644121725e-06,
+          "released": 45,
+          "sweeps_max": 29,
+          "target_list_min": 0.01,
+          "target_list_min_usd": 21.76,
+          "tolerance_usd": 0.00021759999999999998
+        },
+        "0.01|1e-09": {
+          "bound": 1.0000000000000001e-07,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 9.994451551087469e-08,
+          "released": 45,
+          "sweeps_max": 41,
+          "target_list_min": 0.01,
+          "target_list_min_usd": 21.76,
+          "tolerance_usd": 2.176e-06
+        },
+        "0.01|1e-12": {
+          "bound": 9.999999999999999e-11,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 9.976030418412662e-11,
+          "released": 45,
+          "sweeps_max": 61,
+          "target_list_min": 0.01,
+          "target_list_min_usd": 21.76,
+          "tolerance_usd": 2.176e-09
+        },
+        "1e-06|1e-07": {
+          "bound": 0.1,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 45,
+          "gt_1pct": 30,
+          "max_saving": 0.09994103257955124,
+          "released": 45,
+          "sweeps_max": 29,
+          "target_list_min": 1e-06,
+          "target_list_min_usd": 0.002176,
+          "tolerance_usd": 0.00021759999999999998
+        },
+        "1e-06|1e-09": {
+          "bound": 0.001,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 0.0009994116500903257,
+          "released": 45,
+          "sweeps_max": 43,
+          "target_list_min": 1e-06,
+          "target_list_min_usd": 0.002176,
+          "tolerance_usd": 2.176e-06
+        },
+        "1e-06|1e-12": {
+          "bound": 1e-06,
+          "bound_holds": true,
+          "fallback": 0,
+          "gate_calls": 45,
+          "gt_0p1pct": 0,
+          "gt_1pct": 0,
+          "max_saving": 9.918901637540056e-07,
+          "released": 45,
+          "sweeps_max": 63,
+          "target_list_min": 1e-06,
+          "target_list_min_usd": 0.002176,
+          "tolerance_usd": 2.176e-09
+        }
+      },
+      "fallback": 0,
+      "policy_verifies": true
+    }
+  },
+  "s23_assets_floored": {
+    "source": "s23_policy.csv (list prices raised by each floor, summed over datasets)",
+    "value": {
+      "0.0001": 6272,
+      "0.01": 7033,
+      "1e-06": 1524
+    }
+  },
+  "s23_dollars_per_unit": {
+    "source": "s23_summary.csv (tolerance_usd / tolerance)",
+    "value": 2176.0
+  },
+  "s24": {
+    "source": "s24_distances.csv; s24_certificates.csv; s24_raw.csv; s24_paired.csv",
+    "value": {
+      "bracket_width_max": 2.24473784227186e-07,
+      "bracket_width_median": 1.2501111257279263e-13,
+      "certificate_seconds_max": 3.064673809999931,
+      "clarabel_status": {
+        "clarabel_default|Solved": 135,
+        "clarabel_tight|InsufficientProgress": 105,
+        "clarabel_tight|Solved": 30
+      },
+      "feasible_point_bound_max": 6.209213360920652e-05,
+      "methods": {
+        "arbiter_active": {
+          "distance_high_median": 0.032052581721958615,
+          "l1_osqp_max": 1.1088013124102143,
+          "l1_osqp_median": 1.0615110793707974,
+          "l1_osqp_min": 1.0240993179387528,
+          "l2_high_max": 1.1726552885996653,
+          "l2_low_min": 1.0028604243192154,
+          "l2_median": 1.0687214429587053,
+          "proposals": 45,
+          "ratio_above_1p001": 45,
+          "verified": 45
+        },
+        "clarabel_default": {
+          "distance_high_median": 0.00018514151616646823,
+          "l1_osqp_max": 8.804619745671909,
+          "l1_osqp_median": 1.0163947188466727,
+          "l1_osqp_min": 0.999964181327879,
+          "l2_high_max": 6.69713022163414,
+          "l2_low_min": 1.00000015952772,
+          "l2_median": 1.0000082629120879,
+          "proposals": 45,
+          "ratio_above_1p001": 10,
+          "verified": 45
+        },
+        "clarabel_tight": {
+          "distance_high_median": 0.5024505504568109,
+          "l1_osqp_max": 3882.754575693687,
+          "l1_osqp_median": 3.19927761433466,
+          "l1_osqp_min": 1.0000022483559947,
+          "l2_high_max": 2238.419235590331,
+          "l2_low_min": 0.9999999999865287,
+          "l2_median": 1.8372097745863778,
+          "proposals": 45,
+          "ratio_above_1p001": 35,
+          "verified": 45
+        },
+        "full_cyclic": {
+          "distance_high_median": 0.03472170134443977,
+          "l1_osqp_max": 1.1380006145223842,
+          "l1_osqp_median": 1.052124294429037,
+          "l1_osqp_min": 1.0215166517311052,
+          "l2_high_max": 1.1341832960160116,
+          "l2_low_min": 1.0038069961177896,
+          "l2_median": 1.0742215705654237,
+          "proposals": 45,
+          "ratio_above_1p001": 45,
+          "verified": 45
+        },
+        "osqp_qp": {
+          "distance_high_median": 1.1063554226400413e-07,
+          "l1_osqp_max": 1.0,
+          "l1_osqp_median": 1.0,
+          "l1_osqp_min": 1.0,
+          "l2_high_max": 1.00000001204376,
+          "l2_low_min": 0.9999997741506593,
+          "l2_median": 1.0,
+          "proposals": 45,
+          "ratio_above_1p001": 0,
+          "verified": 45
+        }
+      },
+      "osqp_iteration_cap": 54,
+      "osqp_trials": 135,
+      "projection_distance_max": 0.9783363768100725,
+      "projection_distance_min": 5.612870581742694e-06,
+      "speedups": {
+        "NYC Taxi 2024-01|clarabel_default": {
+          "high": 4.258406337334073,
+          "low": 3.0385687190388357,
+          "median": 4.205282180826293
+        },
+        "NYC Taxi 2024-01|clarabel_tight": {
+          "high": 3.065957312106369,
+          "low": 2.01083579395155,
+          "median": 2.749697624219331
+        },
+        "NYC Taxi 2024-01|full_cyclic": {
+          "high": 18.6374119582574,
+          "low": 11.267533828574924,
+          "median": 11.647947320965066
+        },
+        "NYC Taxi 2024-01|osqp_qp": {
+          "high": 6.735691639032555,
+          "low": 3.4422756707047237,
+          "median": 6.5019216422425385
+        },
+        "TPC-H SF1|clarabel_default": {
+          "high": 5.696800794816667,
+          "low": 1.4159666101024482,
+          "median": 2.1151430365664656
+        },
+        "TPC-H SF1|clarabel_tight": {
+          "high": 4.492145773286431,
+          "low": 1.7182338070282126,
+          "median": 1.7627956848981063
+        },
+        "TPC-H SF1|full_cyclic": {
+          "high": 32.99723492924562,
+          "low": 9.883125518473864,
+          "median": 17.645614593509784
+        },
+        "TPC-H SF1|osqp_qp": {
+          "high": 292.3308524612675,
+          "low": 3.728786323750749,
+          "median": 105.26032649156532
+        },
+        "UCI Adult|clarabel_default": {
+          "high": 32.37954656167795,
+          "low": 18.83905866789707,
+          "median": 19.026374385392067
+        },
+        "UCI Adult|clarabel_tight": {
+          "high": 24.964452858722698,
+          "low": 14.321783221725452,
+          "median": 23.71085362529114
+        },
+        "UCI Adult|full_cyclic": {
+          "high": 30.868892216792446,
+          "low": 8.768317313383665,
+          "median": 15.262850013865945
+        },
+        "UCI Adult|osqp_qp": {
+          "high": 237.067139365763,
+          "low": 2.1281222747847104,
+          "median": 51.80299430690249
+        }
+      },
+      "timing_p50_ms": {
+        "NYC Taxi 2024-01": {
+          "arbiter_active": 43.593344,
+          "clarabel_default": 181.531713,
+          "clarabel_tight": 133.243235,
+          "full_cyclic": 807.8162,
+          "osqp_qp": 287.167201
+        },
+        "TPC-H SF1": {
+          "arbiter_active": 57.237252,
+          "clarabel_default": 114.330865,
+          "clarabel_tight": 90.941998,
+          "full_cyclic": 703.31466,
+          "osqp_qp": 5931.226271
+        },
+        "UCI Adult": {
+          "arbiter_active": 50.057044,
+          "clarabel_default": 1028.246023,
+          "clarabel_tight": 788.815866,
+          "full_cyclic": 869.860364,
+          "osqp_qp": 2897.442073
+        }
+      }
+    }
+  },
+  "s24_all_trials_verified": {
+    "source": "s24_raw.csv",
+    "value": {
+      "arbiter_active": 1.0,
+      "clarabel_default": 1.0,
+      "clarabel_tight": 1.0,
+      "full_cyclic": 1.0,
+      "osqp_qp": 1.0
+    }
+  },
+  "s24_certificate_sources": {
+    "source": "s24_certificates.csv (which multipliers and which feasible point gave each bound)",
+    "value": {
+      "dual": {
+        "dual:clarabel_tight": 5,
+        "refined:active_rows:osqp_qp": 5,
+        "refined:dual:clarabel_default": 30,
+        "refined:dual:clarabel_tight": 5
+      },
+      "feasible": {
+        "clarabel_tight toward clarabel_default": 5,
+        "osqp_qp": 5,
+        "osqp_qp toward clarabel_default": 11,
+        "osqp_qp toward clarabel_tight": 24
+      }
+    }
+  },
+  "s24_clarabel_default_far": {
+    "source": "s24_distances.csv (Clarabel at its default tolerance, L2 ratio above 1.001)",
+    "value": {
+      "datasets": [
+        "NYC Taxi 2024-01",
+        "UCI Adult"
+      ],
+      "models": [
+        "dummy_median"
+      ],
+      "proposals": 10,
+      "ratio_by_dataset": {
+        "NYC Taxi 2024-01": 2.393005242258954,
+        "UCI Adult": 6.69713022163414
+      }
+    }
+  },
+  "s24_clarabel_iterations_max": {
+    "source": "s24_raw.csv (Clarabel iteration counts; the iteration limit is 400)",
+    "value": {
+      "clarabel_default": 21,
+      "clarabel_tight": 29
+    }
+  },
+  "s24_clarabel_tight_insufficient_progress": {
+    "source": "s24_raw.csv (status of Clarabel at 1e-12)",
+    "value": [
+      105,
+      135
+    ]
+  },
+  "s24_l2_ratio_by_model": {
+    "source": "s24_distances.csv (L2 change ratio to the exact projection, per model family)",
+    "value": {
+      "arbiter_active": {
+        "dummy_median": {
+          "high_max": 1.101595365719081,
+          "high_median": 1.0795210721912571,
+          "low_min": 1.0687212030588127
+        },
+        "hist_gradient_boosting": {
+          "high_max": 1.0330539210555618,
+          "high_median": 1.0309175565318522,
+          "low_min": 1.0028604243192154
+        },
+        "mlp": {
+          "high_max": 1.1726552885996653,
+          "high_median": 1.106222547281781,
+          "low_min": 1.0130421134635597
+        }
+      },
+      "full_cyclic": {
+        "dummy_median": {
+          "high_max": 1.1061064475253224,
+          "high_median": 1.0860597494613373,
+          "low_min": 1.0742213294308969
+        },
+        "hist_gradient_boosting": {
+          "high_max": 1.0267200875169715,
+          "high_median": 1.0152686083247848,
+          "low_min": 1.0038069961177896
+        },
+        "mlp": {
+          "high_max": 1.1341832960160116,
+          "high_median": 1.0797415606992722,
+          "low_min": 1.0120240423927989
+        }
+      }
+    }
+  },
+  "s24_median_predictor_projection_distance": {
+    "source": "s24_certificates.csv (upper bound on ||p* - p0|| for the median-predictor proposals)",
+    "value": {
+      "NYC Taxi 2024-01": 1.8573264535781088e-05,
+      "TPC-H SF1": 0.11926173616883948,
+      "UCI Adult": 5.612870581742694e-06
+    }
+  },
+  "s24_osqp_distance_max": {
+    "source": "s24_distances.csv (upper bound on the distance from the OSQP solution to p*)",
+    "value": 6.209221255529685e-05
+  },
+  "s24_osqp_runtime_max_ms": {
+    "source": "s24_raw.csv (OSQP at eps_abs 1e-12)",
+    "value": 8043.649915
+  },
+  "s25_arbiter": {
+    "source": "s25_method_summary.csv",
+    "value": {
+      "NYC Taxi 2024-01|4096": {
+        "assets": 4096,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.419304,
+        "runtime_p95_ms": 0.561477,
+        "runtime_p99_ms": 0.6684684900000002,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|8192": {
+        "assets": 8192,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.73692,
+        "runtime_p95_ms": 0.8659625,
+        "runtime_p99_ms": 1.7616922000000004,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|12288": {
+        "assets": 12288,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 1.180459,
+        "runtime_p95_ms": 5.853535,
+        "runtime_p99_ms": 6.548480700000002,
+        "sweeps_max": 30,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|4096": {
+        "assets": 4096,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.4062245,
+        "runtime_p95_ms": 0.49594255,
+        "runtime_p99_ms": 0.55179529,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|8192": {
+        "assets": 8192,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.768735,
+        "runtime_p95_ms": 4.1390410499999994,
+        "runtime_p99_ms": 4.773235400000001,
+        "sweeps_max": 30,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|12288": {
+        "assets": 12288,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 1.1607145,
+        "runtime_p95_ms": 1.387463,
+        "runtime_p99_ms": 1.8492367100000004,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|4096": {
+        "assets": 4096,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.4632995,
+        "runtime_p95_ms": 0.60059405,
+        "runtime_p99_ms": 0.6800971900000001,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|8192": {
+        "assets": 8192,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.766805,
+        "runtime_p95_ms": 0.9043145,
+        "runtime_p99_ms": 0.9917671100000001,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "combined|3x4096": {
+        "assets": 12288,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 0.965215,
+        "runtime_p95_ms": 1.1516421000000001,
+        "runtime_p99_ms": 1.5943706000000009,
+        "sweeps_max": 1,
+        "verified_rate": 1.0
+      },
+      "combined|3x8192": {
+        "assets": 24576,
+        "fallback_rate": 0.0,
+        "runtime_p50_ms": 1.92608,
+        "runtime_p95_ms": 9.772423999999997,
+        "runtime_p99_ms": 10.164897100000003,
+        "sweeps_max": 30,
+        "verified_rate": 1.0
+      }
+    }
+  },
+  "s25_baselines": {
+    "source": "s25_method_summary.csv",
+    "value": {
+      "NYC Taxi 2024-01|4096|clarabel_default": {
+        "p50": 174.4919815,
+        "p95": 187.27881225,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|4096|full_cyclic": {
+        "p50": 78.89181400000001,
+        "p95": 389.710013,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|4096|osqp_qp": {
+        "p50": 75.7239045,
+        "p95": 129.9615855,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|4096|reject_only": {
+        "p50": 0.21935500000000002,
+        "p95": 0.2604515,
+        "verified_rate": 0.0
+      },
+      "NYC Taxi 2024-01|8192|clarabel_default": {
+        "p50": 366.658146,
+        "p95": 389.57514025,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|8192|full_cyclic": {
+        "p50": 83.363169,
+        "p95": 818.33184075,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|8192|osqp_qp": {
+        "p50": 170.111967,
+        "p95": 381.25955650000003,
+        "verified_rate": 1.0
+      },
+      "NYC Taxi 2024-01|8192|reject_only": {
+        "p50": 0.443085,
+        "p95": 0.524401,
+        "verified_rate": 0.0
+      },
+      "TPC-H SF1|12288|clarabel_default": {
+        "p50": 478.8972105,
+        "p95": 567.7785944999999,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|12288|full_cyclic": {
+        "p50": 137.9532875,
+        "p95": 2022.12742825,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|12288|osqp_qp": {
+        "p50": 416.9267985,
+        "p95": 2062.92540525,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|12288|reject_only": {
+        "p50": 0.71435,
+        "p95": 0.7808855,
+        "verified_rate": 0.0
+      },
+      "TPC-H SF1|4096|clarabel_default": {
+        "p50": 106.547217,
+        "p95": 116.838524,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|4096|full_cyclic": {
+        "p50": 39.452332999999996,
+        "p95": 656.0527774999999,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|4096|osqp_qp": {
+        "p50": 79.419865,
+        "p95": 236.10244275,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|4096|reject_only": {
+        "p50": 0.215665,
+        "p95": 0.25837699999999997,
+        "verified_rate": 0.0
+      },
+      "TPC-H SF1|8192|clarabel_default": {
+        "p50": 319.537331,
+        "p95": 329.587108,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|8192|full_cyclic": {
+        "p50": 87.108063,
+        "p95": 1290.3675865,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|8192|osqp_qp": {
+        "p50": 241.786925,
+        "p95": 474.095829,
+        "verified_rate": 1.0
+      },
+      "TPC-H SF1|8192|reject_only": {
+        "p50": 0.460735,
+        "p95": 0.5093965,
+        "verified_rate": 0.0
+      },
+      "UCI Adult|12288|clarabel_default": {
+        "p50": 3609.740251,
+        "p95": 3695.05057125,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|12288|full_cyclic": {
+        "p50": 137.6978445,
+        "p95": 2449.03632625,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|12288|osqp_qp": {
+        "p50": 652.873893,
+        "p95": 30481.08667825,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|12288|reject_only": {
+        "p50": 0.736915,
+        "p95": 0.839973,
+        "verified_rate": 0.0
+      },
+      "UCI Adult|4096|clarabel_default": {
+        "p50": 964.9977015,
+        "p95": 1105.30533575,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|4096|full_cyclic": {
+        "p50": 41.176404000000005,
+        "p95": 440.24618449999997,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|4096|osqp_qp": {
+        "p50": 100.229815,
+        "p95": 515.65807025,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|4096|reject_only": {
+        "p50": 0.22809000000000001,
+        "p95": 0.27841755,
+        "verified_rate": 0.0
+      },
+      "UCI Adult|8192|clarabel_default": {
+        "p50": 471.975064,
+        "p95": 485.0856475,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|8192|full_cyclic": {
+        "p50": 85.84306699999999,
+        "p95": 858.3537585,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|8192|osqp_qp": {
+        "p50": 224.372796,
+        "p95": 1183.2160652500002,
+        "verified_rate": 1.0
+      },
+      "UCI Adult|8192|reject_only": {
+        "p50": 0.4511505,
+        "p95": 0.516864,
+        "verified_rate": 0.0
+      },
+      "combined|3x4096|clarabel_default": {
+        "p50": 549.914174,
+        "p95": 563.009225,
+        "verified_rate": 1.0
+      },
+      "combined|3x4096|full_cyclic": {
+        "p50": 119.4456975,
+        "p95": 1134.5588634499986,
+        "verified_rate": 1.0
+      },
+      "combined|3x4096|osqp_qp": {
+        "p50": 353.07922299999996,
+        "p95": 22324.8543745,
+        "verified_rate": 1.0
+      },
+      "combined|3x4096|reject_only": {
+        "p50": 0.6099,
+        "p95": 0.6775279499999999,
+        "verified_rate": 0.0
+      },
+      "combined|3x8192|clarabel_default": {
+        "p50": 1259.3767834999999,
+        "p95": 1311.83338035,
+        "verified_rate": 1.0
+      },
+      "combined|3x8192|full_cyclic": {
+        "p50": 253.606112,
+        "p95": 3735.37560745,
+        "verified_rate": 1.0
+      },
+      "combined|3x8192|osqp_qp": {
+        "p50": 944.250215,
+        "p95": 54212.479266849994,
+        "verified_rate": 1.0
+      },
+      "combined|3x8192|reject_only": {
+        "p50": 1.2964395,
+        "p95": 1.56347705,
+        "verified_rate": 0.0
+      }
+    }
+  },
+  "s25_speedups": {
+    "source": "s25_paired.csv",
+    "value": {
+      "NYC Taxi 2024-01|4096|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 406.41241101855877,
+        "low": 358.13864508373376,
+        "median": 389.13621557672883
+      },
+      "NYC Taxi 2024-01|4096|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 665.4058656333914,
+        "low": 87.5742343686259,
+        "median": 184.3945793821016
+      },
+      "NYC Taxi 2024-01|4096|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 174.7968820220104,
+        "low": 141.34116459685544,
+        "median": 167.74515324941333
+      },
+      "NYC Taxi 2024-01|4096|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.5578074340144837,
+        "low": 0.48535434821963774,
+        "median": 0.527622791325256
+      },
+      "NYC Taxi 2024-01|8192|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 508.1401303400925,
+        "low": 455.81308121536097,
+        "median": 482.9276722553319
+      },
+      "NYC Taxi 2024-01|8192|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 175.76078243645094,
+        "low": 105.64394593713511,
+        "median": 108.74029463912431
+      },
+      "NYC Taxi 2024-01|8192|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 330.6863273585407,
+        "low": 185.5199101725705,
+        "median": 217.79436244109138
+      },
+      "NYC Taxi 2024-01|8192|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6209975685041296,
+        "low": 0.5818683400321768,
+        "median": 0.602439430513087
+      },
+      "TPC-H SF1|12288|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 421.51129000884544,
+        "low": 233.57059199614423,
+        "median": 389.8942479816465
+      },
+      "TPC-H SF1|12288|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 347.89251718214507,
+        "low": 116.75463320378755,
+        "median": 121.62368891595051
+      },
+      "TPC-H SF1|12288|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 597.3837852365848,
+        "low": 146.4909456695778,
+        "median": 376.7085938379912
+      },
+      "TPC-H SF1|12288|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6417236905960968,
+        "low": 0.34136224236860746,
+        "median": 0.6131242663130223
+      },
+      "TPC-H SF1|4096|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 247.16376113623204,
+        "low": 220.4976750504954,
+        "median": 233.25480386832467
+      },
+      "TPC-H SF1|4096|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 1290.4722220897615,
+        "low": 83.59542680362722,
+        "median": 88.1441714930826
+      },
+      "TPC-H SF1|4096|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 310.4437938710673,
+        "low": 124.5778077235181,
+        "median": 167.84015053217942
+      },
+      "TPC-H SF1|4096|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.546114963899167,
+        "low": 0.5186101537702288,
+        "median": 0.5247773419560529
+      },
+      "TPC-H SF1|8192|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 405.2342834443258,
+        "low": 234.50196096223135,
+        "median": 397.0765879563567
+      },
+      "TPC-H SF1|8192|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 271.56860738142166,
+        "low": 109.03444332087736,
+        "median": 111.4929009254189
+      },
+      "TPC-H SF1|8192|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 349.16461882297835,
+        "low": 128.16037686857112,
+        "median": 310.63396900047064
+      },
+      "TPC-H SF1|8192|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6299699577237561,
+        "low": 0.3580523870855875,
+        "median": 0.604361688223576
+      },
+      "UCI Adult|12288|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 3037.4989900938826,
+        "low": 2923.912980756591,
+        "median": 2969.0512553907706
+      },
+      "UCI Adult|12288|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 941.1035623164998,
+        "low": 115.0554950613222,
+        "median": 118.29127999624961
+      },
+      "UCI Adult|12288|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 2128.3012365260165,
+        "low": 315.8499152888508,
+        "median": 541.4000609144484
+      },
+      "UCI Adult|12288|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6544550595033622,
+        "low": 0.6101281522099458,
+        "median": 0.6459700177419697
+      },
+      "UCI Adult|4096|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 2063.531748397403,
+        "low": 1692.2761942173552,
+        "median": 2010.6964406510851
+      },
+      "UCI Adult|4096|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 341.9241944412862,
+        "low": 77.84657506190163,
+        "median": 83.80998379948934
+      },
+      "UCI Adult|4096|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 587.7410588155982,
+        "low": 170.72977121649603,
+        "median": 194.92046213219248
+      },
+      "UCI Adult|4096|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.5663260938958642,
+        "low": 0.4780670333039512,
+        "median": 0.5205547855173714
+      },
+      "UCI Adult|8192|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 613.1835599651328,
+        "low": 563.1650427449641,
+        "median": 591.1240655964673
+      },
+      "UCI Adult|8192|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 453.70366077333165,
+        "low": 105.88442850543782,
+        "median": 110.11983905876693
+      },
+      "UCI Adult|8192|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 382.03462550647816,
+        "low": 242.07735184742546,
+        "median": 296.3950256569591
+      },
+      "UCI Adult|8192|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6237647698132227,
+        "low": 0.5742374361205513,
+        "median": 0.6017532253943085
+      },
+      "combined|3x4096|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 549.1234399051718,
+        "low": 533.9845027146933,
+        "median": 545.905166666831
+      },
+      "combined|3x4096|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 239.85289745541525,
+        "low": 117.46205295863992,
+        "median": 121.83104308989732
+      },
+      "combined|3x4096|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 620.0349117672174,
+        "low": 246.47113780274216,
+        "median": 346.9138869213125
+      },
+      "combined|3x4096|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6444141078278449,
+        "low": 0.6223021445640877,
+        "median": 0.6370359875313831
+      },
+      "combined|3x8192|clarabel_default": {
+        "baseline_verified_rate": 1.0,
+        "high": 648.6908624568772,
+        "low": 627.5892191322498,
+        "median": 634.6159197058905
+      },
+      "combined|3x8192|full_cyclic": {
+        "baseline_verified_rate": 1.0,
+        "high": 260.41096646186685,
+        "low": 127.91322288004696,
+        "median": 130.3942739264637
+      },
+      "combined|3x8192|osqp_qp": {
+        "baseline_verified_rate": 1.0,
+        "high": 902.6305021646601,
+        "low": 423.09038107805213,
+        "median": 473.57525534344535
+      },
+      "combined|3x8192|reject_only": {
+        "baseline_verified_rate": 0.0,
+        "high": 0.6791113035555776,
+        "low": 0.6681318260782416,
+        "median": 0.6741885120379452
+      }
+    }
+  },
+  "s25_violations": {
+    "source": "s25_raw.csv",
+    "value": {
+      "NYC Taxi 2024-01|4096": {
+        "max": 51,
+        "median": 15.0,
+        "min": 3
+      },
+      "NYC Taxi 2024-01|8192": {
+        "max": 27,
+        "median": 15.0,
+        "min": 3
+      },
+      "TPC-H SF1|12288": {
+        "max": 81,
+        "median": 6.0,
+        "min": 3
+      },
+      "TPC-H SF1|4096": {
+        "max": 21,
+        "median": 10.0,
+        "min": 3
+      },
+      "TPC-H SF1|8192": {
+        "max": 15,
+        "median": 6.0,
+        "min": 3
+      },
+      "UCI Adult|12288": {
+        "max": 81,
+        "median": 6.0,
+        "min": 3
+      },
+      "UCI Adult|4096": {
+        "max": 51,
+        "median": 17.0,
+        "min": 3
+      },
+      "UCI Adult|8192": {
+        "max": 69,
+        "median": 17.0,
+        "min": 3
+      },
+      "combined|3x4096": {
+        "max": 51,
+        "median": 15.0,
+        "min": 3
+      },
+      "combined|3x8192": {
+        "max": 36,
+        "median": 15.0,
+        "min": 3
+      }
+    }
+  },
+  "s25_workloads": {
+    "source": "s25_workloads.csv",
+    "value": {
+      "oracle_min": 1.0,
+      "reproduced": true,
+      "reproduced_count": 3,
+      "rows": {
+        "NYC Taxi 2024-01|4096": {
+          "assets": 4096,
+          "build_p50_ms": 154.04862,
+          "nonzeros": 25233,
+          "numeric_bytes": 465316,
+          "relations": 9447,
+          "rows": 13543
+        },
+        "NYC Taxi 2024-01|8192": {
+          "assets": 8192,
+          "build_p50_ms": 342.704635,
+          "nonzeros": 53004,
+          "numeric_bytes": 977116,
+          "relations": 20230,
+          "rows": 28422
+        },
+        "TPC-H SF1|12288": {
+          "assets": 12288,
+          "build_p50_ms": 585.48257,
+          "nonzeros": 87789,
+          "numeric_bytes": 1612396,
+          "relations": 34289,
+          "rows": 46577
+        },
+        "TPC-H SF1|4096": {
+          "assets": 4096,
+          "build_p50_ms": 155.44934,
+          "nonzeros": 24556,
+          "numeric_bytes": 454228,
+          "relations": 9200,
+          "rows": 13296
+        },
+        "TPC-H SF1|8192": {
+          "assets": 8192,
+          "build_p50_ms": 363.767107,
+          "nonzeros": 55678,
+          "numeric_bytes": 1024372,
+          "relations": 21494,
+          "rows": 29686
+        },
+        "UCI Adult|12288": {
+          "assets": 12288,
+          "build_p50_ms": 614.268218,
+          "nonzeros": 90373,
+          "numeric_bytes": 1650484,
+          "relations": 34879,
+          "rows": 47167
+        },
+        "UCI Adult|4096": {
+          "assets": 4096,
+          "build_p50_ms": 173.130144,
+          "nonzeros": 26160,
+          "numeric_bytes": 481276,
+          "relations": 9850,
+          "rows": 13946
+        },
+        "UCI Adult|8192": {
+          "assets": 8192,
+          "build_p50_ms": 356.099507,
+          "nonzeros": 55244,
+          "numeric_bytes": 1014460,
+          "relations": 21102,
+          "rows": 29294
+        },
+        "combined|3x4096": {
+          "assets": 12288,
+          "build_p50_ms": 504.148566,
+          "nonzeros": 75949,
+          "numeric_bytes": 1400812,
+          "relations": 28497,
+          "rows": 40785
+        },
+        "combined|3x8192": {
+          "assets": 24576,
+          "build_p50_ms": 1128.362963,
+          "nonzeros": 163926,
+          "numeric_bytes": 3015940,
+          "relations": 62826,
+          "rows": 87402
+        }
+      }
+    }
+  }
+}

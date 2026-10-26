@@ -1,0 +1,1894 @@
+{
+ "tpch_rows_all_tables": {
+  "value": 8661245,
+  "source": "v4 00_workload/dataset_metadata.csv (all eight TPC-H tables)"
+ },
+ "rows_NYC Taxi": {
+  "value": 2964624,
+  "source": "v4 00_workload/table_specs.json (rows of the tables the workload reads)"
+ },
+ "rows_TPC-H SF1": {
+  "value": 7651215,
+  "source": "v4 00_workload/table_specs.json (rows of the tables the workload reads)"
+ },
+ "rows_UCI Adult": {
+  "value": 48842,
+  "source": "v4 00_workload/table_specs.json (rows of the tables the workload reads)"
+ },
+ "relations_total": {
+  "value": 28497,
+  "source": "v4 00_workload/compiled_relations.csv"
+ },
+ "relations_by_dataset": {
+  "value": {
+   "NYC Taxi": 9447,
+   "TPC-H SF1": 9200,
+   "UCI Adult": 9850
+  },
+  "source": "v4 compiler_metrics.csv"
+ },
+ "unsupported_total": {
+  "value": 139,
+  "source": "v4 compiler_metrics.csv"
+ },
+ "assets_total": {
+  "value": 12427,
+  "source": "v4 compiler_metrics.csv"
+ },
+ "precision_recall": {
+  "value": {
+   "NYC Taxi": [
+    1.0,
+    1.0
+   ],
+   "TPC-H SF1": [
+    1.0,
+    1.0
+   ],
+   "UCI Adult": [
+    1.0,
+    1.0
+   ]
+  },
+  "source": "v4 compiler_metrics.csv"
+ },
+ "semantic_checks": {
+  "value": [
+   108,
+   108
+  ],
+  "source": "v4 semantic_execution_checks.csv"
+ },
+ "compile_ms": {
+  "value": {
+   "NYC Taxi": 4863.355623,
+   "TPC-H SF1": 2438.712191,
+   "UCI Adult": 4569.915001
+  },
+  "source": "v4 compiler_timing.csv (2 vCPU)"
+ },
+ "tol_1e-7": {
+  "value": {
+   "released": 45,
+   "fallback": 0,
+   "sweeps_max": 29,
+   "gate_p50_ms": 37.570158,
+   "gt1": 30,
+   "gt1_cons": 25,
+   "gt01": 45,
+   "max_saving": 0.395397052155972,
+   "relations_above_1e12_max": 573,
+   "relations_above_1e12_median": 118.0,
+   "relations_gt1_total": 2107
+  },
+  "source": "nb07 s01_natural_gate.csv"
+ },
+ "tol_1e-9": {
+  "value": {
+   "released": 45,
+   "fallback": 0,
+   "sweeps_max": 43,
+   "gate_p50_ms": 54.994243,
+   "gt1": 0,
+   "gt1_cons": 0,
+   "gt01": 15,
+   "max_saving": 0.004196884522442178,
+   "relations_above_1e12_max": 214,
+   "relations_above_1e12_median": 87.0,
+   "relations_gt1_total": 0
+  },
+  "source": "nb07 s01_natural_gate.csv"
+ },
+ "tol_1e-12": {
+  "value": {
+   "released": 45,
+   "fallback": 0,
+   "sweeps_max": 63,
+   "gate_p50_ms": 73.043177,
+   "gt1": 0,
+   "gt1_cons": 0,
+   "gt01": 0,
+   "max_saving": 4.169124980903296e-06,
+   "relations_above_1e12_max": 0,
+   "relations_above_1e12_median": 0.0,
+   "relations_gt1_total": 0
+  },
+  "source": "nb07 s01_natural_gate.csv"
+ },
+ "tol_1e-7_worst_relation": {
+  "value": {
+   "dataset": "NYC Taxi 2024-01",
+   "type": "filter_derivation",
+   "residual": 9.913027968005007e-08,
+   "target_list_price": 2.5071072012177323e-07,
+   "saving": 0.395397052155972
+  },
+  "source": "nb07 s01_natural_top_relations.csv"
+ },
+ "tol_1e-7_top_relation_types": {
+  "value": {
+   "projection_derivation": 39,
+   "filter_derivation": 6
+  },
+  "source": "nb07 s01_natural_top_relations.csv"
+ },
+ "list_price_min_max": {
+  "value": [
+   1.25e-09,
+   1.3599999999999999
+  ],
+  "source": "v4 controlled_policy.csv"
+ },
+ "list_price_below_1e-7": {
+  "value": 140,
+  "source": "v4 controlled_policy.csv"
+ },
+ "list_price_median": {
+  "value": {
+   "NYC Taxi": 3.925669388029202e-06,
+   "TPC-H SF1": 0.038738184149789114,
+   "UCI Adult": 3.8479839460454724e-05
+  },
+  "source": "v4 controlled_policy.csv"
+ },
+ "list_price_min_relation_target": {
+  "value": 9.64953059279459e-08,
+  "source": "v4 controlled_policy.csv joined with v4 compiled_relations.csv"
+ },
+ "tolerance_bound_examples": {
+  "value": {
+   "theta_0.1pct_max_tol": 9.649530592794591e-11,
+   "bound_at_1e-12_pct": 0.0010363198400000005,
+   "bound_at_1e-7_ratio": 1.0363198400000004
+  },
+  "source": "derived from list_price_min_relation_target"
+ },
+ "s01_1e-7_equals_audited": {
+  "value": true,
+  "source": "nb07 s01 vs v4 natural_proposal_gate.csv"
+ },
+ "attacks": {
+  "value": {
+   "n": 2160,
+   "released": 2160,
+   "fallback": 0,
+   "sweeps_max": 1,
+   "viol_min": 3,
+   "viol_max": 57,
+   "viol_max_by_ds": {
+    "NYC Taxi": 51,
+    "TPC-H SF1": 39,
+    "UCI Adult": 57
+   },
+   "repair_p50": 0.7159565,
+   "repair_p95": 0.8784895499999994,
+   "repair_p50_by_ds": {
+    "NYC Taxi": 0.715972,
+    "TPC-H SF1": 0.686744,
+    "UCI Adult": 0.746858
+   },
+   "post_residual_max": 3.9932521265356735e-17,
+   "certified_residual_min": 7.851338776058402e-07
+  },
+  "source": "nb07 s02_attacks.csv"
+ },
+ "attacks_vs_v4": {
+  "value": {
+   "cases_1e12": 2160,
+   "same_target_rows": 2160,
+   "same_release_decision": 2160,
+   "same_violations_before": 2160,
+   "same_sweeps": 2160
+  },
+  "source": "nb07 s02_attack_v4_comparison.csv"
+ },
+ "natural": {
+  "value": {
+   "viol_min": 893,
+   "viol_max": 4737,
+   "sweeps_by_model": {
+    "dummy_median": 33,
+    "hist_gradient_boosting": 53,
+    "mlp": 63
+   }
+  },
+  "source": "nb07 s01_natural_gate.csv"
+ },
+ "history": {
+  "value": {
+   "n": 360,
+   "released": 360,
+   "fallback": 0,
+   "sweeps_max_by_variant": {
+    "list_cap": 377,
+    "residual": 115
+   },
+   "gate_p50": 107.14462
+  },
+  "source": "nb07 s11_history_raw.csv"
+ },
+ "heavy_osqp_iter_cap": {
+  "value": {
+   "hit": 54,
+   "n": 135,
+   "by_ds": {
+    "NYC Taxi": 6,
+    "TPC-H SF1": 27,
+    "UCI Adult": 21
+   }
+  },
+  "source": "nb07 s01_heavy_raw.csv"
+ },
+ "heavy_osqp_v4stop_verified": {
+  "value": [
+   30,
+   135
+  ],
+  "source": "nb07 s01_heavy_raw.csv"
+ },
+ "heavy_p50": {
+  "value": {
+   "NYC Taxi": {
+    "arbiter_active": 64.878625,
+    "full_cyclic": 1102.194932,
+    "osqp_qp": 452.622343,
+    "osqp_qp_v4_stop": 247.855682,
+    "reject_only": 0.403104
+   },
+   "TPC-H SF1": {
+    "arbiter_active": 84.535777,
+    "full_cyclic": 981.386018,
+    "osqp_qp": 9212.107717,
+    "osqp_qp_v4_stop": 255.878549,
+    "reject_only": 0.394138
+   },
+   "UCI Adult": {
+    "arbiter_active": 72.384108,
+    "full_cyclic": 1193.425054,
+    "osqp_qp": 4606.858601,
+    "osqp_qp_v4_stop": 160.63073,
+    "reject_only": 0.407472
+   }
+  },
+  "source": "nb07 s01_heavy_summary.csv"
+ },
+ "heavy_speedups": {
+  "value": {
+   "NYC Taxi": {
+    "full_cyclic": [
+     11.163230663674893,
+     10.531801999759772,
+     17.387414268688932
+    ],
+    "osqp_qp": [
+     7.062505260996571,
+     3.742257124369413,
+     7.1709966668191765
+    ],
+    "osqp_qp_v4_stop": [
+     3.870095072088087,
+     1.8488452018701507,
+     3.9674175880967972
+    ]
+   },
+   "TPC-H SF1": {
+    "full_cyclic": [
+     17.005945020033682,
+     9.54135282893059,
+     31.18454681153768
+    ],
+    "osqp_qp": [
+     111.36419336196442,
+     3.967265526795342,
+     296.10033498724437
+    ],
+    "osqp_qp_v4_stop": [
+     3.5537883965547534,
+     2.475996627210565,
+     5.944037628590369
+    ]
+   },
+   "UCI Adult": {
+    "full_cyclic": [
+     14.396558360598075,
+     8.414149404624165,
+     28.45679296692596
+    ],
+    "osqp_qp": [
+     54.67865306926147,
+     2.224158429054425,
+     247.55347542520352
+    ],
+    "osqp_qp_v4_stop": [
+     2.923238755511265,
+     1.5665619309697096,
+     3.2617768485310115
+    ]
+   }
+  },
+  "source": "nb07 s01_heavy_paired.csv"
+ },
+ "heavy_l1_ratio": {
+  "value": {
+   "vs_osqp": [
+    1.0615110793707974,
+    1.0240993179387528,
+    1.1088013124102143
+   ],
+   "vs_full_cyclic": [
+    0.9962895378732183,
+    0.9663165971423964,
+    1.0240549080447803
+   ],
+   "proposals": 45
+  },
+  "source": "nb07 s01_heavy_raw.csv (L1 norm of the price change, per proposal; median, min, max of the ratio)"
+ },
+ "heavy_osqp_runtime_max_ms": {
+  "value": 12622.671489,
+  "source": "nb07 s01_heavy_raw.csv (OSQP at eps_abs 1e-12, the fallback configuration)"
+ },
+ "dense_fallback_worst_ms": {
+  "value": {
+   "fallback_max": 1211.8172829999999,
+   "gate_max": 1222.0343039999998,
+   "rows": 35
+  },
+  "source": "nb07 s06_dense_raw.csv (rows that used fallback at tolerance 1e-12)"
+ },
+ "scale": {
+  "value": {
+   "NYC Taxi": {
+    "128": {
+     "arbiter_active": [
+      0.1916535,
+      0.23650680000000002,
+      1.0
+     ],
+     "full_cyclic": [
+      1.0308644999999999,
+      1.1216190499999998,
+      1.0
+     ],
+     "osqp_qp": [
+      1.661801,
+      1.85169525,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      1.6487585,
+      1.8318831999999998,
+      1.0
+     ],
+     "reject_only": [
+      0.043179999999999996,
+      0.0580489,
+      0.0
+     ]
+    },
+    "512": {
+     "arbiter_active": [
+      0.270618,
+      0.3410236,
+      1.0
+     ],
+     "full_cyclic": [
+      4.782028,
+      5.21988485,
+      1.0
+     ],
+     "osqp_qp": [
+      5.35484,
+      6.1112931,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      4.017412500000001,
+      4.57257995,
+      1.0
+     ],
+     "reject_only": [
+      0.0679325,
+      0.08783229999999997,
+      0.0
+     ]
+    },
+    "1024": {
+     "arbiter_active": [
+      0.3597135,
+      0.44209874999999993,
+      1.0
+     ],
+     "full_cyclic": [
+      11.554976499999999,
+      22.5208068,
+      1.0
+     ],
+     "osqp_qp": [
+      14.159932999999999,
+      28.92290155,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      10.478027,
+      14.796651850000002,
+      1.0
+     ],
+     "reject_only": [
+      0.1090715,
+      0.14038094999999998,
+      0.0
+     ]
+    },
+    "2048": {
+     "arbiter_active": [
+      0.5437525000000001,
+      0.6535914,
+      1.0
+     ],
+     "full_cyclic": [
+      42.8530025,
+      248.21720735,
+      1.0
+     ],
+     "osqp_qp": [
+      42.2191745,
+      78.24282584999999,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      30.768573500000002,
+      56.1020065,
+      0.9166666666666666
+     ],
+     "reject_only": [
+      0.213466,
+      0.25797509999999996,
+      0.0
+     ]
+    },
+    "4096": {
+     "arbiter_active": [
+      0.823189,
+      0.9852097,
+      1.0
+     ],
+     "full_cyclic": [
+      110.20968500000001,
+      553.1441414000001,
+      1.0
+     ],
+     "osqp_qp": [
+      116.7066815,
+      200.45575524999998,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      82.1576235,
+      107.3337922,
+      0.8333333333333334
+     ],
+     "reject_only": [
+      0.402715,
+      0.47379154999999995,
+      0.0
+     ]
+    }
+   },
+   "TPC-H SF1": {
+    "128": {
+     "arbiter_active": [
+      0.20404450000000002,
+      0.25056025,
+      1.0
+     ],
+     "full_cyclic": [
+      1.1724635,
+      17.34218765,
+      1.0
+     ],
+     "osqp_qp": [
+      1.9891115,
+      2.3450432500000002,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      1.9220540000000002,
+      2.1922981999999998,
+      1.0
+     ],
+     "reject_only": [
+      0.0436415,
+      0.05811584999999999,
+      0.0
+     ]
+    },
+    "512": {
+     "arbiter_active": [
+      0.2757325,
+      0.40065524999999996,
+      1.0
+     ],
+     "full_cyclic": [
+      4.9371624999999995,
+      84.55323474999999,
+      1.0
+     ],
+     "osqp_qp": [
+      6.771442,
+      9.0101541,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      5.6976745,
+      6.9997161,
+      1.0
+     ],
+     "reject_only": [
+      0.0679395,
+      0.10101465,
+      0.0
+     ]
+    },
+    "1024": {
+     "arbiter_active": [
+      0.36467249999999996,
+      0.4436178,
+      1.0
+     ],
+     "full_cyclic": [
+      11.694004,
+      196.4493215,
+      1.0
+     ],
+     "osqp_qp": [
+      16.96943,
+      28.79279345,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      13.7428885,
+      19.583697949999998,
+      0.8333333333333334
+     ],
+     "reject_only": [
+      0.1114925,
+      0.1390746,
+      0.0
+     ]
+    },
+    "2048": {
+     "arbiter_active": [
+      0.5463505,
+      0.6246325999999999,
+      1.0
+     ],
+     "full_cyclic": [
+      44.2603735,
+      494.02447105,
+      1.0
+     ],
+     "osqp_qp": [
+      59.433060999999995,
+      126.02973495,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      46.0335025,
+      85.83895120000001,
+      0.75
+     ],
+     "reject_only": [
+      0.2265185,
+      0.2688669,
+      0.0
+     ]
+    },
+    "4096": {
+     "arbiter_active": [
+      0.800473,
+      0.9251513499999999,
+      1.0
+     ],
+     "full_cyclic": [
+      56.038294,
+      958.3324255499999,
+      1.0
+     ],
+     "osqp_qp": [
+      127.170992,
+      372.1817518,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      93.272689,
+      257.3652979,
+      0.9166666666666666
+     ],
+     "reject_only": [
+      0.3997095,
+      0.4774854499999999,
+      0.0
+     ]
+    }
+   },
+   "UCI Adult": {
+    "128": {
+     "arbiter_active": [
+      0.20748499999999998,
+      0.2866846,
+      1.0
+     ],
+     "full_cyclic": [
+      1.134659,
+      12.488245299999999,
+      1.0
+     ],
+     "osqp_qp": [
+      1.943249,
+      2.2656673,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      1.797786,
+      2.2739574,
+      1.0
+     ],
+     "reject_only": [
+      0.0437635,
+      0.07492679999999996,
+      0.0
+     ]
+    },
+    "512": {
+     "arbiter_active": [
+      0.2891,
+      0.367409,
+      1.0
+     ],
+     "full_cyclic": [
+      5.102733000000001,
+      58.6024447,
+      1.0
+     ],
+     "osqp_qp": [
+      7.249339,
+      9.46604625,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      5.240676499999999,
+      6.4202802000000005,
+      1.0
+     ],
+     "reject_only": [
+      0.0708375,
+      0.0943982,
+      0.0
+     ]
+    },
+    "1024": {
+     "arbiter_active": [
+      0.41077549999999996,
+      0.52259805,
+      1.0
+     ],
+     "full_cyclic": [
+      54.075009,
+      160.6142187,
+      1.0
+     ],
+     "osqp_qp": [
+      19.2376065,
+      44.935184500000005,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      14.489619000000001,
+      23.623578600000002,
+      1.0
+     ],
+     "reject_only": [
+      0.1128735,
+      0.18976289999999998,
+      0.0
+     ]
+    },
+    "2048": {
+     "arbiter_active": [
+      0.603297,
+      0.7731750999999999,
+      1.0
+     ],
+     "full_cyclic": [
+      30.777217,
+      331.93489485,
+      1.0
+     ],
+     "osqp_qp": [
+      79.971811,
+      218.94327479999998,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      45.565772499999994,
+      103.8816602,
+      0.9166666666666666
+     ],
+     "reject_only": [
+      0.2331055,
+      0.2830634,
+      0.0
+     ]
+    },
+    "4096": {
+     "arbiter_active": [
+      0.8545645,
+      1.01834805,
+      1.0
+     ],
+     "full_cyclic": [
+      58.273289500000004,
+      622.5396919,
+      1.0
+     ],
+     "osqp_qp": [
+      155.80636049999998,
+      803.6962067000001,
+      1.0
+     ],
+     "osqp_qp_v4_stop": [
+      122.50408149999998,
+      338.63081545,
+      0.9166666666666666
+     ],
+     "reject_only": [
+      0.4146305,
+      0.5073635999999999,
+      0.0
+     ]
+    }
+   }
+  },
+  "source": "nb07 s04_scale_summary.csv"
+ },
+ "scale_speedup": {
+  "value": {
+   "NYC Taxi": {
+    "128": {
+     "full_cyclic": [
+      5.314915010244178,
+      5.246108440874708,
+      5.5861047711408585
+     ],
+     "osqp_qp": [
+      8.791365142849083,
+      8.537919333091516,
+      8.881578730426893
+     ],
+     "osqp_qp_v4_stop": [
+      8.639567516329723,
+      8.466213504932226,
+      8.852827919607112
+     ]
+    },
+    "4096": {
+     "full_cyclic": [
+      142.00402263981724,
+      69.76109725394112,
+      545.5295618210537
+     ],
+     "osqp_qp": [
+      142.0950417457551,
+      124.67644073103739,
+      149.9396022651752
+     ],
+     "osqp_qp_v4_stop": [
+      95.0819944803164,
+      88.46470106633751,
+      128.59645571708845
+     ]
+    }
+   },
+   "TPC-H SF1": {
+    "128": {
+     "full_cyclic": [
+      5.923434468545686,
+      5.635312163173394,
+      6.066608886533087
+     ],
+     "osqp_qp": [
+      9.862660538788507,
+      9.273240731910171,
+      10.419002503338906
+     ],
+     "osqp_qp_v4_stop": [
+      9.44311257358396,
+      8.91098611242121,
+      9.897476508107212
+     ]
+    },
+    "4096": {
+     "full_cyclic": [
+      69.88855136764303,
+      67.70964582978112,
+      1085.2780251250704
+     ],
+     "osqp_qp": [
+      149.70989843821565,
+      107.32978285307178,
+      277.8211348572556
+     ],
+     "osqp_qp_v4_stop": [
+      114.81540622668642,
+      108.45111946540959,
+      186.67985794316246
+     ]
+    }
+   },
+   "UCI Adult": {
+    "128": {
+     "full_cyclic": [
+      5.545462472441564,
+      5.322451506159185,
+      5.7589097115035415
+     ],
+     "osqp_qp": [
+      9.27844218144364,
+      8.716064108491079,
+      9.899885337520486
+     ],
+     "osqp_qp_v4_stop": [
+      8.641423074616881,
+      8.41595494170058,
+      9.095589088374172
+     ]
+    },
+    "4096": {
+     "full_cyclic": [
+      73.73333336981821,
+      66.71126944798058,
+      305.15572819560276
+     ],
+     "osqp_qp": [
+      179.5234807205369,
+      159.3474999747221,
+      594.5666768681629
+     ],
+     "osqp_qp_v4_stop": [
+      144.1138586500278,
+      122.85112320968216,
+      265.65047046827203
+     ]
+    }
+   }
+  },
+  "source": "nb07 s04_scale_paired.csv"
+ },
+ "scale_sweeps_max": {
+  "value": {
+   "arbiter_active": 1,
+   "full_cyclic": 18,
+   "osqp_qp": 1250,
+   "osqp_qp_v4_stop": 500,
+   "reject_only": 0
+  },
+  "source": "nb07 s04_scale_raw.csv"
+ },
+ "scale_v4stop_verified_range": {
+  "value": [
+   0.75,
+   1.0
+  ],
+  "source": "nb07 s04_scale_summary.csv"
+ },
+ "scale_viol_before": {
+  "value": [
+   1,
+   51,
+   7.0
+  ],
+  "source": "nb07 s04_scale_raw.csv"
+ },
+ "build_4096_p50": {
+  "value": {
+   "NYC Taxi": 238.64506649999998,
+   "TPC-H SF1": 227.546517,
+   "UCI Adult": 244.4947345
+  },
+  "source": "nb07 s04_build_summary.csv"
+ },
+ "snapshot_bytes_4096": {
+  "value": {
+   "sparse_numeric_bytes": [
+    454228,
+    481276
+   ],
+   "snapshot_estimated_bytes": [
+    4871896,
+    5125614
+   ]
+  },
+  "source": "v4 03_scalability/constraint_build_trials.csv (4,096-asset snapshots; numeric CSR arrays and total with row metadata)"
+ },
+ "dense_budget": {
+  "value": {
+   "1e-12|80|1": {
+    "cases": 18,
+    "unverified_by_active_path": 3,
+    "binding": 18
+   },
+   "1e-12|400|1": {
+    "cases": 18,
+    "unverified_by_active_path": 1,
+    "binding": 18
+   },
+   "1e-07|80|1": {
+    "cases": 18,
+    "unverified_by_active_path": 3,
+    "binding": 18
+   },
+   "1e-12|80|4": {
+    "cases": 18,
+    "unverified_by_active_path": 2,
+    "binding": 18
+   },
+   "1e-12|400|4": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 18
+   },
+   "1e-07|80|4": {
+    "cases": 18,
+    "unverified_by_active_path": 1,
+    "binding": 18
+   },
+   "1e-12|80|8": {
+    "cases": 18,
+    "unverified_by_active_path": 1,
+    "binding": 17
+   },
+   "1e-12|400|8": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 17
+   },
+   "1e-07|80|8": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 17
+   },
+   "1e-12|80|16": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 12
+   },
+   "1e-12|400|16": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 12
+   },
+   "1e-07|80|16": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 12
+   },
+   "1e-12|80|32": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 9
+   },
+   "1e-12|400|32": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 9
+   },
+   "1e-07|80|32": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 9
+   },
+   "1e-12|80|64": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 9
+   },
+   "1e-12|400|64": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 9
+   },
+   "1e-07|80|64": {
+    "cases": 18,
+    "unverified_by_active_path": 0,
+    "binding": 9
+   }
+  },
+  "source": "nb07 s06_dense_budget_overview.csv (fail-safe variant)"
+ },
+ "dense_catalog": {
+  "value": [
+   8,
+   199,
+   105.0,
+   22
+  ],
+  "source": "nb07 s06_dense_catalog.csv"
+ },
+ "dense_fail_safe_verified": {
+  "value": 1.0,
+  "source": "nb07 s06_dense_budget_overview.csv"
+ },
+ "dense_fallback_stages": {
+  "value": [
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "active_only",
+    "fallback_stage": "none",
+    "trials": 540
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "fail_safe",
+    "fallback_stage": "full_cyclic",
+    "trials": 25
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "fail_safe",
+    "fallback_stage": "none",
+    "trials": 510
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "fail_safe",
+    "fallback_stage": "osqp",
+    "trials": 5
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "none",
+    "trials": 102
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "osqp",
+    "trials": 3
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "violated_only_cyclic",
+    "trials": 3
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_80_sweeps",
+    "fallback_stage": "none",
+    "trials": 102
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_80_sweeps",
+    "fallback_stage": "violated_only_cyclic",
+    "trials": 6
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "active_only",
+    "fallback_stage": "none",
+    "trials": 540
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "fail_safe",
+    "fallback_stage": "full_cyclic",
+    "trials": 5
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "fail_safe",
+    "fallback_stage": "none",
+    "trials": 535
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "none",
+    "trials": 107
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "osqp",
+    "trials": 1
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "optimized_fail_safe_80_sweeps",
+    "fallback_stage": "none",
+    "trials": 107
+   },
+   {
+    "tolerance": 1e-12,
+    "max_sweeps": 400,
+    "variant_label": "optimized_fail_safe_80_sweeps",
+    "fallback_stage": "violated_only_cyclic",
+    "trials": 1
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "active_only",
+    "fallback_stage": "none",
+    "trials": 540
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "fail_safe",
+    "fallback_stage": "full_cyclic",
+    "trials": 20
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "fail_safe",
+    "fallback_stage": "none",
+    "trials": 520
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "none",
+    "trials": 104
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_20_sweeps",
+    "fallback_stage": "violated_only_cyclic",
+    "trials": 4
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_80_sweeps",
+    "fallback_stage": "none",
+    "trials": 104
+   },
+   {
+    "tolerance": 1e-07,
+    "max_sweeps": 80,
+    "variant_label": "optimized_fail_safe_80_sweeps",
+    "fallback_stage": "violated_only_cyclic",
+    "trials": 4
+   }
+  ],
+  "source": "nb07 s06_dense_fallback_stages.csv"
+ },
+ "kernel_speedup_80": {
+  "value": [
+   77.38866578871506,
+   141.84281869054274
+  ],
+  "source": "nb07 s07_fallback_paired.csv"
+ },
+ "kernel_speedup_80_ci": {
+  "value": [
+   76.0704877023138,
+   143.03268644931248
+  ],
+  "source": "nb07 s07_fallback_paired.csv"
+ },
+ "kernel_verified_20": {
+  "value": {
+   "legacy_full_scan_cyclic": [
+    5,
+    6
+   ],
+   "optimized_violated_only_cyclic": [
+    3,
+    6
+   ]
+  },
+  "source": "nb07 s07_fallback_summary.csv"
+ },
+ "kernel_verified_80": {
+  "value": {
+   "legacy_full_scan_cyclic": [
+    6,
+    6
+   ],
+   "optimized_violated_only_cyclic": [
+    6,
+    6
+   ]
+  },
+  "source": "nb07 s07_fallback_summary.csv"
+ },
+ "kernel_p50_80": {
+  "value": {
+   "legacy_full_scan_cyclic": [
+    164.6236625,
+    1147.5684004999998
+   ],
+   "optimized_violated_only_cyclic": [
+    1.856128,
+    12.624629
+   ]
+  },
+  "source": "nb07 s07_fallback_summary.csv"
+ },
+ "sweep_curve": {
+  "value": [
+   {
+    "family": "s01 natural proposals, tolerance 1e-12",
+    "gate_calls": 45,
+    "sweeps_p50": 40.0,
+    "sweeps_p95": 53.8,
+    "sweeps_max": 63.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s01 natural proposals, tolerance 1e-09",
+    "gate_calls": 45,
+    "sweeps_p50": 26.0,
+    "sweeps_p95": 34.8,
+    "sweeps_max": 43.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s01 natural proposals, tolerance 1e-07",
+    "gate_calls": 45,
+    "sweeps_p50": 17.0,
+    "sweeps_p95": 23.599999999999994,
+    "sweeps_max": 29.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s08 declaration coverage",
+    "gate_calls": 765,
+    "sweeps_p50": 34.0,
+    "sweeps_p95": 90.0,
+    "sweeps_max": 136.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0784313725490196,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s09 pricing-shape proposals, concave_sqrt",
+    "gate_calls": 45,
+    "sweeps_p50": 29.0,
+    "sweeps_p95": 51.0,
+    "sweeps_max": 58.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s09 pricing-shape proposals, linear",
+    "gate_calls": 45,
+    "sweeps_p50": 40.0,
+    "sweeps_p95": 53.8,
+    "sweeps_max": 63.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s09 pricing-shape proposals, tiered_8",
+    "gate_calls": 45,
+    "sweeps_p50": 40.0,
+    "sweeps_p95": 73.0,
+    "sweeps_max": 73.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.0,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s11 buyer history, list_cap",
+    "gate_calls": 180,
+    "sweeps_p50": 22.0,
+    "sweeps_p95": 261.19999999999993,
+    "sweeps_max": 377.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.4111111111111111,
+    "share_needing_more_than_160": 0.2111111111111111,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   },
+   {
+    "family": "s11 buyer history, residual",
+    "gate_calls": 180,
+    "sweeps_p50": 93.0,
+    "sweeps_p95": 109.0,
+    "sweeps_max": 115.0,
+    "not_verified_within_cap": 0,
+    "cap": 3000,
+    "share_needing_more_than_80": 0.8055555555555556,
+    "share_needing_more_than_160": 0.0,
+    "share_needing_more_than_400": 0.0,
+    "share_needing_more_than_1000": 0.0
+   }
+  ],
+  "source": "nb07 final_sweep_budget_curve.csv"
+ },
+ "ablation": {
+  "value": {
+   "NYC Taxi|all_relations_budget_12000": [
+    0.45829600000000004,
+    0.6236964999999999,
+    1.0,
+    1,
+    120
+   ],
+   "NYC Taxi|all_relations_budget_512": [
+    0.453403,
+    0.5803486,
+    1.0,
+    1,
+    120
+   ],
+   "NYC Taxi|all_relations_budget_64": [
+    0.469292,
+    0.57893235,
+    1.0,
+    1,
+    120
+   ],
+   "NYC Taxi|decomposition_only_budget_12000": [
+    0.231059,
+    0.2765167,
+    1.0,
+    1,
+    40
+   ],
+   "TPC-H SF1|all_relations_budget_12000": [
+    0.45890050000000004,
+    0.5401391,
+    1.0,
+    1,
+    120
+   ],
+   "TPC-H SF1|all_relations_budget_512": [
+    0.4521635,
+    0.5351543999999999,
+    1.0,
+    1,
+    120
+   ],
+   "TPC-H SF1|all_relations_budget_64": [
+    0.4656345,
+    0.6643684,
+    1.0,
+    1,
+    120
+   ],
+   "TPC-H SF1|decomposition_only_budget_12000": [
+    0.228314,
+    0.26212729999999995,
+    1.0,
+    1,
+    40
+   ],
+   "UCI Adult|all_relations_budget_12000": [
+    0.497479,
+    0.6289018,
+    1.0,
+    1,
+    120
+   ],
+   "UCI Adult|all_relations_budget_512": [
+    0.5037940000000001,
+    0.65983655,
+    1.0,
+    1,
+    120
+   ],
+   "UCI Adult|all_relations_budget_64": [
+    0.5103625,
+    0.7055848499999999,
+    1.0,
+    1,
+    120
+   ],
+   "UCI Adult|decomposition_only_budget_12000": [
+    0.2569825,
+    0.3137828999999998,
+    1.0,
+    1,
+    40
+   ]
+  },
+  "source": "nb07 s05_ablation_summary.csv"
+ },
+ "recompute_verify_p50_ms": {
+  "value": {
+   "linear": {
+    "recompute": [
+     1.835098,
+     1.851512
+    ],
+    "verify": [
+     0.43304549999999997,
+     0.4547715
+    ]
+   },
+   "concave_sqrt": {
+    "recompute": [
+     1.89634,
+     1.9240325
+    ],
+    "verify": [
+     0.4326275,
+     0.4582435
+    ]
+   },
+   "tiered_8": {
+    "recompute": [
+     2.4594405,
+     2.546671
+    ],
+    "verify": [
+     0.455823,
+     0.4743825
+    ]
+   }
+  },
+  "source": "nb07 s10_recompute_summary.csv"
+ },
+ "shape_gate": {
+  "value": {
+   "linear": {
+    "released": 45,
+    "proposals": 45,
+    "sweeps_max": 63
+   },
+   "concave_sqrt": {
+    "released": 45,
+    "proposals": 45,
+    "sweeps_max": 58
+   },
+   "tiered_8": {
+    "released": 45,
+    "proposals": 45,
+    "sweeps_max": 73
+   }
+  },
+  "source": "nb07 s09_shape_gate_summary.csv"
+ },
+ "shapes_policy": {
+  "value": [
+   {
+    "dataset": "NYC Taxi 2024-01",
+    "shape": "linear",
+    "feasible_at_1e12": true,
+    "violated_rows": 0,
+    "max_residual": 3.9932521265356735e-17,
+    "realized_tiers": NaN
+   },
+   {
+    "dataset": "NYC Taxi 2024-01",
+    "shape": "concave_sqrt",
+    "feasible_at_1e12": true,
+    "violated_rows": 0,
+    "max_residual": -3.621935184002352e-05,
+    "realized_tiers": NaN
+   },
+   {
+    "dataset": "NYC Taxi 2024-01",
+    "shape": "tiered_8",
+    "feasible_at_1e12": false,
+    "violated_rows": 539,
+    "max_residual": 0.6006534660906162,
+    "realized_tiers": 7.0
+   },
+   {
+    "dataset": "TPC-H SF1",
+    "shape": "linear",
+    "feasible_at_1e12": true,
+    "violated_rows": 0,
+    "max_residual": 2.0816681711721685e-17,
+    "realized_tiers": NaN
+   },
+   {
+    "dataset": "TPC-H SF1",
+    "shape": "concave_sqrt",
+    "feasible_at_1e12": true,
+    "violated_rows": 0,
+    "max_residual": -0.00011350470391055574,
+    "realized_tiers": NaN
+   },
+   {
+    "dataset": "TPC-H SF1",
+    "shape": "tiered_8",
+    "feasible_at_1e12": false,
+    "violated_rows": 330,
+    "max_residual": 0.4588444077878864,
+    "realized_tiers": 7.0
+   },
+   {
+    "dataset": "UCI Adult",
+    "shape": "linear",
+    "feasible_at_1e12": true,
+    "violated_rows": 0,
+    "max_residual": 5.421010862427522e-20,
+    "realized_tiers": NaN
+   },
+   {
+    "dataset": "UCI Adult",
+    "shape": "concave_sqrt",
+    "feasible_at_1e12": true,
+    "violated_rows": 0,
+    "max_residual": -0.0003598159123701476,
+    "realized_tiers": NaN
+   },
+   {
+    "dataset": "UCI Adult",
+    "shape": "tiered_8",
+    "feasible_at_1e12": false,
+    "violated_rows": 122,
+    "max_residual": 1.0835088385724785,
+    "realized_tiers": 5.0
+   }
+  ],
+  "source": "nb07 s09_shape_policy.csv"
+ },
+ "shape_models_r2": {
+  "value": {
+   "concave_sqrt|dummy_median": [
+    -0.5181888717066914,
+    -0.2330815653182794
+   ],
+   "concave_sqrt|hist_gradient_boosting": [
+    0.9940303944369938,
+    0.9974693737541898
+   ],
+   "concave_sqrt|mlp": [
+    0.9950370716933604,
+    0.9998035223451599
+   ],
+   "linear|dummy_median": [
+    -0.4756574972477645,
+    -0.41976082607768084
+   ],
+   "linear|hist_gradient_boosting": [
+    0.9918630596426722,
+    0.9958084956893402
+   ],
+   "linear|mlp": [
+    0.9966473736916441,
+    0.9998368329665734
+   ],
+   "tiered_8|dummy_median": [
+    -0.589647918476415,
+    -0.4084997659215812
+   ],
+   "tiered_8|hist_gradient_boosting": [
+    0.9977638277509904,
+    0.9999488090390132
+   ],
+   "tiered_8|mlp": [
+    0.8950395352413155,
+    0.9957596956529338
+   ]
+  },
+  "source": "nb07 s09_shape_model_metrics.csv"
+ },
+ "shape_attacks": {
+  "value": [
+   540,
+   540
+  ],
+  "source": "nb07 s09_shape_attacks.csv"
+ },
+ "history_pinned": {
+  "value": [
+   0,
+   180,
+   1.866118286478162e-09,
+   0.012796108042681501
+  ],
+  "source": "nb07 s11_history_pinned_diagnostic.csv"
+ },
+ "coverage_partial": {
+  "value": {
+   "encodings": 48,
+   "exposed_encodings": 48,
+   "share_max": 0.7760869565217391,
+   "releases": 720,
+   "released": 720,
+   "exposed_releases": 705
+  },
+  "source": "nb07 s08_coverage_raw.csv"
+ },
+ "coverage_complete": {
+  "value": {
+   "releases": 45,
+   "max_violations": 0
+  },
+  "source": "nb07 s08_coverage_raw.csv"
+ },
+ "gap": {
+  "value": {
+   "cases": 540,
+   "released": 540,
+   "survived": 387,
+   "by_type": {
+    "decomposition": 180,
+    "filter_derivation": 27,
+    "projection_derivation": 180
+   },
+   "by_type_v4": {
+    "decomposition": 180,
+    "filter_derivation": 37,
+    "projection_derivation": 180
+   },
+   "filter_by_ds": {
+    "NYC Taxi": 3,
+    "TPC-H SF1": 15,
+    "UCI Adult": 9
+   }
+  },
+  "source": "nb07 s03_gap_cases.csv; v4 omitted_relation_gap_cases.csv"
+ },
+ "protocol": {
+  "value": {
+   "v4_faults": [
+    66,
+    66
+   ],
+   "v4_concurrency": [
+    600,
+    600
+   ],
+   "closure_faults": [
+    63,
+    63
+   ],
+   "closure_concurrency": [
+    300,
+    300
+   ],
+   "closure_delivery": [
+    6,
+    6
+   ]
+  },
+  "source": "nb07 s12_protocol_summary.csv"
+ },
+ "protocol_latency": {
+  "value": {
+   "gate_commit_p50": [
+    6.769266,
+    7.379556
+   ],
+   "durable_complete_p50": [
+    16.990083,
+    17.501932
+   ],
+   "durable_complete_p95": [
+    18.722151399999998,
+    20.7401646
+   ],
+   "single_stage_p50": {
+    "scalar": 20.8356135,
+    "small": 20.546204,
+    "medium": 28.407112499999997,
+    "large": 760.986576
+   },
+   "single_stage_bytes": {
+    "scalar": 66,
+    "small": 624,
+    "medium": 99950,
+    "large": 3468786
+   }
+  },
+  "source": "v4 end_to_end_release.csv; closure protocol_overhead_summary.csv; hardening single_stage_protocol_summary.csv"
+ },
+ "races_released": {
+  "value": {
+   "simultaneous_race": 45,
+   "update_before_commit": 0
+  },
+  "source": "v4 stale_epoch_concurrency.csv"
+ },
+ "protocol_vectors": {
+  "value": [
+   {
+    "dataset": "NYC Taxi 2024-01",
+    "controlled_policy_verifies_at_1e12": true,
+    "controlled_policy_max_residual": 3.9932521265356735e-17,
+    "notebook02_attack_row_same_at_1e12": true,
+    "notebook02_candidate_same_at_1e12": true,
+    "repair_at_1e7_verifies_at_1e12": true,
+    "repair_at_1e7_max_residual": 3.9932521265356735e-17,
+    "repair_at_1e12_verified": true,
+    "repair_vectors_identical": true,
+    "repair_max_abs_difference": 0.0,
+    "repair_sweeps_1e7": 1,
+    "repair_sweeps_1e12": 1,
+    "repair_ms_1e7": 1.108296,
+    "repair_ms_1e12": 0.868181
+   },
+   {
+    "dataset": "TPC-H SF1",
+    "controlled_policy_verifies_at_1e12": true,
+    "controlled_policy_max_residual": 2.0816681711721685e-17,
+    "notebook02_attack_row_same_at_1e12": true,
+    "notebook02_candidate_same_at_1e12": true,
+    "repair_at_1e7_verifies_at_1e12": true,
+    "repair_at_1e7_max_residual": 2.0816681711721685e-17,
+    "repair_at_1e12_verified": true,
+    "repair_vectors_identical": true,
+    "repair_max_abs_difference": 0.0,
+    "repair_sweeps_1e7": 1,
+    "repair_sweeps_1e12": 1,
+    "repair_ms_1e7": 0.988122,
+    "repair_ms_1e12": 0.750357
+   },
+   {
+    "dataset": "UCI Adult",
+    "controlled_policy_verifies_at_1e12": true,
+    "controlled_policy_max_residual": 5.421010862427522e-20,
+    "notebook02_attack_row_same_at_1e12": true,
+    "notebook02_candidate_same_at_1e12": true,
+    "repair_at_1e7_verifies_at_1e12": true,
+    "repair_at_1e7_max_residual": 5.421010862427522e-20,
+    "repair_at_1e12_verified": true,
+    "repair_vectors_identical": true,
+    "repair_max_abs_difference": 0.0,
+    "repair_sweeps_1e7": 1,
+    "repair_sweeps_1e12": 1,
+    "repair_ms_1e7": 1.088706,
+    "repair_ms_1e12": 0.928408
+   }
+  ],
+  "source": "nb07 s12_protocol_vectors.csv"
+ },
+ "incremental": {
+  "value": {
+   "speedup_median": 2.115234185278788,
+   "speedup_by_batch": {
+    "1": 2.103499198421491,
+    "8": 2.1414266841023366,
+    "32": 2.1428379838637897
+   },
+   "identical": [
+    90,
+    90
+   ]
+  },
+  "source": "v4 incremental_update_trials.csv (2 vCPU)"
+ },
+ "model_r2": {
+  "value": {
+   "NYC Taxi|dummy_median": [
+    -0.4756574972477645,
+    -0.4756574972477645
+   ],
+   "NYC Taxi|hist_gradient_boosting": [
+    0.9920279442233284,
+    0.9920279442233284
+   ],
+   "NYC Taxi|mlp": [
+    0.999520923964364,
+    0.9998368329665734
+   ],
+   "TPC-H SF1|dummy_median": [
+    -0.41976082607768084,
+    -0.41976082607768084
+   ],
+   "TPC-H SF1|hist_gradient_boosting": [
+    0.9958084956893402,
+    0.9958084956893402
+   ],
+   "TPC-H SF1|mlp": [
+    0.9966473736916441,
+    0.9994803849953348
+   ],
+   "UCI Adult|dummy_median": [
+    -0.46590958137943317,
+    -0.46590958137943317
+   ],
+   "UCI Adult|hist_gradient_boosting": [
+    0.9918630596426722,
+    0.9918630596426722
+   ],
+   "UCI Adult|mlp": [
+    0.9993861562596601,
+    0.9997708031321962
+   ]
+  },
+  "source": "v4 model_metrics_pooled.csv"
+ },
+ "model_negative_max": {
+  "value": 1500,
+  "source": "v4 model_metrics_pooled.csv"
+ },
+ "nb07_env": {
+  "value": {
+   "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+   "logical_cpus": 8,
+   "memory_gb": 54.750404608,
+   "python": "3.13.16",
+   "packages": {
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.3",
+    "osqp": "1.0.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3"
+   },
+   "stage_seconds": 3532.088301017
+  },
+  "source": "nb07 environment.json"
+ }
+}

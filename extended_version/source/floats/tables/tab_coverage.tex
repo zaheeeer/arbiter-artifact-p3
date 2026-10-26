@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Releases gated by a partial declaration, then checked against the complete snapshot at $10^{-12}$ (D, P, F: decomposition, projection, and filter families, alone or combined; random rows: three seeds). Share: declared share of all relations; Exposed: violating releases; Median: violated relations per release; ${>}1\%$: releases with a conservative saving above 1\%.}
+\label{tab:coverage}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Declared & Share (\%) & Exposed & Median & ${>}1\%$ \\
+\midrule
+None & 0 & 45/45 & 1{,}786 & 40/45 \\
+D & 22--24 & 45/45 & 1{,}431 & 40/45 \\
+F & 29--33 & 45/45 & 1{,}493 & 40/45 \\
+P & 44--47 & 45/45 & 777 & 40/45 \\
+D+F & 53--56 & 45/45 & 791 & 40/45 \\
+D+P & 67--71 & 45/45 & 199 & 40/45 \\
+P+F & 76--78 & 30/45 & 706 & 30/45 \\
+Random 25\% & 25 & 135/135 & 1{,}270 & 120/135 \\
+Random 50\% & 50 & 135/135 & 718 & 120/135 \\
+Random 75\% & 75 & 135/135 & 332 & 120/135 \\
+All & 100 & 0/45 & 0 & 0/45 \\
+\bottomrule
+\end{tabular}
+\end{table}

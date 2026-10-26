@@ -1,0 +1,16 @@
+\begin{table}[h]
+\centering
+\caption{Chain audit in the extension campaign. Targets: interval assets that only chains of existing intervals tile; R1 rows: decompositions that R1 emits for them. Audited: interval assets in one audit pass, with its median time in ms. Detected: attacks (budgets 10\%, 25\%, 50\%) whose violated chain the audit flags. Parts: parts of the cheapest flagged chain. Rounds: lazy-enforcement rounds until the audit flags nothing. Time: median / largest total time per attack in ms.}
+\label{tab:ext-chains}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+Dataset & Targets & R1 rows & Audited & Audit & Detected & Parts & Rounds & Time \\
+\midrule
+NYC Taxi & 60 & 0 & 1{,}369 & 22.6 & 180/180 & 3--4 & 2--5 & 220 / 468 \\
+TPC-H SF1 & 60 & 0 & 1{,}331 & 18.2 & 180/180 & 3--5 & 2--4 & 219 / 358 \\
+UCI Adult & 60 & 0 & 1{,}389 & 22.0 & 180/180 & 3--4 & 2--4 & 225 / 316 \\
+\bottomrule
+\end{tabular}
+\end{table}

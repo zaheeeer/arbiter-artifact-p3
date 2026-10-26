@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Repair latency on the 45 model proposals at tolerance $10^{-12}$, median / p95 in ms (15 proposals per dataset, 3 timed repetitions after one warm-up, counterbalanced order). OSQP rows give $\epsilon_{\mathrm{abs}}$. All outputs of Arbiter, full cyclic repair, and OSQP at $10^{-12}$ passed verification; OSQP at $10^{-9}$ passed in 33\%, 0\%, and 33\% of trials; check only refuses all.}
+\label{tab:heavy}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Method & NYC Taxi & TPC-H SF1 & UCI Adult \\
+\midrule
+Arbiter & 64.9 / 117 & 84.5 / 109 & 72.4 / 103 \\
+Full cyclic & 1{,}102 / 1{,}421 & 981 / 1{,}621 & 1{,}193 / 1{,}501 \\
+OSQP, $10^{-12}$ & 453 / 11{,}477 & 9{,}212 / 9{,}488 & 4{,}607 / 12{,}595 \\
+OSQP, $10^{-9}$ & 248 / 948 & 256 / 620 & 161 / 2{,}221 \\
+Check only & 0.40 / 0.48 & 0.39 / 0.67 & 0.41 / 0.44 \\
+\bottomrule
+\end{tabular}
+\end{table}

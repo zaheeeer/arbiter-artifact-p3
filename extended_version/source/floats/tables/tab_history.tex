@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Buyer-history snapshots at tolerance $10^{-12}$, 120 per row (10 buyers per dataset, proposal, and variant), all released without fallback. Derivable: answers computable from owned ones. Remaining: answers still priced. Rewritten: decompositions rewritten over missing parts. Sweeps: maximum for the residual / list-cap variants. p50: median gate time of the residual variant in ms.}
+\label{tab:history}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+Owned & Derivable & Remaining & Rewritten & Sweeps & p50 \\
+\midrule
+16 & 26--104 & 3{,}976--4{,}054 & 41--173 & 115/359 & 95.1 \\
+64 & 151--330 & 3{,}702--3{,}881 & 207--412 & 107/377 & 177 \\
+256 & 677--969 & 2{,}871--3{,}163 & 444--640 & 114/307 & 173 \\
+\bottomrule
+\end{tabular}
+\end{table}

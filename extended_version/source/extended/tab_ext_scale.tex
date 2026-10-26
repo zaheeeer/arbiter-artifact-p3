@@ -1,0 +1,23 @@
+\begin{table}[h]
+\centering
+\caption{Scale-out in the extension campaign at tolerance $10^{-12}$ on exact per-row attack candidates (12 per dataset workload, 18 per combined workload; budget 25\%). Build: snapshot build time in ms (median of three builds; one build for combined workloads). p50 and p95: Arbiter's latency in ms over 10 timed repetitions after 3 warm-ups. Speedups: paired, with 95\% bootstrap intervals, over full cyclic repair, OSQP at $\epsilon_{\mathrm{abs}} = 10^{-12}$, and Clarabel at its default tolerance, each timed over 3 repetitions after one warm-up. Every output of every method passed verification. Combined workloads join the three datasets' snapshots at 4{,}096 and 8{,}192 assets each.}
+\label{tab:ext-scale}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lrrrrrrlll@{}}
+\toprule
+Workload & Assets & Relations & Rows & Build & p50 & p95 & Full cyclic & OSQP & Clarabel \\
+\midrule
+NYC Taxi 4{,}096 & 4{,}096 & 9{,}447 & 13{,}543 & 154 & 0.42 & 0.56 & 184 [87.6, 665] & 168 [141, 175] & 389 [358, 406] \\
+NYC Taxi 8{,}192 & 8{,}192 & 20{,}230 & 28{,}422 & 343 & 0.74 & 0.87 & 109 [106, 176] & 218 [186, 331] & 483 [456, 508] \\
+TPC-H SF1 4{,}096 & 4{,}096 & 9{,}200 & 13{,}296 & 155 & 0.41 & 0.50 & 88.1 [83.6, 1{,}290] & 168 [125, 310] & 233 [220, 247] \\
+TPC-H SF1 8{,}192 & 8{,}192 & 21{,}494 & 29{,}686 & 364 & 0.77 & 4.14 & 111 [109, 272] & 311 [128, 349] & 397 [235, 405] \\
+TPC-H SF1 12{,}288 & 12{,}288 & 34{,}289 & 46{,}577 & 585 & 1.18 & 5.85 & 122 [117, 348] & 377 [146, 597] & 390 [234, 422] \\
+UCI Adult 4{,}096 & 4{,}096 & 9{,}850 & 13{,}946 & 173 & 0.46 & 0.60 & 83.8 [77.8, 342] & 195 [171, 588] & 2{,}011 [1{,}692, 2{,}064] \\
+UCI Adult 8{,}192 & 8{,}192 & 21{,}102 & 29{,}294 & 356 & 0.77 & 0.90 & 110 [106, 454] & 296 [242, 382] & 591 [563, 613] \\
+UCI Adult 12{,}288 & 12{,}288 & 34{,}879 & 47{,}167 & 614 & 1.16 & 1.39 & 118 [115, 941] & 541 [316, 2{,}128] & 2{,}969 [2{,}924, 3{,}037] \\
+Combined 3$\times$4{,}096 & 12{,}288 & 28{,}497 & 40{,}785 & 504 & 0.97 & 1.15 & 122 [117, 240] & 347 [246, 620] & 546 [534, 549] \\
+Combined 3$\times$8{,}192 & 24{,}576 & 62{,}826 & 87{,}402 & 1{,}128 & 1.93 & 9.77 & 130 [128, 260] & 474 [423, 903] & 635 [628, 649] \\
+\bottomrule
+\end{tabular}
+\end{table}

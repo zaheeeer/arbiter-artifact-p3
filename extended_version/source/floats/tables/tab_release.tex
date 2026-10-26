@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Release outcomes at $10^{-12}$; no case used the fallback. Violated: rows violated before the gate; Released: passed independent verification; Sweeps/p50: largest sweep count and median gate time (ms).}
+\label{tab:release}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Workload & Cases & Violated & Released & Sweeps & p50 \\
+\midrule
+Model proposals & 45 & 893--4{,}737 & 45 & 63 & 73.0 \\
+Per-row attacks & 2{,}160 & 3--57 & 2{,}160 & 1 & 0.72 \\
+Shape proposals & 135 & 31--4{,}737 & 135 & 73 & 71.7 \\
+Shape attacks & 540 & 1--57 & 540 & 1 & 0.73 \\
+Buyer histories & 360 & 41--2{,}643 & 360 & 377 & 107 \\
+\bottomrule
+\end{tabular}
+\end{table}
