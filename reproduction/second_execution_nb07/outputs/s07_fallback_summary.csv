@@ -1,0 +1,25 @@
+dataset,relation_family,case_id,active_row_budget,fallback_sweeps,method,repetitions,runtime_p50_ms,runtime_p95_observed_ms,runtime_median_ci95_low_ms,runtime_median_ci95_high_ms,verified_rate,sweeps_median,projected_rows_median
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,1,20,legacy_full_scan_cyclic,50,522.3619835,695.227506,510.366645,533.579734,1.0,10.0,313.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,1,20,optimized_violated_only_cyclic,50,7.0996435,11.484907,6.848445,7.428386,1.0,19.0,301.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,1,80,legacy_full_scan_cyclic,50,544.437467,685.640055,515.261759,569.548478,1.0,10.0,313.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,1,80,optimized_violated_only_cyclic,50,7.0530775000000006,11.395431,6.9272115,7.309148,1.0,19.0,301.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,4,20,legacy_full_scan_cyclic,50,167.441008,244.283009,160.699364,177.69778150000002,1.0,3.0,52.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,4,20,optimized_violated_only_cyclic,50,2.307822,3.099076,1.93787,2.7223135000000003,1.0,4.0,52.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,4,80,legacy_full_scan_cyclic,50,152.56221449999998,234.547677,144.400164,168.0050415,1.0,3.0,52.0
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,4,80,optimized_violated_only_cyclic,50,1.8612155000000001,3.103912,1.81895,1.900523,1.0,4.0,52.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,1,20,legacy_full_scan_cyclic,50,1087.717578,1321.293613,1050.339258,1125.1209939999999,0.0,20.0,659.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,1,20,optimized_violated_only_cyclic,50,8.7091575,14.852281,8.201009,9.641373,0.0,20.0,400.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,1,80,legacy_full_scan_cyclic,50,1120.2671074999998,1330.220484,1064.2388025,1154.9158235,1.0,21.0,660.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,1,80,optimized_violated_only_cyclic,50,12.137138499999999,23.050267,11.651944499999999,13.396754000000001,1.0,35.0,538.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,4,20,legacy_full_scan_cyclic,50,808.5980725,1140.241222,768.485454,867.7026515,1.0,15.0,303.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,4,20,optimized_violated_only_cyclic,50,6.432271,11.31422,6.103381,6.892703,0.0,20.0,259.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,4,80,legacy_full_scan_cyclic,50,793.9353815,1005.226733,768.189621,846.30409,1.0,15.0,303.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,4,80,optimized_violated_only_cyclic,50,7.831593,12.980184,7.503387,9.304247499999999,1.0,28.0,299.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,8,20,legacy_full_scan_cyclic,50,188.45193849999998,274.106094,183.275778,199.079459,1.0,4.0,62.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,8,20,optimized_violated_only_cyclic,50,2.0667465,3.067721,2.0246425,2.138365,1.0,6.0,63.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,8,80,legacy_full_scan_cyclic,50,197.153954,297.174868,191.5655615,212.200401,1.0,4.0,62.0
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,8,80,optimized_violated_only_cyclic,50,2.3019495,3.890927,2.1923275,2.564876,1.0,6.0,63.0
+UCI Adult,decomposition,c7d2d7a36dd5033465a06c24,1,20,legacy_full_scan_cyclic,50,812.836454,1107.731205,779.841288,863.659642,1.0,15.0,157.0
+UCI Adult,decomposition,c7d2d7a36dd5033465a06c24,1,20,optimized_violated_only_cyclic,50,4.6186454999999995,8.378791,4.426355,5.056271,0.0,20.0,124.0
+UCI Adult,decomposition,c7d2d7a36dd5033465a06c24,1,80,legacy_full_scan_cyclic,50,814.6739425000001,1027.330424,782.9997989999999,851.612187,1.0,15.0,157.0
+UCI Adult,decomposition,c7d2d7a36dd5033465a06c24,1,80,optimized_violated_only_cyclic,50,5.901467,11.128116,5.6622135,6.248447499999999,1.0,29.0,150.0

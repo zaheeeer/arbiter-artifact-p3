@@ -1,0 +1,55 @@
+stage,check,severity,passed,detail
+setup,NYC Taxi 2024-01: audited controlled policy verifies at 1e-12,fatal,True,max residual 3.993e-17
+setup,NYC Taxi 2024-01: audited policy equals the linear price function,fatal,True,max abs difference 0.000e+00
+setup,TPC-H SF1: audited controlled policy verifies at 1e-12,fatal,True,max residual 2.082e-17
+setup,TPC-H SF1: audited policy equals the linear price function,fatal,True,max abs difference 0.000e+00
+setup,UCI Adult: audited controlled policy verifies at 1e-12,fatal,True,max residual 5.421e-20
+setup,UCI Adult: audited policy equals the linear price function,fatal,True,max abs difference 0.000e+00
+s01,one natural-gate row per proposal and tolerance,fatal,True,135/135
+s01,no natural proposal release fails independent verification,fatal,True,
+s01,natural proposals released at 1e-12 pass the complete snapshot at 1e-12,fatal,True,
+s01,"all natural proposals release at 1e-12 (rejections are recorded, not hidden)",finding,True,45/45 released
+s01,heavy-load grid is complete,fatal,True,675/675
+s01,heavy-load trials contain no unsafe release,fatal,True,
+s01,"OSQP trials used the OSQP backend, not the SciPy fallback",fatal,True,
+s02,"every dataset, budget, and relation family is attacked",fatal,True,27/27 cells
+s02,attack target rows are unique within each cell,fatal,True,
+s02,no attack release fails independent verification,fatal,True,
+s02,released attack vectors have zero violated rows at 1e-12,fatal,True,
+s02,every attack is repaired and released at 1e-12,finding,True,2160/2160
+s03,omitted-row grid is complete,fatal,True,27/27 cells
+s03,incomplete-gate releases pass every encoded row,fatal,True,
+s04,every dataset and scale cell is present,fatal,True,15/15
+s04,each candidate and repetition contains every scheduled method,fatal,True,
+s04,all methods use the same snapshot and candidate,fatal,True,
+s04,method execution order is counterbalanced,warning,True,
+s04,benchmark candidates violate the snapshot,fatal,True,
+s04,no scale trial releases an unverified vector,fatal,True,
+s04,Arbiter verifies every scale candidate at 1e-12,finding,True,verified rate 1.000
+s04,"OSQP trials used the OSQP backend, not the SciPy fallback",fatal,True,
+s05,ablation grid is complete,fatal,True,
+s05,no ablation trial releases an unverified vector,fatal,True,
+s06,fail-safe variants release no unverified vector,fatal,True,
+s06,active-only variant releases no unverified vector,fatal,True,
+s06,every tested budget is binding in at least one dense case,warning,True,
+s07,fallback kernels were exercised at 1e-12,finding,True,6 timed conditions
+s07,both fallback kernels verify within 20 sweeps,finding,False,verified rate 0.667
+s07,both fallback kernels verify within 80 sweeps,finding,True,verified rate 1.000
+s08,coverage grid is complete,fatal,True,765/765
+s08,every release passes the encoded snapshot it was verified against,fatal,True,
+s08,complete encodings leave zero complete-snapshot violations,fatal,True,
+s09,every dataset and shape is evaluated,fatal,True,
+s09,no shape-experiment release fails independent verification,fatal,True,
+s10,the published linear policy has zero violated rows,fatal,True,
+s11,buyer-history grid is complete,fatal,True,360/360
+s11,no buyer-history release fails independent verification,fatal,True,
+s11,every buyer-history snapshot admits a verified release,finding,True,360/360
+s11,buyer-history releases need no fallback,finding,True,fallback rate 0.000
+s12,protocol vectors verify at 1e-12,fatal,True,
+s12,v4_faults behave as specified at 1e-12,fatal,True,66/66
+s12,v4_concurrency behave as specified at 1e-12,fatal,True,600/600
+s12,closure_faults behave as specified at 1e-12,fatal,True,63/63
+s12,closure_concurrency behave as specified at 1e-12,fatal,True,300/300
+s12,closure_delivery behave as specified at 1e-12,fatal,True,6/6
+final,audited-v4 package is byte-identical after the campaign,fatal,True,
+final,every stage produced outputs,fatal,True,

@@ -1,0 +1,39 @@
+[OK ] s01 tolerance_overall: rows 3/3 unmatched 0 max rel diff 0.0e+00 
+[OK ] s01 natural_summary: rows 27/27 unmatched 0 max rel diff 0.0e+00 
+[OK ] s01 at 1e-7 equals audited natural_proposal_gate.csv exactly: 45/45 rows
+[OK ] s01 heavy_summary: rows 15/15 unmatched 0 max rel diff 3.0e-16 
+[OK ] s01 heavy_paired (bootstrap reproduced): rows 24/24 unmatched 0 max rel diff 0.0e+00 
+[OK ] s04 scale_summary: rows 75/75 unmatched 0 max rel diff 7.3e-16 
+[OK ] s04 scale_paired (bootstrap reproduced): rows 120/120 unmatched 0 max rel diff 0.0e+00 
+[OK ] s04 build_summary: rows 15/15 unmatched 0 max rel diff 0.0e+00 
+[OK ] s05 ablation_summary: rows 12/12 unmatched 0 max rel diff 4.9e-16 
+[OK ] s02 attack_summary: rows 9/9 unmatched 0 max rel diff 0.0e+00 
+[OK ] s02 attack_family_summary: rows 27/27 unmatched 0 max rel diff 0.0e+00 
+[OK ] s02 v4 comparison (recomputed from audited CSV): rows 27/27 unmatched 0 max rel diff 0.0e+00 
+[OK ] s03 gap_summary: rows 27/27 unmatched 0 max rel diff 0.0e+00 
+[OK ] s03 v4 comparison (recomputed from audited CSV): rows 1/1 unmatched 0 max rel diff 0.0e+00 
+    s03 gap survival by relation type (1e-12 vs v4): {'decomposition': 180, 'filter_derivation': 27, 'projection_derivation': 180} {'decomposition': 180, 'filter_derivation': 37, 'projection_derivation': 180}
+[OK ] s06 dense_budget_overview: rows 36/36 unmatched 0 max rel diff 0.0e+00 
+    s06 outcome constant across repetitions of each case: True
+[OK ] s06 dense_optimized_overview: rows 36/36 unmatched 0 max rel diff 0.0e+00 
+[OK ] s07 fallback_summary (bootstrap reproduced): rows 24/24 unmatched 0 max rel diff 0.0e+00 
+[OK ] s07 fallback_paired (bootstrap reproduced): rows 12/12 unmatched 0 max rel diff 0.0e+00 
+[OK ] s08 coverage_summary: rows 51/51 unmatched 0 max rel diff 0.0e+00 
+[OK ] s09 shape_gate_summary: rows 9/9 unmatched 0 max rel diff 0.0e+00 
+[OK ] s09 shape_attack_summary: rows 9/9 unmatched 0 max rel diff 0.0e+00 
+[OK ] s10 recompute_summary: rows 9/9 unmatched 0 max rel diff 0.0e+00 
+[OK ] s11 history_summary: rows 36/36 unmatched 0 max rel diff 0.0e+00 
+[OK ] s11 pinned_diagnostic_summary: rows 18/18 unmatched 0 max rel diff 0.0e+00 
+[OK ] s12 protocol_summary: rows 5/5 unmatched 0 max rel diff 0.0e+00 
+[OK ] final_sweep_budget_curve: rows 9/9 unmatched 0 max rel diff 0.0e+00 
+    claim value: unsafe releases across all raw tables: 0
+    claim value: 1e-12 released/fallback/max sweeps: (45, 0, 63)
+    claim value: 1e-7 releases with saving >1% (max): (30, 0.3954)
+    claim value: 1e-12 releases with saving >0.1% (max): (0, 4.169124980903296e-06)
+    claim value: attacks released: 2160
+    claim value: OSQP 1e-12 verified min; v4-stop min: (1.0, 0.75)
+    claim value: partial encodings with complete violations: (48, 48)
+    claim value: infeasible shape policies: 3
+    claim value: history released/fallback/max sweeps: (360, 0, 377, 377)
+    claim value: history max sweeps by variant: {'list_cap': 377, 'residual': 115}
+SUMMARY: 26/26 recomputations match

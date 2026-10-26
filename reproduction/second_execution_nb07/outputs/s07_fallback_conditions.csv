@@ -1,0 +1,7 @@
+dataset,relation_family,case_id,active_row_budget,status,active_sweeps
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,1,timed,80
+NYC Taxi 2024-01,decomposition,f8270ddb5485815dbc9ae06d,4,timed,80
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,1,timed,80
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,4,timed,80
+TPC-H SF1,decomposition,fcd09b26b0faf498119247c6,8,timed,80
+UCI Adult,decomposition,c7d2d7a36dd5033465a06c24,1,timed,80

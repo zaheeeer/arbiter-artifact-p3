@@ -1,0 +1,67 @@
+dataset,case,expected_release,actual_release,reason,passed
+NYC Taxi 2024-01,normal_release,True,True,released,True
+NYC Taxi 2024-01,token_replay_first,True,True,released,True
+NYC Taxi 2024-01,token_replay_second,False,False,token_replay,True
+NYC Taxi 2024-01,stale_epoch,False,False,stale_epoch,True
+NYC Taxi 2024-01,constraint_digest_tamper,False,False,constraint_digest_mismatch,True
+NYC Taxi 2024-01,asset_digest_tamper,False,False,asset_digest_mismatch,True
+NYC Taxi 2024-01,price_digest_tamper,False,False,token_mac_mismatch,True
+NYC Taxi 2024-01,token_mac_tamper,False,False,token_mac_mismatch,True
+NYC Taxi 2024-01,price_vector_tamper,False,False,price_digest_mismatch,True
+NYC Taxi 2024-01,missing_constraint_rows,False,False,constraint_digest_mismatch,True
+NYC Taxi 2024-01,process_restart_secret_rotation,False,False,token_mac_mismatch,True
+NYC Taxi 2024-01,nan_input,False,False,nonfinite_price,True
+NYC Taxi 2024-01,infinity_input,False,False,nonfinite_price,True
+NYC Taxi 2024-01,missing_price,False,False,shape_mismatch,True
+NYC Taxi 2024-01,asset_order_reversal,False,False,asset_order_mismatch,True
+NYC Taxi 2024-01,nan_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+NYC Taxi 2024-01,infinite_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+NYC Taxi 2024-01,negative_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+NYC Taxi 2024-01,mismatched_large_tolerance,False,False,ValueError: requested tolerance does not match the store policy,True
+NYC Taxi 2024-01,snapshot_mutation_after_verify,False,False,snapshot_integrity_failure,True
+NYC Taxi 2024-01,fallback_failure,False,False,RuntimeError: injected fallback failure,True
+NYC Taxi 2024-01,solver_iteration_limit,False,False,RuntimeError: OSQP did not solve the projection: maximum iterations reached,True
+TPC-H SF1,normal_release,True,True,released,True
+TPC-H SF1,token_replay_first,True,True,released,True
+TPC-H SF1,token_replay_second,False,False,token_replay,True
+TPC-H SF1,stale_epoch,False,False,stale_epoch,True
+TPC-H SF1,constraint_digest_tamper,False,False,constraint_digest_mismatch,True
+TPC-H SF1,asset_digest_tamper,False,False,asset_digest_mismatch,True
+TPC-H SF1,price_digest_tamper,False,False,token_mac_mismatch,True
+TPC-H SF1,token_mac_tamper,False,False,token_mac_mismatch,True
+TPC-H SF1,price_vector_tamper,False,False,price_digest_mismatch,True
+TPC-H SF1,missing_constraint_rows,False,False,constraint_digest_mismatch,True
+TPC-H SF1,process_restart_secret_rotation,False,False,token_mac_mismatch,True
+TPC-H SF1,nan_input,False,False,nonfinite_price,True
+TPC-H SF1,infinity_input,False,False,nonfinite_price,True
+TPC-H SF1,missing_price,False,False,shape_mismatch,True
+TPC-H SF1,asset_order_reversal,False,False,asset_order_mismatch,True
+TPC-H SF1,nan_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+TPC-H SF1,infinite_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+TPC-H SF1,negative_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+TPC-H SF1,mismatched_large_tolerance,False,False,ValueError: requested tolerance does not match the store policy,True
+TPC-H SF1,snapshot_mutation_after_verify,False,False,snapshot_integrity_failure,True
+TPC-H SF1,fallback_failure,False,False,RuntimeError: injected fallback failure,True
+TPC-H SF1,solver_iteration_limit,False,False,RuntimeError: OSQP did not solve the projection: maximum iterations reached,True
+UCI Adult,normal_release,True,True,released,True
+UCI Adult,token_replay_first,True,True,released,True
+UCI Adult,token_replay_second,False,False,token_replay,True
+UCI Adult,stale_epoch,False,False,stale_epoch,True
+UCI Adult,constraint_digest_tamper,False,False,constraint_digest_mismatch,True
+UCI Adult,asset_digest_tamper,False,False,asset_digest_mismatch,True
+UCI Adult,price_digest_tamper,False,False,token_mac_mismatch,True
+UCI Adult,token_mac_tamper,False,False,token_mac_mismatch,True
+UCI Adult,price_vector_tamper,False,False,price_digest_mismatch,True
+UCI Adult,missing_constraint_rows,False,False,constraint_digest_mismatch,True
+UCI Adult,process_restart_secret_rotation,False,False,token_mac_mismatch,True
+UCI Adult,nan_input,False,False,nonfinite_price,True
+UCI Adult,infinity_input,False,False,nonfinite_price,True
+UCI Adult,missing_price,False,False,shape_mismatch,True
+UCI Adult,asset_order_reversal,False,False,asset_order_mismatch,True
+UCI Adult,nan_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+UCI Adult,infinite_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+UCI Adult,negative_tolerance,False,False,ValueError: tolerance must be finite and strictly positive,True
+UCI Adult,mismatched_large_tolerance,False,False,ValueError: requested tolerance does not match the store policy,True
+UCI Adult,snapshot_mutation_after_verify,False,False,snapshot_integrity_failure,True
+UCI Adult,fallback_failure,False,False,RuntimeError: injected fallback failure,True
+UCI Adult,solver_iteration_limit,False,False,RuntimeError: OSQP did not solve the projection: maximum iterations reached,True

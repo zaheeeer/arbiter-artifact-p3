@@ -1,0 +1,57 @@
+s01_natural_gate                 rows colab=135 local=135 matched=135 dupkeys=0/0 cols=30 -> IDENTICAL
+s01_natural_top_relations        rows colab=1350 local=1350 matched=1350 dupkeys=0/0 cols=6 -> IDENTICAL
+s01_heavy_raw                    rows colab=405 local=405 matched=405 dupkeys=0/0 cols=12 -> IDENTICAL
+s02_attacks                      rows colab=2160 local=2160 matched=2160 dupkeys=0/0 cols=22 -> IDENTICAL
+s02_attack_deltas                rows colab=5040 local=5040 matched=5040 dupkeys=0/0 cols=3 -> IDENTICAL
+s02_attack_records               rows colab=2160 local=2160 matched=2160 dupkeys=0/0 cols=5 -> IDENTICAL
+s03_gap_cases                    rows colab=540 local=540 matched=540 dupkeys=0/0 cols=21 -> IDENTICAL
+s04_build_raw                    rows colab=150 local=150 matched=150 dupkeys=0/0 cols=5 -> IDENTICAL
+s04_scale_raw                    rows colab=5400 local=5400 matched=5400 dupkeys=0/0 cols=25 -> IDENTICAL
+s05_ablation_raw                 rows colab=1200 local=1200 matched=1200 dupkeys=0/0 cols=26 -> IDENTICAL
+s06_dense_catalog                rows colab=54 local=54 matched=54 dupkeys=0/0 cols=8 -> IDENTICAL
+s06_dense_raw                    rows colab=3240 local=3240 matched=3240 dupkeys=0/0 cols=17 -> DIFFERS
+     fallback_stage: 5 differ e.g. [{'fallback_stage_c': 'osqp', 'fallback_stage_l': 'rejected_after_osqp'}, {'fallback_stage_c': 'osqp', 'fallback_stage_l': 'rejected_after_osqp'}]
+     rejected: 5 differ e.g. [{'rejected_c': False, 'rejected_l': True}, {'rejected_c': False, 'rejected_l': True}]
+     verified: 5 differ e.g. [{'verified_c': True, 'verified_l': False}, {'verified_c': True, 'verified_l': False}]
+     oracle_verified: 5 differ e.g. [{'oracle_verified_c': True, 'oracle_verified_l': False}, {'oracle_verified_c': True, 'oracle_verified_l': False}]
+     violations_after: 5 differ e.g. [{'violations_after_c': 0, 'violations_after_l': 193}, {'violations_after_c': 0, 'violations_after_l': 193}]
+     max_residual_after: 5 differ (max rel 1.00e+00)
+     sweeps: 5 differ e.g. [{'sweeps_c': 300, 'sweeps_l': 100}, {'sweeps_c': 300, 'sweeps_l': 100}]
+     l1_adjustment: 5 differ (max rel 1.00e+00)
+s06_dense_optimized              rows colab=648 local=648 matched=648 dupkeys=0/0 cols=14 -> DIFFERS
+     fallback_stage: 4 differ e.g. [{'fallback_stage_c': 'osqp', 'fallback_stage_l': 'rejected_after_osqp'}, {'fallback_stage_c': 'osqp', 'fallback_stage_l': 'rejected_after_osqp'}]
+     rejected: 4 differ e.g. [{'rejected_c': False, 'rejected_l': True}, {'rejected_c': False, 'rejected_l': True}]
+     verified: 4 differ e.g. [{'verified_c': True, 'verified_l': False}, {'verified_c': True, 'verified_l': False}]
+     oracle_verified: 4 differ e.g. [{'oracle_verified_c': True, 'oracle_verified_l': False}, {'oracle_verified_c': True, 'oracle_verified_l': False}]
+     sweeps: 4 differ e.g. [{'sweeps_c': 300, 'sweeps_l': 100}, {'sweeps_c': 620, 'sweeps_l': 420}]
+     violations_after: 4 differ e.g. [{'violations_after_c': 0, 'violations_after_l': 193}, {'violations_after_c': 0, 'violations_after_l': 193}]
+     max_residual_after: 4 differ (max rel 1.00e+00)
+     l1_adjustment: 4 differ (max rel 1.00e+00)
+     error: 4 differ e.g. [{'error_c': nan, 'error_l': 'RuntimeError: OSQP did not solve the projection: maximum iterations reached'}, {'error_c': nan, 'error_l': 'RuntimeError: OSQP did not solve the projection: maximum iterations reached'}]
+s07_fallback_conditions          rows colab=6 local=6 matched=6 dupkeys=0/0 cols=2 -> IDENTICAL
+s07_fallback_raw                 rows colab=1200 local=1200 matched=1200 dupkeys=0/0 cols=6 -> IDENTICAL
+s08_coverage_raw                 rows colab=765 local=765 matched=765 dupkeys=0/0 cols=27 -> IDENTICAL
+s09_shape_policy                 rows colab=9 local=9 matched=9 dupkeys=0/0 cols=15 -> IDENTICAL
+s09_shape_model_metrics          rows colab=135 local=135 matched=135 dupkeys=0/0 cols=4 -> DIFFERS
+     pooled_r2: 90 differ (max rel 3.82e-02)
+     pooled_mae: 85 differ (max rel 2.06e-01)
+     negative_predictions: 55 differ e.g. [{'negative_predictions_c': 56, 'negative_predictions_l': 61}, {'negative_predictions_c': 56, 'negative_predictions_l': 61}]
+s09_shape_gate                   rows colab=135 local=135 matched=135 dupkeys=0/0 cols=12 -> DIFFERS
+     sweeps_to_verify: 69 differ e.g. [{'sweeps_to_verify_c': 29, 'sweeps_to_verify_l': 28}, {'sweeps_to_verify_c': 29, 'sweeps_to_verify_l': 28}]
+     violations_before: 90 differ e.g. [{'violations_before_c': 3137, 'violations_before_l': 3266}, {'violations_before_c': 3137, 'violations_before_l': 3266}]
+     sweeps: 69 differ e.g. [{'sweeps_c': 29, 'sweeps_l': 28}, {'sweeps_c': 29, 'sweeps_l': 28}]
+     l1_adjustment: 90 differ (max rel 9.87e-01)
+     max_saving_vs_list: 85 differ (max rel 1.00e+00)
+s09_shape_attacks                rows colab=540 local=540 matched=540 dupkeys=0/0 cols=11 -> IDENTICAL
+s10_recompute_raw                rows colab=1800 local=1800 matched=1800 dupkeys=0/0 cols=4 -> IDENTICAL
+s11_history_raw                  rows colab=360 local=360 matched=360 dupkeys=0/0 cols=20 -> IDENTICAL
+s11_history_pinned_diagnostic    rows colab=180 local=180 matched=180 dupkeys=0/0 cols=3 -> IDENTICAL
+s12_protocol_vectors             rows colab=3 local=3 matched=3 dupkeys=0/0 cols=11 -> IDENTICAL
+s12_v4_faults                    rows colab=66 local=66 matched=66 dupkeys=0/0 cols=4 -> IDENTICAL
+s12_closure_faults               rows colab=63 local=63 matched=63 dupkeys=0/0 cols=7 -> IDENTICAL
+s12_closure_delivery             rows colab=6 local=6 matched=6 dupkeys=0/0 cols=3 -> IDENTICAL
+final_sweep_budget_curve         rows colab=9 local=9 matched=9 dupkeys=0/0 cols=10 -> DIFFERS
+     sweeps_p50: 2 differ (max rel 1.11e-01)
+     sweeps_p95: 2 differ (max rel 8.24e-02)
+     sweeps_max: 2 differ (max rel 5.19e-02)
+TOTAL matched rows 27759; compared cells 385212; differing cells 715

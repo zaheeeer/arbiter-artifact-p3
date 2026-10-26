@@ -1,0 +1,19 @@
+dataset,proposal,history_size,buyers,active_repair_verified_rate,sweeps_median,max_residual_after_median
+NYC Taxi 2024-01,hist_gradient_boosting,16,10,0.0,400.0,0.00015676968377640718
+NYC Taxi 2024-01,hist_gradient_boosting,64,10,0.0,400.0,0.0006561795681738303
+NYC Taxi 2024-01,hist_gradient_boosting,256,10,0.0,400.0,0.00014310360956417716
+NYC Taxi 2024-01,list_price,16,10,0.0,400.0,0.00030248621997772004
+NYC Taxi 2024-01,list_price,64,10,0.0,400.0,0.0009099051385389662
+NYC Taxi 2024-01,list_price,256,10,0.0,400.0,0.00013421529977773614
+TPC-H SF1,hist_gradient_boosting,16,10,0.0,400.0,4.343382455887832e-05
+TPC-H SF1,hist_gradient_boosting,64,10,0.0,400.0,2.9356242981072374e-05
+TPC-H SF1,hist_gradient_boosting,256,10,0.0,400.0,4.026020448638606e-05
+TPC-H SF1,list_price,16,10,0.0,400.0,5.3398360784872226e-05
+TPC-H SF1,list_price,64,10,0.0,400.0,6.763376479763873e-05
+TPC-H SF1,list_price,256,10,0.0,400.0,6.29097785521055e-05
+UCI Adult,hist_gradient_boosting,16,10,0.0,400.0,0.0008783556080815804
+UCI Adult,hist_gradient_boosting,64,10,0.0,400.0,0.0010046148029854496
+UCI Adult,hist_gradient_boosting,256,10,0.0,400.0,0.0003853764270297902
+UCI Adult,list_price,16,10,0.0,400.0,0.0017672271160243005
+UCI Adult,list_price,64,10,0.0,400.0,0.0015356840374529078
+UCI Adult,list_price,256,10,0.0,400.0,0.0003161733316844831

@@ -1,0 +1,4 @@
+dataset,controlled_policy_verifies_at_1e12,controlled_policy_max_residual,notebook02_attack_row_same_at_1e12,notebook02_candidate_same_at_1e12,repair_at_1e7_verifies_at_1e12,repair_at_1e7_max_residual,repair_at_1e12_verified,repair_vectors_identical,repair_max_abs_difference,repair_sweeps_1e7,repair_sweeps_1e12,repair_ms_1e7,repair_ms_1e12
+NYC Taxi 2024-01,True,3.9932521265356735e-17,True,True,True,3.9932521265356735e-17,True,True,0.0,1,1,1.170636,0.866972
+TPC-H SF1,True,2.0816681711721685e-17,True,True,True,2.0816681711721685e-17,True,True,0.0,1,1,1.724326,1.189254
+UCI Adult,True,5.421010862427522e-20,True,True,True,5.421010862427522e-20,True,True,0.0,1,1,1.668406,1.247328

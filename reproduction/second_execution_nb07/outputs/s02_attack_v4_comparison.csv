@@ -1,0 +1,28 @@
+dataset,budget_fraction,target_constraint_type,cases_1e12,cases_v4,same_target_rows,same_release_decision,same_violations_before,same_sweeps
+NYC Taxi 2024-01,0.1,decomposition,80,80,80,80,80,80
+NYC Taxi 2024-01,0.1,filter_derivation,80,80,80,80,80,80
+NYC Taxi 2024-01,0.1,projection_derivation,80,80,80,80,80,80
+NYC Taxi 2024-01,0.25,decomposition,80,80,80,80,80,80
+NYC Taxi 2024-01,0.25,filter_derivation,80,80,80,80,80,80
+NYC Taxi 2024-01,0.25,projection_derivation,80,80,80,80,80,80
+NYC Taxi 2024-01,0.5,decomposition,80,80,80,80,80,80
+NYC Taxi 2024-01,0.5,filter_derivation,80,80,80,80,80,80
+NYC Taxi 2024-01,0.5,projection_derivation,80,80,80,80,80,80
+TPC-H SF1,0.1,decomposition,80,80,80,80,80,80
+TPC-H SF1,0.1,filter_derivation,80,80,80,80,80,80
+TPC-H SF1,0.1,projection_derivation,80,80,80,80,80,80
+TPC-H SF1,0.25,decomposition,80,80,80,80,80,80
+TPC-H SF1,0.25,filter_derivation,80,80,80,80,80,80
+TPC-H SF1,0.25,projection_derivation,80,80,80,80,80,80
+TPC-H SF1,0.5,decomposition,80,80,80,80,80,80
+TPC-H SF1,0.5,filter_derivation,80,80,80,80,80,80
+TPC-H SF1,0.5,projection_derivation,80,80,80,80,80,80
+UCI Adult,0.1,decomposition,80,80,80,80,80,80
+UCI Adult,0.1,filter_derivation,80,80,80,80,80,80
+UCI Adult,0.1,projection_derivation,80,80,80,80,80,80
+UCI Adult,0.25,decomposition,80,80,80,80,80,80
+UCI Adult,0.25,filter_derivation,80,80,80,80,80,80
+UCI Adult,0.25,projection_derivation,80,80,80,80,80,80
+UCI Adult,0.5,decomposition,80,80,80,80,80,80
+UCI Adult,0.5,filter_derivation,80,80,80,80,80,80
+UCI Adult,0.5,projection_derivation,80,80,80,80,80,80

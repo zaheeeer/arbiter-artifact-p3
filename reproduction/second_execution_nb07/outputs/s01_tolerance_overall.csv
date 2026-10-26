@@ -1,0 +1,4 @@
+tolerance,releases,proposals,fallback,rejected,unsafe,sweeps_max,max_saving_vs_list,releases_with_saving_gt_1pct,releases_with_saving_gt_0p1pct,max_saving_conservative,releases_with_conservative_gt_1pct,max_residual_after,gate_p50_ms
+1e-07,45,45,0,0,0,29,0.395397052155972,30,45,0.395397052155972,25,9.996805485055517e-08,41.139244
+1e-09,45,45,0,0,0,43,0.004196884522442178,0,15,0.004055872200414905,0,9.998776633046713e-10,50.534243
+1e-12,45,45,0,0,0,63,4.169124980903296e-06,0,0,3.4157754994753775e-06,0,9.996517502663949e-13,65.750376

@@ -1,0 +1,28 @@
+dataset,budget_fraction,relation_type,cases,distinct_relations,candidate_target_violation_rate,incomplete_release_rate,gap_survival_rate,gaps_survived,fallback_rate,gate_p50_ms
+NYC Taxi 2024-01,0.1,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.9675205
+NYC Taxi 2024-01,0.1,filter_derivation,20,20,1.0,1.0,0.05,1,0.0,2.8446645
+NYC Taxi 2024-01,0.1,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,2.9316385
+NYC Taxi 2024-01,0.25,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.9655595
+NYC Taxi 2024-01,0.25,filter_derivation,20,20,1.0,1.0,0.05,1,0.0,3.267026
+NYC Taxi 2024-01,0.25,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,2.9914240000000003
+NYC Taxi 2024-01,0.5,decomposition,20,20,1.0,1.0,1.0,20,0.0,5.8446625
+NYC Taxi 2024-01,0.5,filter_derivation,20,20,1.0,1.0,0.05,1,0.0,3.1413475
+NYC Taxi 2024-01,0.5,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.058768
+TPC-H SF1,0.1,decomposition,20,20,1.0,1.0,1.0,20,0.0,1.1137460000000001
+TPC-H SF1,0.1,filter_derivation,20,20,1.0,1.0,0.25,5,0.0,3.5416225
+TPC-H SF1,0.1,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,4.325073
+TPC-H SF1,0.25,decomposition,20,20,1.0,1.0,1.0,20,0.0,4.429177
+TPC-H SF1,0.25,filter_derivation,20,20,1.0,1.0,0.25,5,0.0,3.476058
+TPC-H SF1,0.25,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,4.619802
+TPC-H SF1,0.5,decomposition,20,20,1.0,1.0,1.0,20,0.0,5.971265
+TPC-H SF1,0.5,filter_derivation,20,20,1.0,1.0,0.25,5,0.0,3.3623665000000003
+TPC-H SF1,0.5,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,4.6744129999999995
+UCI Adult,0.1,decomposition,20,20,1.0,1.0,1.0,20,0.0,1.0323805
+UCI Adult,0.1,filter_derivation,20,20,1.0,1.0,0.15,3,0.0,3.050675
+UCI Adult,0.1,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.808916
+UCI Adult,0.25,decomposition,20,20,1.0,1.0,1.0,20,0.0,1.10676
+UCI Adult,0.25,filter_derivation,20,20,1.0,1.0,0.15,3,0.0,3.6987805
+UCI Adult,0.25,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.463103
+UCI Adult,0.5,decomposition,20,20,1.0,1.0,1.0,20,0.0,4.013313500000001
+UCI Adult,0.5,filter_derivation,20,20,1.0,1.0,0.15,3,0.0,3.518744
+UCI Adult,0.5,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.4689475
