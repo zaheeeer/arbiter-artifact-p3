@@ -1,0 +1,91 @@
+dataset,declaration,model,seed,released_partial,gate_ms,audit_flags_undeclared_violation,undeclared_rows_violated,audit_p50_ms
+NYC Taxi 2024-01,D,dummy_median,11,True,0.18998,True,893,0.22572
+NYC Taxi 2024-01,D,dummy_median,23,True,0.166,True,893,0.21339
+NYC Taxi 2024-01,D,dummy_median,37,True,0.2359,True,893,0.206025
+NYC Taxi 2024-01,D,dummy_median,51,True,0.15605,True,893,0.20546999999999999
+NYC Taxi 2024-01,D,dummy_median,73,True,0.154269,True,893,0.20949
+NYC Taxi 2024-01,D,hist_gradient_boosting,11,True,10.253508,True,1524,0.206945
+NYC Taxi 2024-01,D,hist_gradient_boosting,23,True,9.824307,True,1524,0.21511
+NYC Taxi 2024-01,D,hist_gradient_boosting,37,True,9.975278,True,1524,0.2116
+NYC Taxi 2024-01,D,hist_gradient_boosting,51,True,9.776187,True,1524,0.2113395
+NYC Taxi 2024-01,D,hist_gradient_boosting,73,True,9.954257,True,1524,0.21892
+NYC Taxi 2024-01,D,mlp,11,True,22.882634,True,1809,0.2147795
+NYC Taxi 2024-01,D,mlp,23,True,24.061553,True,1647,0.2111595
+NYC Taxi 2024-01,D,mlp,37,True,23.001094,True,1737,0.21189950000000002
+NYC Taxi 2024-01,D,mlp,51,True,22.447024,True,1685,0.20978
+NYC Taxi 2024-01,D,mlp,73,True,21.148854,True,1022,0.209175
+NYC Taxi 2024-01,PF,dummy_median,11,True,41.109319,False,0,0.210995
+NYC Taxi 2024-01,PF,dummy_median,23,True,43.547839,False,0,0.2130495
+NYC Taxi 2024-01,PF,dummy_median,37,True,42.832868,False,0,0.21899
+NYC Taxi 2024-01,PF,dummy_median,51,True,42.446459,False,0,0.2119
+NYC Taxi 2024-01,PF,dummy_median,73,True,42.437109,False,0,0.20871499999999998
+NYC Taxi 2024-01,PF,hist_gradient_boosting,11,True,27.977833,True,693,0.2045495
+NYC Taxi 2024-01,PF,hist_gradient_boosting,23,True,27.768643,True,693,0.213915
+NYC Taxi 2024-01,PF,hist_gradient_boosting,37,True,27.964732,True,693,0.21205000000000002
+NYC Taxi 2024-01,PF,hist_gradient_boosting,51,True,27.874323,True,693,0.21994999999999998
+NYC Taxi 2024-01,PF,hist_gradient_boosting,73,True,28.003042,True,693,0.212565
+NYC Taxi 2024-01,PF,mlp,11,True,41.745319,True,560,0.2129945
+NYC Taxi 2024-01,PF,mlp,23,True,47.576308,True,1023,0.2222795
+NYC Taxi 2024-01,PF,mlp,37,True,46.135627,True,1079,0.208835
+NYC Taxi 2024-01,PF,mlp,51,True,59.120735,True,973,0.217045
+NYC Taxi 2024-01,PF,mlp,73,True,40.541789,True,524,0.210675
+TPC-H SF1,D,dummy_median,11,True,0.18902,True,2456,0.21040999999999999
+TPC-H SF1,D,dummy_median,23,True,0.16521,True,2456,0.1994945
+TPC-H SF1,D,dummy_median,37,True,0.149949,True,2456,0.204095
+TPC-H SF1,D,dummy_median,51,True,0.17938,True,2456,0.19632
+TPC-H SF1,D,dummy_median,73,True,0.14434,True,2456,0.19792500000000002
+TPC-H SF1,D,hist_gradient_boosting,11,True,7.909858,True,360,0.20176
+TPC-H SF1,D,hist_gradient_boosting,23,True,7.827848,True,360,0.2017
+TPC-H SF1,D,hist_gradient_boosting,37,True,7.643388,True,360,0.20142
+TPC-H SF1,D,hist_gradient_boosting,51,True,7.611198,True,360,0.20327
+TPC-H SF1,D,hist_gradient_boosting,73,True,7.731058,True,360,0.19975500000000002
+TPC-H SF1,D,mlp,11,True,18.215165,True,1289,0.204615
+TPC-H SF1,D,mlp,23,True,18.942674,True,1272,0.20462
+TPC-H SF1,D,mlp,37,True,17.459785,True,1098,0.2035945
+TPC-H SF1,D,mlp,51,True,18.523044,True,1263,0.20116
+TPC-H SF1,D,mlp,73,True,17.535575,True,1371,0.2003855
+TPC-H SF1,PF,dummy_median,11,True,72.117359,False,0,0.2103545
+TPC-H SF1,PF,dummy_median,23,True,73.521959,False,0,0.20411
+TPC-H SF1,PF,dummy_median,37,True,75.082369,False,0,0.20971499999999998
+TPC-H SF1,PF,dummy_median,51,True,75.021789,False,0,0.201075
+TPC-H SF1,PF,dummy_median,73,True,74.955238,False,0,0.20599499999999998
+TPC-H SF1,PF,hist_gradient_boosting,11,True,9.323947,True,706,0.202735
+TPC-H SF1,PF,hist_gradient_boosting,23,True,9.676767,True,706,0.2026945
+TPC-H SF1,PF,hist_gradient_boosting,37,True,9.377637,True,706,0.210665
+TPC-H SF1,PF,hist_gradient_boosting,51,True,9.194447,True,706,0.2029
+TPC-H SF1,PF,hist_gradient_boosting,73,True,9.088958,True,706,0.20453500000000002
+TPC-H SF1,PF,mlp,11,True,31.667891,True,797,0.2040095
+TPC-H SF1,PF,mlp,23,True,47.769736,True,1008,0.20575500000000002
+TPC-H SF1,PF,mlp,37,True,31.737691,True,914,0.22612500000000002
+TPC-H SF1,PF,mlp,51,True,42.088458,True,998,0.20424
+TPC-H SF1,PF,mlp,73,True,28.897442,True,973,0.203225
+UCI Adult,D,dummy_median,11,True,0.19825,True,1431,0.220475
+UCI Adult,D,dummy_median,23,True,0.17476,True,1431,0.223324
+UCI Adult,D,dummy_median,37,True,0.21844,True,1431,0.22309
+UCI Adult,D,dummy_median,51,True,0.182321,True,1431,0.22254449999999998
+UCI Adult,D,dummy_median,73,True,0.21938,True,1431,0.21630500000000003
+UCI Adult,D,hist_gradient_boosting,11,True,8.15666,True,213,0.22160950000000001
+UCI Adult,D,hist_gradient_boosting,23,True,8.139619,True,213,0.223015
+UCI Adult,D,hist_gradient_boosting,37,True,7.901999,True,213,0.220465
+UCI Adult,D,hist_gradient_boosting,51,True,8.030929,True,213,0.22321950000000002
+UCI Adult,D,hist_gradient_boosting,73,True,7.93462,True,213,0.21959499999999998
+UCI Adult,D,mlp,11,True,20.441318,True,1873,0.2259195
+UCI Adult,D,mlp,23,True,23.292018,True,1656,0.23179
+UCI Adult,D,mlp,37,True,26.131497,True,1070,0.22009
+UCI Adult,D,mlp,51,True,24.445087,True,2006,0.2159405
+UCI Adult,D,mlp,73,True,26.014688,True,1554,0.2257645
+UCI Adult,PF,dummy_median,11,True,52.119215,False,0,0.22257
+UCI Adult,PF,dummy_median,23,True,53.212304,False,0,0.2215945
+UCI Adult,PF,dummy_median,37,True,55.263044,False,0,0.221805
+UCI Adult,PF,dummy_median,51,True,55.257325,False,0,0.217235
+UCI Adult,PF,dummy_median,73,True,52.675605,False,0,0.218715
+UCI Adult,PF,hist_gradient_boosting,11,True,11.711049,True,778,0.21931
+UCI Adult,PF,hist_gradient_boosting,23,True,11.747408,True,778,0.22309
+UCI Adult,PF,hist_gradient_boosting,37,True,11.844168,True,778,0.216835
+UCI Adult,PF,hist_gradient_boosting,51,True,11.826949,True,778,0.22055999999999998
+UCI Adult,PF,hist_gradient_boosting,73,True,11.982829,True,778,0.218065
+UCI Adult,PF,mlp,11,True,63.920323,True,898,0.218275
+UCI Adult,PF,mlp,23,True,48.676605,True,889,0.22077
+UCI Adult,PF,mlp,37,True,31.167837,True,759,0.248535
+UCI Adult,PF,mlp,51,True,86.454671,True,1110,0.21276
+UCI Adult,PF,mlp,73,True,43.553786,True,857,0.2188095

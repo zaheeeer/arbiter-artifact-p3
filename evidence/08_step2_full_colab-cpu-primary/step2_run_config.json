@@ -1,0 +1,109 @@
+{
+  "audit_mode_declarations": [
+    "D",
+    "PF"
+  ],
+  "audit_mode_proposals": 15,
+  "audit_repetitions": 20,
+  "bootstrap_resamples": 10000,
+  "clarabel_default_tolerance": 1e-08,
+  "clarabel_max_iter": 400,
+  "clarabel_tight_tolerance": 1e-12,
+  "dollars_per_price_unit": 2176.0,
+  "floor_tolerances": [
+    1e-07,
+    1e-09,
+    1e-12
+  ],
+  "groupby_attack_budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "groupby_attack_cases": 20,
+  "groupby_category_pairs": 3,
+  "groupby_columns_per_table": 3,
+  "groupby_exec_checks_per_family": 12,
+  "groupby_max_new_assets": 1500,
+  "groupby_numeric_columns": 2,
+  "groupby_sum_measures": 1,
+  "groupby_triples_per_column": 2,
+  "mode": "full",
+  "multipart_attack_budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "multipart_max_rounds": 10,
+  "multipart_targets_per_dataset": 60,
+  "multipart_widths": [
+    5,
+    6,
+    8
+  ],
+  "pilot_gate": {
+    "pilot_estimated_full_hours": 0.961,
+    "pilot_zip": "arbiter_step2_pilot_colab-cpu-primary_v1_1.zip"
+  },
+  "price_floors": [
+    1e-06,
+    0.0001,
+    0.01
+  ],
+  "primary_tolerance": 1e-12,
+  "projection_methods": [
+    "arbiter_active",
+    "full_cyclic",
+    "osqp_qp",
+    "clarabel_default",
+    "clarabel_tight"
+  ],
+  "projection_proposals": 15,
+  "projection_repetitions": 3,
+  "projection_warmups": 1,
+  "repair_sweeps": 400,
+  "runtime_go_limit_hours": 8.0,
+  "scale_out_attack_budget": 0.25,
+  "scale_out_cases_per_family": 4,
+  "scale_out_combined": [
+    4096,
+    8192
+  ],
+  "scale_out_combined_cases_per_family": 2,
+  "scale_out_fast_repetitions": 10,
+  "scale_out_fast_warmups": 3,
+  "scale_out_methods": [
+    "reject_only",
+    "arbiter_active",
+    "full_cyclic",
+    "osqp_qp",
+    "clarabel_default"
+  ],
+  "scale_out_sizes": {
+    "NYC Taxi 2024-01": [
+      4096,
+      8192
+    ],
+    "TPC-H SF1": [
+      4096,
+      8192,
+      12288
+    ],
+    "UCI Adult": [
+      4096,
+      8192,
+      12288
+    ]
+  },
+  "scale_out_slow_repetitions": 3,
+  "scale_out_slow_warmups": 1,
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    73
+  ],
+  "step2_suite_version": "2026-10-23-step2-v1.1",
+  "sweeps_to_verify_cap": 3000
+}

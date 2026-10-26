@@ -1,0 +1,181 @@
+dataset,family,relation_id,proof_rule,passed,detail,error,runtime_ms
+NYC Taxi 2024-01,group_filter,groupfilter_27fca5826dc923a2,group_filter,True,1 groups,,21.425741
+NYC Taxi 2024-01,group_filter,groupfilter_1b912beb94cbc022,group_filter,True,1 groups,,15.049151
+NYC Taxi 2024-01,group_filter,groupfilter_4f56158c62035ce9,group_filter,True,1 groups,,27.365022
+NYC Taxi 2024-01,group_filter,groupfilter_218241820411c41f,group_filter,True,1 groups,,40.598013
+NYC Taxi 2024-01,group_filter,groupfilter_6adb3ab11932f0d5,group_filter,True,1 groups,,16.154961
+NYC Taxi 2024-01,group_filter,groupfilter_334200df28ddc9be,group_filter,True,2 groups,,29.741253
+NYC Taxi 2024-01,group_filter,groupfilter_e5bbe623ca5b53b6,group_filter,True,1 groups,,10.568841
+NYC Taxi 2024-01,group_filter,groupfilter_ae30bc5346b7abf7,group_filter,True,1 groups,,20.814242
+NYC Taxi 2024-01,group_filter,groupfilter_5a9a023356803fde,group_filter,True,1 groups,,13.542301
+NYC Taxi 2024-01,group_filter,groupfilter_cbca689073dcfca1,group_filter,True,1 groups,,31.977242
+NYC Taxi 2024-01,group_filter,groupfilter_6853d0d507d23329,group_filter,True,2 groups,,33.346253
+NYC Taxi 2024-01,group_filter,groupfilter_1d7ee7874d66256a,group_filter,True,1 groups,,18.369601
+NYC Taxi 2024-01,group_rollup,rollup_3208da684fb4e0cf,group_rollup,True,derived 5483915.830000016 combined 5483915.830000018,,27.451232
+NYC Taxi 2024-01,group_rollup,rollup_ba6d45b1198c48cc,group_rollup,True,derived 62856 combined 62856,,22.157852
+NYC Taxi 2024-01,group_rollup,rollup_c12c5cad020d6e95,group_rollup,True,derived 12193.830000000014 combined 12193.830000000014,,14.356591
+NYC Taxi 2024-01,group_rollup,rollup_2052d4db2a53d0c5,group_rollup,True,derived 66225 combined 66225,,11.755161
+NYC Taxi 2024-01,group_rollup,rollup_875ec8ce823597de,group_rollup,True,derived -636954.659999969 combined -636954.6600000028,,23.016931
+NYC Taxi 2024-01,group_rollup,rollup_f2186503544b56a0,group_rollup,True,derived 6622494.629999999 combined 6622494.629999999,,19.944961
+NYC Taxi 2024-01,group_rollup,rollup_b72b7e0237166dd4,group_rollup,True,derived 2319046 combined 2319046,,19.626612
+NYC Taxi 2024-01,group_rollup,rollup_12fdcd1bbb5a3199,group_rollup,True,derived 52871 combined 52871,,17.030891
+NYC Taxi 2024-01,group_rollup,rollup_d275905633d8a408,group_rollup,True,derived 642738.9000000001 combined 642738.9000000001,,22.227122
+NYC Taxi 2024-01,group_rollup,rollup_ac17c00a0c6c4abd,group_rollup,True,derived 729992 combined 729992,,30.799732
+NYC Taxi 2024-01,group_rollup,rollup_76fd7b2c2c60d967,group_rollup,True,derived 10441252.349999985 combined 10441252.349999974,,20.914931
+NYC Taxi 2024-01,group_rollup,rollup_f4df4ffb642482d6,group_rollup,True,derived 187232 combined 187232,,23.602422
+NYC Taxi 2024-01,group_slice,slice_4b4c3d4c07732b03,group_slice,True,derived 6365 combined 6365,,13.720331
+NYC Taxi 2024-01,group_slice,slice_1804b844cb7bfc7c,group_slice,True,derived 40997884.39000192 combined 40997884.39000192,,43.582004
+NYC Taxi 2024-01,group_slice,slice_ec442c1b4ea05682,group_slice,True,derived 642747.4000000001 combined 642747.4000000001,,24.543733
+NYC Taxi 2024-01,group_slice,slice_f1747e8c255ba3eb,group_slice,True,derived 642738.9000000001 combined 642738.9000000001,,26.155651
+NYC Taxi 2024-01,group_slice,slice_0b1a2e08c0a29c75,group_slice,True,derived 19597 combined 19597,,15.119531
+NYC Taxi 2024-01,group_slice,slice_ec8f3473dcdaa1aa,group_slice,True,derived 2319046 combined 2319046,,17.816211
+NYC Taxi 2024-01,group_slice,slice_b6b2b77030955241,group_slice,True,derived 2805509.7700004894 combined 2805509.7700004894,,16.089681
+NYC Taxi 2024-01,group_slice,slice_1730ab900d69f47d,group_slice,True,derived 2762063 combined 2762063,,19.103732
+NYC Taxi 2024-01,group_slice,slice_da7b2234462495b4,group_slice,True,derived 41010078.22000188 combined 41010078.22000192,,63.824814
+NYC Taxi 2024-01,group_slice,slice_34a39acb46c03ac5,group_slice,True,derived 46628 combined 46628,,14.020161
+NYC Taxi 2024-01,group_slice,slice_6fee600dcc0ce649,group_slice,True,derived 98713 combined 98713,,13.124891
+NYC Taxi 2024-01,group_slice,slice_6fc8b6b8d9fad481,group_slice,True,derived 43035538.92000025 combined 43035538.92000025,,34.590893
+NYC Taxi 2024-01,grouped_partition_union,decomp_aedd8a4564abf64c,grouped_partition_union,True,2 groups,,28.282622
+NYC Taxi 2024-01,grouped_partition_union,decomp_74caad66dfb0fbcc,grouped_partition_union,True,2 groups,,46.996993
+NYC Taxi 2024-01,grouped_partition_union,decomp_c25d57c7c812b626,grouped_partition_union,True,5 groups,,27.088412
+NYC Taxi 2024-01,grouped_partition_union,decomp_7a97092c40b644dd,grouped_partition_union,True,2 groups,,30.819522
+NYC Taxi 2024-01,grouped_partition_union,decomp_d5a155498722c7ad,grouped_partition_union,True,8 groups,,25.599322
+NYC Taxi 2024-01,grouped_partition_union,decomp_1be3c01869c41bdc,grouped_partition_union,True,7 groups,,35.668263
+NYC Taxi 2024-01,grouped_partition_union,decomp_49f5952b782a674c,grouped_partition_union,True,5 groups,,34.064733
+NYC Taxi 2024-01,grouped_partition_union,decomp_3cead18d991340b2,grouped_partition_union,True,3 groups,,34.766593
+NYC Taxi 2024-01,grouped_partition_union,decomp_ddc339f0bcfd586d,grouped_partition_union,True,3 groups,,24.291762
+NYC Taxi 2024-01,grouped_partition_union,decomp_eff054b5342362fe,grouped_partition_union,True,2 groups,,20.586522
+NYC Taxi 2024-01,grouped_partition_union,decomp_16a3d6e29c7f71b4,grouped_partition_union,True,5 groups,,28.022442
+NYC Taxi 2024-01,grouped_partition_union,decomp_4ff308bf209a0afd,grouped_partition_union,True,8 groups,,34.720013
+NYC Taxi 2024-01,partition_union_new_assets,decomp_15e8abf403578c0f,disjoint_partition_union,True,target 729992 combined 729992,,25.048592
+NYC Taxi 2024-01,partition_union_new_assets,decomp_0f8b06b37592232e,disjoint_partition_union,True,target 6622503.129999999 combined 6622503.129999999,,24.860102
+NYC Taxi 2024-01,partition_union_new_assets,decomp_344dd38296931ceb,disjoint_partition_union,True,target 2762063 combined 2762063,,14.579701
+NYC Taxi 2024-01,partition_union_new_assets,decomp_a5b1eb8e4ecb81f0,disjoint_partition_union,True,target 47546561.72000113 combined 47546561.72000013,,30.858773
+NYC Taxi 2024-01,partition_union_new_assets,decomp_58042868ca244f93,disjoint_partition_union,True,target 2758237 combined 2758237,,16.053841
+NYC Taxi 2024-01,partition_union_new_assets,decomp_5a4b57096e692e7b,disjoint_partition_union,True,target 50882141.71000221 combined 50882141.71000035,,33.027033
+NYC Taxi 2024-01,partition_union_new_assets,decomp_7b6301e84275c63a,disjoint_partition_union,True,target 2964364 combined 2964364,,14.983881
+NYC Taxi 2024-01,partition_union_new_assets,decomp_3d0f90715aa15255,disjoint_partition_union,True,target 194573.28000000003 combined 194573.2799999999,,21.326301
+NYC Taxi 2024-01,partition_union_new_assets,decomp_9ba4edd778a3b271,disjoint_partition_union,True,target 53870030.93000475 combined 53870030.93000211,,31.078953
+NYC Taxi 2024-01,partition_union_new_assets,decomp_7c29b405f18765b3,disjoint_partition_union,True,target 10652112.560001764 combined 10652112.56000059,,30.447123
+NYC Taxi 2024-01,partition_union_new_assets,decomp_96042678b78053e7,disjoint_partition_union,True,target 2234892 combined 2234892,,25.378742
+NYC Taxi 2024-01,partition_union_new_assets,decomp_ea8b45bfcfae16a6,disjoint_partition_union,True,target 6372 combined 6372,,15.313632
+TPC-H SF1,group_filter,groupfilter_1b97eb68060d9b1f,group_filter,True,1 groups,,19.177499
+TPC-H SF1,group_filter,groupfilter_2edb0d253b700d24,group_filter,True,2 groups,,75.743666
+TPC-H SF1,group_filter,groupfilter_8b1a9f0d46610935,group_filter,True,2 groups,,67.241646
+TPC-H SF1,group_filter,groupfilter_c2e425645fcc709f,group_filter,True,1 groups,,24.304019
+TPC-H SF1,group_filter,groupfilter_b3ee486f792a5214,group_filter,True,1 groups,,16.418489
+TPC-H SF1,group_filter,groupfilter_4f6440512f73e434,group_filter,True,1 groups,,15.516389
+TPC-H SF1,group_filter,groupfilter_9e21e885b21647b2,group_filter,True,1 groups,,6.60606
+TPC-H SF1,group_filter,groupfilter_f0788ac4ae73a1de,group_filter,True,2 groups,,2.736819
+TPC-H SF1,group_filter,groupfilter_f64e76e8e52bc2df,group_filter,True,1 groups,,23.837498
+TPC-H SF1,group_filter,groupfilter_1ddc6681b256d4b9,group_filter,True,1 groups,,6.21759
+TPC-H SF1,group_filter,groupfilter_944dc904a6a6a3cd,group_filter,True,1 groups,,7.947409
+TPC-H SF1,group_filter,groupfilter_bf5ea868fb8c41c8,group_filter,True,2 groups,,2.949849
+TPC-H SF1,group_rollup,rollup_33c5fb7dd33f6015,group_rollup,True,derived 17344955.00 combined 17344955.00,,13.035539
+TPC-H SF1,group_rollup,rollup_5128824c2de9141b,group_rollup,True,derived 226829306447.46 combined 226829306447.46,,4.238979
+TPC-H SF1,group_rollup,rollup_67672bc38533c0dd,group_rollup,True,derived 5861576.00 combined 5861576.00,,9.7688
+TPC-H SF1,group_rollup,rollup_804d39cb20057cce,group_rollup,True,derived 120401 combined 120401,,18.956059
+TPC-H SF1,group_rollup,rollup_59055ab69a3c6ed9,group_rollup,True,derived 375077 combined 375077,,9.055679
+TPC-H SF1,group_rollup,rollup_fa3b60a48142c7e6,group_rollup,True,derived 46874 combined 46874,,5.14313
+TPC-H SF1,group_rollup,rollup_818ced5a9cf8bf82,group_rollup,True,derived 150000 combined 150000,,1.64331
+TPC-H SF1,group_rollup,rollup_553c5651951cdf5d,group_rollup,True,derived 46875 combined 46875,,4.29996
+TPC-H SF1,group_rollup,rollup_a6eecff1194c4198,group_rollup,True,derived 54595455.52 combined 54595455.52,,3.097969
+TPC-H SF1,group_rollup,rollup_6d20421885ba5146,group_rollup,True,derived 46875 combined 46875,,5.121509
+TPC-H SF1,group_rollup,rollup_fcbd17677ef3835d,group_rollup,True,derived 359908 combined 359908,,10.488649
+TPC-H SF1,group_rollup,rollup_3755dc5711e6d595,group_rollup,True,derived 153078795.00 combined 153078795.00,,10.667339
+TPC-H SF1,group_slice,slice_d78c56b39af515c4,group_slice,True,derived 37734107.00 combined 37734107.00,,18.448359
+TPC-H SF1,group_slice,slice_979a1bad5e19fa48,group_slice,True,derived 133866847.09 combined 133866847.09,,4.52755
+TPC-H SF1,group_slice,slice_dff9047da7e13fc4,group_slice,True,derived 27457855.49 combined 27457855.49,,2.428239
+TPC-H SF1,group_slice,slice_c0fa5ce928cb401a,group_slice,True,derived 77624935.00 combined 77624935.00,,26.621309
+TPC-H SF1,group_slice,slice_822019d967d20dc8,group_slice,True,derived 77624935.00 combined 77624935.00,,25.925119
+TPC-H SF1,group_slice,slice_a2b8c3105b2b5d8f,group_slice,True,derived 7109117393.01 combined 7109117393.01,,5.11323
+TPC-H SF1,group_slice,slice_5614dc376d6185ad,group_slice,True,derived 219720189054.45 combined 219720189054.45,,30.627478
+TPC-H SF1,group_slice,slice_9f0f0b0fdc8e2446,group_slice,True,derived 300091 combined 300091,,6.832199
+TPC-H SF1,group_slice,slice_c5be8ec6239d877d,group_slice,True,derived 300254 combined 300254,,5.84904
+TPC-H SF1,group_slice,slice_36169155a414dc21,group_slice,True,derived 729413 combined 729413,,6.64082
+TPC-H SF1,group_slice,slice_cf562726d6bf2955,group_slice,True,derived 43744239.00 combined 43744239.00,,47.106977
+TPC-H SF1,group_slice,slice_9267b60c0a596873,group_slice,True,derived 729413 combined 729413,,9.48819
+TPC-H SF1,grouped_partition_union,decomp_bb88214d5fb5c4b9,grouped_partition_union,True,25 groups,,3.24699
+TPC-H SF1,grouped_partition_union,decomp_c48ab5c384e5199d,grouped_partition_union,True,7 groups,,20.983849
+TPC-H SF1,grouped_partition_union,decomp_d5667e3d630ee7c5,grouped_partition_union,True,7 groups,,19.597189
+TPC-H SF1,grouped_partition_union,decomp_341c17f5bac7873e,grouped_partition_union,True,2 groups,,20.576759
+TPC-H SF1,grouped_partition_union,decomp_ef45b57c433be435,grouped_partition_union,True,2 groups,,59.767987
+TPC-H SF1,grouped_partition_union,decomp_77e2d309cc877eb0,grouped_partition_union,True,3 groups,,16.215699
+TPC-H SF1,grouped_partition_union,decomp_7c7ade36a50ddb9b,grouped_partition_union,True,2 groups,,3.15081
+TPC-H SF1,grouped_partition_union,decomp_acb48232803170b1,grouped_partition_union,True,5 groups,,8.096679
+TPC-H SF1,grouped_partition_union,decomp_4d13823e5e7c2b79,grouped_partition_union,True,7 groups,,19.002448
+TPC-H SF1,grouped_partition_union,decomp_11b09a77167c9b39,grouped_partition_union,True,5 groups,,4.56732
+TPC-H SF1,grouped_partition_union,decomp_ca0083ffa2dcd500,grouped_partition_union,True,25 groups,,2.97189
+TPC-H SF1,grouped_partition_union,decomp_5d04ea620455ff82,grouped_partition_union,True,2 groups,,21.635829
+TPC-H SF1,partition_union_new_assets,decomp_a8c0bd9ef22dea3f,disjoint_partition_union,True,target 90633384331.49 combined 90633384331.49,,13.277329
+TPC-H SF1,partition_union_new_assets,decomp_d7a163fd1373edb4,disjoint_partition_union,True,target 770587 combined 770587,,11.889389
+TPC-H SF1,partition_union_new_assets,decomp_dee17e7f3a547bc6,disjoint_partition_union,True,target 2957363 combined 2957363,,37.456668
+TPC-H SF1,partition_union_new_assets,decomp_b19cf3fc25295f73,disjoint_partition_union,True,target 153078795.00 combined 153078795.00,,49.688587
+TPC-H SF1,partition_union_new_assets,decomp_60592a5926afdc5d,disjoint_partition_union,True,target 600597 combined 600597,,11.608989
+TPC-H SF1,partition_union_new_assets,decomp_b3b475deb6d30745,disjoint_partition_union,True,target 60331 combined 60331,,4.05787
+TPC-H SF1,partition_union_new_assets,decomp_8b914f3d1f497a27,disjoint_partition_union,True,target 767956 combined 767956,,11.882009
+TPC-H SF1,partition_union_new_assets,decomp_f239ea17a96fe700,disjoint_partition_union,True,target 600932 combined 600932,,12.64741
+TPC-H SF1,partition_union_new_assets,decomp_67d6fa7498b944fb,disjoint_partition_union,True,target 55654074.39 combined 55654074.39,,3.1785
+TPC-H SF1,partition_union_new_assets,decomp_135afe23532c6713,disjoint_partition_union,True,target 12261 combined 12261,,2.216839
+TPC-H SF1,partition_union_new_assets,decomp_b694f2203ae8a174,disjoint_partition_union,True,target 60110 combined 60110,,4.57178
+TPC-H SF1,partition_union_new_assets,decomp_78d90ff64822fd8f,disjoint_partition_union,True,target 219720189054.45 combined 219720189054.45,,20.524569
+UCI Adult,group_filter,groupfilter_fc61a77915d110c4,group_filter,True,2 groups,,5.16369
+UCI Adult,group_filter,groupfilter_ee1aab5981041fbc,group_filter,True,1 groups,,5.08542
+UCI Adult,group_filter,groupfilter_27359b0b4080ccf7,group_filter,True,1 groups,,3.57806
+UCI Adult,group_filter,groupfilter_a5f3fe9f40720bdb,group_filter,True,1 groups,,3.448699
+UCI Adult,group_filter,groupfilter_f7a486935a7339c2,group_filter,True,1 groups,,3.08158
+UCI Adult,group_filter,groupfilter_fafdaae1b877a3e0,group_filter,True,1 groups,,4.07355
+UCI Adult,group_filter,groupfilter_17e34e9e6cb89f7a,group_filter,True,1 groups,,4.78477
+UCI Adult,group_filter,groupfilter_ad03b5be596278e0,group_filter,True,2 groups,,6.314789
+UCI Adult,group_filter,groupfilter_ad04d968f45980d9,group_filter,True,1 groups,,5.47281
+UCI Adult,group_filter,groupfilter_0bfbbfcb993caa24,group_filter,True,1 groups,,3.79623
+UCI Adult,group_filter,groupfilter_b7814323a1222221,group_filter,True,1 groups,,5.85103
+UCI Adult,group_filter,groupfilter_cfd925444f71a1dd,group_filter,True,1 groups,,4.54914
+UCI Adult,group_rollup,rollup_d0bcfe75f43d2864,group_rollup,True,derived 154583 combined 154583,,3.86936
+UCI Adult,group_rollup,rollup_f5214e333a885dcb,group_rollup,True,derived 2550 combined 2550,,2.19071
+UCI Adult,group_rollup,rollup_48388f1f3bb84719,group_rollup,True,derived 10 combined 10,,3.09751
+UCI Adult,group_rollup,rollup_473e3adf99445fc4,group_rollup,True,derived 1426312 combined 1426312,,7.060929
+UCI Adult,group_rollup,rollup_0179f2e165e1da1a,group_rollup,True,derived 115427 combined 115427,,3.32109
+UCI Adult,group_rollup,rollup_d11512e260c877e9,group_rollup,True,derived 114039 combined 114039,,5.0623
+UCI Adult,group_rollup,rollup_7cfc8395f71342bf,group_rollup,True,derived 48842 combined 48842,,2.03385
+UCI Adult,group_rollup,rollup_22f510d126066c9f,group_rollup,True,derived 250335 combined 250335,,4.50127
+UCI Adult,group_rollup,rollup_27e9a8f1d1923cde,group_rollup,True,derived 322729 combined 322729,,5.44952
+UCI Adult,group_rollup,rollup_5b8834163200bcce,group_rollup,True,derived 45638 combined 45638,,2.79379
+UCI Adult,group_rollup,rollup_602c5edd6dbf2fcf,group_rollup,True,derived 1053 combined 1053,,3.32717
+UCI Adult,group_rollup,rollup_47ce042fdb73ed10,group_rollup,True,derived 312143 combined 312143,,3.26396
+UCI Adult,group_slice,slice_d8a4840ab529af95,group_slice,True,derived 2429 combined 2429,,5.43618
+UCI Adult,group_slice,slice_3fa4cccbcaf2c050,group_slice,True,derived 6112 combined 6112,,4.65824
+UCI Adult,group_slice,slice_34bdb538d2b879ae,group_slice,True,derived 388095 combined 388095,,2.92114
+UCI Adult,group_slice,slice_8593b6e9d9f6a380,group_slice,True,derived 53719 combined 53719,,4.212999
+UCI Adult,group_slice,slice_a99cb98f593b2b69,group_slice,True,derived 116926 combined 116926,,2.99865
+UCI Adult,group_slice,slice_df4dd359cdd0b454,group_slice,True,derived 250335 combined 250335,,6.03543
+UCI Adult,group_slice,slice_1ba957384a79a78c,group_slice,True,derived 756 combined 756,,2.57341
+UCI Adult,group_slice,slice_dba2bd128a0ff2b4,group_slice,True,derived 130696 combined 130696,,3.99909
+UCI Adult,group_slice,slice_8fe4be2e061f2d89,group_slice,True,derived 114039 combined 114039,,5.02527
+UCI Adult,group_slice,slice_fc68c72a759fe948,group_slice,True,derived 52101 combined 52101,,3.535849
+UCI Adult,group_slice,slice_be71be7bb77ced9a,group_slice,True,derived 3136 combined 3136,,3.38525
+UCI Adult,group_slice,slice_bd6f1962a956c4d5,group_slice,True,derived 488756 combined 488756,,5.36525
+UCI Adult,grouped_partition_union,decomp_a5dcf15938cbfb7d,grouped_partition_union,True,8 groups,,5.07281
+UCI Adult,grouped_partition_union,decomp_2b071d56b1259f70,grouped_partition_union,True,15 groups,,7.79782
+UCI Adult,grouped_partition_union,decomp_cec20dd16872111f,grouped_partition_union,True,16 groups,,4.33128
+UCI Adult,grouped_partition_union,decomp_2a8dad332e5c60b4,grouped_partition_union,True,2 groups,,5.819589
+UCI Adult,grouped_partition_union,decomp_52609d9d1f7cc1be,grouped_partition_union,True,7 groups,,4.96057
+UCI Adult,grouped_partition_union,decomp_e331e033ba3af5e9,grouped_partition_union,True,14 groups,,4.46965
+UCI Adult,grouped_partition_union,decomp_b698384015ac73a9,grouped_partition_union,True,14 groups,,7.39182
+UCI Adult,grouped_partition_union,decomp_5e9532031acf4c66,grouped_partition_union,True,14 groups,,8.047099
+UCI Adult,grouped_partition_union,decomp_e888f01be3a7967d,grouped_partition_union,True,2 groups,,4.61621
+UCI Adult,grouped_partition_union,decomp_7a6781eeae1720fa,grouped_partition_union,True,2 groups,,4.04419
+UCI Adult,grouped_partition_union,decomp_ef8d03c38cb96574,grouped_partition_union,True,9 groups,,5.975429
+UCI Adult,grouped_partition_union,decomp_9b4831f2cb7745e0,grouped_partition_union,True,14 groups,,7.129849
+UCI Adult,partition_union_new_assets,decomp_ccb07873473c9a2f,disjoint_partition_union,True,target 31 combined 31,,4.23163
+UCI Adult,partition_union_new_assets,decomp_023620f36578c336,disjoint_partition_union,True,target 488756 combined 488756,,5.549239
+UCI Adult,partition_union_new_assets,decomp_4b9b91a93e03e973,disjoint_partition_union,True,target 322729 combined 322729,,5.11455
+UCI Adult,partition_union_new_assets,decomp_8773bc81bdf06f6a,disjoint_partition_union,True,target 4831 combined 4831,,3.41834
+UCI Adult,partition_union_new_assets,decomp_d373028d713b9873,disjoint_partition_union,True,target 91957 combined 91957,,4.54809
+UCI Adult,partition_union_new_assets,decomp_f05a9d11b9b3e27b,disjoint_partition_union,True,target 1192 combined 1192,,2.95681
+UCI Adult,partition_union_new_assets,decomp_82f065fded538050,disjoint_partition_union,True,target 12284 combined 12284,,4.712509
+UCI Adult,partition_union_new_assets,decomp_314623fe19145007,disjoint_partition_union,True,target 52101 combined 52101,,2.20532
+UCI Adult,partition_union_new_assets,decomp_65408511025a6eb5,disjoint_partition_union,True,target 8633 combined 8633,,5.55337
+UCI Adult,partition_union_new_assets,decomp_b3490daf41abb8e7,disjoint_partition_union,True,target 208326 combined 208326,,4.13094
+UCI Adult,partition_union_new_assets,decomp_43d119e46c19d5b3,disjoint_partition_union,True,target 37768 combined 37768,,5.410469
+UCI Adult,partition_union_new_assets,decomp_5f7da616a5daab1d,disjoint_partition_union,True,target 1004836 combined 1004836,,3.73836

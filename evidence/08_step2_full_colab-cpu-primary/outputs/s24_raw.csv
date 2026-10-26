@@ -1,0 +1,676 @@
+dataset,model,seed,unit,repetition,execution_order,method,runtime_ms,verified,rejected,unsafe_release,fallback_used,solver,sweeps,projected_rows,l1_adjustment,violations_after,max_residual_after,error,status
+NYC Taxi 2024-01,dummy_median,11,0,0,0,arbiter_active,41.218387,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,11,0,0,1,full_cyclic,454.38285,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,11,0,0,2,osqp_qp,138.198531,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,11,0,0,3,clarabel_default,176.576118,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,11,0,0,4,clarabel_tight,115.393713,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,11,0,1,0,full_cyclic,461.604939,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,11,0,1,1,osqp_qp,137.617971,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,11,0,1,2,clarabel_default,173.149459,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,11,0,1,3,clarabel_tight,112.855302,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,11,0,1,4,arbiter_active,40.611148,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,11,0,2,0,osqp_qp,137.573572,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,11,0,2,1,clarabel_default,172.690468,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,11,0,2,2,clarabel_tight,112.108573,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,11,0,2,3,arbiter_active,40.896257,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,11,0,2,4,full_cyclic,466.843659,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,0,0,full_cyclic,474.159829,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,0,1,osqp_qp,138.577651,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,23,1,0,2,clarabel_default,171.959549,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,23,1,0,3,clarabel_tight,117.47145,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,23,1,0,4,arbiter_active,42.081953,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,1,0,osqp_qp,141.677318,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,23,1,1,1,clarabel_default,173.894059,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,23,1,1,2,clarabel_tight,114.381371,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,23,1,1,3,arbiter_active,43.626922,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,1,4,full_cyclic,461.46866,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,2,0,clarabel_default,172.24289,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,23,1,2,1,clarabel_tight,111.608563,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,23,1,2,2,arbiter_active,40.589395,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,2,3,full_cyclic,461.625691,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,23,1,2,4,osqp_qp,139.279829,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,37,2,0,0,osqp_qp,139.04403,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,37,2,0,1,clarabel_default,176.360398,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,37,2,0,2,clarabel_tight,114.69836,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,37,2,0,3,arbiter_active,41.292885,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,37,2,0,4,full_cyclic,465.946837,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,37,2,1,0,clarabel_default,179.275175,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,37,2,1,1,clarabel_tight,112.880792,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,37,2,1,2,arbiter_active,41.209514,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,37,2,1,3,full_cyclic,463.871389,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,37,2,1,4,osqp_qp,138.78377,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,37,2,2,0,clarabel_tight,113.104002,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,37,2,2,1,arbiter_active,40.895224,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,37,2,2,2,full_cyclic,458.416693,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,37,2,2,3,osqp_qp,146.990103,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,37,2,2,4,clarabel_default,180.463084,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,51,3,0,0,clarabel_default,176.301007,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,51,3,0,1,clarabel_tight,115.32735,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,51,3,0,2,arbiter_active,44.102722,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,51,3,0,3,full_cyclic,466.581656,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,51,3,0,4,osqp_qp,141.492097,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,51,3,1,0,clarabel_tight,110.868594,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,51,3,1,1,arbiter_active,40.757015,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,51,3,1,2,full_cyclic,466.682575,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,51,3,1,3,osqp_qp,158.527732,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,51,3,1,4,clarabel_default,171.430912,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,51,3,2,0,arbiter_active,41.379514,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,51,3,2,1,full_cyclic,458.249792,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,51,3,2,2,osqp_qp,142.469417,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,51,3,2,3,clarabel_default,169.814563,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,51,3,2,4,clarabel_tight,111.974083,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,73,4,0,0,clarabel_tight,110.032814,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,73,4,0,1,arbiter_active,40.700395,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,73,4,0,2,full_cyclic,460.652601,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,73,4,0,3,osqp_qp,138.961819,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,73,4,0,4,clarabel_default,173.31882,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,73,4,1,0,arbiter_active,41.121014,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,dummy_median,73,4,1,1,full_cyclic,460.123151,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,73,4,1,2,osqp_qp,143.839936,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,73,4,1,3,clarabel_default,176.280557,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,73,4,1,4,clarabel_tight,112.516483,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,73,4,2,0,full_cyclic,458.787873,True,False,False,False,full_cyclic,11,4212,0.0005877107571485707,0,9.649437155142084e-13,,full_cyclic
+NYC Taxi 2024-01,dummy_median,73,4,2,1,osqp_qp,139.51726,True,False,False,False,osqp,325,0,0.0005753315485876919,0,2.342396410809301e-13,,osqp
+NYC Taxi 2024-01,dummy_median,73,4,2,2,clarabel_default,169.252164,True,False,False,False,clarabel,21,0,0.002164914388829629,0,-2.515304837810497e-07,,Solved
+NYC Taxi 2024-01,dummy_median,73,4,2,3,clarabel_tight,114.73756,True,False,False,False,clarabel,12,0,2.2338712028197953,0,-7.975176643762406e-06,,InsufficientProgress
+NYC Taxi 2024-01,dummy_median,73,4,2,4,arbiter_active,40.942585,True,False,False,False,active_cyclic,21,4205,0.0005891966464973016,0,9.828130435949722e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,0,0,arbiter_active,43.549932,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,0,1,full_cyclic,804.480683,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,0,2,osqp_qp,290.430919,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,0,3,clarabel_default,189.160987,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,0,4,clarabel_tight,134.282413,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,1,0,full_cyclic,806.700832,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,1,1,osqp_qp,301.358829,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,1,2,clarabel_default,185.20728,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,1,3,clarabel_tight,135.263123,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,1,4,arbiter_active,44.041582,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,2,0,osqp_qp,297.467742,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,2,1,clarabel_default,178.496365,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,2,2,clarabel_tight,136.168862,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,2,3,arbiter_active,43.744512,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,11,5,2,4,full_cyclic,807.8162,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,0,0,full_cyclic,805.233453,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,0,1,osqp_qp,287.36207,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,0,2,clarabel_default,186.816828,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,0,3,clarabel_tight,134.503704,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,0,4,arbiter_active,43.136562,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,1,0,osqp_qp,284.791373,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,1,1,clarabel_default,182.498672,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,1,2,clarabel_tight,132.060116,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,1,3,arbiter_active,43.062862,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,1,4,full_cyclic,811.321187,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,2,0,clarabel_default,182.696822,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,2,1,clarabel_tight,133.257364,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,2,2,arbiter_active,43.832362,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,2,3,full_cyclic,821.294599,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,23,6,2,4,osqp_qp,287.167201,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,0,0,osqp_qp,281.476876,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,0,1,clarabel_default,186.030559,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,0,2,clarabel_tight,133.243235,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,0,3,arbiter_active,43.488243,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,0,4,full_cyclic,808.324989,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,1,0,clarabel_default,184.068011,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,1,1,clarabel_tight,136.985892,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,1,2,arbiter_active,43.102523,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,1,3,full_cyclic,810.561968,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,1,4,osqp_qp,289.460549,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,2,0,clarabel_tight,134.118734,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,2,1,arbiter_active,43.384172,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,2,2,full_cyclic,818.865601,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,2,3,osqp_qp,280.898726,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,37,7,2,4,clarabel_default,181.531713,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,0,0,clarabel_default,184.028396,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,0,1,clarabel_tight,135.266802,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,0,2,arbiter_active,43.282594,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,0,3,full_cyclic,806.675535,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,0,4,osqp_qp,283.256624,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,1,0,clarabel_tight,135.307053,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,1,1,arbiter_active,43.593344,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,1,2,full_cyclic,810.231974,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,1,3,osqp_qp,287.382682,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,1,4,clarabel_default,185.839346,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,2,0,arbiter_active,43.089844,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,2,1,full_cyclic,812.551154,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,2,2,osqp_qp,288.274982,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,2,3,clarabel_default,180.284847,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,51,8,2,4,clarabel_tight,131.103882,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,0,0,clarabel_tight,132.304093,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,0,1,arbiter_active,43.259155,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,0,2,full_cyclic,817.549332,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,0,3,osqp_qp,283.493893,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,0,4,clarabel_default,182.335727,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,1,0,arbiter_active,44.126894,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,1,1,full_cyclic,831.431471,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,1,2,osqp_qp,284.139933,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,1,3,clarabel_default,182.911837,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,1,4,clarabel_tight,140.787211,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,2,0,full_cyclic,807.819275,True,False,False,False,full_cyclic,20,3941,3.096893944716395,0,9.982941132589206e-13,,full_cyclic
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,2,1,osqp_qp,286.943092,True,False,False,False,osqp,725,0,2.971827718432685,0,7.215930293341579e-13,,osqp
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,2,2,clarabel_default,188.256485,True,False,False,False,clarabel,21,0,3.030734509239608,0,-1.6236915700851284e-09,,Solved
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,2,3,clarabel_tight,135.306963,True,False,False,False,clarabel,14,0,33.07753433117878,0,-0.00023635113868554532,,InsufficientProgress
+NYC Taxi 2024-01,hist_gradient_boosting,73,9,2,4,arbiter_active,44.132044,True,False,False,False,active_cyclic,43,3870,3.0438334166562253,0,9.982661891237484e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,11,10,0,0,arbiter_active,81.516489,True,False,False,False,active_cyclic,46,7266,15.294233858790836,0,9.988817370881546e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,11,10,0,1,full_cyclic,892.792123,True,False,False,False,full_cyclic,22,5510,15.460208899701259,0,9.859303044118528e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,11,10,0,2,osqp_qp,344.606465,True,False,False,False,osqp,875,0,14.407983257090805,0,1.2212453270876722e-15,,osqp
+NYC Taxi 2024-01,mlp,11,10,0,3,clarabel_default,172.544928,True,False,False,False,clarabel,20,0,14.409650015379281,0,-1.2485047043020301e-08,,Solved
+NYC Taxi 2024-01,mlp,11,10,0,4,clarabel_tight,131.744152,True,False,False,False,clarabel,14,0,34.6438624433686,0,-0.0010005301434456407,,InsufficientProgress
+NYC Taxi 2024-01,mlp,11,10,1,0,full_cyclic,889.031034,True,False,False,False,full_cyclic,22,5510,15.460208899701259,0,9.859303044118528e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,11,10,1,1,osqp_qp,349.338674,True,False,False,False,osqp,875,0,14.407983257090805,0,1.2212453270876722e-15,,osqp
+NYC Taxi 2024-01,mlp,11,10,1,2,clarabel_default,179.761597,True,False,False,False,clarabel,20,0,14.409650015379281,0,-1.2485047043020301e-08,,Solved
+NYC Taxi 2024-01,mlp,11,10,1,3,clarabel_tight,134.679032,True,False,False,False,clarabel,14,0,34.6438624433686,0,-0.0010005301434456407,,InsufficientProgress
+NYC Taxi 2024-01,mlp,11,10,1,4,arbiter_active,82.830389,True,False,False,False,active_cyclic,46,7266,15.294233858790836,0,9.988817370881546e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,11,10,2,0,osqp_qp,350.352774,True,False,False,False,osqp,875,0,14.407983257090805,0,1.2212453270876722e-15,,osqp
+NYC Taxi 2024-01,mlp,11,10,2,1,clarabel_default,184.147526,True,False,False,False,clarabel,20,0,14.409650015379281,0,-1.2485047043020301e-08,,Solved
+NYC Taxi 2024-01,mlp,11,10,2,2,clarabel_tight,137.290982,True,False,False,False,clarabel,14,0,34.6438624433686,0,-0.0010005301434456407,,InsufficientProgress
+NYC Taxi 2024-01,mlp,11,10,2,3,arbiter_active,85.662639,True,False,False,False,active_cyclic,46,7266,15.294233858790836,0,9.988817370881546e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,11,10,2,4,full_cyclic,912.62675,True,False,False,False,full_cyclic,22,5510,15.460208899701259,0,9.859303044118528e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,23,11,0,0,full_cyclic,973.729223,True,False,False,False,full_cyclic,24,6312,11.108364472544594,0,9.93204650467927e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,23,11,0,1,osqp_qp,7235.519183,True,False,False,False,osqp,20000,0,10.171553703015949,0,1.9984014443252818e-15,,osqp
+NYC Taxi 2024-01,mlp,23,11,0,2,clarabel_default,186.672716,True,False,False,False,clarabel,21,0,10.1717782750958,0,-9.601360412972337e-10,,Solved
+NYC Taxi 2024-01,mlp,23,11,0,3,clarabel_tight,138.013923,True,False,False,False,clarabel,14,0,32.54162406506174,0,-0.0006494750526540246,,InsufficientProgress
+NYC Taxi 2024-01,mlp,23,11,0,4,arbiter_active,61.434423,True,False,False,False,active_cyclic,40,5619,11.278232095155058,0,9.982312285800043e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,23,11,1,0,osqp_qp,7246.898202,True,False,False,False,osqp,20000,0,10.171553703015949,0,1.9984014443252818e-15,,osqp
+NYC Taxi 2024-01,mlp,23,11,1,1,clarabel_default,187.777275,True,False,False,False,clarabel,21,0,10.1717782750958,0,-9.601360412972337e-10,,Solved
+NYC Taxi 2024-01,mlp,23,11,1,2,clarabel_tight,133.054693,True,False,False,False,clarabel,14,0,32.54162406506174,0,-0.0006494750526540246,,InsufficientProgress
+NYC Taxi 2024-01,mlp,23,11,1,3,arbiter_active,61.195842,True,False,False,False,active_cyclic,40,5619,11.278232095155058,0,9.982312285800043e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,23,11,1,4,full_cyclic,980.506092,True,False,False,False,full_cyclic,24,6312,11.108364472544594,0,9.93204650467927e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,23,11,2,0,clarabel_default,187.127355,True,False,False,False,clarabel,21,0,10.1717782750958,0,-9.601360412972337e-10,,Solved
+NYC Taxi 2024-01,mlp,23,11,2,1,clarabel_tight,132.334813,True,False,False,False,clarabel,14,0,32.54162406506174,0,-0.0006494750526540246,,InsufficientProgress
+NYC Taxi 2024-01,mlp,23,11,2,2,arbiter_active,61.649871,True,False,False,False,active_cyclic,40,5619,11.278232095155058,0,9.982312285800043e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,23,11,2,3,full_cyclic,985.550442,True,False,False,False,full_cyclic,24,6312,11.108364472544594,0,9.93204650467927e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,23,11,2,4,osqp_qp,7270.225569,True,False,False,False,osqp,20000,0,10.171553703015949,0,1.9984014443252818e-15,,osqp
+NYC Taxi 2024-01,mlp,37,12,0,0,osqp_qp,507.173534,True,False,False,False,osqp,1350,0,11.486401474111688,0,7.231951582725715e-13,,osqp
+NYC Taxi 2024-01,mlp,37,12,0,1,clarabel_default,184.548285,True,False,False,False,clarabel,21,0,11.48681971717906,0,-1.2220676267828798e-09,,Solved
+NYC Taxi 2024-01,mlp,37,12,0,2,clarabel_tight,137.165392,True,False,False,False,clarabel,14,0,32.65435763522259,0,-0.0009645342868215686,,InsufficientProgress
+NYC Taxi 2024-01,mlp,37,12,0,3,arbiter_active,75.29643,True,False,False,False,active_cyclic,42,6629,12.42585568506131,0,9.909785665673798e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,37,12,0,4,full_cyclic,860.836718,True,False,False,False,full_cyclic,21,6031,12.481414999567475,0,9.88304707169596e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,37,12,1,0,clarabel_default,181.027986,True,False,False,False,clarabel,21,0,11.48681971717906,0,-1.2220676267828798e-09,,Solved
+NYC Taxi 2024-01,mlp,37,12,1,1,clarabel_tight,137.043752,True,False,False,False,clarabel,14,0,32.65435763522259,0,-0.0009645342868215686,,InsufficientProgress
+NYC Taxi 2024-01,mlp,37,12,1,2,arbiter_active,75.30628,True,False,False,False,active_cyclic,42,6629,12.42585568506131,0,9.909785665673798e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,37,12,1,3,full_cyclic,905.298492,True,False,False,False,full_cyclic,21,6031,12.481414999567475,0,9.88304707169596e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,37,12,1,4,osqp_qp,550.658848,True,False,False,False,osqp,1350,0,11.486401474111688,0,7.231951582725715e-13,,osqp
+NYC Taxi 2024-01,mlp,37,12,2,0,clarabel_tight,157.135809,True,False,False,False,clarabel,14,0,32.65435763522259,0,-0.0009645342868215686,,InsufficientProgress
+NYC Taxi 2024-01,mlp,37,12,2,1,arbiter_active,89.371668,True,False,False,False,active_cyclic,42,6629,12.42585568506131,0,9.909785665673798e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,37,12,2,2,full_cyclic,864.423497,True,False,False,False,full_cyclic,21,6031,12.481414999567475,0,9.88304707169596e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,37,12,2,3,osqp_qp,514.450763,True,False,False,False,osqp,1350,0,11.486401474111688,0,7.231951582725715e-13,,osqp
+NYC Taxi 2024-01,mlp,37,12,2,4,clarabel_default,189.001575,True,False,False,False,clarabel,21,0,11.48681971717906,0,-1.2220676267828798e-09,,Solved
+NYC Taxi 2024-01,mlp,51,13,0,0,clarabel_default,184.368356,True,False,False,False,clarabel,21,0,7.697682334824044,0,-1.58315025372639e-08,,Solved
+NYC Taxi 2024-01,mlp,51,13,0,1,clarabel_tight,132.455843,True,False,False,False,clarabel,14,0,33.15197789282253,0,-0.0008223390058413054,,InsufficientProgress
+NYC Taxi 2024-01,mlp,51,13,0,2,arbiter_active,82.333739,True,False,False,False,active_cyclic,54,7451,8.33827842963186,0,9.970928162988946e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,51,13,0,3,full_cyclic,1025.959256,True,False,False,False,full_cyclic,25,7328,8.366319363708415,0,9.932311050009357e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,51,13,0,4,osqp_qp,1142.47279,True,False,False,False,osqp,3000,0,7.69642848941308,0,9.036471657758449e-13,,osqp
+NYC Taxi 2024-01,mlp,51,13,1,0,clarabel_tight,134.777962,True,False,False,False,clarabel,14,0,33.15197789282253,0,-0.0008223390058413054,,InsufficientProgress
+NYC Taxi 2024-01,mlp,51,13,1,1,arbiter_active,82.947139,True,False,False,False,active_cyclic,54,7451,8.33827842963186,0,9.970928162988946e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,51,13,1,2,full_cyclic,1045.692893,True,False,False,False,full_cyclic,25,7328,8.366319363708415,0,9.932311050009357e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,51,13,1,3,osqp_qp,1137.682491,True,False,False,False,osqp,3000,0,7.69642848941308,0,9.036471657758449e-13,,osqp
+NYC Taxi 2024-01,mlp,51,13,1,4,clarabel_default,185.751406,True,False,False,False,clarabel,21,0,7.697682334824044,0,-1.58315025372639e-08,,Solved
+NYC Taxi 2024-01,mlp,51,13,2,0,arbiter_active,82.908529,True,False,False,False,active_cyclic,54,7451,8.33827842963186,0,9.970928162988946e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,51,13,2,1,full_cyclic,1051.252365,True,False,False,False,full_cyclic,25,7328,8.366319363708415,0,9.932311050009357e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,51,13,2,2,osqp_qp,1116.816842,True,False,False,False,osqp,3000,0,7.69642848941308,0,9.036471657758449e-13,,osqp
+NYC Taxi 2024-01,mlp,51,13,2,3,clarabel_default,202.509317,True,False,False,False,clarabel,21,0,7.697682334824044,0,-1.58315025372639e-08,,Solved
+NYC Taxi 2024-01,mlp,51,13,2,4,clarabel_tight,150.780873,True,False,False,False,clarabel,14,0,33.15197789282253,0,-0.0008223390058413054,,InsufficientProgress
+NYC Taxi 2024-01,mlp,73,14,0,0,clarabel_tight,137.302114,True,False,False,False,clarabel,14,0,35.40639788993782,0,-0.00038598425672053765,,InsufficientProgress
+NYC Taxi 2024-01,mlp,73,14,0,1,arbiter_active,66.534893,True,False,False,False,active_cyclic,39,6091,11.885131277137267,0,9.721407706608787e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,73,14,0,2,full_cyclic,782.70308,True,False,False,False,full_cyclic,19,5093,11.951517578629954,0,9.976429404812137e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,73,14,0,3,osqp_qp,7261.139781,True,False,False,False,osqp,20000,0,11.29265669736316,0,9.992007221626409e-16,,osqp
+NYC Taxi 2024-01,mlp,73,14,0,4,clarabel_default,189.259329,True,False,False,False,clarabel,20,0,11.294038066755778,0,-5.854157981011078e-10,,Solved
+NYC Taxi 2024-01,mlp,73,14,1,0,arbiter_active,67.563903,True,False,False,False,active_cyclic,39,6091,11.885131277137267,0,9.721407706608787e-13,,active_cyclic
+NYC Taxi 2024-01,mlp,73,14,1,1,full_cyclic,783.07271,True,False,False,False,full_cyclic,19,5093,11.951517578629954,0,9.976429404812137e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,73,14,1,2,osqp_qp,7243.868082,True,False,False,False,osqp,20000,0,11.29265669736316,0,9.992007221626409e-16,,osqp
+NYC Taxi 2024-01,mlp,73,14,1,3,clarabel_default,173.52852,True,False,False,False,clarabel,20,0,11.294038066755778,0,-5.854157981011078e-10,,Solved
+NYC Taxi 2024-01,mlp,73,14,1,4,clarabel_tight,134.526085,True,False,False,False,clarabel,14,0,35.40639788993782,0,-0.00038598425672053765,,InsufficientProgress
+NYC Taxi 2024-01,mlp,73,14,2,0,full_cyclic,777.060564,True,False,False,False,full_cyclic,19,5093,11.951517578629954,0,9.976429404812137e-13,,full_cyclic
+NYC Taxi 2024-01,mlp,73,14,2,1,osqp_qp,7292.408157,True,False,False,False,osqp,20000,0,11.29265669736316,0,9.992007221626409e-16,,osqp
+NYC Taxi 2024-01,mlp,73,14,2,2,clarabel_default,172.80599,True,False,False,False,clarabel,20,0,11.294038066755778,0,-5.854157981011078e-10,,Solved
+NYC Taxi 2024-01,mlp,73,14,2,3,clarabel_tight,134.147344,True,False,False,False,clarabel,14,0,35.40639788993782,0,-0.00038598425672053765,,InsufficientProgress
+NYC Taxi 2024-01,mlp,73,14,2,4,arbiter_active,66.712232,True,False,False,False,active_cyclic,39,6091,11.885131277137267,0,9.721407706608787e-13,,active_cyclic
+TPC-H SF1,dummy_median,11,0,0,0,arbiter_active,71.748562,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,11,0,0,1,full_cyclic,718.003357,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,11,0,0,2,osqp_qp,264.22208,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,11,0,0,3,clarabel_default,102.323038,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,11,0,0,4,clarabel_tight,124.192826,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,11,0,1,0,full_cyclic,703.31466,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,11,0,1,1,osqp_qp,266.022129,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,11,0,1,2,clarabel_default,103.589608,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,11,0,1,3,clarabel_tight,125.807256,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,11,0,1,4,arbiter_active,71.163182,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,11,0,2,0,osqp_qp,266.389499,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,11,0,2,1,clarabel_default,102.078409,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,11,0,2,2,clarabel_tight,123.922436,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,11,0,2,3,arbiter_active,71.441342,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,11,0,2,4,full_cyclic,694.940471,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,23,1,0,0,full_cyclic,694.95564,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,23,1,0,1,osqp_qp,265.8783,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,23,1,0,2,clarabel_default,107.725728,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,23,1,0,3,clarabel_tight,125.511826,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,23,1,0,4,arbiter_active,70.839452,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,23,1,1,0,osqp_qp,265.033589,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,23,1,1,1,clarabel_default,103.038489,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,23,1,1,2,clarabel_tight,125.586315,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,23,1,1,3,arbiter_active,72.995622,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,23,1,1,4,full_cyclic,689.833761,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,23,1,2,0,clarabel_default,102.639968,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,23,1,2,1,clarabel_tight,124.877106,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,23,1,2,2,arbiter_active,73.032972,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,23,1,2,3,full_cyclic,687.936321,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,23,1,2,4,osqp_qp,264.754669,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,37,2,0,0,osqp_qp,262.75636,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,37,2,0,1,clarabel_default,100.826779,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,37,2,0,2,clarabel_tight,127.605315,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,37,2,0,3,arbiter_active,71.260932,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,37,2,0,4,full_cyclic,688.252211,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,37,2,1,0,clarabel_default,102.060128,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,37,2,1,1,clarabel_tight,126.504146,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,37,2,1,2,arbiter_active,73.810232,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,37,2,1,3,full_cyclic,725.858386,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,37,2,1,4,osqp_qp,266.977509,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,37,2,2,0,clarabel_tight,125.511306,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,37,2,2,1,arbiter_active,73.546501,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,37,2,2,2,full_cyclic,722.324868,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,37,2,2,3,osqp_qp,262.16,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,37,2,2,4,clarabel_default,103.343958,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,51,3,0,0,clarabel_default,102.965339,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,51,3,0,1,clarabel_tight,125.448405,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,51,3,0,2,arbiter_active,71.802331,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,51,3,0,3,full_cyclic,700.3414,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,51,3,0,4,osqp_qp,265.40412,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,51,3,1,0,clarabel_tight,123.937976,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,51,3,1,1,arbiter_active,72.131031,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,51,3,1,2,full_cyclic,712.127879,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,51,3,1,3,osqp_qp,263.485899,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,51,3,1,4,clarabel_default,102.099928,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,51,3,2,0,arbiter_active,73.878722,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,51,3,2,1,full_cyclic,715.307128,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,51,3,2,2,osqp_qp,263.49812,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,51,3,2,3,clarabel_default,101.550698,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,51,3,2,4,clarabel_tight,126.157026,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,73,4,0,0,clarabel_tight,126.032756,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,73,4,0,1,arbiter_active,70.573782,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,73,4,0,2,full_cyclic,692.742961,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,73,4,0,3,osqp_qp,266.594559,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,73,4,0,4,clarabel_default,103.129108,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,73,4,1,0,arbiter_active,71.610642,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,dummy_median,73,4,1,1,full_cyclic,712.809639,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,73,4,1,2,osqp_qp,266.44566,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,73,4,1,3,clarabel_default,101.398278,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,73,4,1,4,clarabel_tight,126.911646,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,73,4,2,0,full_cyclic,724.209127,True,False,False,False,full_cyclic,17,7876,4.967942785299247,0,9.969733372194867e-13,,full_cyclic
+TPC-H SF1,dummy_median,73,4,2,1,osqp_qp,262.90882,True,False,False,False,osqp,825,0,4.599936219006713,0,8.448380883763207e-13,,osqp
+TPC-H SF1,dummy_median,73,4,2,2,clarabel_default,100.361058,True,False,False,False,clarabel,17,0,4.600502089917962,0,-5.787632179066193e-11,,Solved
+TPC-H SF1,dummy_median,73,4,2,3,clarabel_tight,123.423116,True,False,False,False,clarabel,22,0,4.599946561300886,0,3.9190872769268026e-14,,Solved
+TPC-H SF1,dummy_median,73,4,2,4,arbiter_active,71.578262,True,False,False,False,active_cyclic,33,7275,4.8911153395706535,0,9.996517502663949e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,11,5,0,0,arbiter_active,19.289648,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,11,5,0,1,full_cyclic,647.644305,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,11,5,0,2,osqp_qp,5987.840445,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,11,5,0,3,clarabel_default,116.801427,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,11,5,0,4,clarabel_tight,89.16155,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,11,5,1,0,full_cyclic,671.940934,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,11,5,1,1,osqp_qp,5960.416198,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,11,5,1,2,clarabel_default,113.773076,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,11,5,1,3,clarabel_tight,90.799639,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,11,5,1,4,arbiter_active,19.971398,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,11,5,2,0,osqp_qp,5995.813554,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,11,5,2,1,clarabel_default,114.042857,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,11,5,2,2,clarabel_tight,88.62015,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,11,5,2,3,arbiter_active,20.062488,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,11,5,2,4,full_cyclic,649.417946,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,0,0,full_cyclic,650.505806,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,0,1,osqp_qp,5931.226271,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,23,6,0,2,clarabel_default,114.102107,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,23,6,0,3,clarabel_tight,89.80635,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,23,6,0,4,arbiter_active,20.078868,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,1,0,osqp_qp,5978.294566,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,23,6,1,1,clarabel_default,114.860777,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,23,6,1,2,clarabel_tight,90.35564,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,23,6,1,3,arbiter_active,20.114138,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,1,4,full_cyclic,657.690814,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,2,0,clarabel_default,114.402057,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,23,6,2,1,clarabel_tight,92.90949,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,23,6,2,2,arbiter_active,20.180827,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,2,3,full_cyclic,675.176113,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,23,6,2,4,osqp_qp,5921.233383,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,37,7,0,0,osqp_qp,5961.068015,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,37,7,0,1,clarabel_default,116.680765,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,37,7,0,2,clarabel_tight,90.941998,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,37,7,0,3,arbiter_active,20.379587,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,37,7,0,4,full_cyclic,672.47002,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,37,7,1,0,clarabel_default,114.207095,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,37,7,1,1,clarabel_tight,90.563578,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,37,7,1,2,arbiter_active,19.996567,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,37,7,1,3,full_cyclic,679.481619,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,37,7,1,4,osqp_qp,5952.040297,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,37,7,2,0,clarabel_tight,91.229878,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,37,7,2,1,arbiter_active,20.406547,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,37,7,2,2,full_cyclic,653.341253,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,37,7,2,3,osqp_qp,5973.080133,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,37,7,2,4,clarabel_default,113.562585,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,51,8,0,0,clarabel_default,118.312844,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,51,8,0,1,clarabel_tight,91.939337,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,51,8,0,2,arbiter_active,20.274188,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,51,8,0,3,full_cyclic,682.174949,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,51,8,0,4,osqp_qp,5926.770661,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,51,8,1,0,clarabel_tight,89.211008,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,51,8,1,1,arbiter_active,19.679667,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,51,8,1,2,full_cyclic,659.434072,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,51,8,1,3,osqp_qp,5986.818022,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,51,8,1,4,clarabel_default,116.238164,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,51,8,2,0,arbiter_active,21.813048,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,51,8,2,1,full_cyclic,651.070483,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,51,8,2,2,osqp_qp,5942.009488,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,51,8,2,3,clarabel_default,113.648844,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,51,8,2,4,clarabel_tight,89.086659,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,73,9,0,0,clarabel_tight,89.880478,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,73,9,0,1,arbiter_active,19.780727,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,73,9,0,2,full_cyclic,675.83298,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,73,9,0,3,osqp_qp,5918.681941,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,73,9,0,4,clarabel_default,114.330865,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,73,9,1,0,arbiter_active,20.375537,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,hist_gradient_boosting,73,9,1,1,full_cyclic,666.795851,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,73,9,1,2,osqp_qp,5916.939222,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,73,9,1,3,clarabel_default,113.862025,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,73,9,1,4,clarabel_tight,92.525438,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,73,9,2,0,full_cyclic,670.030401,True,False,False,False,full_cyclic,17,1551,1.556412015426946,0,9.432187616436954e-13,,full_cyclic
+TPC-H SF1,hist_gradient_boosting,73,9,2,1,osqp_qp,5992.468242,True,False,False,False,osqp,20000,0,1.4793043214267512,0,6.661338147750939e-16,,osqp
+TPC-H SF1,hist_gradient_boosting,73,9,2,2,clarabel_default,116.995644,True,False,False,False,clarabel,20,0,1.5326999478641758,0,-1.147044323412949e-08,,Solved
+TPC-H SF1,hist_gradient_boosting,73,9,2,3,clarabel_tight,89.605088,True,False,False,False,clarabel,14,0,26.18678736645419,0,-0.0007258897527164659,,InsufficientProgress
+TPC-H SF1,hist_gradient_boosting,73,9,2,4,arbiter_active,19.918977,True,False,False,False,active_cyclic,40,1647,1.5446718103901118,0,7.443559657538401e-13,,active_cyclic
+TPC-H SF1,mlp,11,10,0,0,arbiter_active,46.895624,True,False,False,False,active_cyclic,33,3952,12.530440741970533,0,9.604092178095713e-13,,active_cyclic
+TPC-H SF1,mlp,11,10,0,1,full_cyclic,820.470481,True,False,False,False,full_cyclic,20,4521,12.65935892724556,0,9.993197675611798e-13,,full_cyclic
+TPC-H SF1,mlp,11,10,0,2,osqp_qp,5995.04348,True,False,False,False,osqp,20000,0,11.41392605825466,0,1.1102230246251565e-15,,osqp
+TPC-H SF1,mlp,11,10,0,3,clarabel_default,118.251705,True,False,False,False,clarabel,21,0,11.414611290470834,0,-1.2804567619587107e-08,,Solved
+TPC-H SF1,mlp,11,10,0,4,clarabel_tight,90.074007,True,False,False,False,clarabel,14,0,28.735086728430225,0,-0.001093934019872781,,InsufficientProgress
+TPC-H SF1,mlp,11,10,1,0,full_cyclic,808.714292,True,False,False,False,full_cyclic,20,4521,12.65935892724556,0,9.993197675611798e-13,,full_cyclic
+TPC-H SF1,mlp,11,10,1,1,osqp_qp,6011.078978,True,False,False,False,osqp,20000,0,11.41392605825466,0,1.1102230246251565e-15,,osqp
+TPC-H SF1,mlp,11,10,1,2,clarabel_default,117.108454,True,False,False,False,clarabel,21,0,11.414611290470834,0,-1.2804567619587107e-08,,Solved
+TPC-H SF1,mlp,11,10,1,3,clarabel_tight,90.056358,True,False,False,False,clarabel,14,0,28.735086728430225,0,-0.001093934019872781,,InsufficientProgress
+TPC-H SF1,mlp,11,10,1,4,arbiter_active,45.830894,True,False,False,False,active_cyclic,33,3952,12.530440741970533,0,9.604092178095713e-13,,active_cyclic
+TPC-H SF1,mlp,11,10,2,0,osqp_qp,6015.456729,True,False,False,False,osqp,20000,0,11.41392605825466,0,1.1102230246251565e-15,,osqp
+TPC-H SF1,mlp,11,10,2,1,clarabel_default,123.288884,True,False,False,False,clarabel,21,0,11.414611290470834,0,-1.2804567619587107e-08,,Solved
+TPC-H SF1,mlp,11,10,2,2,clarabel_tight,89.497508,True,False,False,False,clarabel,14,0,28.735086728430225,0,-0.001093934019872781,,InsufficientProgress
+TPC-H SF1,mlp,11,10,2,3,arbiter_active,45.737074,True,False,False,False,active_cyclic,33,3952,12.530440741970533,0,9.604092178095713e-13,,active_cyclic
+TPC-H SF1,mlp,11,10,2,4,full_cyclic,811.515832,True,False,False,False,full_cyclic,20,4521,12.65935892724556,0,9.993197675611798e-13,,full_cyclic
+TPC-H SF1,mlp,23,11,0,0,full_cyclic,1172.233494,True,False,False,False,full_cyclic,29,5709,19.998510279967356,0,9.867384687112235e-13,,full_cyclic
+TPC-H SF1,mlp,23,11,0,1,osqp_qp,5981.309413,True,False,False,False,osqp,20000,0,18.89238108520184,0,1.3322676295501878e-15,,osqp
+TPC-H SF1,mlp,23,11,0,2,clarabel_default,118.103305,True,False,False,False,clarabel,21,0,18.892680927946458,0,-2.615087976003072e-10,,Solved
+TPC-H SF1,mlp,23,11,0,3,clarabel_tight,89.508579,True,False,False,False,clarabel,14,0,36.31327087668628,0,-0.0002128368621467629,,InsufficientProgress
+TPC-H SF1,mlp,23,11,0,4,arbiter_active,65.707151,True,False,False,False,active_cyclic,53,5961,19.92430656498148,0,9.963855912217823e-13,,active_cyclic
+TPC-H SF1,mlp,23,11,1,0,osqp_qp,5988.364968,True,False,False,False,osqp,20000,0,18.89238108520184,0,1.3322676295501878e-15,,osqp
+TPC-H SF1,mlp,23,11,1,1,clarabel_default,118.040505,True,False,False,False,clarabel,21,0,18.892680927946458,0,-2.615087976003072e-10,,Solved
+TPC-H SF1,mlp,23,11,1,2,clarabel_tight,89.231118,True,False,False,False,clarabel,14,0,36.31327087668628,0,-0.0002128368621467629,,InsufficientProgress
+TPC-H SF1,mlp,23,11,1,3,arbiter_active,66.270882,True,False,False,False,active_cyclic,53,5961,19.92430656498148,0,9.963855912217823e-13,,active_cyclic
+TPC-H SF1,mlp,23,11,1,4,full_cyclic,1197.843339,True,False,False,False,full_cyclic,29,5709,19.998510279967356,0,9.867384687112235e-13,,full_cyclic
+TPC-H SF1,mlp,23,11,2,0,clarabel_default,121.177444,True,False,False,False,clarabel,21,0,18.892680927946458,0,-2.615087976003072e-10,,Solved
+TPC-H SF1,mlp,23,11,2,1,clarabel_tight,89.499899,True,False,False,False,clarabel,14,0,36.31327087668628,0,-0.0002128368621467629,,InsufficientProgress
+TPC-H SF1,mlp,23,11,2,2,arbiter_active,67.038851,True,False,False,False,active_cyclic,53,5961,19.92430656498148,0,9.963855912217823e-13,,active_cyclic
+TPC-H SF1,mlp,23,11,2,3,full_cyclic,1176.818832,True,False,False,False,full_cyclic,29,5709,19.998510279967356,0,9.867384687112235e-13,,full_cyclic
+TPC-H SF1,mlp,23,11,2,4,osqp_qp,5972.610879,True,False,False,False,osqp,20000,0,18.89238108520184,0,1.3322676295501878e-15,,osqp
+TPC-H SF1,mlp,37,12,0,0,osqp_qp,6029.648582,True,False,False,False,osqp,20000,0,13.946012930212133,0,9.992007221626409e-16,,osqp
+TPC-H SF1,mlp,37,12,0,1,clarabel_default,117.047805,True,False,False,False,clarabel,20,0,13.946447031395087,0,-1.6047065098495163e-09,,Solved
+TPC-H SF1,mlp,37,12,0,2,clarabel_tight,91.065079,True,False,False,False,clarabel,14,0,28.950399450912332,0,-0.0005168007304418968,,InsufficientProgress
+TPC-H SF1,mlp,37,12,0,3,arbiter_active,51.211394,True,False,False,False,active_cyclic,61,4331,15.282838811503254,0,9.583753061981337e-13,,active_cyclic
+TPC-H SF1,mlp,37,12,0,4,full_cyclic,1122.764158,True,False,False,False,full_cyclic,28,4102,15.296431485988597,0,9.33552063778209e-13,,full_cyclic
+TPC-H SF1,mlp,37,12,1,0,clarabel_default,118.543265,True,False,False,False,clarabel,20,0,13.946447031395087,0,-1.6047065098495163e-09,,Solved
+TPC-H SF1,mlp,37,12,1,1,clarabel_tight,89.290999,True,False,False,False,clarabel,14,0,28.950399450912332,0,-0.0005168007304418968,,InsufficientProgress
+TPC-H SF1,mlp,37,12,1,2,arbiter_active,52.168034,True,False,False,False,active_cyclic,61,4331,15.282838811503254,0,9.583753061981337e-13,,active_cyclic
+TPC-H SF1,mlp,37,12,1,3,full_cyclic,1124.090168,True,False,False,False,full_cyclic,28,4102,15.296431485988597,0,9.33552063778209e-13,,full_cyclic
+TPC-H SF1,mlp,37,12,1,4,osqp_qp,6035.891182,True,False,False,False,osqp,20000,0,13.946012930212133,0,9.992007221626409e-16,,osqp
+TPC-H SF1,mlp,37,12,2,0,clarabel_tight,88.594099,True,False,False,False,clarabel,14,0,28.950399450912332,0,-0.0005168007304418968,,InsufficientProgress
+TPC-H SF1,mlp,37,12,2,1,arbiter_active,50.257724,True,False,False,False,active_cyclic,61,4331,15.282838811503254,0,9.583753061981337e-13,,active_cyclic
+TPC-H SF1,mlp,37,12,2,2,full_cyclic,1134.478767,True,False,False,False,full_cyclic,28,4102,15.296431485988597,0,9.33552063778209e-13,,full_cyclic
+TPC-H SF1,mlp,37,12,2,3,osqp_qp,6024.835533,True,False,False,False,osqp,20000,0,13.946012930212133,0,9.992007221626409e-16,,osqp
+TPC-H SF1,mlp,37,12,2,4,clarabel_default,114.539836,True,False,False,False,clarabel,20,0,13.946447031395087,0,-1.6047065098495163e-09,,Solved
+TPC-H SF1,mlp,51,13,0,0,clarabel_default,120.720915,True,False,False,False,clarabel,21,0,26.799927341301974,0,-8.52118679837684e-10,,Solved
+TPC-H SF1,mlp,51,13,0,1,clarabel_tight,93.204948,True,False,False,False,clarabel,14,0,40.92594423154986,0,-0.00023983827756750016,,InsufficientProgress
+TPC-H SF1,mlp,51,13,0,2,arbiter_active,85.853919,True,False,False,False,active_cyclic,63,6211,28.91498618845455,0,9.859723714561452e-13,,active_cyclic
+TPC-H SF1,mlp,51,13,0,3,full_cyclic,1014.755253,True,False,False,False,full_cyclic,25,5284,28.952139277793968,0,9.870914849385848e-13,,full_cyclic
+TPC-H SF1,mlp,51,13,0,4,osqp_qp,2183.919265,True,False,False,False,osqp,7250,0,26.799511173246525,0,1.1102230246251565e-15,,osqp
+TPC-H SF1,mlp,51,13,1,0,clarabel_tight,90.532039,True,False,False,False,clarabel,14,0,40.92594423154986,0,-0.00023983827756750016,,InsufficientProgress
+TPC-H SF1,mlp,51,13,1,1,arbiter_active,70.198592,True,False,False,False,active_cyclic,63,6211,28.91498618845455,0,9.859723714561452e-13,,active_cyclic
+TPC-H SF1,mlp,51,13,1,2,full_cyclic,1019.323081,True,False,False,False,full_cyclic,25,5284,28.952139277793968,0,9.870914849385848e-13,,full_cyclic
+TPC-H SF1,mlp,51,13,1,3,osqp_qp,2178.145947,True,False,False,False,osqp,7250,0,26.799511173246525,0,1.1102230246251565e-15,,osqp
+TPC-H SF1,mlp,51,13,1,4,clarabel_default,121.095014,True,False,False,False,clarabel,21,0,26.799927341301974,0,-8.52118679837684e-10,,Solved
+TPC-H SF1,mlp,51,13,2,0,arbiter_active,70.320972,True,False,False,False,active_cyclic,63,6211,28.91498618845455,0,9.859723714561452e-13,,active_cyclic
+TPC-H SF1,mlp,51,13,2,1,full_cyclic,1016.764942,True,False,False,False,full_cyclic,25,5284,28.952139277793968,0,9.870914849385848e-13,,full_cyclic
+TPC-H SF1,mlp,51,13,2,2,osqp_qp,2191.187605,True,False,False,False,osqp,7250,0,26.799511173246525,0,1.1102230246251565e-15,,osqp
+TPC-H SF1,mlp,51,13,2,3,clarabel_default,120.801625,True,False,False,False,clarabel,21,0,26.799927341301974,0,-8.52118679837684e-10,,Solved
+TPC-H SF1,mlp,51,13,2,4,clarabel_tight,87.836639,True,False,False,False,clarabel,14,0,40.92594423154986,0,-0.00023983827756750016,,InsufficientProgress
+TPC-H SF1,mlp,73,14,0,0,clarabel_tight,89.164709,True,False,False,False,clarabel,14,0,28.793070761663024,0,-0.0009836042645396878,,InsufficientProgress
+TPC-H SF1,mlp,73,14,0,1,arbiter_active,57.237252,True,False,False,False,active_cyclic,41,4915,13.668637893641595,0,9.86669730293488e-13,,active_cyclic
+TPC-H SF1,mlp,73,14,0,2,full_cyclic,787.582751,True,False,False,False,full_cyclic,19,3915,14.145092751239773,0,9.791958910376763e-13,,full_cyclic
+TPC-H SF1,mlp,73,14,0,3,osqp_qp,6024.811833,True,False,False,False,osqp,20000,0,12.429776021849014,0,1.5543122344752192e-15,,osqp
+TPC-H SF1,mlp,73,14,0,4,clarabel_default,121.064975,True,False,False,False,clarabel,21,0,12.42993717943549,0,-8.961601460910629e-10,,Solved
+TPC-H SF1,mlp,73,14,1,0,arbiter_active,57.005713,True,False,False,False,active_cyclic,41,4915,13.668637893641595,0,9.86669730293488e-13,,active_cyclic
+TPC-H SF1,mlp,73,14,1,1,full_cyclic,774.493782,True,False,False,False,full_cyclic,19,3915,14.145092751239773,0,9.791958910376763e-13,,full_cyclic
+TPC-H SF1,mlp,73,14,1,2,osqp_qp,6001.601507,True,False,False,False,osqp,20000,0,12.429776021849014,0,1.5543122344752192e-15,,osqp
+TPC-H SF1,mlp,73,14,1,3,clarabel_default,122.997375,True,False,False,False,clarabel,21,0,12.42993717943549,0,-8.961601460910629e-10,,Solved
+TPC-H SF1,mlp,73,14,1,4,clarabel_tight,90.414388,True,False,False,False,clarabel,14,0,28.793070761663024,0,-0.0009836042645396878,,InsufficientProgress
+TPC-H SF1,mlp,73,14,2,0,full_cyclic,804.17786,True,False,False,False,full_cyclic,19,3915,14.145092751239773,0,9.791958910376763e-13,,full_cyclic
+TPC-H SF1,mlp,73,14,2,1,osqp_qp,5999.363108,True,False,False,False,osqp,20000,0,12.429776021849014,0,1.5543122344752192e-15,,osqp
+TPC-H SF1,mlp,73,14,2,2,clarabel_default,119.587754,True,False,False,False,clarabel,21,0,12.42993717943549,0,-8.961601460910629e-10,,Solved
+TPC-H SF1,mlp,73,14,2,3,clarabel_tight,91.294529,True,False,False,False,clarabel,14,0,28.793070761663024,0,-0.0009836042645396878,,InsufficientProgress
+TPC-H SF1,mlp,73,14,2,4,arbiter_active,57.851013,True,False,False,False,active_cyclic,41,4915,13.668637893641595,0,9.86669730293488e-13,,active_cyclic
+UCI Adult,dummy_median,11,0,0,0,arbiter_active,50.106364,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,11,0,0,1,full_cyclic,439.584175,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,11,0,0,2,osqp_qp,105.782197,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,11,0,0,3,clarabel_default,947.832961,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,11,0,0,4,clarabel_tight,1250.877962,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,11,0,1,0,full_cyclic,435.879256,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,11,0,1,1,osqp_qp,104.009386,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,11,0,1,2,clarabel_default,958.164649,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,11,0,1,3,clarabel_tight,1259.331092,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,11,0,1,4,arbiter_active,49.997004,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,11,0,2,0,osqp_qp,104.205976,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,11,0,2,1,clarabel_default,956.35658,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,11,0,2,2,clarabel_tight,1275.47851,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,11,0,2,3,arbiter_active,51.159974,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,11,0,2,4,full_cyclic,440.410424,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,23,1,0,0,full_cyclic,439.262674,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,23,1,0,1,osqp_qp,105.655737,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,23,1,0,2,clarabel_default,951.292901,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,23,1,0,3,clarabel_tight,1253.599212,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,23,1,0,4,arbiter_active,49.649524,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,23,1,1,0,osqp_qp,106.657936,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,23,1,1,1,clarabel_default,950.307991,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,23,1,1,2,clarabel_tight,1243.140923,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,23,1,1,3,arbiter_active,50.320903,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,23,1,1,4,full_cyclic,441.229645,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,23,1,2,0,clarabel_default,952.981771,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,23,1,2,1,clarabel_tight,1263.273152,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,23,1,2,2,arbiter_active,50.806954,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,23,1,2,3,full_cyclic,440.775365,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,23,1,2,4,osqp_qp,106.814696,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,37,2,0,0,osqp_qp,105.474817,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,37,2,0,1,clarabel_default,950.122937,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,37,2,0,2,clarabel_tight,1255.361318,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,37,2,0,3,arbiter_active,50.057044,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,37,2,0,4,full_cyclic,441.173083,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,37,2,1,0,clarabel_default,948.564388,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,37,2,1,1,clarabel_tight,1265.220137,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,37,2,1,2,arbiter_active,50.350944,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,37,2,1,3,full_cyclic,448.077172,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,37,2,1,4,osqp_qp,104.261357,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,37,2,2,0,clarabel_tight,1293.900593,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,37,2,2,1,arbiter_active,50.561003,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,37,2,2,2,full_cyclic,444.914293,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,37,2,2,3,osqp_qp,105.089366,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,37,2,2,4,clarabel_default,951.964187,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,51,3,0,0,clarabel_default,949.030068,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,51,3,0,1,clarabel_tight,1249.532699,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,51,3,0,2,arbiter_active,49.758003,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,51,3,0,3,full_cyclic,436.091874,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,51,3,0,4,osqp_qp,102.727137,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,51,3,1,0,clarabel_tight,1272.591696,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,51,3,1,1,arbiter_active,51.069953,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,51,3,1,2,full_cyclic,438.053094,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,51,3,1,3,osqp_qp,108.926886,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,51,3,1,4,clarabel_default,972.711494,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,51,3,2,0,arbiter_active,50.495994,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,51,3,2,1,full_cyclic,442.028363,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,51,3,2,2,osqp_qp,106.679926,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,51,3,2,3,clarabel_default,947.703538,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,51,3,2,4,clarabel_tight,1261.102477,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,73,4,0,0,clarabel_tight,1253.042478,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,73,4,0,1,arbiter_active,49.883614,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,73,4,0,2,full_cyclic,454.132181,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,73,4,0,3,osqp_qp,107.841446,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,73,4,0,4,clarabel_default,981.344164,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,73,4,1,0,arbiter_active,52.361343,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,dummy_median,73,4,1,1,full_cyclic,445.434533,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,73,4,1,2,osqp_qp,104.133676,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,73,4,1,3,clarabel_default,955.903687,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,73,4,1,4,clarabel_tight,1258.063678,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,73,4,2,0,full_cyclic,436.657744,True,False,False,False,full_cyclic,10,5136,0.0002107432204422756,0,9.8031927356617e-13,,full_cyclic
+UCI Adult,dummy_median,73,4,2,1,osqp_qp,106.624657,True,False,False,False,osqp,200,0,0.00020304321741109705,0,0.0,,osqp
+UCI Adult,dummy_median,73,4,2,2,clarabel_default,948.035678,True,False,False,False,clarabel,21,0,0.0017877183212424994,0,-4.0981942112085034e-07,,Solved
+UCI Adult,dummy_median,73,4,2,3,clarabel_tight,1254.358269,True,False,False,False,clarabel,29,0,0.00020380766141438116,0,-7.928071176985241e-14,,Solved
+UCI Adult,dummy_median,73,4,2,4,arbiter_active,50.102693,True,False,False,False,active_cyclic,19,5139,0.00021016769525326548,0,9.988158642727264e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,11,5,0,0,arbiter_active,33.374506,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,11,5,0,1,full_cyclic,1021.062258,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,11,5,0,2,osqp_qp,7901.934101,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,11,5,0,3,clarabel_default,1080.651371,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,11,5,0,4,clarabel_tight,799.150967,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,11,5,1,0,full_cyclic,1026.665347,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,11,5,1,1,osqp_qp,7898.658171,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,11,5,1,2,clarabel_default,1063.573743,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,11,5,1,3,clarabel_tight,776.65488,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,11,5,1,4,arbiter_active,32.945276,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,11,5,2,0,osqp_qp,7956.555394,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,11,5,2,1,clarabel_default,1091.347459,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,11,5,2,2,clarabel_tight,785.165989,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,11,5,2,3,arbiter_active,33.565606,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,11,5,2,4,full_cyclic,1035.944566,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,23,6,0,0,full_cyclic,1023.423048,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,23,6,0,1,osqp_qp,7937.415707,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,23,6,0,2,clarabel_default,1088.81367,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,23,6,0,3,clarabel_tight,784.741859,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,23,6,0,4,arbiter_active,33.335686,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,23,6,1,0,osqp_qp,7938.891427,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,23,6,1,1,clarabel_default,1083.80132,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,23,6,1,2,clarabel_tight,785.347839,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,23,6,1,3,arbiter_active,32.994876,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,23,6,1,4,full_cyclic,1032.518177,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,23,6,2,0,clarabel_default,1081.257381,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,23,6,2,1,clarabel_tight,784.796509,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,23,6,2,2,arbiter_active,32.936286,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,23,6,2,3,full_cyclic,1046.649595,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,23,6,2,4,osqp_qp,7899.953242,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,37,7,0,0,osqp_qp,7932.479965,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,37,7,0,1,clarabel_default,1080.653267,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,37,7,0,2,clarabel_tight,782.042227,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,37,7,0,3,arbiter_active,33.035366,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,37,7,0,4,full_cyclic,1028.635395,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,37,7,1,0,clarabel_default,1084.041397,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,37,7,1,1,clarabel_tight,788.815866,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,37,7,1,2,arbiter_active,32.886836,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,37,7,1,3,full_cyclic,1025.938844,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,37,7,1,4,osqp_qp,7971.59301,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,37,7,2,0,clarabel_tight,783.398527,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,37,7,2,1,arbiter_active,33.529626,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,37,7,2,2,full_cyclic,1029.239434,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,37,7,2,3,osqp_qp,7948.817733,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,37,7,2,4,clarabel_default,1086.183857,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,51,8,0,0,clarabel_default,1080.767297,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,51,8,0,1,clarabel_tight,773.442508,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,51,8,0,2,arbiter_active,33.074456,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,51,8,0,3,full_cyclic,1031.081744,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,51,8,0,4,osqp_qp,7987.976748,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,51,8,1,0,clarabel_tight,792.826426,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,51,8,1,1,arbiter_active,33.238455,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,51,8,1,2,full_cyclic,1050.146492,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,51,8,1,3,osqp_qp,7902.135449,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,51,8,1,4,clarabel_default,1092.226906,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,51,8,2,0,arbiter_active,32.521686,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,51,8,2,1,full_cyclic,1028.679354,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,51,8,2,2,osqp_qp,7920.848387,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,51,8,2,3,clarabel_default,1094.306576,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,51,8,2,4,clarabel_tight,811.633863,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,73,9,0,0,clarabel_tight,786.302587,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,73,9,0,1,arbiter_active,32.959235,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,73,9,0,2,full_cyclic,1024.634065,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,73,9,0,3,osqp_qp,7938.708185,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,73,9,0,4,clarabel_default,1116.793663,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,73,9,1,0,arbiter_active,33.362355,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,hist_gradient_boosting,73,9,1,1,full_cyclic,1031.170264,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,73,9,1,2,osqp_qp,7884.978592,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,73,9,1,3,clarabel_default,1100.156005,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,73,9,1,4,clarabel_tight,791.049916,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,73,9,2,0,full_cyclic,1059.575571,True,False,False,False,full_cyclic,25,3018,3.0949107185864135,0,9.842380003458745e-13,,full_cyclic
+UCI Adult,hist_gradient_boosting,73,9,2,1,osqp_qp,7933.072943,True,False,False,False,osqp,20000,0,2.9551554854101845,0,1.5543122344752192e-15,,osqp
+UCI Adult,hist_gradient_boosting,73,9,2,2,clarabel_default,1076.742516,True,False,False,False,clarabel,21,0,3.0036044287416868,0,-3.788187202676683e-09,,Solved
+UCI Adult,hist_gradient_boosting,73,9,2,3,clarabel_tight,781.174875,True,False,False,False,clarabel,14,0,33.424222641385775,0,-0.0003213123126751523,,InsufficientProgress
+UCI Adult,hist_gradient_boosting,73,9,2,4,arbiter_active,33.341366,True,False,False,False,active_cyclic,53,2959,3.1400316384752136,0,9.793790326898834e-13,,active_cyclic
+UCI Adult,mlp,11,10,0,0,arbiter_active,55.931942,True,False,False,False,active_cyclic,47,4904,16.772442101709995,0,9.760165765870799e-13,,active_cyclic
+UCI Adult,mlp,11,10,0,1,full_cyclic,840.315728,True,False,False,False,full_cyclic,20,4968,16.916002546244638,0,9.881474978545857e-13,,full_cyclic
+UCI Adult,mlp,11,10,0,2,osqp_qp,2897.442073,True,False,False,False,osqp,7225,0,15.252920461296398,0,9.651069006466617e-13,,osqp
+UCI Adult,mlp,11,10,0,3,clarabel_default,1051.39155,True,False,False,False,clarabel,20,0,15.253179687055251,0,-3.731189357480957e-09,,Solved
+UCI Adult,mlp,11,10,0,4,clarabel_tight,804.798662,True,False,False,False,clarabel,14,0,34.977028131743566,0,-0.0012012611481544058,,InsufficientProgress
+UCI Adult,mlp,11,10,1,0,full_cyclic,866.600185,True,False,False,False,full_cyclic,20,4968,16.916002546244638,0,9.881474978545857e-13,,full_cyclic
+UCI Adult,mlp,11,10,1,1,osqp_qp,2903.512662,True,False,False,False,osqp,7225,0,15.252920461296398,0,9.651069006466617e-13,,osqp
+UCI Adult,mlp,11,10,1,2,clarabel_default,1043.562731,True,False,False,False,clarabel,20,0,15.253179687055251,0,-3.731189357480957e-09,,Solved
+UCI Adult,mlp,11,10,1,3,clarabel_tight,787.680415,True,False,False,False,clarabel,14,0,34.977028131743566,0,-0.0012012611481544058,,InsufficientProgress
+UCI Adult,mlp,11,10,1,4,arbiter_active,55.502283,True,False,False,False,active_cyclic,47,4904,16.772442101709995,0,9.760165765870799e-13,,active_cyclic
+UCI Adult,mlp,11,10,2,0,osqp_qp,2896.113683,True,False,False,False,osqp,7225,0,15.252920461296398,0,9.651069006466617e-13,,osqp
+UCI Adult,mlp,11,10,2,1,clarabel_default,1039.031181,True,False,False,False,clarabel,20,0,15.253179687055251,0,-3.731189357480957e-09,,Solved
+UCI Adult,mlp,11,10,2,2,clarabel_tight,778.635636,True,False,False,False,clarabel,14,0,34.977028131743566,0,-0.0012012611481544058,,InsufficientProgress
+UCI Adult,mlp,11,10,2,3,arbiter_active,58.467972,True,False,False,False,active_cyclic,47,4904,16.772442101709995,0,9.760165765870799e-13,,active_cyclic
+UCI Adult,mlp,11,10,2,4,full_cyclic,873.496594,True,False,False,False,full_cyclic,20,4968,16.916002546244638,0,9.881474978545857e-13,,full_cyclic
+UCI Adult,mlp,23,11,0,0,full_cyclic,843.354608,True,False,False,False,full_cyclic,20,5721,10.521342682613572,0,9.986076635742913e-13,,full_cyclic
+UCI Adult,mlp,23,11,0,1,osqp_qp,175.804326,True,False,False,False,osqp,375,0,9.790325383484042,0,9.381232769778425e-14,,osqp
+UCI Adult,mlp,23,11,0,2,clarabel_default,1038.315702,True,False,False,False,clarabel,20,0,9.790449784722965,0,-1.1600060217942243e-09,,Solved
+UCI Adult,mlp,23,11,0,3,clarabel_tight,772.614428,True,False,False,False,clarabel,14,0,32.48979954106846,0,-0.000766481493939028,,InsufficientProgress
+UCI Adult,mlp,23,11,0,4,arbiter_active,56.598802,True,False,False,False,active_cyclic,32,5171,10.774432613351463,0,9.40303282286059e-13,,active_cyclic
+UCI Adult,mlp,23,11,1,0,osqp_qp,177.068887,True,False,False,False,osqp,375,0,9.790325383484042,0,9.381232769778425e-14,,osqp
+UCI Adult,mlp,23,11,1,1,clarabel_default,1029.624481,True,False,False,False,clarabel,20,0,9.790449784722965,0,-1.1600060217942243e-09,,Solved
+UCI Adult,mlp,23,11,1,2,clarabel_tight,777.793017,True,False,False,False,clarabel,14,0,32.48979954106846,0,-0.000766481493939028,,InsufficientProgress
+UCI Adult,mlp,23,11,1,3,arbiter_active,56.095923,True,False,False,False,active_cyclic,32,5171,10.774432613351463,0,9.40303282286059e-13,,active_cyclic
+UCI Adult,mlp,23,11,1,4,full_cyclic,869.860364,True,False,False,False,full_cyclic,20,5721,10.521342682613572,0,9.986076635742913e-13,,full_cyclic
+UCI Adult,mlp,23,11,2,0,clarabel_default,1081.143555,True,False,False,False,clarabel,20,0,9.790449784722965,0,-1.1600060217942243e-09,,Solved
+UCI Adult,mlp,23,11,2,1,clarabel_tight,772.143737,True,False,False,False,clarabel,14,0,32.48979954106846,0,-0.000766481493939028,,InsufficientProgress
+UCI Adult,mlp,23,11,2,2,arbiter_active,55.337022,True,False,False,False,active_cyclic,32,5171,10.774432613351463,0,9.40303282286059e-13,,active_cyclic
+UCI Adult,mlp,23,11,2,3,full_cyclic,844.600667,True,False,False,False,full_cyclic,20,5721,10.521342682613572,0,9.986076635742913e-13,,full_cyclic
+UCI Adult,mlp,23,11,2,4,osqp_qp,176.069617,True,False,False,False,osqp,375,0,9.790325383484042,0,9.381232769778425e-14,,osqp
+UCI Adult,mlp,37,12,0,0,osqp_qp,7976.110554,True,False,False,False,osqp,20000,0,14.87030339276947,0,1.3322676295501878e-15,,osqp
+UCI Adult,mlp,37,12,0,1,clarabel_default,1002.652215,True,False,False,False,clarabel,19,0,14.869770758247904,0,-1.9194900608631367e-09,,Solved
+UCI Adult,mlp,37,12,0,2,clarabel_tight,795.272244,True,False,False,False,clarabel,14,0,36.555521304047446,0,-0.0010236282003277012,,InsufficientProgress
+UCI Adult,mlp,37,12,0,3,arbiter_active,47.368484,True,False,False,False,active_cyclic,39,4287,16.009159975919722,0,9.840498099537853e-13,,active_cyclic
+UCI Adult,mlp,37,12,0,4,full_cyclic,842.631567,True,False,False,False,full_cyclic,20,5799,15.84645336325054,0,9.756513088751695e-13,,full_cyclic
+UCI Adult,mlp,37,12,1,0,clarabel_default,1001.211656,True,False,False,False,clarabel,19,0,14.869770758247904,0,-1.9194900608631367e-09,,Solved
+UCI Adult,mlp,37,12,1,1,clarabel_tight,785.200765,True,False,False,False,clarabel,14,0,36.555521304047446,0,-0.0010236282003277012,,InsufficientProgress
+UCI Adult,mlp,37,12,1,2,arbiter_active,47.596104,True,False,False,False,active_cyclic,39,4287,16.009159975919722,0,9.840498099537853e-13,,active_cyclic
+UCI Adult,mlp,37,12,1,3,full_cyclic,854.092566,True,False,False,False,full_cyclic,20,5799,15.84645336325054,0,9.756513088751695e-13,,full_cyclic
+UCI Adult,mlp,37,12,1,4,osqp_qp,8043.649915,True,False,False,False,osqp,20000,0,14.87030339276947,0,1.3322676295501878e-15,,osqp
+UCI Adult,mlp,37,12,2,0,clarabel_tight,782.467275,True,False,False,False,clarabel,14,0,36.555521304047446,0,-0.0010236282003277012,,InsufficientProgress
+UCI Adult,mlp,37,12,2,1,arbiter_active,47.456094,True,False,False,False,active_cyclic,39,4287,16.009159975919722,0,9.840498099537853e-13,,active_cyclic
+UCI Adult,mlp,37,12,2,2,full_cyclic,847.339277,True,False,False,False,full_cyclic,20,5799,15.84645336325054,0,9.756513088751695e-13,,full_cyclic
+UCI Adult,mlp,37,12,2,3,osqp_qp,8022.134278,True,False,False,False,osqp,20000,0,14.87030339276947,0,1.3322676295501878e-15,,osqp
+UCI Adult,mlp,37,12,2,4,clarabel_default,998.832306,True,False,False,False,clarabel,19,0,14.869770758247904,0,-1.9194900608631367e-09,,Solved
+UCI Adult,mlp,51,13,0,0,clarabel_default,1007.733316,True,False,False,False,clarabel,19,0,13.891184163613028,0,-1.4172726326566427e-08,,Solved
+UCI Adult,mlp,51,13,0,1,clarabel_tight,786.601095,True,False,False,False,clarabel,14,0,35.17755080157768,0,-0.0011511302979187238,,InsufficientProgress
+UCI Adult,mlp,51,13,0,2,arbiter_active,73.33742,True,False,False,False,active_cyclic,37,6618,15.196101288124751,0,9.819728580620635e-13,,active_cyclic
+UCI Adult,mlp,51,13,0,3,full_cyclic,887.454861,True,False,False,False,full_cyclic,21,6812,15.507552211623423,0,9.985738364665098e-13,,full_cyclic
+UCI Adult,mlp,51,13,0,4,osqp_qp,7915.270702,True,False,False,False,osqp,20000,0,13.887332006924034,0,1.3322676295501878e-15,,osqp
+UCI Adult,mlp,51,13,1,0,clarabel_tight,783.807216,True,False,False,False,clarabel,14,0,35.17755080157768,0,-0.0011511302979187238,,InsufficientProgress
+UCI Adult,mlp,51,13,1,1,arbiter_active,72.66791,True,False,False,False,active_cyclic,37,6618,15.196101288124751,0,9.819728580620635e-13,,active_cyclic
+UCI Adult,mlp,51,13,1,2,full_cyclic,896.25361,True,False,False,False,full_cyclic,21,6812,15.507552211623423,0,9.985738364665098e-13,,full_cyclic
+UCI Adult,mlp,51,13,1,3,osqp_qp,7932.48871,True,False,False,False,osqp,20000,0,13.887332006924034,0,1.3322676295501878e-15,,osqp
+UCI Adult,mlp,51,13,1,4,clarabel_default,989.629098,True,False,False,False,clarabel,19,0,13.891184163613028,0,-1.4172726326566427e-08,,Solved
+UCI Adult,mlp,51,13,2,0,arbiter_active,73.48355,True,False,False,False,active_cyclic,37,6618,15.196101288124751,0,9.819728580620635e-13,,active_cyclic
+UCI Adult,mlp,51,13,2,1,full_cyclic,902.913409,True,False,False,False,full_cyclic,21,6812,15.507552211623423,0,9.985738364665098e-13,,full_cyclic
+UCI Adult,mlp,51,13,2,2,osqp_qp,7921.737742,True,False,False,False,osqp,20000,0,13.887332006924034,0,1.3322676295501878e-15,,osqp
+UCI Adult,mlp,51,13,2,3,clarabel_default,1014.904504,True,False,False,False,clarabel,19,0,13.891184163613028,0,-1.4172726326566427e-08,,Solved
+UCI Adult,mlp,51,13,2,4,clarabel_tight,784.544495,True,False,False,False,clarabel,14,0,35.17755080157768,0,-0.0011511302979187238,,InsufficientProgress
+UCI Adult,mlp,73,14,0,0,clarabel_tight,772.181757,True,False,False,False,clarabel,14,0,38.483868868143816,0,-0.0004892093967760775,,InsufficientProgress
+UCI Adult,mlp,73,14,0,1,arbiter_active,53.916593,True,False,False,False,active_cyclic,34,4856,20.38695030181855,0,9.164396672090014e-13,,active_cyclic
+UCI Adult,mlp,73,14,0,2,full_cyclic,1082.038375,True,False,False,False,full_cyclic,26,4877,20.381000060524265,0,9.65529305813062e-13,,full_cyclic
+UCI Adult,mlp,73,14,0,3,osqp_qp,1936.384652,True,False,False,False,osqp,4750,0,18.975566247013305,0,2.0980266135506298e-13,,osqp
+UCI Adult,mlp,73,14,0,4,clarabel_default,1022.629504,True,False,False,False,clarabel,20,0,18.97733395643364,0,-9.202631383326563e-10,,Solved
+UCI Adult,mlp,73,14,1,0,arbiter_active,54.043193,True,False,False,False,active_cyclic,34,4856,20.38695030181855,0,9.164396672090014e-13,,active_cyclic
+UCI Adult,mlp,73,14,1,1,full_cyclic,1077.101466,True,False,False,False,full_cyclic,26,4877,20.381000060524265,0,9.65529305813062e-13,,full_cyclic
+UCI Adult,mlp,73,14,1,2,osqp_qp,1909.166225,True,False,False,False,osqp,4750,0,18.975566247013305,0,2.0980266135506298e-13,,osqp
+UCI Adult,mlp,73,14,1,3,clarabel_default,1028.246023,True,False,False,False,clarabel,20,0,18.97733395643364,0,-9.202631383326563e-10,,Solved
+UCI Adult,mlp,73,14,1,4,clarabel_tight,769.540367,True,False,False,False,clarabel,14,0,38.483868868143816,0,-0.0004892093967760775,,InsufficientProgress
+UCI Adult,mlp,73,14,2,0,full_cyclic,1076.470746,True,False,False,False,full_cyclic,26,4877,20.381000060524265,0,9.65529305813062e-13,,full_cyclic
+UCI Adult,mlp,73,14,2,1,osqp_qp,1915.710854,True,False,False,False,osqp,4750,0,18.975566247013305,0,2.0980266135506298e-13,,osqp
+UCI Adult,mlp,73,14,2,2,clarabel_default,1060.530508,True,False,False,False,clarabel,20,0,18.97733395643364,0,-9.202631383326563e-10,,Solved
+UCI Adult,mlp,73,14,2,3,clarabel_tight,817.246721,True,False,False,False,clarabel,14,0,38.483868868143816,0,-0.0004892093967760775,,InsufficientProgress
+UCI Adult,mlp,73,14,2,4,arbiter_active,54.520353,True,False,False,False,active_cyclic,34,4856,20.38695030181855,0,9.164396672090014e-13,,active_cyclic

@@ -1,0 +1,16 @@
+dataset,family,oracle_relations,compiled_relations,true_positives,false_positives,false_negatives,precision,recall
+NYC Taxi 2024-01,grouped_partition_union,42,42,42,0,0,1.0,1.0
+NYC Taxi 2024-01,partition_union_new_assets,18,18,18,0,0,1.0,1.0
+NYC Taxi 2024-01,group_rollup,120,120,120,0,0,1.0,1.0
+NYC Taxi 2024-01,group_slice,78,78,78,0,0,1.0,1.0
+NYC Taxi 2024-01,group_filter,78,78,78,0,0,1.0,1.0
+TPC-H SF1,grouped_partition_union,86,86,86,0,0,1.0,1.0
+TPC-H SF1,partition_union_new_assets,38,38,38,0,0,1.0,1.0
+TPC-H SF1,group_rollup,252,252,252,0,0,1.0,1.0
+TPC-H SF1,group_slice,170,170,170,0,0,1.0,1.0
+TPC-H SF1,group_filter,170,170,170,0,0,1.0,1.0
+UCI Adult,grouped_partition_union,42,42,42,0,0,1.0,1.0
+UCI Adult,partition_union_new_assets,18,18,18,0,0,1.0,1.0
+UCI Adult,group_rollup,132,132,132,0,0,1.0,1.0
+UCI Adult,group_slice,90,90,90,0,0,1.0,1.0
+UCI Adult,group_filter,90,90,90,0,0,1.0,1.0

@@ -1,0 +1,46 @@
+stage,check,severity,passed,detail
+setup,NYC Taxi 2024-01: audited controlled policy verifies at 1e-12,fatal,True,max residual 3.993e-17
+setup,NYC Taxi 2024-01: audited policy equals the linear price function,fatal,True,max abs difference 0.000e+00
+setup,TPC-H SF1: audited controlled policy verifies at 1e-12,fatal,True,max residual 2.082e-17
+setup,TPC-H SF1: audited policy equals the linear price function,fatal,True,max abs difference 0.000e+00
+setup,UCI Adult: audited controlled policy verifies at 1e-12,fatal,True,max residual 5.421e-20
+setup,UCI Adult: audited policy equals the linear price function,fatal,True,max abs difference 0.000e+00
+setup,NYC Taxi 2024-01: restored table specifications regenerate the audited workload,fatal,True,
+setup,TPC-H SF1: restored table specifications regenerate the audited workload,fatal,True,
+setup,UCI Adult: restored table specifications regenerate the audited workload,fatal,True,
+s21,every dataset produced a grouped workload,fatal,True,
+s21,extended parser self-test (supported and fail-closed strings),fatal,True,
+s21,base relations are unchanged by the extension,fatal,True,
+s21,base assets parse exactly as in the audited compile,fatal,True,
+s21,every new asset parses to its construction descriptor,fatal,True,
+s21,no relation outside the named families touches a new asset,fatal,True,
+s21,compiler matches the oracle on every new relation family (precision and recall 1),fatal,True,"[{""dataset"":""NYC Taxi 2024-01"",""family"":""grouped_partition_union"",""precision"":1.0,""recall"":1.0},{""dataset"":""NYC Taxi 2024-01"",""family"":""partition_union_new_assets"",""precision"":1.0,""recall"":1.0},{""dataset"":""NYC Taxi 2024-01"",""family"":""group_rollup"",""precision"":1.0,""recall"":1.0},{""dataset"":""NYC Taxi 2024-01"",""family"":""group_slice"",""precision"":1.0,""recall"":1.0},{""dataset"":""NYC Taxi 2024-01"",""family"":""group_filter"",""precision"":1.0,""recall"":1.0},{""dataset"":""TPC-H SF1"",""family"":""grouped_partition_union"",""precision"":1.0,""recall"":1.0},{""dataset"":""TPC-H SF1"",""family"":""partition_union_new_assets"",""precision"":1.0,""recall"":1.0},{""dataset"":""TPC-H SF1"",""family"":""group_rollup"",""precision"":1.0,""recall"":1.0},{""dataset"":""TPC-H SF1"",""family"":""group_slice"",""precision"":1.0,""recall"":1.0},{""dataset"":""TPC-H SF1"",""family"":""group_filter"",""precision"":1.0,""recall"":1.0},{""dataset"":""UCI Adult"",""family"":""grouped_partition_union"",""precision"":1.0,""recall"":1.0},{""dataset"":""UCI Adult"",""family"":""partition_union_new_assets"",""precision"":1.0,""recall"":1.0},{""dataset"":""UCI Adult"",""family"":""group_rollup"",""precision"":1.0,""recall"":1.0},{""dataset"":""UCI Adult"",""family"":""group_slice"",""precision"":1.0,""recall"":1.0},{""dataset"":""UCI Adult"",""family"":""group_filter"",""precision"":1.0,""recall"":1.0}]"
+s21,every new relation family occurs on every dataset,finding,True,
+s21,every executed check passes on real data,fatal,True,180/180
+s21,audited GROUP BY negatives become supported; every other negative stays rejected,fatal,True,17 now supported
+s21,extended list prices verify at 1e-12,fatal,True,
+s21,base list prices are reproduced exactly,fatal,True,
+s21,no proposal or attack is released unverified,fatal,True,
+s21,the proposal grid is complete,fatal,True,45/45
+s22,every dataset produced multi-part targets,fatal,True,
+s22,rule R1 emits no row for a multi-part target,fatal,True,
+s22,"list prices with multi-part targets verify, base prices unchanged",fatal,True,
+s22,the audit flags nothing on list prices,fatal,True,
+s22,no release is unverified against its own snapshot,fatal,True,
+s22,lazy enforcement removes every flagged chain,finding,True,
+s23,the floor grid is complete,fatal,True,405/405
+s23,floored list prices verify at 1e-12,fatal,True,
+s23,no floor-study release is unverified,fatal,True,
+s23,every leftover saving obeys the corollary bound,fatal,True,
+s24,no projection-study release is unverified,fatal,True,
+s24,every proposal has a two-sided bracket on its projection distance,fatal,True,
+s24,the bracket is within 1 percent for every proposal,finding,True,max relative width 2.24e-07
+s24,Arbiter verifies every proposal at 1e-12,finding,True,
+s25,every workload's list prices verify at 1e-12,fatal,True,
+s25,every generated asset parses to its construction descriptor,fatal,True,
+s25,"the generator reproduces the audited 4,096-asset workloads, relations, and snapshots",fatal,True,
+s25,compiler matches the oracle on every workload (precision and recall 1),fatal,True,
+s25,no scale-out trial releases an unverified vector,fatal,True,
+s25,Arbiter verifies every scale-out candidate,finding,True,
+final,audited-v4 package is byte-identical after the campaign,fatal,True,
+final,every stage produced outputs,fatal,True,

@@ -1,0 +1,4 @@
+dataset,provenance,source_url,sha256,total_rows,materialization
+NYC Taxi 2024-01,public observational,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet,c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510,2964624,
+TPC-H SF1,benchmark-generated,https://www.tpc.org/tpch/,,8661245,duckdb_core_repository
+UCI Adult,public observational,https://archive.ics.uci.edu/static/public/2/adult.zip,7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb,48842,

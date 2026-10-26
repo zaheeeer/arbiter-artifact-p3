@@ -1,0 +1,4 @@
+dataset,wide_targets,parse_matches_construction,r1_rows_on_wide_targets,base_prices_reproduced,list_prices_verify,interval_targets_audited,list_price_flags,audit_all_targets_p50_ms,audit_all_targets_p95_ms,chain_parts_median,chain_parts_max,attacks,released_first,audit_detected,saving_before_max,enforcement_rounds_max,flagged_after,unsafe_any,enforced_total_p50_ms,audit_mode_releases,audit_mode_flagged,audit_mode_p50_ms,complete_snapshot_rows
+NYC Taxi 2024-01,60,True,0,True,True,1369,0,22.627333999999998,23.622310000000002,3.0,4,180,180,180,0.9066666666666673,5,0,0,220.277932,30,25,0.21189975,13543
+TPC-H SF1,60,True,0,True,True,1331,0,18.19895,18.60088495,3.0,5,180,180,180,79028.60000000006,4,0,0,218.750859,30,25,0.20343225,13296
+UCI Adult,60,True,0,True,True,1389,0,22.0430085,23.2298165,3.0,4,180,180,180,0.5000000000000003,4,0,0,224.844381,30,25,0.220665,13946

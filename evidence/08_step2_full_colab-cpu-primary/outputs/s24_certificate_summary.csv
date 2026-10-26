@@ -1,0 +1,2 @@
+proposals,relative_width_median,relative_width_max,feasible_point_distance_bound_max,certificate_seconds_max,dual_sources,feasible_sources
+45,1.2501111257279263e-13,2.24473784227186e-07,6.209213360920652e-05,3.064673809999931,dual:clarabel_tight;refined:active_rows:osqp_qp;refined:dual:clarabel_default;refined:dual:clarabel_tight,clarabel_tight toward clarabel_default;osqp_qp;osqp_qp toward clarabel_default;osqp_qp toward clarabel_tight
