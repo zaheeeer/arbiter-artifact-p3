@@ -1,0 +1,145 @@
+dataset,relation_family,margin_ratio,relative_tolerance,scale_points,violations_invariant,acceptance_invariant,release_invariant,normalized_distortion_span,normalized_distortion_relative_span,normalized_distortion_span_limit,passed
+NYC Taxi 2024-01,decomposition,3e-10,1e-10,3,True,True,True,1.6940658945086007e-21,5.646886315016287e-12,1e-09,True
+NYC Taxi 2024-01,decomposition,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,decomposition,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,decomposition,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,decomposition,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,decomposition,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,decomposition,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,decomposition,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,decomposition,3e-06,1e-10,3,True,True,True,4.235164736271502e-22,1.4117215787571671e-16,1e-09,True
+NYC Taxi 2024-01,decomposition,3e-06,1e-08,3,True,True,True,4.235164736271502e-22,1.4117215787571671e-16,5e-08,True
+NYC Taxi 2024-01,decomposition,3e-06,1e-06,3,True,True,True,4.235164736271502e-22,1.4117215787571671e-16,4.9999999999999996e-06,True
+NYC Taxi 2024-01,decomposition,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,decomposition,0.0003,1e-10,3,True,True,True,5.421010862427522e-20,1.807003620809174e-16,1e-09,True
+NYC Taxi 2024-01,decomposition,0.0003,1e-08,3,True,True,True,5.421010862427522e-20,1.807003620809174e-16,5e-08,True
+NYC Taxi 2024-01,decomposition,0.0003,1e-06,3,True,True,True,5.421010862427522e-20,1.807003620809174e-16,4.9999999999999996e-06,True
+NYC Taxi 2024-01,decomposition,0.0003,0.0001,3,True,True,True,5.421010862427522e-20,1.807003620809174e-16,0.0005,True
+NYC Taxi 2024-01,filter_derivation,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,filter_derivation,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,filter_derivation,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,filter_derivation,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,filter_derivation,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,filter_derivation,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,filter_derivation,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,filter_derivation,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,filter_derivation,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,filter_derivation,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,filter_derivation,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,filter_derivation,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,filter_derivation,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,filter_derivation,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,filter_derivation,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,filter_derivation,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,projection_derivation,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,projection_derivation,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,projection_derivation,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,projection_derivation,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,projection_derivation,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,projection_derivation,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,projection_derivation,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,projection_derivation,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,projection_derivation,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,projection_derivation,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,projection_derivation,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,projection_derivation,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+NYC Taxi 2024-01,projection_derivation,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+NYC Taxi 2024-01,projection_derivation,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+NYC Taxi 2024-01,projection_derivation,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+NYC Taxi 2024-01,projection_derivation,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,decomposition,3e-10,1e-10,3,True,True,True,1.1102230246251565e-16,3.7007431092163304e-07,1e-09,True
+TPC-H SF1,decomposition,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,decomposition,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,decomposition,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,decomposition,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,decomposition,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,decomposition,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,decomposition,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,decomposition,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,decomposition,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,decomposition,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,decomposition,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,decomposition,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,decomposition,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,decomposition,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,decomposition,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,filter_derivation,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,filter_derivation,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,filter_derivation,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,filter_derivation,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,filter_derivation,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,filter_derivation,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,filter_derivation,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,filter_derivation,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,filter_derivation,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,filter_derivation,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,filter_derivation,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,filter_derivation,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,filter_derivation,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,filter_derivation,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,filter_derivation,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,filter_derivation,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,projection_derivation,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,projection_derivation,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,projection_derivation,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,projection_derivation,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,projection_derivation,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,projection_derivation,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,projection_derivation,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,projection_derivation,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,projection_derivation,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,projection_derivation,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,projection_derivation,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,projection_derivation,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+TPC-H SF1,projection_derivation,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+TPC-H SF1,projection_derivation,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+TPC-H SF1,projection_derivation,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+TPC-H SF1,projection_derivation,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,decomposition,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,decomposition,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,decomposition,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,decomposition,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,decomposition,3e-08,1e-10,3,True,True,True,3.3881317890172014e-21,1.1293772630056809e-13,1e-09,True
+UCI Adult,decomposition,3e-08,1e-08,3,True,True,True,3.3881317890172014e-21,1.1293772630056809e-13,5e-08,True
+UCI Adult,decomposition,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,decomposition,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,decomposition,3e-06,1e-10,3,True,True,True,1.6940658945086007e-20,5.181984251174336e-15,1e-09,True
+UCI Adult,decomposition,3e-06,1e-08,3,True,True,True,1.6940658945086007e-20,5.181984251174336e-15,5e-08,True
+UCI Adult,decomposition,3e-06,1e-06,3,True,True,True,3.3881317890172014e-21,1.1293772630057331e-15,4.9999999999999996e-06,True
+UCI Adult,decomposition,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,decomposition,0.0003,1e-10,3,True,True,True,2.168404344971009e-19,3.440322733154054e-16,1e-09,True
+UCI Adult,decomposition,0.0003,1e-08,3,True,True,True,2.168404344971009e-19,3.440322733154054e-16,5e-08,True
+UCI Adult,decomposition,0.0003,1e-06,3,True,True,True,2.168404344971009e-19,3.440322733154054e-16,4.9999999999999996e-06,True
+UCI Adult,decomposition,0.0003,0.0001,3,True,True,True,1.0842021724855044e-19,2.1763498471272936e-16,0.0005,True
+UCI Adult,filter_derivation,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,filter_derivation,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,filter_derivation,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,filter_derivation,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,filter_derivation,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,filter_derivation,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,filter_derivation,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,filter_derivation,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,filter_derivation,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,filter_derivation,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,filter_derivation,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,filter_derivation,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,filter_derivation,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,filter_derivation,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,filter_derivation,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,filter_derivation,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,projection_derivation,3e-10,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,projection_derivation,3e-10,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,projection_derivation,3e-10,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,projection_derivation,3e-10,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,projection_derivation,3e-08,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,projection_derivation,3e-08,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,projection_derivation,3e-08,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,projection_derivation,3e-08,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,projection_derivation,3e-06,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,projection_derivation,3e-06,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,projection_derivation,3e-06,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,projection_derivation,3e-06,0.0001,3,True,True,True,0.0,0.0,0.0005,True
+UCI Adult,projection_derivation,0.0003,1e-10,3,True,True,True,0.0,0.0,1e-09,True
+UCI Adult,projection_derivation,0.0003,1e-08,3,True,True,True,0.0,0.0,5e-08,True
+UCI Adult,projection_derivation,0.0003,1e-06,3,True,True,True,0.0,0.0,4.9999999999999996e-06,True
+UCI Adult,projection_derivation,0.0003,0.0001,3,True,True,True,0.0,0.0,0.0005,True

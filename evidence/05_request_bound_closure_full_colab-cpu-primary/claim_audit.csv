@@ -1,0 +1,7 @@
+claim,status,required_wording
+"Request-, buyer/session-, asset-, query-, quote-, vector-, snapshot-, and answer-bound durable outbox commit for the evaluated prototype faults.",SUPPORTED,Limit to the evaluated in-process service plus local SQLite transaction.
+The 1/4/8/16/32/64 active-row budgets are exercised by dense controlled cases.,SUPPORTED,"Call these deterministic constraint-level stress cases, not observed buyer attacks."
+P95-normalized repair is decision-invariant across the tested 1e-2/1/1e2 unit rescalings.,SUPPORTED,Report the tested relative-tolerance and residual-margin grid.
+"Network delivery, distributed transactions, and payment settlement are atomic.",NOT_SUPPORTED,The durable outbox makes delivery recoverable; it does not prove network delivery or payment atomicity.
+General SQL or standard TPC-H benchmark-query coverage.,NOT_SUPPORTED,Retain the audited supported-fragment boundary.
+Performance generalizes across hardware environments.,NOT_SUPPORTED,This archive records one named environment; a second environment remains required.

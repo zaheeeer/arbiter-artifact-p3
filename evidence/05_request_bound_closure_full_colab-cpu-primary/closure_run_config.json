@@ -1,0 +1,46 @@
+{
+  "active_row_budgets": [
+    1,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "audited_input_run_mode": "full",
+  "audited_input_suite_version": "2026-08-01-audited-v4",
+  "budget_repetitions": 5,
+  "budget_warmups": 2,
+  "closure_mode": "full",
+  "closure_suite_version": "2026-08-01-request-bound-closure-v1.1",
+  "concurrency_trials": 50,
+  "dense_target_violation_counts": [
+    8,
+    192
+  ],
+  "environment_label": "colab_cpu_primary",
+  "fixed_absolute_tolerance_diagnostic": 1e-07,
+  "margin_ratios": [
+    3e-10,
+    3e-08,
+    3e-06,
+    0.0003
+  ],
+  "max_sweeps": 80,
+  "osqp_max_iter": 20000,
+  "overhead_repetitions": 25,
+  "overhead_warmups": 5,
+  "relative_tolerances": [
+    1e-10,
+    1e-08,
+    1e-06,
+    0.0001
+  ],
+  "repair_step": 1.0,
+  "scale_factors": [
+    0.01,
+    1.0,
+    100.0
+  ],
+  "verifier_tolerance": 1e-07
+}

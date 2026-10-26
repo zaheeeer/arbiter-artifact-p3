@@ -1,0 +1,64 @@
+dataset,case,phase,expected_release,released,durable,reason,buffer_released,durable_release_rows,passed
+NYC Taxi 2024-01,normal_request_bound_release,commit,True,True,True,released,True,1,True
+NYC Taxi 2024-01,request_id_swap,commit,False,False,False,request_id_mismatch,False,0,True
+NYC Taxi 2024-01,buyer_id_swap,commit,False,False,False,buyer_id_mismatch,False,0,True
+NYC Taxi 2024-01,session_id_swap,commit,False,False,False,session_id_mismatch,False,0,True
+NYC Taxi 2024-01,query_swap,commit,False,False,False,query_digest_mismatch,False,0,True
+NYC Taxi 2024-01,quoted_price_swap,commit,False,False,False,quoted_price_hex_mismatch,False,0,True
+NYC Taxi 2024-01,asset_swap,commit,False,False,False,asset_id_mismatch,False,0,True
+NYC Taxi 2024-01,answer_buffer_swap,commit,False,False,False,buffer_id_mismatch,False,0,True
+NYC Taxi 2024-01,cross_request_token_swap,commit,False,False,False,request_id_mismatch,False,0,True
+NYC Taxi 2024-01,price_vector_swap,commit,False,False,False,price_digest_mismatch,False,0,True
+NYC Taxi 2024-01,signed_field_tamper,commit,False,False,False,token_mac_mismatch,False,0,True
+NYC Taxi 2024-01,mac_tamper,commit,False,False,False,token_mac_mismatch,False,0,True
+NYC Taxi 2024-01,stale_epoch,commit,False,False,False,stale_epoch,False,0,True
+NYC Taxi 2024-01,expired_token,commit,False,False,False,token_expired,False,0,True
+NYC Taxi 2024-01,secret_rotation,commit,False,False,False,token_mac_mismatch,False,0,True
+NYC Taxi 2024-01,snapshot_mutation_after_issue,commit,False,False,False,snapshot_integrity_failure,False,0,True
+NYC Taxi 2024-01,token_replay,second_commit,False,False,False,token_replay,True,1,True
+NYC Taxi 2024-01,request_replay_distinct_token,second_commit,False,False,False,request_replay,False,1,True
+NYC Taxi 2024-01,durable_replay_after_restart,restart_commit,False,False,False,token_replay,False,1,True
+NYC Taxi 2024-01,unregistered_query_at_issue,issuance,False,False,False,query digest does not match the selected asset registry,False,0,True
+NYC Taxi 2024-01,wrong_quote_at_issue,issuance,False,False,False,quoted price does not equal the selected verified vector coordinate,False,0,True
+TPC-H SF1,normal_request_bound_release,commit,True,True,True,released,True,1,True
+TPC-H SF1,request_id_swap,commit,False,False,False,request_id_mismatch,False,0,True
+TPC-H SF1,buyer_id_swap,commit,False,False,False,buyer_id_mismatch,False,0,True
+TPC-H SF1,session_id_swap,commit,False,False,False,session_id_mismatch,False,0,True
+TPC-H SF1,query_swap,commit,False,False,False,query_digest_mismatch,False,0,True
+TPC-H SF1,quoted_price_swap,commit,False,False,False,quoted_price_hex_mismatch,False,0,True
+TPC-H SF1,asset_swap,commit,False,False,False,asset_id_mismatch,False,0,True
+TPC-H SF1,answer_buffer_swap,commit,False,False,False,buffer_id_mismatch,False,0,True
+TPC-H SF1,cross_request_token_swap,commit,False,False,False,request_id_mismatch,False,0,True
+TPC-H SF1,price_vector_swap,commit,False,False,False,price_digest_mismatch,False,0,True
+TPC-H SF1,signed_field_tamper,commit,False,False,False,token_mac_mismatch,False,0,True
+TPC-H SF1,mac_tamper,commit,False,False,False,token_mac_mismatch,False,0,True
+TPC-H SF1,stale_epoch,commit,False,False,False,stale_epoch,False,0,True
+TPC-H SF1,expired_token,commit,False,False,False,token_expired,False,0,True
+TPC-H SF1,secret_rotation,commit,False,False,False,token_mac_mismatch,False,0,True
+TPC-H SF1,snapshot_mutation_after_issue,commit,False,False,False,snapshot_integrity_failure,False,0,True
+TPC-H SF1,token_replay,second_commit,False,False,False,token_replay,True,1,True
+TPC-H SF1,request_replay_distinct_token,second_commit,False,False,False,request_replay,False,1,True
+TPC-H SF1,durable_replay_after_restart,restart_commit,False,False,False,token_replay,False,1,True
+TPC-H SF1,unregistered_query_at_issue,issuance,False,False,False,query digest does not match the selected asset registry,False,0,True
+TPC-H SF1,wrong_quote_at_issue,issuance,False,False,False,quoted price does not equal the selected verified vector coordinate,False,0,True
+UCI Adult,normal_request_bound_release,commit,True,True,True,released,True,1,True
+UCI Adult,request_id_swap,commit,False,False,False,request_id_mismatch,False,0,True
+UCI Adult,buyer_id_swap,commit,False,False,False,buyer_id_mismatch,False,0,True
+UCI Adult,session_id_swap,commit,False,False,False,session_id_mismatch,False,0,True
+UCI Adult,query_swap,commit,False,False,False,query_digest_mismatch,False,0,True
+UCI Adult,quoted_price_swap,commit,False,False,False,quoted_price_hex_mismatch,False,0,True
+UCI Adult,asset_swap,commit,False,False,False,asset_id_mismatch,False,0,True
+UCI Adult,answer_buffer_swap,commit,False,False,False,buffer_id_mismatch,False,0,True
+UCI Adult,cross_request_token_swap,commit,False,False,False,request_id_mismatch,False,0,True
+UCI Adult,price_vector_swap,commit,False,False,False,price_digest_mismatch,False,0,True
+UCI Adult,signed_field_tamper,commit,False,False,False,token_mac_mismatch,False,0,True
+UCI Adult,mac_tamper,commit,False,False,False,token_mac_mismatch,False,0,True
+UCI Adult,stale_epoch,commit,False,False,False,stale_epoch,False,0,True
+UCI Adult,expired_token,commit,False,False,False,token_expired,False,0,True
+UCI Adult,secret_rotation,commit,False,False,False,token_mac_mismatch,False,0,True
+UCI Adult,snapshot_mutation_after_issue,commit,False,False,False,snapshot_integrity_failure,False,0,True
+UCI Adult,token_replay,second_commit,False,False,False,token_replay,True,1,True
+UCI Adult,request_replay_distinct_token,second_commit,False,False,False,request_replay,False,1,True
+UCI Adult,durable_replay_after_restart,restart_commit,False,False,False,token_replay,False,1,True
+UCI Adult,unregistered_query_at_issue,issuance,False,False,False,query digest does not match the selected asset registry,False,0,True
+UCI Adult,wrong_quote_at_issue,issuance,False,False,False,quoted price does not equal the selected verified vector coordinate,False,0,True

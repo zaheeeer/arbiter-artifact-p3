@@ -1,0 +1,26 @@
+check,passed
+all audited-v4 input hashes and code hashes match,True
+every protocol substitution and issuance fault passes,True
+authorized and unauthorized deliveries behave correctly,True
+cross-service duplicate-token and same-request races allow exactly one release,True
+every tested active-row budget is binding in at least one case,True
+dense ablation contains violations above the former observed maximum,True
+active-only ablation exercises rejection,True
+fail-safe ablation exercises fallback,True
+fail-safe ablation releases no unverified vector,True
+scale-aware tolerance decisions and normalized distortion are invariant,True
+fixed absolute tolerance diagnostic exposes at least one scale-dependent decision,True
+all scale-aware repaired outputs independently verify,True
+tolerance campaign records no unsafe release,True
+protocol overhead trials all durably release,True
+request-bound token exposes every required signed field,True
+protocol faults have unique dataset/case keys,True
+concurrency rows have unique dataset/schedule/trial keys,True
+budget timing rows have unique paired keys,True
+tolerance grid rows have unique condition keys,True
+actual DuckDB answers were used without fallback,True
+protocol_faults contains no NaN or infinite numeric evidence,True
+concurrency contains no NaN or infinite numeric evidence,True
+budget_raw contains no NaN or infinite numeric evidence,True
+tolerance_raw contains no NaN or infinite numeric evidence,True
+overhead_raw contains no NaN or infinite numeric evidence,True

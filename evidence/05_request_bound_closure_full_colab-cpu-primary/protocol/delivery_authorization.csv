@@ -1,0 +1,7 @@
+dataset,case,delivered,reason,passed
+NYC Taxi 2024-01,authorized_delivery,True,delivered,True
+NYC Taxi 2024-01,cross_buyer_delivery,False,delivery_request_mismatch,True
+TPC-H SF1,authorized_delivery,True,delivered,True
+TPC-H SF1,cross_buyer_delivery,False,delivery_request_mismatch,True
+UCI Adult,authorized_delivery,True,delivered,True
+UCI Adult,cross_buyer_delivery,False,delivery_request_mismatch,True

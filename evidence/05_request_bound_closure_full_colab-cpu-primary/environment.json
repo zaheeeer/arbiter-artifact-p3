@@ -1,0 +1,77 @@
+{
+  "closure_suite_version": "2026-08-01-request-bound-closure-v1.1",
+  "config": {
+    "active_row_budgets": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "audited_input_run_mode": "full",
+    "audited_input_suite_version": "2026-08-01-audited-v4",
+    "budget_repetitions": 5,
+    "budget_warmups": 2,
+    "closure_mode": "full",
+    "closure_suite_version": "2026-08-01-request-bound-closure-v1.1",
+    "concurrency_trials": 50,
+    "dense_target_violation_counts": [
+      8,
+      192
+    ],
+    "environment_label": "colab_cpu_primary",
+    "fixed_absolute_tolerance_diagnostic": 1e-07,
+    "margin_ratios": [
+      3e-10,
+      3e-08,
+      3e-06,
+      0.0003
+    ],
+    "max_sweeps": 80,
+    "osqp_max_iter": 20000,
+    "overhead_repetitions": 25,
+    "overhead_warmups": 5,
+    "relative_tolerances": [
+      1e-10,
+      1e-08,
+      1e-06,
+      0.0001
+    ],
+    "repair_step": 1.0,
+    "scale_factors": [
+      0.01,
+      1.0,
+      100.0
+    ],
+    "verifier_tolerance": 1e-07
+  },
+  "cpu_count": 2,
+  "cpu_model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "logical_cpu_count": 2,
+  "machine": "x86_64",
+  "memory_bytes": 13605830656,
+  "packages": {
+    "duckdb": "1.3.2",
+    "matplotlib": "3.10.0",
+    "numpy": "2.0.2",
+    "osqp": "1.0.4",
+    "pandas": "2.2.2",
+    "pyarrow": "19.0.1",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3",
+    "sqlglot": "27.0.0"
+  },
+  "perf_counter_monotonic": true,
+  "perf_counter_resolution_seconds": 1e-09,
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "processor": "x86_64",
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "sqlite_version": "3.37.2",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "unset",
+    "NUMEXPR_NUM_THREADS": "unset",
+    "OMP_NUM_THREADS": "unset",
+    "OPENBLAS_NUM_THREADS": "unset"
+  }
+}
