@@ -1,0 +1,10 @@
+dataset,shape,attacks,attack_success_rate,violations_before_max,released_rate,unsafe_releases
+NYC Taxi 2024-01,concave_sqrt,60,1.0,51,1.0,0
+NYC Taxi 2024-01,linear,60,1.0,51,1.0,0
+NYC Taxi 2024-01,tiered_8,60,1.0,51,1.0,0
+TPC-H SF1,concave_sqrt,60,1.0,27,1.0,0
+TPC-H SF1,linear,60,1.0,27,1.0,0
+TPC-H SF1,tiered_8,60,1.0,27,1.0,0
+UCI Adult,concave_sqrt,60,1.0,57,1.0,0
+UCI Adult,linear,60,1.0,57,1.0,0
+UCI Adult,tiered_8,60,1.0,57,1.0,0

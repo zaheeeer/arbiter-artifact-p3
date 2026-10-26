@@ -1,0 +1,14 @@
+claim,status,value,required_wording
+No measured release failed independent verification at the stated tolerance.,SUPPORTED,unsafe releases across all raw tables = 0,"State the empirical count, the tolerance 1e-12, and the encoded scope."
+Every natural proposal is released at 1e-12 by active-row repair without fallback.,SUPPORTED,released 45/45; fallback 0; max sweeps 63 of the 400-sweep budget,Report the sweep maximum against the sweep budget.
+At 1e-7 some released vectors still leave an encoded relation with a saving above 1% of the list price; at 1e-12 none exceeds 0.1%.,SUPPORTED,1e-7: 30/45 releases with a saving above 1% (max 0.3954); 1e-12: 0/45 above 0.1% (max 4.17e-06),Savings are relative to the seller list price of the target answer.
+Every exact per-row box attack is repaired and released at 1e-12.,SUPPORTED,released 2160/2160; attacks on the same target rows as v4 2160/2160; same release decision 2160/2160,"Call it an exact per-row box attack, not a global worst-case adversary."
+OSQP configured at 1e-12 certifies the scale candidates at 1e-12.,SUPPORTED,verified rate min 1.000; with the audited stopping rule min 0.750,Report OSQP certification rates next to its latency; a rejected OSQP output is not a release.
+Releases verified against a partial declaration can leave violations of the complete snapshot.,SUPPORTED,encodings with surviving complete-snapshot violations: 48/48,Describe only the measured encodings; do not extrapolate to arbitrary SQL.
+The release decision does not depend on the seller policy being feasible by construction.,SUPPORTED,infeasible shape policies: 3 of 9 dataset-shape cells,Name the three shapes and report the violated-row counts of each.
+Buyer-specific residual snapshots release by active-row repair without fallback.,SUPPORTED,released 360/360; fallback 0; max sweeps needed 377,Owned and derivable answers leave the buyer's vector; state the history sizes tested.
+"The release protocol behaves identically at 1e-12 (faults, stale epochs, request binding, races).",SUPPORTED,v4_faults 66/66; v4_concurrency 600/600; closure_faults 63/63; closure_concurrency 300/300; closure_delivery 6/6,Closure payloads in this campaign are deterministic stand-ins; Notebook 05 used DuckDB answers.
+All timing parts ran in one runtime session on one machine.,SUPPORTED,distinct runtime hosts across timing parts: 1,"If LIMITED, report that timings span resumed sessions and list the CPU models."
+The OSQP baseline uses the audited OSQP version 1.0.4.,SUPPORTED,osqp 1.0.4,Report the OSQP version used for every OSQP number.
+Performance generalizes across hardware environments.,NOT_SUPPORTED,one environment,Report the CPU model and core count; do not generalize latency.
+Buyer-history rows give a sequence-level arbitrage guarantee.,NOT_SUPPORTED,one returning buyer per snapshot,Residual rows remove encoded savings for one buyer's history at release time only.

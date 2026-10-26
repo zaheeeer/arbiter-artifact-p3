@@ -1,0 +1,177 @@
+{
+  "ablation_repetitions": 10,
+  "ablation_scale": 2048,
+  "ablation_warmups": 3,
+  "attack_budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "attack_cases": 80,
+  "attack_min_cases": 20,
+  "audited_tolerance": 1e-07,
+  "bootstrap_resamples": 10000,
+  "closure_concurrency_trials": 50,
+  "coverage_family_subsets": [
+    "none",
+    "D",
+    "P",
+    "F",
+    "DP",
+    "DF",
+    "PF",
+    "DPF"
+  ],
+  "coverage_fraction_seeds": [
+    0,
+    1,
+    2
+  ],
+  "coverage_fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "dense_budget_fraction": 0.5,
+  "dense_budgets": [
+    1,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "dense_repetitions": 5,
+  "dense_settings": [
+    [
+      1e-12,
+      80
+    ],
+    [
+      1e-12,
+      400
+    ],
+    [
+      1e-07,
+      80
+    ]
+  ],
+  "dense_targets": [
+    8,
+    192
+  ],
+  "dense_warmups": 2,
+  "fallback_condition_sweeps": 80,
+  "fallback_repetitions": 50,
+  "fallback_sweeps": 20,
+  "fallback_sweeps_grid": [
+    20,
+    80
+  ],
+  "fallback_warmups": 5,
+  "gap_cases": 20,
+  "heavy_methods": [
+    "reject_only",
+    "arbiter_active",
+    "full_cyclic",
+    "osqp_qp",
+    "osqp_qp_v4_stop"
+  ],
+  "heavy_repetitions": 3,
+  "heavy_warmups": 1,
+  "history_buyers": 10,
+  "history_sizes": [
+    16,
+    64,
+    256
+  ],
+  "history_variants": [
+    "residual",
+    "list_cap"
+  ],
+  "mode": "full",
+  "natural_tolerances": [
+    1e-07,
+    1e-09,
+    1e-12
+  ],
+  "osqp_qp_repetitions": 10,
+  "osqp_qp_warmups": 3,
+  "osqp_repetition_rule": {
+    "largest_pilot_scale": 4096,
+    "osqp_qp_repetitions": 10,
+    "osqp_qp_warmups": 3,
+    "pilot_estimated_full_hours": 0.82899370444462,
+    "pilot_osqp_mean_ms_at_largest_scale": 174.78275772222221,
+    "rule": [
+      [
+        1500.0,
+        10,
+        3
+      ],
+      [
+        6000.0,
+        5,
+        2
+      ],
+      [
+        "inf",
+        3,
+        1
+      ]
+    ]
+  },
+  "primary_tolerance": 1e-12,
+  "protocol_concurrency_trials": 100,
+  "recompute_repetitions": 200,
+  "recompute_warmups": 20,
+  "repair_sweeps": 400,
+  "revision_suite_version": "2026-10-22-revision-v1.0",
+  "runtime_go_limit_hours": 8.0,
+  "scale_attack_budget": 0.25,
+  "scale_cases_per_family": 4,
+  "scale_methods": [
+    "reject_only",
+    "arbiter_active",
+    "full_cyclic",
+    "osqp_qp",
+    "osqp_qp_v4_stop"
+  ],
+  "scale_points": [
+    128,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "scale_repetitions": 10,
+  "scale_warmups": 3,
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    73
+  ],
+  "shape_attack_budget": 0.25,
+  "shape_attack_cases": 20,
+  "shape_models": [
+    "dummy_median",
+    "hist_gradient_boosting",
+    "mlp"
+  ],
+  "shape_names": [
+    "linear",
+    "concave_sqrt",
+    "tiered_8"
+  ],
+  "shape_seeds": [
+    11,
+    23,
+    37,
+    51,
+    73
+  ],
+  "shape_tiers": 8,
+  "sweeps_to_verify_cap": 3000
+}

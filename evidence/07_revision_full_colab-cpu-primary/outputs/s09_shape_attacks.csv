@@ -1,0 +1,541 @@
+dataset,shape,relation_family,rank,target_row_id,center_policy,certified_target_residual,violations_before,released,fallback_used,sweeps,gate_ms,violations_after,unsafe_release,requested_cases,available_cases
+NYC Taxi 2024-01,linear,decomposition,0,decomp_ffdff5460730f41e,additive_boundary_center,0.6799999999999997,15,True,False,1,0.902269,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,1,decomp_ff3860c4f111b16b,additive_boundary_center,0.6799999999999997,15,True,False,1,0.835854,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,2,decomp_ff22cea8d3901e0f,additive_boundary_center,0.6799999999999997,7,True,False,1,0.720964,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,3,decomp_ff1001a26d0d5dc8,additive_boundary_center,0.6799999999999997,15,True,False,1,0.764959,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,4,decomp_fe8253ad2c94d979,additive_boundary_center,0.6799999999999997,15,True,False,1,0.743361,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,5,decomp_fd211b817f7611cf,additive_boundary_center,0.6799999999999997,15,True,False,1,0.726689,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,6,decomp_fcf2fb4280cc53c6,additive_boundary_center,0.6799999999999997,15,True,False,1,1.059043,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,7,decomp_fc1769fbd3932482,additive_boundary_center,0.6799999999999997,15,True,False,1,0.753599,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,8,decomp_fb823cfe1da7b8f9,additive_boundary_center,0.6799999999999997,7,True,False,1,0.720466,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,9,decomp_fb6031d1a665f6cb,additive_boundary_center,0.6799999999999997,15,True,False,1,0.739729,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,10,decomp_fb5361e633e7fcbf,additive_boundary_center,0.6799999999999997,15,True,False,1,0.722445,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,11,decomp_faf983ad2acb90ae,additive_boundary_center,0.6799999999999997,15,True,False,1,0.717877,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,12,decomp_fa00a38098d415ee,additive_boundary_center,0.6799999999999997,7,True,False,1,0.710307,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,13,decomp_f883a23cf3c2eb35,additive_boundary_center,0.6799999999999997,15,True,False,1,0.729091,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,14,decomp_f8796247d9fd262b,additive_boundary_center,0.6799999999999997,15,True,False,1,0.70166,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,15,decomp_f867bb90d6553212,additive_boundary_center,0.6799999999999997,15,True,False,1,0.738421,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,16,decomp_f829ca4e24e07ddc,additive_boundary_center,0.6799999999999997,8,True,False,1,0.690965,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,17,decomp_f7b0b29ea475e4d0,additive_boundary_center,0.6799999999999997,15,True,False,1,0.704024,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,18,decomp_f72afb32a5bc8ba7,additive_boundary_center,0.6799999999999997,15,True,False,1,0.742865,0,False,20,20
+NYC Taxi 2024-01,linear,decomposition,19,decomp_f68c45f853e22061,additive_boundary_center,0.6799999999999997,15,True,False,1,0.725227,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,0,projection_fffb7bbeb78cc42c,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.85043,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,1,projection_fff14256781113df,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.711192,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,2,projection_ffbf64b5590af0dd,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.744956,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,3,projection_ffbebe342412a052,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.663731,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,4,projection_ffa09708d2fbbd9d,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.641443,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,5,projection_ff9d38e777f0e2ad,equal_price_derivation_boundary_center,1.962834694014601e-06,6,True,False,1,0.647202,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,6,projection_ff73e8c554ae5493,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.687297,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,7,projection_ff6cc8334e2189f4,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.680001,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,8,projection_ff681fa9ef0ab9d7,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.661314,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,9,projection_ff476a207f6539d6,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.729862,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,10,projection_ff46d9ee7f4a0472,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.660209,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,11,projection_ff28c1fda3f7f183,equal_price_derivation_boundary_center,1.962834694014601e-06,6,True,False,1,0.658759,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,12,projection_ff1d837b0805fb10,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.647734,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,13,projection_ff0e629031caba36,equal_price_derivation_boundary_center,1.962834694014601e-06,9,True,False,1,0.71922,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,14,projection_ff0b1d47f1d00964,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.682815,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,15,projection_fef3a846d3b8d6f3,equal_price_derivation_boundary_center,1.962834694014601e-06,9,True,False,1,0.691219,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,16,projection_fecfaba63ce3a48f,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.717755,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,17,projection_fec4ab02b02ba77d,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.712715,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,18,projection_feb3cbf51512f2f7,equal_price_derivation_boundary_center,1.962834694014601e-06,5,True,False,1,0.661984,0,False,20,20
+NYC Taxi 2024-01,linear,projection_derivation,19,projection_fea3d8f2d56759e5,equal_price_derivation_boundary_center,1.962834694014601e-06,3,True,False,1,0.645078,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,0,filter_ffea7b484892935f,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.890349,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,1,filter_ff7653982ab11a7c,equal_price_derivation_boundary_center,1.962834694014601e-06,51,True,False,1,0.938506,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,2,filter_ff65eec808fb907b,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.720259,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,3,filter_ff388427d10f6fe2,equal_price_derivation_boundary_center,1.962834694014601e-06,17,True,False,1,0.834103,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,4,filter_ff2259be9de7e3c5,equal_price_derivation_boundary_center,1.962834694014601e-06,33,True,False,1,0.798868,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,5,filter_ff1af3dbd03ecbb7,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.749847,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,6,filter_fee7baf3c331f145,equal_price_derivation_boundary_center,1.962834694014601e-06,33,True,False,1,0.811003,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,7,filter_feb25fcc2bfc9998,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.696253,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,8,filter_feafe9ab1d037411,equal_price_derivation_boundary_center,1.962834694014601e-06,33,True,False,1,0.782025,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,9,filter_fe90fff1bcec0047,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.701232,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,10,filter_fe57567e8f854a9c,equal_price_derivation_boundary_center,1.962834694014601e-06,19,True,False,1,0.741354,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,11,filter_fe4f91985e74a856,equal_price_derivation_boundary_center,1.962834694014601e-06,17,True,False,1,0.720541,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,12,filter_fe28e07308752f3b,equal_price_derivation_boundary_center,1.962834694014601e-06,17,True,False,1,0.727966,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,13,filter_fe239da08433906c,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.697999,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,14,filter_fdd9933c83a8ee16,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.742091,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,15,filter_fd96719b0ce74a67,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.735336,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,16,filter_fd9038d7ecf237bb,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.732834,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,17,filter_fd520ed16716c4a3,equal_price_derivation_boundary_center,1.962834694014601e-06,21,True,False,1,0.74792,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,18,filter_fd4bdbaf9b7db7ee,equal_price_derivation_boundary_center,1.962834694014601e-06,15,True,False,1,0.77642,0,False,20,20
+NYC Taxi 2024-01,linear,filter_derivation,19,filter_fd3ba0b9dcfd9a34,equal_price_derivation_boundary_center,1.962834694014601e-06,27,True,False,1,0.752643,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,0,decomp_e7f3c54f017d0de5,additive_boundary_center,0.5688864451724343,1,True,False,1,0.801109,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,1,decomp_d7e42d880348723c,additive_boundary_center,0.5688864451724343,1,True,False,1,0.703179,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,2,decomp_b8307ad08ac45819,additive_boundary_center,0.5688864451724343,1,True,False,1,0.667311,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,3,decomp_7a13549ac102f47d,additive_boundary_center,0.5688864451724343,1,True,False,1,0.660647,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,4,decomp_ffdff5460730f41e,additive_boundary_center,0.23594541823171822,5,True,False,1,0.718193,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,5,decomp_ff3860c4f111b16b,additive_boundary_center,0.23594541823171822,5,True,False,1,0.704381,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,6,decomp_ff22cea8d3901e0f,additive_boundary_center,0.23594541823171822,5,True,False,1,0.715591,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,7,decomp_ff1001a26d0d5dc8,additive_boundary_center,0.23594541823171822,5,True,False,1,0.709665,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,8,decomp_fe8253ad2c94d979,additive_boundary_center,0.23594541823171822,5,True,False,1,0.765772,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,9,decomp_fd211b817f7611cf,additive_boundary_center,0.23594541823171822,5,True,False,1,0.733322,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,10,decomp_fcf2fb4280cc53c6,additive_boundary_center,0.23594541823171822,5,True,False,1,0.725301,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,11,decomp_fc1769fbd3932482,additive_boundary_center,0.23594541823171822,5,True,False,1,0.683317,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,12,decomp_fb823cfe1da7b8f9,additive_boundary_center,0.23594541823171822,5,True,False,1,0.676258,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,13,decomp_fb6031d1a665f6cb,additive_boundary_center,0.23594541823171822,5,True,False,1,0.711358,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,14,decomp_fb5361e633e7fcbf,additive_boundary_center,0.23594541823171822,5,True,False,1,0.850664,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,15,decomp_faf983ad2acb90ae,additive_boundary_center,0.23594541823171822,5,True,False,1,0.747124,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,16,decomp_fa00a38098d415ee,additive_boundary_center,0.23594541823171822,5,True,False,1,0.718905,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,17,decomp_f883a23cf3c2eb35,additive_boundary_center,0.23594541823171822,5,True,False,1,0.688671,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,18,decomp_f8796247d9fd262b,additive_boundary_center,0.23594541823171822,5,True,False,1,0.726546,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,decomposition,19,decomp_f867bb90d6553212,additive_boundary_center,0.23594541823171822,5,True,False,1,0.793937,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,0,projection_fffb7bbeb78cc42c,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.908469,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,1,projection_fff14256781113df,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.729171,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,2,projection_ffbf64b5590af0dd,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.766584,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,3,projection_ffbebe342412a052,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.682969,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,4,projection_ffa09708d2fbbd9d,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.654196,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,5,projection_ff9d38e777f0e2ad,equal_price_derivation_boundary_center,0.0010189589695858113,6,True,False,1,0.902301,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,6,projection_ff73e8c554ae5493,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.736896,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,7,projection_ff6cc8334e2189f4,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.687717,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,8,projection_ff681fa9ef0ab9d7,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.653606,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,9,projection_ff476a207f6539d6,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.727939,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,10,projection_ff46d9ee7f4a0472,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.66806,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,11,projection_ff28c1fda3f7f183,equal_price_derivation_boundary_center,0.0010189589695858113,6,True,False,1,0.749629,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,12,projection_ff1d837b0805fb10,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.695341,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,13,projection_ff0e629031caba36,equal_price_derivation_boundary_center,0.0010189589695858113,9,True,False,1,0.696151,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,14,projection_ff0b1d47f1d00964,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.664898,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,15,projection_fef3a846d3b8d6f3,equal_price_derivation_boundary_center,0.0010189589695858113,9,True,False,1,0.695708,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,16,projection_fecfaba63ce3a48f,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.701714,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,17,projection_fec4ab02b02ba77d,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.691507,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,18,projection_feb3cbf51512f2f7,equal_price_derivation_boundary_center,0.0010189589695858113,5,True,False,1,0.716275,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,projection_derivation,19,projection_fea3d8f2d56759e5,equal_price_derivation_boundary_center,0.0010189589695858113,3,True,False,1,0.682275,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,0,filter_ffea7b484892935f,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,0.942316,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,1,filter_ff7653982ab11a7c,equal_price_derivation_boundary_center,0.0010189589695858113,51,True,False,1,0.916118,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,2,filter_ff65eec808fb907b,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,0.757902,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,3,filter_ff388427d10f6fe2,equal_price_derivation_boundary_center,0.0010189589695858113,17,True,False,1,0.808534,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,4,filter_ff2259be9de7e3c5,equal_price_derivation_boundary_center,0.0010189589695858113,33,True,False,1,0.90259,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,5,filter_ff1af3dbd03ecbb7,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,1.401632,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,6,filter_fee7baf3c331f145,equal_price_derivation_boundary_center,0.0010189589695858113,33,True,False,1,0.985131,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,7,filter_feb25fcc2bfc9998,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.827439,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,8,filter_feafe9ab1d037411,equal_price_derivation_boundary_center,0.0010189589695858113,33,True,False,1,0.911968,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,9,filter_fe90fff1bcec0047,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.80614,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,10,filter_fe57567e8f854a9c,equal_price_derivation_boundary_center,0.0010189589695858113,19,True,False,1,0.76098,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,11,filter_fe4f91985e74a856,equal_price_derivation_boundary_center,0.0010189589695858113,17,True,False,1,0.703843,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,12,filter_fe28e07308752f3b,equal_price_derivation_boundary_center,0.0010189589695858113,17,True,False,1,0.908184,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,13,filter_fe239da08433906c,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.802826,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,14,filter_fdd9933c83a8ee16,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,0.78761,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,15,filter_fd96719b0ce74a67,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,0.749641,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,16,filter_fd9038d7ecf237bb,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,0.773397,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,17,filter_fd520ed16716c4a3,equal_price_derivation_boundary_center,0.0010189589695858113,21,True,False,1,0.808747,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,18,filter_fd4bdbaf9b7db7ee,equal_price_derivation_boundary_center,0.0010189589695858113,15,True,False,1,0.743425,0,False,20,20
+NYC Taxi 2024-01,concave_sqrt,filter_derivation,19,filter_fd3ba0b9dcfd9a34,equal_price_derivation_boundary_center,0.0010189589695858113,27,True,False,1,0.786209,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,0,decomp_ffdff5460730f41e,additive_boundary_center,0.6535640569495782,15,True,False,1,0.966737,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,1,decomp_ff3860c4f111b16b,additive_boundary_center,0.6535640569495782,15,True,False,1,0.752388,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,2,decomp_ff22cea8d3901e0f,additive_boundary_center,0.6535640569495782,7,True,False,1,0.715446,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,3,decomp_ff1001a26d0d5dc8,additive_boundary_center,0.6535640569495782,15,True,False,1,0.728562,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,4,decomp_fe8253ad2c94d979,additive_boundary_center,0.6535640569495782,15,True,False,1,0.721337,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,5,decomp_fd211b817f7611cf,additive_boundary_center,0.6535640569495782,15,True,False,1,0.710259,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,6,decomp_fcf2fb4280cc53c6,additive_boundary_center,0.6535640569495782,15,True,False,1,0.746973,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,7,decomp_fc1769fbd3932482,additive_boundary_center,0.6535640569495782,15,True,False,1,0.690115,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,8,decomp_fb823cfe1da7b8f9,additive_boundary_center,0.6535640569495782,7,True,False,1,0.684337,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,9,decomp_fb6031d1a665f6cb,additive_boundary_center,0.6535640569495782,15,True,False,1,0.711612,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,10,decomp_fb5361e633e7fcbf,additive_boundary_center,0.6535640569495782,15,True,False,1,0.725104,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,11,decomp_faf983ad2acb90ae,additive_boundary_center,0.6535640569495782,15,True,False,1,0.720422,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,12,decomp_fa00a38098d415ee,additive_boundary_center,0.6535640569495782,7,True,False,1,0.689131,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,13,decomp_f883a23cf3c2eb35,additive_boundary_center,0.6535640569495782,15,True,False,1,0.724962,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,14,decomp_f8796247d9fd262b,additive_boundary_center,0.6535640569495782,15,True,False,1,0.692649,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,15,decomp_f867bb90d6553212,additive_boundary_center,0.6535640569495782,15,True,False,1,0.679289,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,16,decomp_f829ca4e24e07ddc,additive_boundary_center,0.6535640569495782,8,True,False,1,0.6524,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,17,decomp_f7b0b29ea475e4d0,additive_boundary_center,0.6535640569495782,15,True,False,1,0.703165,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,18,decomp_f72afb32a5bc8ba7,additive_boundary_center,0.6535640569495782,15,True,False,1,0.711655,0,False,20,20
+NYC Taxi 2024-01,tiered_8,decomposition,19,decomp_f68c45f853e22061,additive_boundary_center,0.6535640569495782,15,True,False,1,0.704346,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,0,projection_fffb7bbeb78cc42c,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.825946,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,1,projection_fff14256781113df,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.708721,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,2,projection_ffbf64b5590af0dd,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.811535,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,3,projection_ffbebe342412a052,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.641459,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,4,projection_ffa09708d2fbbd9d,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.672771,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,5,projection_ff9d38e777f0e2ad,equal_price_derivation_boundary_center,6.565380908329986e-06,6,True,False,1,0.667737,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,6,projection_ff73e8c554ae5493,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.653883,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,7,projection_ff6cc8334e2189f4,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.664894,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,8,projection_ff681fa9ef0ab9d7,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.668016,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,9,projection_ff476a207f6539d6,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.715527,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,10,projection_ff46d9ee7f4a0472,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.661134,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,11,projection_ff28c1fda3f7f183,equal_price_derivation_boundary_center,6.565380908329986e-06,6,True,False,1,0.673466,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,12,projection_ff1d837b0805fb10,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.629388,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,13,projection_ff0e629031caba36,equal_price_derivation_boundary_center,6.565380908329986e-06,9,True,False,1,0.654214,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,14,projection_ff0b1d47f1d00964,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.70479,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,15,projection_fef3a846d3b8d6f3,equal_price_derivation_boundary_center,6.565380908329986e-06,9,True,False,1,0.698945,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,16,projection_fecfaba63ce3a48f,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.715004,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,17,projection_fec4ab02b02ba77d,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.721454,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,18,projection_feb3cbf51512f2f7,equal_price_derivation_boundary_center,6.565380908329986e-06,5,True,False,1,0.677444,0,False,20,20
+NYC Taxi 2024-01,tiered_8,projection_derivation,19,projection_fea3d8f2d56759e5,equal_price_derivation_boundary_center,6.565380908329986e-06,3,True,False,1,0.664347,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,0,filter_ffea7b484892935f,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.988834,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,1,filter_ff7653982ab11a7c,equal_price_derivation_boundary_center,6.565380908329986e-06,51,True,False,1,0.981193,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,2,filter_ff65eec808fb907b,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.817431,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,3,filter_ff388427d10f6fe2,equal_price_derivation_boundary_center,6.565380908329986e-06,17,True,False,1,0.832847,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,4,filter_ff2259be9de7e3c5,equal_price_derivation_boundary_center,6.565380908329986e-06,33,True,False,1,0.865684,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,5,filter_ff1af3dbd03ecbb7,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.797083,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,6,filter_fee7baf3c331f145,equal_price_derivation_boundary_center,6.565380908329986e-06,33,True,False,1,0.876605,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,7,filter_feb25fcc2bfc9998,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.81983,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,8,filter_feafe9ab1d037411,equal_price_derivation_boundary_center,6.565380908329986e-06,33,True,False,1,0.812027,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,9,filter_fe90fff1bcec0047,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.726128,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,10,filter_fe57567e8f854a9c,equal_price_derivation_boundary_center,6.565380908329986e-06,19,True,False,1,0.767348,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,11,filter_fe4f91985e74a856,equal_price_derivation_boundary_center,6.565380908329986e-06,17,True,False,1,0.72708,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,12,filter_fe28e07308752f3b,equal_price_derivation_boundary_center,6.565380908329986e-06,17,True,False,1,0.733841,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,13,filter_fe239da08433906c,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.716221,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,14,filter_fdd9933c83a8ee16,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.712663,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,15,filter_fd96719b0ce74a67,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.746208,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,16,filter_fd9038d7ecf237bb,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.749634,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,17,filter_fd520ed16716c4a3,equal_price_derivation_boundary_center,6.565380908329986e-06,21,True,False,1,0.742747,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,18,filter_fd4bdbaf9b7db7ee,equal_price_derivation_boundary_center,6.565380908329986e-06,15,True,False,1,0.703658,0,False,20,20
+NYC Taxi 2024-01,tiered_8,filter_derivation,19,filter_fd3ba0b9dcfd9a34,equal_price_derivation_boundary_center,6.565380908329986e-06,27,True,False,1,0.787228,0,False,20,20
+TPC-H SF1,linear,decomposition,0,decomp_fe329839e72e5ac6,additive_boundary_center,0.6799999999999997,11,True,False,1,0.927618,0,False,20,20
+TPC-H SF1,linear,decomposition,1,decomp_fe1f7dd0392ef407,additive_boundary_center,0.6799999999999997,8,True,False,1,0.714888,0,False,20,20
+TPC-H SF1,linear,decomposition,2,decomp_fdca8efaa60fe2fb,additive_boundary_center,0.6799999999999997,8,True,False,1,0.707131,0,False,20,20
+TPC-H SF1,linear,decomposition,3,decomp_fd3fd5e4c8f67f8f,additive_boundary_center,0.6799999999999997,8,True,False,1,0.763103,0,False,20,20
+TPC-H SF1,linear,decomposition,4,decomp_fcec4a75bc98c135,additive_boundary_center,0.6799999999999997,10,True,False,1,0.854243,0,False,20,20
+TPC-H SF1,linear,decomposition,5,decomp_fa26e8a576dfb68e,additive_boundary_center,0.6799999999999997,6,True,False,1,0.698867,0,False,20,20
+TPC-H SF1,linear,decomposition,6,decomp_f9b7177bc921819b,additive_boundary_center,0.6799999999999997,11,True,False,1,0.678339,0,False,20,20
+TPC-H SF1,linear,decomposition,7,decomp_f9374ab656a4c86c,additive_boundary_center,0.6799999999999997,7,True,False,1,0.841911,0,False,20,20
+TPC-H SF1,linear,decomposition,8,decomp_f5873a9a92aaa5ef,additive_boundary_center,0.6799999999999997,7,True,False,1,0.706016,0,False,20,20
+TPC-H SF1,linear,decomposition,9,decomp_f3e628f368f8d937,additive_boundary_center,0.6799999999999997,9,True,False,1,0.7225,0,False,20,20
+TPC-H SF1,linear,decomposition,10,decomp_f2a478b528b13581,additive_boundary_center,0.6799999999999997,11,True,False,1,0.781112,0,False,20,20
+TPC-H SF1,linear,decomposition,11,decomp_f19c0227fd245efd,additive_boundary_center,0.6799999999999997,6,True,False,1,1.036081,0,False,20,20
+TPC-H SF1,linear,decomposition,12,decomp_f0217411aae8d208,additive_boundary_center,0.6799999999999997,11,True,False,1,0.755206,0,False,20,20
+TPC-H SF1,linear,decomposition,13,decomp_ee0fcb7982d59f0d,additive_boundary_center,0.6799999999999997,11,True,False,1,0.804853,0,False,20,20
+TPC-H SF1,linear,decomposition,14,decomp_eca7b0baaf53d221,additive_boundary_center,0.6799999999999997,7,True,False,1,0.670647,0,False,20,20
+TPC-H SF1,linear,decomposition,15,decomp_ec9f3277785d367a,additive_boundary_center,0.6799999999999997,9,True,False,1,0.663812,0,False,20,20
+TPC-H SF1,linear,decomposition,16,decomp_ec83fa453ff17dfb,additive_boundary_center,0.6799999999999997,11,True,False,1,0.699429,0,False,20,20
+TPC-H SF1,linear,decomposition,17,decomp_eac894e17fe7a09c,additive_boundary_center,0.6799999999999997,7,True,False,1,0.69208,0,False,20,20
+TPC-H SF1,linear,decomposition,18,decomp_e9a86de496f14ddc,additive_boundary_center,0.6799999999999997,11,True,False,1,0.761174,0,False,20,20
+TPC-H SF1,linear,decomposition,19,decomp_e92859cc8506db75,additive_boundary_center,0.6799999999999997,8,True,False,1,0.693482,0,False,20,20
+TPC-H SF1,linear,projection_derivation,0,projection_fffc5e21522c1432,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.901409,0,False,20,20
+TPC-H SF1,linear,projection_derivation,1,projection_fff4d88b1e37f7dc,equal_price_derivation_boundary_center,0.019369092074894553,4,True,False,1,0.940526,0,False,20,20
+TPC-H SF1,linear,projection_derivation,2,projection_ffd01829a4e7325f,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.764282,0,False,20,20
+TPC-H SF1,linear,projection_derivation,3,projection_ff94b1da253c6f7f,equal_price_derivation_boundary_center,0.019369092074894553,9,True,False,1,0.792611,0,False,20,20
+TPC-H SF1,linear,projection_derivation,4,projection_ff848b7299119790,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.765226,0,False,20,20
+TPC-H SF1,linear,projection_derivation,5,projection_ff6c34eb16f1c552,equal_price_derivation_boundary_center,0.019369092074894553,9,True,False,1,0.707824,0,False,20,20
+TPC-H SF1,linear,projection_derivation,6,projection_ff526a89c65a0fdf,equal_price_derivation_boundary_center,0.019369092074894553,9,True,False,1,0.687541,0,False,20,20
+TPC-H SF1,linear,projection_derivation,7,projection_ff5255c2ca1880eb,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.68892,0,False,20,20
+TPC-H SF1,linear,projection_derivation,8,projection_ff48278910884b5c,equal_price_derivation_boundary_center,0.019369092074894553,5,True,False,1,0.68555,0,False,20,20
+TPC-H SF1,linear,projection_derivation,9,projection_ff40a3cd89e58c3e,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.769309,0,False,20,20
+TPC-H SF1,linear,projection_derivation,10,projection_ff39057107ee3872,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.733492,0,False,20,20
+TPC-H SF1,linear,projection_derivation,11,projection_ff330c6c29d85047,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.724741,0,False,20,20
+TPC-H SF1,linear,projection_derivation,12,projection_ff29139b92e6521e,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.648521,0,False,20,20
+TPC-H SF1,linear,projection_derivation,13,projection_ff070401a98ce8ec,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.643732,0,False,20,20
+TPC-H SF1,linear,projection_derivation,14,projection_ff02b0f5241aebe7,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.724405,0,False,20,20
+TPC-H SF1,linear,projection_derivation,15,projection_fef2920f61f19262,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.866239,0,False,20,20
+TPC-H SF1,linear,projection_derivation,16,projection_fedc44c529283061,equal_price_derivation_boundary_center,0.019369092074894553,9,True,False,1,0.807459,0,False,20,20
+TPC-H SF1,linear,projection_derivation,17,projection_fed27c3eacf9251d,equal_price_derivation_boundary_center,0.019369092074894553,6,True,False,1,0.997469,0,False,20,20
+TPC-H SF1,linear,projection_derivation,18,projection_fecabe041e69717c,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,1.154714,0,False,20,20
+TPC-H SF1,linear,projection_derivation,19,projection_fec3f9f4599f6e32,equal_price_derivation_boundary_center,0.019369092074894553,3,True,False,1,0.756563,0,False,20,20
+TPC-H SF1,linear,filter_derivation,0,filter_ffffda8d623c7db0,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.865375,0,False,20,20
+TPC-H SF1,linear,filter_derivation,1,filter_ffe0db6508c1c19e,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.758349,0,False,20,20
+TPC-H SF1,linear,filter_derivation,2,filter_ffd8bbd3acc03d6b,equal_price_derivation_boundary_center,0.019369092074894553,17,True,False,1,0.742291,0,False,20,20
+TPC-H SF1,linear,filter_derivation,3,filter_ffc03b629896b734,equal_price_derivation_boundary_center,0.019369092074894553,21,True,False,1,0.752638,0,False,20,20
+TPC-H SF1,linear,filter_derivation,4,filter_ffb89c7a00797786,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.726639,0,False,20,20
+TPC-H SF1,linear,filter_derivation,5,filter_ffad890176f3a539,equal_price_derivation_boundary_center,0.019369092074894553,21,True,False,1,0.757655,0,False,20,20
+TPC-H SF1,linear,filter_derivation,6,filter_ffa1aa85756b1233,equal_price_derivation_boundary_center,0.019369092074894553,18,True,False,1,0.745617,0,False,20,20
+TPC-H SF1,linear,filter_derivation,7,filter_ff7ef43d1b936ccb,equal_price_derivation_boundary_center,0.019369092074894553,27,True,False,1,0.762459,0,False,20,20
+TPC-H SF1,linear,filter_derivation,8,filter_ff7eeb663a78c3d5,equal_price_derivation_boundary_center,0.019369092074894553,18,True,False,1,0.690621,0,False,20,20
+TPC-H SF1,linear,filter_derivation,9,filter_ff2c055a36644207,equal_price_derivation_boundary_center,0.019369092074894553,27,True,False,1,0.792736,0,False,20,20
+TPC-H SF1,linear,filter_derivation,10,filter_ff24f6e9579e3c52,equal_price_derivation_boundary_center,0.019369092074894553,20,True,False,1,0.732836,0,False,20,20
+TPC-H SF1,linear,filter_derivation,11,filter_ff1e3aaeaf9915f0,equal_price_derivation_boundary_center,0.019369092074894553,24,True,False,1,0.755379,0,False,20,20
+TPC-H SF1,linear,filter_derivation,12,filter_ff0f68fcd3c02f3a,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.717234,0,False,20,20
+TPC-H SF1,linear,filter_derivation,13,filter_fed8f8d4a99b9c37,equal_price_derivation_boundary_center,0.019369092074894553,17,True,False,1,0.737275,0,False,20,20
+TPC-H SF1,linear,filter_derivation,14,filter_febc50752e6c8358,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.677249,0,False,20,20
+TPC-H SF1,linear,filter_derivation,15,filter_fe9e4502237aab29,equal_price_derivation_boundary_center,0.019369092074894553,15,True,False,1,0.694769,0,False,20,20
+TPC-H SF1,linear,filter_derivation,16,filter_fe96a97e3e464339,equal_price_derivation_boundary_center,0.019369092074894553,27,True,False,1,0.761141,0,False,20,20
+TPC-H SF1,linear,filter_derivation,17,filter_fe7909ba1f43e208,equal_price_derivation_boundary_center,0.019369092074894553,21,True,False,1,0.75364,0,False,20,20
+TPC-H SF1,linear,filter_derivation,18,filter_fe5e8b595d6383b1,equal_price_derivation_boundary_center,0.019369092074894553,18,True,False,1,0.717223,0,False,20,20
+TPC-H SF1,linear,filter_derivation,19,filter_fe5b7e03e75baabc,equal_price_derivation_boundary_center,0.019369092074894553,17,True,False,1,0.731491,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,0,decomp_de31ea188e02182d,additive_boundary_center,0.29080706324558225,1,True,False,1,0.780636,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,1,decomp_ca0ca96334a2052c,additive_boundary_center,0.29080706324558225,1,True,False,1,0.666031,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,2,decomp_fe329839e72e5ac6,additive_boundary_center,0.20317128734990386,5,True,False,1,0.696601,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,3,decomp_fe1f7dd0392ef407,additive_boundary_center,0.20317128734990386,5,True,False,1,0.69402,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,4,decomp_fdca8efaa60fe2fb,additive_boundary_center,0.20317128734990386,5,True,False,1,0.697975,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,5,decomp_fd3fd5e4c8f67f8f,additive_boundary_center,0.20317128734990386,5,True,False,1,0.710822,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,6,decomp_fcec4a75bc98c135,additive_boundary_center,0.20317128734990386,5,True,False,1,0.714725,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,7,decomp_fa26e8a576dfb68e,additive_boundary_center,0.20317128734990386,5,True,False,1,0.713143,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,8,decomp_f9b7177bc921819b,additive_boundary_center,0.20317128734990386,5,True,False,1,0.707447,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,9,decomp_f9374ab656a4c86c,additive_boundary_center,0.20317128734990386,5,True,False,1,0.692036,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,10,decomp_f5873a9a92aaa5ef,additive_boundary_center,0.20317128734990386,5,True,False,1,0.670792,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,11,decomp_f3e628f368f8d937,additive_boundary_center,0.20317128734990386,5,True,False,1,0.674814,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,12,decomp_f2a478b528b13581,additive_boundary_center,0.20317128734990386,5,True,False,1,0.755011,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,13,decomp_f19c0227fd245efd,additive_boundary_center,0.20317128734990386,5,True,False,1,0.734093,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,14,decomp_f0217411aae8d208,additive_boundary_center,0.20317128734990386,5,True,False,1,0.707516,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,15,decomp_ee0fcb7982d59f0d,additive_boundary_center,0.20317128734990386,5,True,False,1,0.708161,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,16,decomp_eca7b0baaf53d221,additive_boundary_center,0.20317128734990386,5,True,False,1,0.718621,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,17,decomp_ec9f3277785d367a,additive_boundary_center,0.20317128734990386,5,True,False,1,0.710512,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,18,decomp_ec83fa453ff17dfb,additive_boundary_center,0.20317128734990386,5,True,False,1,0.668158,0,False,20,20
+TPC-H SF1,concave_sqrt,decomposition,19,decomp_eac894e17fe7a09c,additive_boundary_center,0.20317128734990386,5,True,False,1,0.90272,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,0,projection_fffc5e21522c1432,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.814277,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,1,projection_fff4d88b1e37f7dc,equal_price_derivation_boundary_center,0.08646332286713881,4,True,False,1,0.708633,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,2,projection_ffd01829a4e7325f,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.719396,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,3,projection_ff94b1da253c6f7f,equal_price_derivation_boundary_center,0.08646332286713881,9,True,False,1,0.66806,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,4,projection_ff848b7299119790,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.624452,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,5,projection_ff6c34eb16f1c552,equal_price_derivation_boundary_center,0.08646332286713881,9,True,False,1,0.650146,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,6,projection_ff526a89c65a0fdf,equal_price_derivation_boundary_center,0.08646332286713881,9,True,False,1,0.664437,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,7,projection_ff5255c2ca1880eb,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.806385,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,8,projection_ff48278910884b5c,equal_price_derivation_boundary_center,0.08646332286713881,5,True,False,1,0.715443,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,9,projection_ff40a3cd89e58c3e,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.726324,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,10,projection_ff39057107ee3872,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.636084,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,11,projection_ff330c6c29d85047,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.624787,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,12,projection_ff29139b92e6521e,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.630472,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,13,projection_ff070401a98ce8ec,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.633787,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,14,projection_ff02b0f5241aebe7,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.640057,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,15,projection_fef2920f61f19262,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.703563,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,16,projection_fedc44c529283061,equal_price_derivation_boundary_center,0.08646332286713881,9,True,False,1,0.675054,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,17,projection_fed27c3eacf9251d,equal_price_derivation_boundary_center,0.08646332286713881,6,True,False,1,0.654847,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,18,projection_fecabe041e69717c,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.688858,0,False,20,20
+TPC-H SF1,concave_sqrt,projection_derivation,19,projection_fec3f9f4599f6e32,equal_price_derivation_boundary_center,0.08646332286713881,3,True,False,1,0.660092,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,0,filter_ffffda8d623c7db0,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.906178,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,1,filter_ffe0db6508c1c19e,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.786515,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,2,filter_ffd8bbd3acc03d6b,equal_price_derivation_boundary_center,0.08646332286713881,17,True,False,1,0.731236,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,3,filter_ffc03b629896b734,equal_price_derivation_boundary_center,0.08646332286713881,21,True,False,1,0.749799,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,4,filter_ffb89c7a00797786,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.84045,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,5,filter_ffad890176f3a539,equal_price_derivation_boundary_center,0.08646332286713881,21,True,False,1,0.767556,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,6,filter_ffa1aa85756b1233,equal_price_derivation_boundary_center,0.08646332286713881,18,True,False,1,0.740291,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,7,filter_ff7ef43d1b936ccb,equal_price_derivation_boundary_center,0.08646332286713881,27,True,False,1,0.759981,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,8,filter_ff7eeb663a78c3d5,equal_price_derivation_boundary_center,0.08646332286713881,18,True,False,1,0.759046,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,9,filter_ff2c055a36644207,equal_price_derivation_boundary_center,0.08646332286713881,27,True,False,1,0.766868,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,10,filter_ff24f6e9579e3c52,equal_price_derivation_boundary_center,0.08646332286713881,20,True,False,1,0.744657,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,11,filter_ff1e3aaeaf9915f0,equal_price_derivation_boundary_center,0.08646332286713881,24,True,False,1,0.781965,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,12,filter_ff0f68fcd3c02f3a,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.768174,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,13,filter_fed8f8d4a99b9c37,equal_price_derivation_boundary_center,0.08646332286713881,17,True,False,1,0.724252,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,14,filter_febc50752e6c8358,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.7119,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,15,filter_fe9e4502237aab29,equal_price_derivation_boundary_center,0.08646332286713881,15,True,False,1,0.717183,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,16,filter_fe96a97e3e464339,equal_price_derivation_boundary_center,0.08646332286713881,27,True,False,1,0.77502,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,17,filter_fe7909ba1f43e208,equal_price_derivation_boundary_center,0.08646332286713881,21,True,False,1,0.739219,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,18,filter_fe5e8b595d6383b1,equal_price_derivation_boundary_center,0.08646332286713881,18,True,False,1,0.689533,0,False,20,20
+TPC-H SF1,concave_sqrt,filter_derivation,19,filter_fe5b7e03e75baabc,equal_price_derivation_boundary_center,0.08646332286713881,17,True,False,1,0.700534,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,0,decomp_fe329839e72e5ac6,additive_boundary_center,0.6525332812227083,11,True,False,1,0.838342,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,1,decomp_fe1f7dd0392ef407,additive_boundary_center,0.6525332812227083,8,True,False,1,0.719207,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,2,decomp_fdca8efaa60fe2fb,additive_boundary_center,0.6525332812227083,8,True,False,1,0.706773,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,3,decomp_fd3fd5e4c8f67f8f,additive_boundary_center,0.6525332812227083,8,True,False,1,0.694262,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,4,decomp_fa26e8a576dfb68e,additive_boundary_center,0.6525332812227083,6,True,False,1,0.679749,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,5,decomp_f9374ab656a4c86c,additive_boundary_center,0.6525332812227083,7,True,False,1,0.679387,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,6,decomp_f3e628f368f8d937,additive_boundary_center,0.6525332812227083,9,True,False,1,0.706619,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,7,decomp_f2a478b528b13581,additive_boundary_center,0.6525332812227083,11,True,False,1,0.710438,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,8,decomp_f19c0227fd245efd,additive_boundary_center,0.6525332812227083,6,True,False,1,0.655752,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,9,decomp_f0217411aae8d208,additive_boundary_center,0.6525332812227083,11,True,False,1,0.764135,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,10,decomp_ec9f3277785d367a,additive_boundary_center,0.6525332812227083,9,True,False,1,0.709818,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,11,decomp_ec83fa453ff17dfb,additive_boundary_center,0.6525332812227083,11,True,False,1,0.708773,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,12,decomp_eac894e17fe7a09c,additive_boundary_center,0.6525332812227083,7,True,False,1,0.677185,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,13,decomp_e92859cc8506db75,additive_boundary_center,0.6525332812227083,8,True,False,1,0.691794,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,14,decomp_e911aacc9461354e,additive_boundary_center,0.6525332812227083,11,True,False,1,0.679451,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,15,decomp_e8252997867bef64,additive_boundary_center,0.6525332812227083,7,True,False,1,0.665673,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,16,decomp_e7c73787c133eeff,additive_boundary_center,0.6525332812227083,8,True,False,1,0.95886,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,17,decomp_e140b23f6f0fbcf5,additive_boundary_center,0.6525332812227083,7,True,False,1,0.750203,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,18,decomp_e1303620a2e65aa4,additive_boundary_center,0.6525332812227083,5,True,False,1,0.702724,0,False,20,20
+TPC-H SF1,tiered_8,decomposition,19,decomp_dfb953d4eb898d7b,additive_boundary_center,0.6525332812227083,8,True,False,1,0.666352,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,0,projection_fffc5e21522c1432,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.825291,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,1,projection_fff4d88b1e37f7dc,equal_price_derivation_boundary_center,0.02379339009104195,4,True,False,1,0.691097,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,2,projection_ffd01829a4e7325f,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.756181,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,3,projection_ff94b1da253c6f7f,equal_price_derivation_boundary_center,0.02379339009104195,9,True,False,1,0.729513,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,4,projection_ff848b7299119790,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.653265,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,5,projection_ff6c34eb16f1c552,equal_price_derivation_boundary_center,0.02379339009104195,9,True,False,1,0.67809,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,6,projection_ff526a89c65a0fdf,equal_price_derivation_boundary_center,0.02379339009104195,9,True,False,1,0.671815,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,7,projection_ff5255c2ca1880eb,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.660131,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,8,projection_ff48278910884b5c,equal_price_derivation_boundary_center,0.02379339009104195,5,True,False,1,0.673003,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,9,projection_ff40a3cd89e58c3e,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.696525,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,10,projection_ff39057107ee3872,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.638152,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,11,projection_ff330c6c29d85047,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.657286,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,12,projection_ff29139b92e6521e,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.677469,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,13,projection_ff070401a98ce8ec,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.658733,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,14,projection_ff02b0f5241aebe7,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.692507,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,15,projection_fef2920f61f19262,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.701013,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,16,projection_fedc44c529283061,equal_price_derivation_boundary_center,0.02379339009104195,9,True,False,1,0.702852,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,17,projection_fed27c3eacf9251d,equal_price_derivation_boundary_center,0.02379339009104195,6,True,False,1,0.675191,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,18,projection_fecabe041e69717c,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.64095,0,False,20,20
+TPC-H SF1,tiered_8,projection_derivation,19,projection_fec3f9f4599f6e32,equal_price_derivation_boundary_center,0.02379339009104195,3,True,False,1,0.657915,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,0,filter_ffffda8d623c7db0,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.917718,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,1,filter_ffe0db6508c1c19e,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.753342,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,2,filter_ffd8bbd3acc03d6b,equal_price_derivation_boundary_center,0.02379339009104195,17,True,False,1,0.746713,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,3,filter_ffc03b629896b734,equal_price_derivation_boundary_center,0.02379339009104195,21,True,False,1,0.740505,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,4,filter_ffb89c7a00797786,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.754896,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,5,filter_ffad890176f3a539,equal_price_derivation_boundary_center,0.02379339009104195,21,True,False,1,0.753492,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,6,filter_ffa1aa85756b1233,equal_price_derivation_boundary_center,0.02379339009104195,18,True,False,1,0.838406,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,7,filter_ff7ef43d1b936ccb,equal_price_derivation_boundary_center,0.02379339009104195,27,True,False,1,0.794721,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,8,filter_ff7eeb663a78c3d5,equal_price_derivation_boundary_center,0.02379339009104195,18,True,False,1,0.729816,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,9,filter_ff2c055a36644207,equal_price_derivation_boundary_center,0.02379339009104195,27,True,False,1,0.805302,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,10,filter_ff24f6e9579e3c52,equal_price_derivation_boundary_center,0.02379339009104195,20,True,False,1,0.779937,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,11,filter_ff1e3aaeaf9915f0,equal_price_derivation_boundary_center,0.02379339009104195,24,True,False,1,0.757109,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,12,filter_ff0f68fcd3c02f3a,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.747125,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,13,filter_fed8f8d4a99b9c37,equal_price_derivation_boundary_center,0.02379339009104195,17,True,False,1,0.717309,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,14,filter_febc50752e6c8358,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.717551,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,15,filter_fe9e4502237aab29,equal_price_derivation_boundary_center,0.02379339009104195,15,True,False,1,0.737242,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,16,filter_fe96a97e3e464339,equal_price_derivation_boundary_center,0.02379339009104195,27,True,False,1,0.776217,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,17,filter_fe7909ba1f43e208,equal_price_derivation_boundary_center,0.02379339009104195,21,True,False,1,0.729118,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,18,filter_fe5e8b595d6383b1,equal_price_derivation_boundary_center,0.02379339009104195,18,True,False,1,0.742421,0,False,20,20
+TPC-H SF1,tiered_8,filter_derivation,19,filter_fe5b7e03e75baabc,equal_price_derivation_boundary_center,0.02379339009104195,17,True,False,1,0.712401,0,False,20,20
+UCI Adult,linear,decomposition,0,decomp_ffaf78d3864df560,additive_boundary_center,0.6799999999999997,17,True,False,1,0.897954,0,False,20,20
+UCI Adult,linear,decomposition,1,decomp_ffae6ed52ce51442,additive_boundary_center,0.6799999999999997,17,True,False,1,0.84118,0,False,20,20
+UCI Adult,linear,decomposition,2,decomp_ff09c520498fae71,additive_boundary_center,0.6799999999999997,17,True,False,1,0.781446,0,False,20,20
+UCI Adult,linear,decomposition,3,decomp_fcf588b5c4263917,additive_boundary_center,0.6799999999999997,17,True,False,1,0.763049,0,False,20,20
+UCI Adult,linear,decomposition,4,decomp_fcce1c3873c575a9,additive_boundary_center,0.6799999999999997,17,True,False,1,0.782309,0,False,20,20
+UCI Adult,linear,decomposition,5,decomp_fc9616c93999bb12,additive_boundary_center,0.6799999999999997,17,True,False,1,0.816847,0,False,20,20
+UCI Adult,linear,decomposition,6,decomp_fbd2f5360136a151,additive_boundary_center,0.6799999999999997,17,True,False,1,0.755116,0,False,20,20
+UCI Adult,linear,decomposition,7,decomp_f9eb42256ac26db1,additive_boundary_center,0.6799999999999997,17,True,False,1,0.739356,0,False,20,20
+UCI Adult,linear,decomposition,8,decomp_f63c23fb4fc5a338,additive_boundary_center,0.6799999999999997,17,True,False,1,0.757887,0,False,20,20
+UCI Adult,linear,decomposition,9,decomp_f5e28d1e1462fd21,additive_boundary_center,0.6799999999999997,17,True,False,1,0.781769,0,False,20,20
+UCI Adult,linear,decomposition,10,decomp_f565f9ce615afa75,additive_boundary_center,0.6799999999999997,17,True,False,1,0.838044,0,False,20,20
+UCI Adult,linear,decomposition,11,decomp_f4dee0f20d324388,additive_boundary_center,0.6799999999999997,17,True,False,1,0.725065,0,False,20,20
+UCI Adult,linear,decomposition,12,decomp_f48ecadedd55dae3,additive_boundary_center,0.6799999999999997,17,True,False,1,0.897996,0,False,20,20
+UCI Adult,linear,decomposition,13,decomp_f453b7b9c9cd1ce3,additive_boundary_center,0.6799999999999997,17,True,False,1,0.830697,0,False,20,20
+UCI Adult,linear,decomposition,14,decomp_f3eae56d78311284,additive_boundary_center,0.6799999999999997,17,True,False,1,0.764331,0,False,20,20
+UCI Adult,linear,decomposition,15,decomp_f3d2fd88408a1d23,additive_boundary_center,0.6799999999999997,17,True,False,1,0.719944,0,False,20,20
+UCI Adult,linear,decomposition,16,decomp_f3532c3d0e378b1f,additive_boundary_center,0.6799999999999997,17,True,False,1,0.746521,0,False,20,20
+UCI Adult,linear,decomposition,17,decomp_f33a36fac5fc6278,additive_boundary_center,0.6799999999999997,17,True,False,1,0.767299,0,False,20,20
+UCI Adult,linear,decomposition,18,decomp_f0e575f4d4627167,additive_boundary_center,0.6799999999999997,17,True,False,1,0.756689,0,False,20,20
+UCI Adult,linear,decomposition,19,decomp_f09284259ebfa6b3,additive_boundary_center,0.6799999999999997,17,True,False,1,0.758992,0,False,20,20
+UCI Adult,linear,projection_derivation,0,projection_ffffd8d410af0909,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.8276,0,False,20,20
+UCI Adult,linear,projection_derivation,1,projection_fff9bd98c4ce8ef1,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.710208,0,False,20,20
+UCI Adult,linear,projection_derivation,2,projection_ffee2220ac6be777,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.708071,0,False,20,20
+UCI Adult,linear,projection_derivation,3,projection_ffd2c6a076ba90e2,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.669373,0,False,20,20
+UCI Adult,linear,projection_derivation,4,projection_ffce2681f73f7f2d,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.650902,0,False,20,20
+UCI Adult,linear,projection_derivation,5,projection_ffbdf299f8d0bc0a,equal_price_derivation_boundary_center,1.923991973022736e-05,45,True,False,1,0.857747,0,False,20,20
+UCI Adult,linear,projection_derivation,6,projection_ff9537efbeaf8c5f,equal_price_derivation_boundary_center,1.923991973022736e-05,9,True,False,1,0.696296,0,False,20,20
+UCI Adult,linear,projection_derivation,7,projection_ff86780147a8c003,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.674221,0,False,20,20
+UCI Adult,linear,projection_derivation,8,projection_ff5446cd9c1f9943,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.672153,0,False,20,20
+UCI Adult,linear,projection_derivation,9,projection_ff4e13a07930b3d8,equal_price_derivation_boundary_center,1.923991973022736e-05,9,True,False,1,0.704831,0,False,20,20
+UCI Adult,linear,projection_derivation,10,projection_ff4804f6431cc692,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.686418,0,False,20,20
+UCI Adult,linear,projection_derivation,11,projection_ff360b533871b837,equal_price_derivation_boundary_center,1.923991973022736e-05,15,True,False,1,0.714921,0,False,20,20
+UCI Adult,linear,projection_derivation,12,projection_ff26842e71cd56c7,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.712738,0,False,20,20
+UCI Adult,linear,projection_derivation,13,projection_ff1a65eb6bdbba95,equal_price_derivation_boundary_center,1.923991973022736e-05,15,True,False,1,0.735685,0,False,20,20
+UCI Adult,linear,projection_derivation,14,projection_ff0368501843b726,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.797432,0,False,20,20
+UCI Adult,linear,projection_derivation,15,projection_ff001462b413dc90,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.718216,0,False,20,20
+UCI Adult,linear,projection_derivation,16,projection_fef24ca6091d415d,equal_price_derivation_boundary_center,1.923991973022736e-05,10,True,False,1,0.685868,0,False,20,20
+UCI Adult,linear,projection_derivation,17,projection_fed9c6c28508439a,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.706411,0,False,20,20
+UCI Adult,linear,projection_derivation,18,projection_fec99d6a8106cad0,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.678577,0,False,20,20
+UCI Adult,linear,projection_derivation,19,projection_fe80c9af203a6389,equal_price_derivation_boundary_center,1.923991973022736e-05,3,True,False,1,0.671709,0,False,20,20
+UCI Adult,linear,filter_derivation,0,filter_ffb2ffada12f828f,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,1.46102,0,False,20,20
+UCI Adult,linear,filter_derivation,1,filter_ff9318222403d339,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,0.906264,0,False,20,20
+UCI Adult,linear,filter_derivation,2,filter_ff5d2f5bf74dbc5c,equal_price_derivation_boundary_center,1.923991973022736e-05,30,True,False,1,0.880201,0,False,20,20
+UCI Adult,linear,filter_derivation,3,filter_ff58e9a92472314b,equal_price_derivation_boundary_center,1.923991973022736e-05,51,True,False,1,0.930762,0,False,20,20
+UCI Adult,linear,filter_derivation,4,filter_ff2ea344b3489167,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,0.847827,0,False,20,20
+UCI Adult,linear,filter_derivation,5,filter_ff268ec4373be6ef,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,1.051936,0,False,20,20
+UCI Adult,linear,filter_derivation,6,filter_ff230945b10cea2d,equal_price_derivation_boundary_center,1.923991973022736e-05,22,True,False,1,0.938708,0,False,20,20
+UCI Adult,linear,filter_derivation,7,filter_ff01606b076c8a93,equal_price_derivation_boundary_center,1.923991973022736e-05,27,True,False,1,0.827956,0,False,20,20
+UCI Adult,linear,filter_derivation,8,filter_fed5e29a5947619d,equal_price_derivation_boundary_center,1.923991973022736e-05,17,True,False,1,0.78944,0,False,20,20
+UCI Adult,linear,filter_derivation,9,filter_feae31efae47dfba,equal_price_derivation_boundary_center,1.923991973022736e-05,15,True,False,1,0.752597,0,False,20,20
+UCI Adult,linear,filter_derivation,10,filter_fea46a55e7ee5ea4,equal_price_derivation_boundary_center,1.923991973022736e-05,57,True,False,1,0.927701,0,False,20,20
+UCI Adult,linear,filter_derivation,11,filter_fe60398d2d3ba3e4,equal_price_derivation_boundary_center,1.923991973022736e-05,21,True,False,1,0.761263,0,False,20,20
+UCI Adult,linear,filter_derivation,12,filter_fe464841404324ea,equal_price_derivation_boundary_center,1.923991973022736e-05,21,True,False,1,0.818625,0,False,20,20
+UCI Adult,linear,filter_derivation,13,filter_fe1d4d484e06f507,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,0.870524,0,False,20,20
+UCI Adult,linear,filter_derivation,14,filter_fdfd0536f7f63a3d,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,0.881956,0,False,20,20
+UCI Adult,linear,filter_derivation,15,filter_fdf9f3566afcc510,equal_price_derivation_boundary_center,1.923991973022736e-05,15,True,False,1,0.732326,0,False,20,20
+UCI Adult,linear,filter_derivation,16,filter_fddc361055646809,equal_price_derivation_boundary_center,1.923991973022736e-05,21,True,False,1,0.785287,0,False,20,20
+UCI Adult,linear,filter_derivation,17,filter_fddb0d0c02bdbd5f,equal_price_derivation_boundary_center,1.923991973022736e-05,45,True,False,1,0.875606,0,False,20,20
+UCI Adult,linear,filter_derivation,18,filter_fdae4a236f2afd8f,equal_price_derivation_boundary_center,1.923991973022736e-05,27,True,False,1,0.767773,0,False,20,20
+UCI Adult,linear,filter_derivation,19,filter_fd94a4ac2c75ba00,equal_price_derivation_boundary_center,1.923991973022736e-05,36,True,False,1,0.840443,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,0,decomp_d7c00f422b19ce34,additive_boundary_center,0.41695669655510614,1,True,False,1,0.831077,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,1,decomp_a033a4cdf0a18e03,additive_boundary_center,0.41695669655510614,1,True,False,1,0.713539,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,2,decomp_760fae32af0dd91b,additive_boundary_center,0.41695669655510614,1,True,False,1,0.78997,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,3,decomp_3bdaee323eee2105,additive_boundary_center,0.41695669655510614,1,True,False,1,0.65881,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,4,decomp_14e7e3ebf1c8fa41,additive_boundary_center,0.41695669655510614,1,True,False,1,0.685344,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,5,decomp_ffaf78d3864df560,additive_boundary_center,0.2400683186337762,5,True,False,1,0.807783,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,6,decomp_ffae6ed52ce51442,additive_boundary_center,0.2400683186337762,5,True,False,1,0.80649,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,7,decomp_ff09c520498fae71,additive_boundary_center,0.2400683186337762,5,True,False,1,0.728805,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,8,decomp_fcf588b5c4263917,additive_boundary_center,0.2400683186337762,5,True,False,1,0.75421,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,9,decomp_fcce1c3873c575a9,additive_boundary_center,0.2400683186337762,5,True,False,1,0.834635,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,10,decomp_fc9616c93999bb12,additive_boundary_center,0.2400683186337762,5,True,False,1,0.794318,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,11,decomp_fbd2f5360136a151,additive_boundary_center,0.2400683186337762,5,True,False,1,0.768898,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,12,decomp_f9eb42256ac26db1,additive_boundary_center,0.2400683186337762,5,True,False,1,0.757352,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,13,decomp_f63c23fb4fc5a338,additive_boundary_center,0.2400683186337762,5,True,False,1,0.789766,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,14,decomp_f5e28d1e1462fd21,additive_boundary_center,0.2400683186337762,5,True,False,1,0.753231,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,15,decomp_f565f9ce615afa75,additive_boundary_center,0.2400683186337762,5,True,False,1,0.742557,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,16,decomp_f4dee0f20d324388,additive_boundary_center,0.2400683186337762,5,True,False,1,0.747537,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,17,decomp_f48ecadedd55dae3,additive_boundary_center,0.2400683186337762,5,True,False,1,0.748968,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,18,decomp_f453b7b9c9cd1ce3,additive_boundary_center,0.2400683186337762,5,True,False,1,0.729356,0,False,20,20
+UCI Adult,concave_sqrt,decomposition,19,decomp_f3eae56d78311284,additive_boundary_center,0.2400683186337762,5,True,False,1,0.726784,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,0,projection_ffffd8d410af0909,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.802544,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,1,projection_fff9bd98c4ce8ef1,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.730405,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,2,projection_ffee2220ac6be777,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.705937,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,3,projection_ffd2c6a076ba90e2,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.708092,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,4,projection_ffce2681f73f7f2d,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.68939,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,5,projection_ffbdf299f8d0bc0a,equal_price_derivation_boundary_center,0.0032199671149170488,45,True,False,1,0.850804,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,6,projection_ff9537efbeaf8c5f,equal_price_derivation_boundary_center,0.0032199671149170488,9,True,False,1,0.714044,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,7,projection_ff86780147a8c003,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.699588,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,8,projection_ff5446cd9c1f9943,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.689347,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,9,projection_ff4e13a07930b3d8,equal_price_derivation_boundary_center,0.0032199671149170488,9,True,False,1,0.717702,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,10,projection_ff4804f6431cc692,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.677248,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,11,projection_ff360b533871b837,equal_price_derivation_boundary_center,0.0032199671149170488,15,True,False,1,0.816063,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,12,projection_ff26842e71cd56c7,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.667003,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,13,projection_ff1a65eb6bdbba95,equal_price_derivation_boundary_center,0.0032199671149170488,15,True,False,1,0.733067,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,14,projection_ff0368501843b726,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.681884,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,15,projection_ff001462b413dc90,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.702356,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,16,projection_fef24ca6091d415d,equal_price_derivation_boundary_center,0.0032199671149170488,10,True,False,1,0.80194,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,17,projection_fed9c6c28508439a,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.691027,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,18,projection_fec99d6a8106cad0,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.658769,0,False,20,20
+UCI Adult,concave_sqrt,projection_derivation,19,projection_fe80c9af203a6389,equal_price_derivation_boundary_center,0.0032199671149170488,3,True,False,1,0.718186,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,0,filter_ffb2ffada12f828f,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,1.02138,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,1,filter_ff9318222403d339,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,0.888014,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,2,filter_ff5d2f5bf74dbc5c,equal_price_derivation_boundary_center,0.0032199671149170488,30,True,False,1,0.846149,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,3,filter_ff58e9a92472314b,equal_price_derivation_boundary_center,0.0032199671149170488,51,True,False,1,1.020616,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,4,filter_ff2ea344b3489167,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,0.88245,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,5,filter_ff268ec4373be6ef,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,0.83553,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,6,filter_ff230945b10cea2d,equal_price_derivation_boundary_center,0.0032199671149170488,22,True,False,1,0.815446,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,7,filter_ff01606b076c8a93,equal_price_derivation_boundary_center,0.0032199671149170488,27,True,False,1,0.812638,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,8,filter_fed5e29a5947619d,equal_price_derivation_boundary_center,0.0032199671149170488,17,True,False,1,0.814991,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,9,filter_feae31efae47dfba,equal_price_derivation_boundary_center,0.0032199671149170488,15,True,False,1,0.873765,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,10,filter_fea46a55e7ee5ea4,equal_price_derivation_boundary_center,0.0032199671149170488,57,True,False,1,0.988078,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,11,filter_fe60398d2d3ba3e4,equal_price_derivation_boundary_center,0.0032199671149170488,21,True,False,1,0.797076,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,12,filter_fe464841404324ea,equal_price_derivation_boundary_center,0.0032199671149170488,21,True,False,1,0.74361,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,13,filter_fe1d4d484e06f507,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,0.832855,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,14,filter_fdfd0536f7f63a3d,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,0.835957,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,15,filter_fdf9f3566afcc510,equal_price_derivation_boundary_center,0.0032199671149170488,15,True,False,1,0.722944,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,16,filter_fddc361055646809,equal_price_derivation_boundary_center,0.0032199671149170488,21,True,False,1,0.74948,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,17,filter_fddb0d0c02bdbd5f,equal_price_derivation_boundary_center,0.0032199671149170488,45,True,False,1,0.952427,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,18,filter_fdae4a236f2afd8f,equal_price_derivation_boundary_center,0.0032199671149170488,27,True,False,1,0.832064,0,False,20,20
+UCI Adult,concave_sqrt,filter_derivation,19,filter_fd94a4ac2c75ba00,equal_price_derivation_boundary_center,0.0032199671149170488,36,True,False,1,0.793478,0,False,20,20
+UCI Adult,tiered_8,decomposition,0,decomp_dfe5adbbe3e5f46f,additive_boundary_center,0.44264759400679216,3,True,False,1,0.840643,0,False,20,20
+UCI Adult,tiered_8,decomposition,1,decomp_b5e6fa9fe4d43e8b,additive_boundary_center,0.44264759400679216,3,True,False,1,0.726382,0,False,20,20
+UCI Adult,tiered_8,decomposition,2,decomp_fdbc18eb61462499,additive_boundary_center,0.4426470216684818,2,True,False,1,0.895509,0,False,20,20
+UCI Adult,tiered_8,decomposition,3,decomp_be9ee79b1a1304d9,additive_boundary_center,0.4426470216684818,2,True,False,1,0.782941,0,False,20,20
+UCI Adult,tiered_8,decomposition,4,decomp_3ac7278159bc50c9,additive_boundary_center,0.4426470216684818,2,True,False,1,0.695402,0,False,20,20
+UCI Adult,tiered_8,decomposition,5,decomp_ec36837e5d945fad,additive_boundary_center,0.4426458769918606,2,True,False,1,0.672839,0,False,20,20
+UCI Adult,tiered_8,decomposition,6,decomp_9be8a3bc14963731,additive_boundary_center,0.4426458769918606,2,True,False,1,0.698933,0,False,20,20
+UCI Adult,tiered_8,decomposition,7,decomp_e8d215161b92cd85,additive_boundary_center,0.42420494584855256,1,True,False,1,0.666994,0,False,20,20
+UCI Adult,tiered_8,decomposition,8,decomp_e8181c291b34aaee,additive_boundary_center,0.38732480057686763,1,True,False,1,0.675828,0,False,20,20
+UCI Adult,tiered_8,decomposition,9,decomp_d98563adfd7e0035,additive_boundary_center,0.38732480057686763,1,True,False,1,0.701284,0,False,20,20
+UCI Adult,tiered_8,decomposition,10,decomp_d55b442f4e5613c2,additive_boundary_center,0.38732480057686763,1,True,False,1,0.667505,0,False,20,20
+UCI Adult,tiered_8,decomposition,11,decomp_c4bf515e0cc40242,additive_boundary_center,0.38732480057686763,1,True,False,1,0.666117,0,False,20,20
+UCI Adult,tiered_8,decomposition,12,decomp_4d0e76a42e96c570,additive_boundary_center,0.38732480057686763,1,True,False,1,0.642982,0,False,20,20
+UCI Adult,tiered_8,decomposition,13,decomp_e85b6248c9a51bf5,additive_boundary_center,0.38731964953207326,1,True,False,1,0.685905,0,False,20,20
+UCI Adult,tiered_8,decomposition,14,decomp_d859d5613ec1dbeb,additive_boundary_center,0.36888158008031763,1,True,False,1,0.672625,0,False,20,20
+UCI Adult,tiered_8,decomposition,15,decomp_904304fc2e18a7b5,additive_boundary_center,0.36888158008031763,1,True,False,1,0.669853,0,False,20,20
+UCI Adult,tiered_8,decomposition,16,decomp_439054e53c6a11d4,additive_boundary_center,0.36888158008031746,1,True,False,1,0.658338,0,False,20,20
+UCI Adult,tiered_8,decomposition,17,decomp_7be6df4a1abe5a59,additive_boundary_center,0.36887871838876496,1,True,False,1,0.669242,0,False,20,20
+UCI Adult,tiered_8,decomposition,18,decomp_f4a966ca711af231,additive_boundary_center,0.3688775737121442,1,True,False,1,0.665595,0,False,20,20
+UCI Adult,tiered_8,decomposition,19,decomp_d83ff103e035d712,additive_boundary_center,0.3688775737121442,1,True,False,1,0.66896,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,0,projection_ffffd8d410af0909,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.851891,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,1,projection_fff9bd98c4ce8ef1,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.712024,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,2,projection_ffee2220ac6be777,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.823836,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,3,projection_ffd2c6a076ba90e2,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.748604,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,4,projection_ffce2681f73f7f2d,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.703174,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,5,projection_ffbdf299f8d0bc0a,equal_price_derivation_boundary_center,1.5453134383132432e-05,45,True,False,1,0.921387,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,6,projection_ff9537efbeaf8c5f,equal_price_derivation_boundary_center,1.5453134383132432e-05,9,True,False,1,0.752296,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,7,projection_ff86780147a8c003,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.683429,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,8,projection_ff5446cd9c1f9943,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.655247,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,9,projection_ff4e13a07930b3d8,equal_price_derivation_boundary_center,1.5453134383132432e-05,9,True,False,1,0.669538,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,10,projection_ff4804f6431cc692,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.689146,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,11,projection_ff360b533871b837,equal_price_derivation_boundary_center,1.5453134383132432e-05,15,True,False,1,0.728141,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,12,projection_ff26842e71cd56c7,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.682832,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,13,projection_ff1a65eb6bdbba95,equal_price_derivation_boundary_center,1.5453134383132432e-05,15,True,False,1,0.759738,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,14,projection_ff0368501843b726,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.675996,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,15,projection_ff001462b413dc90,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.697159,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,16,projection_fef24ca6091d415d,equal_price_derivation_boundary_center,1.5453134383132432e-05,10,True,False,1,0.707474,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,17,projection_fed9c6c28508439a,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.662438,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,18,projection_fec99d6a8106cad0,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.654602,0,False,20,20
+UCI Adult,tiered_8,projection_derivation,19,projection_fe80c9af203a6389,equal_price_derivation_boundary_center,1.5453134383132432e-05,3,True,False,1,0.695485,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,0,filter_ffb2ffada12f828f,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,1.043303,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,1,filter_ff9318222403d339,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,0.883884,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,2,filter_ff5d2f5bf74dbc5c,equal_price_derivation_boundary_center,1.5453134383132432e-05,30,True,False,1,0.849141,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,3,filter_ff58e9a92472314b,equal_price_derivation_boundary_center,1.5453134383132432e-05,51,True,False,1,0.914493,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,4,filter_ff2ea344b3489167,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,0.837314,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,5,filter_ff268ec4373be6ef,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,0.848469,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,6,filter_ff230945b10cea2d,equal_price_derivation_boundary_center,1.5453134383132432e-05,22,True,False,1,0.794874,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,7,filter_ff01606b076c8a93,equal_price_derivation_boundary_center,1.5453134383132432e-05,27,True,False,1,0.812644,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,8,filter_fed5e29a5947619d,equal_price_derivation_boundary_center,1.5453134383132432e-05,17,True,False,1,0.762633,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,9,filter_feae31efae47dfba,equal_price_derivation_boundary_center,1.5453134383132432e-05,15,True,False,1,0.744218,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,10,filter_fea46a55e7ee5ea4,equal_price_derivation_boundary_center,1.5453134383132432e-05,57,True,False,1,0.957641,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,11,filter_fe60398d2d3ba3e4,equal_price_derivation_boundary_center,1.5453134383132432e-05,21,True,False,1,0.818678,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,12,filter_fe464841404324ea,equal_price_derivation_boundary_center,1.5453134383132432e-05,21,True,False,1,0.767372,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,13,filter_fe1d4d484e06f507,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,0.828759,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,14,filter_fdfd0536f7f63a3d,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,0.854412,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,15,filter_fdf9f3566afcc510,equal_price_derivation_boundary_center,1.5453134383132432e-05,15,True,False,1,0.756835,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,16,filter_fddc361055646809,equal_price_derivation_boundary_center,1.5453134383132432e-05,21,True,False,1,0.782491,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,17,filter_fddb0d0c02bdbd5f,equal_price_derivation_boundary_center,1.5453134383132432e-05,45,True,False,1,0.89651,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,18,filter_fdae4a236f2afd8f,equal_price_derivation_boundary_center,1.5453134383132432e-05,27,True,False,1,0.776844,0,False,20,20
+UCI Adult,tiered_8,filter_derivation,19,filter_fd94a4ac2c75ba00,equal_price_derivation_boundary_center,1.5453134383132432e-05,36,True,False,1,0.832436,0,False,20,20

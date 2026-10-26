@@ -1,0 +1,181 @@
+dataset,history_size,buyer,encoding,proposal,active_repair_verified,sweeps,max_residual_after,runtime_ms
+NYC Taxi 2024-01,16,0,pinned_zero_caps_all_assets,list_price,False,400,0.0007627417537240457,554.442356
+NYC Taxi 2024-01,16,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0007694225344157356,527.203678
+NYC Taxi 2024-01,16,1,pinned_zero_caps_all_assets,list_price,False,400,1.589727439698464e-06,669.618899
+NYC Taxi 2024-01,16,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.6039680593814792e-06,534.62973
+NYC Taxi 2024-01,16,2,pinned_zero_caps_all_assets,list_price,False,400,0.0005060651736100813,562.994795
+NYC Taxi 2024-01,16,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00031191753003681965,565.4035
+NYC Taxi 2024-01,16,3,pinned_zero_caps_all_assets,list_price,False,400,1.5749418349591952e-06,365.047616
+NYC Taxi 2024-01,16,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.5959333610119273e-06,370.8301
+NYC Taxi 2024-01,16,4,pinned_zero_caps_all_assets,list_price,False,400,9.890726634535885e-05,698.639084
+NYC Taxi 2024-01,16,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.506614381801077e-07,560.392082
+NYC Taxi 2024-01,16,5,pinned_zero_caps_all_assets,list_price,False,400,0.0009505490683161688,591.364446
+NYC Taxi 2024-01,16,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0009487082460162549,544.742875
+NYC Taxi 2024-01,16,6,pinned_zero_caps_all_assets,list_price,False,400,6.394036401875571e-07,626.58272
+NYC Taxi 2024-01,16,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,7.431612034051582e-07,541.190203
+NYC Taxi 2024-01,16,7,pinned_zero_caps_all_assets,list_price,False,400,0.0010099605079741108,935.297671
+NYC Taxi 2024-01,16,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0011899886857515503,929.564927
+NYC Taxi 2024-01,16,8,pinned_zero_caps_all_assets,list_price,False,400,1.621849455810834e-06,293.815624
+NYC Taxi 2024-01,16,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.621837515994685e-06,284.031237
+NYC Taxi 2024-01,16,9,pinned_zero_caps_all_assets,list_price,False,400,0.0006427093234909374,493.493249
+NYC Taxi 2024-01,16,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0007484304618502812,442.371039
+NYC Taxi 2024-01,64,0,pinned_zero_caps_all_assets,list_price,False,400,0.001116510342180989,1440.429539
+NYC Taxi 2024-01,64,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.890091761158923e-05,1240.311291
+NYC Taxi 2024-01,64,1,pinned_zero_caps_all_assets,list_price,False,400,0.0007713201235349922,1465.572787
+NYC Taxi 2024-01,64,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0007903821155044826,1173.319926
+NYC Taxi 2024-01,64,2,pinned_zero_caps_all_assets,list_price,False,400,0.0006026286601376785,1357.629006
+NYC Taxi 2024-01,64,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0005219770208431781,1121.91498
+NYC Taxi 2024-01,64,3,pinned_zero_caps_all_assets,list_price,False,400,0.004997421652111784,1631.626924
+NYC Taxi 2024-01,64,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00797050126778484,1509.599669
+NYC Taxi 2024-01,64,4,pinned_zero_caps_all_assets,list_price,False,400,0.0007981942376914153,1455.616303
+NYC Taxi 2024-01,64,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00010106926432914952,1190.936162
+NYC Taxi 2024-01,64,5,pinned_zero_caps_all_assets,list_price,False,400,0.0016140183801021816,1455.87034
+NYC Taxi 2024-01,64,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0008358560931211837,1184.306175
+NYC Taxi 2024-01,64,6,pinned_zero_caps_all_assets,list_price,False,400,7.948106891646747e-05,1423.9211
+NYC Taxi 2024-01,64,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,7.886046945081346e-05,1292.298513
+NYC Taxi 2024-01,64,7,pinned_zero_caps_all_assets,list_price,False,400,0.0010216160393865172,1628.577571
+NYC Taxi 2024-01,64,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0010349511113501614,1262.998788
+NYC Taxi 2024-01,64,8,pinned_zero_caps_all_assets,list_price,False,400,6.583331961995418e-05,1427.8009
+NYC Taxi 2024-01,64,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,6.478356735364714e-05,1114.744528
+NYC Taxi 2024-01,64,9,pinned_zero_caps_all_assets,list_price,False,400,0.0024155483004225133,1612.774059
+NYC Taxi 2024-01,64,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00254910368905179,1515.336148
+NYC Taxi 2024-01,256,0,pinned_zero_caps_all_assets,list_price,False,400,5.2097535331926106e-05,3682.661613
+NYC Taxi 2024-01,256,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00010071972204887109,3009.125004
+NYC Taxi 2024-01,256,1,pinned_zero_caps_all_assets,list_price,False,400,0.0015657098706784844,3594.577483
+NYC Taxi 2024-01,256,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.001582155163017278,3287.960433
+NYC Taxi 2024-01,256,2,pinned_zero_caps_all_assets,list_price,False,400,1.139252752268841e-05,3036.325553
+NYC Taxi 2024-01,256,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.125335683240063e-05,2525.999443
+NYC Taxi 2024-01,256,3,pinned_zero_caps_all_assets,list_price,False,400,0.0010142003031984466,3467.246807
+NYC Taxi 2024-01,256,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0002581177556986794,3080.446021
+NYC Taxi 2024-01,256,4,pinned_zero_caps_all_assets,list_price,False,400,0.00020898958901300515,3563.643111
+NYC Taxi 2024-01,256,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00018548749707948323,2966.291305
+NYC Taxi 2024-01,256,5,pinned_zero_caps_all_assets,list_price,False,400,5.94410105424671e-05,3621.065899
+NYC Taxi 2024-01,256,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.3612422491560714e-05,3045.978508
+NYC Taxi 2024-01,256,6,pinned_zero_caps_all_assets,list_price,False,400,5.7414441128197036e-05,3601.902581
+NYC Taxi 2024-01,256,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.158140161749615e-05,3063.976663
+NYC Taxi 2024-01,256,7,pinned_zero_caps_all_assets,list_price,False,400,0.0002334639113957614,3320.797922
+NYC Taxi 2024-01,256,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00024315071406547312,2752.012642
+NYC Taxi 2024-01,256,8,pinned_zero_caps_all_assets,list_price,False,400,0.0016628006286282192,3720.293285
+NYC Taxi 2024-01,256,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.001749768209797495,3245.207215
+NYC Taxi 2024-01,256,9,pinned_zero_caps_all_assets,list_price,False,400,1.1172895223607309e-05,3207.701771
+NYC Taxi 2024-01,256,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.6232958953625125e-05,2709.321624
+TPC-H SF1,16,0,pinned_zero_caps_all_assets,list_price,False,400,0.00013940252874459165,814.743117
+TPC-H SF1,16,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00014730714642928152,826.545652
+TPC-H SF1,16,1,pinned_zero_caps_all_assets,list_price,False,400,9.609723943037522e-07,633.429355
+TPC-H SF1,16,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.086008667580343e-07,590.437717
+TPC-H SF1,16,2,pinned_zero_caps_all_assets,list_price,False,400,8.24544905573438e-09,451.114725
+TPC-H SF1,16,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,6.92628211293167e-09,514.267624
+TPC-H SF1,16,3,pinned_zero_caps_all_assets,list_price,False,400,5.732087871867398e-05,754.181918
+TPC-H SF1,16,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,4.796763799702597e-05,722.769788
+TPC-H SF1,16,4,pinned_zero_caps_all_assets,list_price,False,400,4.947584285107047e-05,699.424182
+TPC-H SF1,16,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.8900011120730676e-05,662.4469
+TPC-H SF1,16,5,pinned_zero_caps_all_assets,list_price,False,400,4.0100883877590315e-09,346.879944
+TPC-H SF1,16,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.6759799340108117e-09,306.932263
+TPC-H SF1,16,6,pinned_zero_caps_all_assets,list_price,False,400,0.00011783488976550223,504.755888
+TPC-H SF1,16,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.388279110676078e-05,524.188845
+TPC-H SF1,16,7,pinned_zero_caps_all_assets,list_price,False,400,3.6484414721971853e-09,413.243044
+TPC-H SF1,16,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.866118286478162e-09,389.845254
+TPC-H SF1,16,8,pinned_zero_caps_all_assets,list_price,False,400,0.00011440422938393193,541.984131
+TPC-H SF1,16,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00011222639943087595,545.066285
+TPC-H SF1,16,9,pinned_zero_caps_all_assets,list_price,False,400,0.00011600100431335922,659.685813
+TPC-H SF1,16,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00011385544258345369,683.902466
+TPC-H SF1,64,0,pinned_zero_caps_all_assets,list_price,False,400,3.0544614084219994e-06,2042.948978
+TPC-H SF1,64,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.1263596313376375e-06,1820.706946
+TPC-H SF1,64,1,pinned_zero_caps_all_assets,list_price,False,400,3.512891284575891e-07,1812.756829
+TPC-H SF1,64,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.082543744483127e-07,1786.287087
+TPC-H SF1,64,2,pinned_zero_caps_all_assets,list_price,False,400,1.6956485926971058e-06,1720.937463
+TPC-H SF1,64,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.567511137990438e-06,1595.326907
+TPC-H SF1,64,3,pinned_zero_caps_all_assets,list_price,False,400,0.00011660385009053548,1838.273269
+TPC-H SF1,64,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00011584474755595194,1628.870101
+TPC-H SF1,64,4,pinned_zero_caps_all_assets,list_price,False,400,0.00010040740619650635,1536.156915
+TPC-H SF1,64,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.3591617412188847e-05,1504.592568
+TPC-H SF1,64,5,pinned_zero_caps_all_assets,list_price,False,400,7.999254614556825e-05,1716.566734
+TPC-H SF1,64,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,7.818342099042925e-05,1634.891885
+TPC-H SF1,64,6,pinned_zero_caps_all_assets,list_price,False,400,5.120293575153487e-05,1591.648564
+TPC-H SF1,64,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,4.51208685499559e-05,1577.225758
+TPC-H SF1,64,7,pinned_zero_caps_all_assets,list_price,False,400,5.5274983449709215e-05,1707.596968
+TPC-H SF1,64,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,6.0999425828899726e-05,1543.580872
+TPC-H SF1,64,8,pinned_zero_caps_all_assets,list_price,False,400,0.0001418361392896254,1453.847205
+TPC-H SF1,64,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,8.933606715749117e-07,1364.781837
+TPC-H SF1,64,9,pinned_zero_caps_all_assets,list_price,False,400,9.522649527296264e-05,1673.09962
+TPC-H SF1,64,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.513363341359853e-05,1576.283599
+TPC-H SF1,256,0,pinned_zero_caps_all_assets,list_price,False,400,0.00017276813884876577,4056.874957
+TPC-H SF1,256,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0002652759579050307,3811.462628
+TPC-H SF1,256,1,pinned_zero_caps_all_assets,list_price,False,400,4.913904502700608e-06,3888.78144
+TPC-H SF1,256,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,7.453161957483528e-06,3500.930418
+TPC-H SF1,256,2,pinned_zero_caps_all_assets,list_price,False,400,6.309500692313405e-05,3654.383684
+TPC-H SF1,256,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,6.512763832343754e-05,3502.100812
+TPC-H SF1,256,3,pinned_zero_caps_all_assets,list_price,False,400,2.1878941885916974e-05,4135.406453
+TPC-H SF1,256,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.6234385419603416e-05,3906.69071
+TPC-H SF1,256,4,pinned_zero_caps_all_assets,list_price,False,400,7.480605223951157e-05,4097.007695
+TPC-H SF1,256,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,2.003301436444849e-06,3937.832568
+TPC-H SF1,256,5,pinned_zero_caps_all_assets,list_price,False,400,1.3996682798488092e-05,4202.632779
+TPC-H SF1,256,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.2990490322573216e-05,3949.688055
+TPC-H SF1,256,6,pinned_zero_caps_all_assets,list_price,False,400,1.6272296632916333e-05,3916.34631
+TPC-H SF1,256,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,1.8444885216924012e-05,3765.46866
+TPC-H SF1,256,7,pinned_zero_caps_all_assets,list_price,False,400,6.272455018107696e-05,3907.876455
+TPC-H SF1,256,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,6.20755237558481e-05,3791.04137
+TPC-H SF1,256,8,pinned_zero_caps_all_assets,list_price,False,400,7.387469047404756e-05,4129.251754
+TPC-H SF1,256,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,8.853088570662312e-05,3826.510203
+TPC-H SF1,256,9,pinned_zero_caps_all_assets,list_price,False,400,0.0002642622350566807,3992.55969
+TPC-H SF1,256,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0002639585007437852,3886.195431
+UCI Adult,16,0,pinned_zero_caps_all_assets,list_price,False,400,0.012796108042681501,605.283802
+UCI Adult,16,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.012794077282259127,618.879785
+UCI Adult,16,1,pinned_zero_caps_all_assets,list_price,False,400,0.0018153252562358637,663.036443
+UCI Adult,16,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.001814326019866239,717.261801
+UCI Adult,16,2,pinned_zero_caps_all_assets,list_price,False,400,0.0023600435314737574,524.846199
+UCI Adult,16,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,9.595419597496557e-05,555.046205
+UCI Adult,16,3,pinned_zero_caps_all_assets,list_price,False,400,7.91815097770542e-06,708.391883
+UCI Adult,16,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.362915400934301e-06,725.366611
+UCI Adult,16,4,pinned_zero_caps_all_assets,list_price,False,400,0.0018462069837783329,881.390173
+UCI Adult,16,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0018321991567340802,885.697727
+UCI Adult,16,5,pinned_zero_caps_all_assets,list_price,False,400,6.843413008510519e-06,618.905009
+UCI Adult,16,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,5.940583271629536e-08,623.945483
+UCI Adult,16,6,pinned_zero_caps_all_assets,list_price,False,400,1.2773163805171416e-05,883.801518
+UCI Adult,16,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,7.00763727372219e-06,841.987846
+UCI Adult,16,7,pinned_zero_caps_all_assets,list_price,False,400,0.0032305314492319806,632.948376
+UCI Adult,16,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0029577708779579596,654.570691
+UCI Adult,16,8,pinned_zero_caps_all_assets,list_price,False,400,9.514533832031957e-05,715.865423
+UCI Adult,16,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,7.711720524995279e-05,728.335044
+UCI Adult,16,9,pinned_zero_caps_all_assets,list_price,False,400,0.0017191289758127376,687.442275
+UCI Adult,16,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0016607570201881952,749.54772
+UCI Adult,64,0,pinned_zero_caps_all_assets,list_price,False,400,0.010808139617602075,1453.127045
+UCI Adult,64,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.010282008963146861,1446.805829
+UCI Adult,64,1,pinned_zero_caps_all_assets,list_price,False,400,0.0035074802071415143,1943.701211
+UCI Adult,64,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.003380758545441436,1808.20455
+UCI Adult,64,2,pinned_zero_caps_all_assets,list_price,False,400,0.009970881102127075,1657.50831
+UCI Adult,64,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.009322060701756164,1659.413784
+UCI Adult,64,3,pinned_zero_caps_all_assets,list_price,False,400,0.0009681797070448007,1516.346338
+UCI Adult,64,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.000999138921370248,1467.893747
+UCI Adult,64,4,pinned_zero_caps_all_assets,list_price,False,400,5.9221937464758654e-05,1404.896555
+UCI Adult,64,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,5.836829173484176e-05,1370.494302
+UCI Adult,64,5,pinned_zero_caps_all_assets,list_price,False,400,0.0009432196951849884,1619.383524
+UCI Adult,64,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0007074694448657582,1572.218259
+UCI Adult,64,6,pinned_zero_caps_all_assets,list_price,False,400,0.0009642950566179696,2043.27529
+UCI Adult,64,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0009413998922705242,1875.223656
+UCI Adult,64,7,pinned_zero_caps_all_assets,list_price,False,400,0.006353019918547902,1870.245376
+UCI Adult,64,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.005104265774522929,1800.324141
+UCI Adult,64,8,pinned_zero_caps_all_assets,list_price,False,400,0.0011848766941412394,1799.503137
+UCI Adult,64,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0010100906846006513,1738.512948
+UCI Adult,64,9,pinned_zero_caps_all_assets,list_price,False,400,0.0018864913807645762,1829.018834
+UCI Adult,64,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00034976706118169335,1815.283068
+UCI Adult,256,0,pinned_zero_caps_all_assets,list_price,False,400,0.0001415671709418452,4135.094754
+UCI Adult,256,0,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00011928290209571878,3895.49156
+UCI Adult,256,1,pinned_zero_caps_all_assets,list_price,False,400,0.00014396201797934352,4237.327027
+UCI Adult,256,1,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00022251206764647632,4182.146137
+UCI Adult,256,2,pinned_zero_caps_all_assets,list_price,False,400,0.0009325944528476504,4559.639553
+UCI Adult,256,2,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.000775734194939622,4391.861414
+UCI Adult,256,3,pinned_zero_caps_all_assets,list_price,False,400,3.630968738347761e-05,3985.553808
+UCI Adult,256,3,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,3.1249764616009395e-05,3978.457625
+UCI Adult,256,4,pinned_zero_caps_all_assets,list_price,False,400,0.0009798485012390782,3993.492636
+UCI Adult,256,4,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0010770113535162945,3817.188336
+UCI Adult,256,5,pinned_zero_caps_all_assets,list_price,False,400,0.00045391636368922783,3776.612701
+UCI Adult,256,5,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0005482407864131041,3640.175584
+UCI Adult,256,6,pinned_zero_caps_all_assets,list_price,False,400,3.8206325271679105e-05,3735.642106
+UCI Adult,256,6,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,2.5118523610925698e-05,3472.092093
+UCI Adult,256,7,pinned_zero_caps_all_assets,list_price,False,400,0.0008896015324213714,3583.927448
+UCI Adult,256,7,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0008916507681529418,3305.626612
+UCI Adult,256,8,pinned_zero_caps_all_assets,list_price,False,400,0.0001784302996797384,4320.378318
+UCI Adult,256,8,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.00019194801726441638,4065.276924
+UCI Adult,256,9,pinned_zero_caps_all_assets,list_price,False,400,0.0010950998794093101,3625.736613
+UCI Adult,256,9,pinned_zero_caps_all_assets,hist_gradient_boosting,False,400,0.0012180343987307225,3488.477939

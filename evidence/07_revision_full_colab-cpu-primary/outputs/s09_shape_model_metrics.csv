@@ -1,0 +1,136 @@
+dataset,shape,model,seed,pooled_r2,pooled_mae,negative_predictions,source
+NYC Taxi 2024-01,linear,hist_gradient_boosting,11,0.9920279442233284,0.004346968972849428,437,audited_v4_oof
+NYC Taxi 2024-01,linear,hist_gradient_boosting,23,0.9920279442233284,0.004346968972849428,437,audited_v4_oof
+NYC Taxi 2024-01,linear,hist_gradient_boosting,37,0.9920279442233284,0.004346968972849428,437,audited_v4_oof
+NYC Taxi 2024-01,linear,hist_gradient_boosting,51,0.9920279442233284,0.004346968972849428,437,audited_v4_oof
+NYC Taxi 2024-01,linear,hist_gradient_boosting,73,0.9920279442233284,0.004346968972849428,437,audited_v4_oof
+NYC Taxi 2024-01,linear,mlp,11,0.9996872372571022,0.006509086188772694,1382,audited_v4_oof
+NYC Taxi 2024-01,linear,mlp,23,0.9998368329665734,0.0044707933554311765,1408,audited_v4_oof
+NYC Taxi 2024-01,linear,mlp,37,0.9996069315901904,0.0060440092792174455,1499,audited_v4_oof
+NYC Taxi 2024-01,linear,mlp,51,0.9997965938550761,0.0038840320223254452,1419,audited_v4_oof
+NYC Taxi 2024-01,linear,mlp,73,0.999520923964364,0.006765290392634651,1215,audited_v4_oof
+NYC Taxi 2024-01,linear,dummy_median,11,-0.4756574972477645,0.35992187713905294,0,audited_v4_oof
+NYC Taxi 2024-01,linear,dummy_median,23,-0.4756574972477645,0.35992187713905294,0,audited_v4_oof
+NYC Taxi 2024-01,linear,dummy_median,37,-0.4756574972477645,0.35992187713905294,0,audited_v4_oof
+NYC Taxi 2024-01,linear,dummy_median,51,-0.4756574972477645,0.35992187713905294,0,audited_v4_oof
+NYC Taxi 2024-01,linear,dummy_median,73,-0.4756574972477645,0.35992187713905294,0,audited_v4_oof
+NYC Taxi 2024-01,concave_sqrt,dummy_median,11,-0.5181888717066914,0.3589769347207714,0,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,dummy_median,23,-0.5181888717066914,0.3589769347207714,0,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,dummy_median,37,-0.5181888717066914,0.3589769347207714,0,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,dummy_median,51,-0.5181888717066914,0.3589769347207714,0,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,dummy_median,73,-0.5181888717066914,0.3589769347207714,0,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,hist_gradient_boosting,11,0.9940303944369938,0.0035910749247377314,56,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,hist_gradient_boosting,23,0.9940303944369938,0.0035910749247377314,56,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,hist_gradient_boosting,37,0.9940303944369938,0.0035910749247377314,56,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,hist_gradient_boosting,51,0.9940303944369938,0.0035910749247377314,56,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,hist_gradient_boosting,73,0.9940303944369938,0.0035910749247377314,56,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,mlp,11,0.9995579682432114,0.007044637459911606,799,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,mlp,23,0.9998035223451599,0.00463693728506665,818,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,mlp,37,0.9995233293254678,0.006839077359376571,787,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,mlp,51,0.9996575475390664,0.004642441377583517,822,retrained_on_shape
+NYC Taxi 2024-01,concave_sqrt,mlp,73,0.9993177739087233,0.007596462393341575,752,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,dummy_median,11,-0.5178389604117946,0.3599213954617399,0,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,dummy_median,23,-0.5178389604117946,0.3599213954617399,0,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,dummy_median,37,-0.5178389604117946,0.3599213954617399,0,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,dummy_median,51,-0.5178389604117946,0.3599213954617399,0,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,dummy_median,73,-0.5178389604117946,0.3599213954617399,0,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,hist_gradient_boosting,11,0.9977638277509904,0.0022500132417676492,467,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,hist_gradient_boosting,23,0.9977638277509904,0.0022500132417676492,467,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,hist_gradient_boosting,37,0.9977638277509904,0.0022500132417676492,467,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,hist_gradient_boosting,51,0.9977638277509904,0.0022500132417676492,467,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,hist_gradient_boosting,73,0.9977638277509904,0.0022500132417676492,467,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,mlp,11,0.9761784626055713,0.024194403650305854,1179,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,mlp,23,0.9760044079601274,0.024025464067979414,1456,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,mlp,37,0.9757481243378218,0.026024874334833737,1016,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,mlp,51,0.9759682485770247,0.022168740623525703,689,retrained_on_shape
+NYC Taxi 2024-01,tiered_8,mlp,73,0.9759595704891495,0.024920774998960935,1142,retrained_on_shape
+TPC-H SF1,linear,hist_gradient_boosting,11,0.9958084956893402,0.002112587978497998,144,audited_v4_oof
+TPC-H SF1,linear,hist_gradient_boosting,23,0.9958084956893402,0.002112587978497998,144,audited_v4_oof
+TPC-H SF1,linear,hist_gradient_boosting,37,0.9958084956893402,0.002112587978497998,144,audited_v4_oof
+TPC-H SF1,linear,hist_gradient_boosting,51,0.9958084956893402,0.002112587978497998,144,audited_v4_oof
+TPC-H SF1,linear,hist_gradient_boosting,73,0.9958084956893402,0.002112587978497998,144,audited_v4_oof
+TPC-H SF1,linear,mlp,11,0.9994803849953348,0.007778004635989541,869,audited_v4_oof
+TPC-H SF1,linear,mlp,23,0.9983508999908712,0.009341917918483985,874,audited_v4_oof
+TPC-H SF1,linear,mlp,37,0.999238373778456,0.008759640493222373,856,audited_v4_oof
+TPC-H SF1,linear,mlp,51,0.9966473736916441,0.013990841853217823,894,audited_v4_oof
+TPC-H SF1,linear,mlp,73,0.9990391608248096,0.008538765423974977,818,audited_v4_oof
+TPC-H SF1,linear,dummy_median,11,-0.41976082607768084,0.3491405186995836,0,audited_v4_oof
+TPC-H SF1,linear,dummy_median,23,-0.41976082607768084,0.3491405186995836,0,audited_v4_oof
+TPC-H SF1,linear,dummy_median,37,-0.41976082607768084,0.3491405186995836,0,audited_v4_oof
+TPC-H SF1,linear,dummy_median,51,-0.41976082607768084,0.3491405186995836,0,audited_v4_oof
+TPC-H SF1,linear,dummy_median,73,-0.41976082607768084,0.3491405186995836,0,audited_v4_oof
+TPC-H SF1,concave_sqrt,dummy_median,11,-0.2330815653182794,0.3182369880788255,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,dummy_median,23,-0.2330815653182794,0.3182369880788255,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,dummy_median,37,-0.2330815653182794,0.3182369880788255,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,dummy_median,51,-0.2330815653182794,0.3182369880788255,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,dummy_median,73,-0.2330815653182794,0.3182369880788255,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,hist_gradient_boosting,11,0.9974693737541898,0.0016626659831793851,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,hist_gradient_boosting,23,0.9974693737541898,0.0016626659831793851,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,hist_gradient_boosting,37,0.9974693737541898,0.0016626659831793851,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,hist_gradient_boosting,51,0.9974693737541898,0.0016626659831793851,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,hist_gradient_boosting,73,0.9974693737541898,0.0016626659831793851,0,retrained_on_shape
+TPC-H SF1,concave_sqrt,mlp,11,0.9989625159441824,0.008422392838998318,292,retrained_on_shape
+TPC-H SF1,concave_sqrt,mlp,23,0.9957747688207135,0.01147078994880657,400,retrained_on_shape
+TPC-H SF1,concave_sqrt,mlp,37,0.9984581844295468,0.009992671224402009,268,retrained_on_shape
+TPC-H SF1,concave_sqrt,mlp,51,0.9950370716933604,0.01316705132172747,420,retrained_on_shape
+TPC-H SF1,concave_sqrt,mlp,73,0.9979677536074332,0.010444811387531098,273,retrained_on_shape
+TPC-H SF1,tiered_8,dummy_median,11,-0.4084997659215812,0.34601210996076526,0,retrained_on_shape
+TPC-H SF1,tiered_8,dummy_median,23,-0.4084997659215812,0.34601210996076526,0,retrained_on_shape
+TPC-H SF1,tiered_8,dummy_median,37,-0.4084997659215812,0.34601210996076526,0,retrained_on_shape
+TPC-H SF1,tiered_8,dummy_median,51,-0.4084997659215812,0.34601210996076526,0,retrained_on_shape
+TPC-H SF1,tiered_8,dummy_median,73,-0.4084997659215812,0.34601210996076526,0,retrained_on_shape
+TPC-H SF1,tiered_8,hist_gradient_boosting,11,0.998483321552855,0.0014110388081547912,11,retrained_on_shape
+TPC-H SF1,tiered_8,hist_gradient_boosting,23,0.998483321552855,0.0014110388081547912,11,retrained_on_shape
+TPC-H SF1,tiered_8,hist_gradient_boosting,37,0.998483321552855,0.0014110388081547912,11,retrained_on_shape
+TPC-H SF1,tiered_8,hist_gradient_boosting,51,0.998483321552855,0.0014110388081547912,11,retrained_on_shape
+TPC-H SF1,tiered_8,hist_gradient_boosting,73,0.998483321552855,0.0014110388081547912,11,retrained_on_shape
+TPC-H SF1,tiered_8,mlp,11,0.9957413565879357,0.013051596165596896,418,retrained_on_shape
+TPC-H SF1,tiered_8,mlp,23,0.9954849669274003,0.013444440851779184,497,retrained_on_shape
+TPC-H SF1,tiered_8,mlp,37,0.9942287638973766,0.015563220600548794,776,retrained_on_shape
+TPC-H SF1,tiered_8,mlp,51,0.9927881102171041,0.01622626491303261,777,retrained_on_shape
+TPC-H SF1,tiered_8,mlp,73,0.9957596956529338,0.013232795662930317,571,retrained_on_shape
+UCI Adult,linear,hist_gradient_boosting,11,0.9918630596426722,0.004151080953288744,246,audited_v4_oof
+UCI Adult,linear,hist_gradient_boosting,23,0.9918630596426722,0.004151080953288744,246,audited_v4_oof
+UCI Adult,linear,hist_gradient_boosting,37,0.9918630596426722,0.004151080953288744,246,audited_v4_oof
+UCI Adult,linear,hist_gradient_boosting,51,0.9918630596426722,0.004151080953288744,246,audited_v4_oof
+UCI Adult,linear,hist_gradient_boosting,73,0.9918630596426722,0.004151080953288744,246,audited_v4_oof
+UCI Adult,linear,mlp,11,0.9997708031321962,0.006063018546526621,1132,audited_v4_oof
+UCI Adult,linear,mlp,23,0.9997668595891408,0.005171604115755356,1314,audited_v4_oof
+UCI Adult,linear,mlp,37,0.9993861562596601,0.007009658359836275,1500,audited_v4_oof
+UCI Adult,linear,mlp,51,0.9997159711548812,0.005706247355739272,1420,audited_v4_oof
+UCI Adult,linear,mlp,73,0.999395041351198,0.009225624360267257,1426,audited_v4_oof
+UCI Adult,linear,dummy_median,11,-0.46590958137943317,0.3679325861301174,0,audited_v4_oof
+UCI Adult,linear,dummy_median,23,-0.46590958137943317,0.3679325861301174,0,audited_v4_oof
+UCI Adult,linear,dummy_median,37,-0.46590958137943317,0.3679325861301174,0,audited_v4_oof
+UCI Adult,linear,dummy_median,51,-0.46590958137943317,0.3679325861301174,0,audited_v4_oof
+UCI Adult,linear,dummy_median,73,-0.46590958137943317,0.3679325861301174,0,audited_v4_oof
+UCI Adult,concave_sqrt,dummy_median,11,-0.4967528205740783,0.3631376572312729,0,retrained_on_shape
+UCI Adult,concave_sqrt,dummy_median,23,-0.4967528205740783,0.3631376572312729,0,retrained_on_shape
+UCI Adult,concave_sqrt,dummy_median,37,-0.4967528205740783,0.3631376572312729,0,retrained_on_shape
+UCI Adult,concave_sqrt,dummy_median,51,-0.4967528205740783,0.3631376572312729,0,retrained_on_shape
+UCI Adult,concave_sqrt,dummy_median,73,-0.4967528205740783,0.3631376572312729,0,retrained_on_shape
+UCI Adult,concave_sqrt,hist_gradient_boosting,11,0.9944670216469298,0.0032088968143393682,49,retrained_on_shape
+UCI Adult,concave_sqrt,hist_gradient_boosting,23,0.9944670216469298,0.0032088968143393682,49,retrained_on_shape
+UCI Adult,concave_sqrt,hist_gradient_boosting,37,0.9944670216469298,0.0032088968143393682,49,retrained_on_shape
+UCI Adult,concave_sqrt,hist_gradient_boosting,51,0.9944670216469298,0.0032088968143393682,49,retrained_on_shape
+UCI Adult,concave_sqrt,hist_gradient_boosting,73,0.9944670216469298,0.0032088968143393682,49,retrained_on_shape
+UCI Adult,concave_sqrt,mlp,11,0.9996759023911225,0.006521767888831987,561,retrained_on_shape
+UCI Adult,concave_sqrt,mlp,23,0.9996724791810514,0.005617453478861461,440,retrained_on_shape
+UCI Adult,concave_sqrt,mlp,37,0.9993540664989313,0.007630060321521746,637,retrained_on_shape
+UCI Adult,concave_sqrt,mlp,51,0.9996961409685617,0.005650473300263567,453,retrained_on_shape
+UCI Adult,concave_sqrt,mlp,73,0.9993077839168784,0.009220137443913864,625,retrained_on_shape
+UCI Adult,tiered_8,dummy_median,11,-0.589647918476415,0.36793717828162076,0,retrained_on_shape
+UCI Adult,tiered_8,dummy_median,23,-0.589647918476415,0.36793717828162076,0,retrained_on_shape
+UCI Adult,tiered_8,dummy_median,37,-0.589647918476415,0.36793717828162076,0,retrained_on_shape
+UCI Adult,tiered_8,dummy_median,51,-0.589647918476415,0.36793717828162076,0,retrained_on_shape
+UCI Adult,tiered_8,dummy_median,73,-0.589647918476415,0.36793717828162076,0,retrained_on_shape
+UCI Adult,tiered_8,hist_gradient_boosting,11,0.9999488090390132,0.00036984103505200555,132,retrained_on_shape
+UCI Adult,tiered_8,hist_gradient_boosting,23,0.9999488090390132,0.00036984103505200555,132,retrained_on_shape
+UCI Adult,tiered_8,hist_gradient_boosting,37,0.9999488090390132,0.00036984103505200555,132,retrained_on_shape
+UCI Adult,tiered_8,hist_gradient_boosting,51,0.9999488090390132,0.00036984103505200555,132,retrained_on_shape
+UCI Adult,tiered_8,hist_gradient_boosting,73,0.9999488090390132,0.00036984103505200555,132,retrained_on_shape
+UCI Adult,tiered_8,mlp,11,0.8950395352413155,0.0518868355004598,851,retrained_on_shape
+UCI Adult,tiered_8,mlp,23,0.897740785336818,0.048898690495542144,597,retrained_on_shape
+UCI Adult,tiered_8,mlp,37,0.8978009413937316,0.05064886920437812,652,retrained_on_shape
+UCI Adult,tiered_8,mlp,51,0.8973784116601039,0.049370300518953664,760,retrained_on_shape
+UCI Adult,tiered_8,mlp,73,0.8963658725082121,0.050030341080065904,889,retrained_on_shape

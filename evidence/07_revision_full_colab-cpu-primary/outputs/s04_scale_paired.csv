@@ -1,0 +1,121 @@
+dataset,scale,baseline,subset,paired_trials,units,baseline_verified_rate,speedup_median,speedup_ci95_low,speedup_ci95_high,direction
+NYC Taxi 2024-01,128,full_cyclic,all_trials,120,12,1.0,5.314915010244178,5.246108440874708,5.5861047711408585,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,full_cyclic,baseline_verified_trials,120,12,1.0,5.314915010244178,5.246108440874708,5.5861047711408585,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,osqp_qp,all_trials,120,12,1.0,8.791365142849083,8.537919333091516,8.881578730426893,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,osqp_qp,baseline_verified_trials,120,12,1.0,8.791365142849083,8.537919333091516,8.881578730426893,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,osqp_qp_v4_stop,all_trials,120,12,1.0,8.639567516329723,8.466213504932226,8.852827919607112,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,8.639567516329723,8.466213504932226,8.852827919607112,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,reject_only,all_trials,120,12,0.0,0.22614844762415415,0.22109523127854766,0.23282343139771752,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,128,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,full_cyclic,all_trials,120,12,1.0,18.282460925941137,17.04644738243705,18.79382674955285,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,full_cyclic,baseline_verified_trials,120,12,1.0,18.282460925941137,17.04644738243705,18.79382674955285,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,osqp_qp,all_trials,120,12,1.0,18.421668435001592,16.676822446248025,23.100523265960057,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,osqp_qp,baseline_verified_trials,120,12,1.0,18.421668435001592,16.676822446248025,23.100523265960057,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,osqp_qp_v4_stop,all_trials,120,12,1.0,15.17599489637295,14.487685198893242,16.30555307318261,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,15.17599489637295,14.487685198893242,16.30555307318261,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,reject_only,all_trials,120,12,0.0,0.25716132831318683,0.23785180874630474,0.2791864906021038,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,512,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,full_cyclic,all_trials,120,12,1.0,32.03450255534413,30.33556016951423,34.16672972955475,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,full_cyclic,baseline_verified_trials,120,12,1.0,32.03450255534413,30.33556016951423,34.16672972955475,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,osqp_qp,all_trials,120,12,1.0,41.055697814452834,37.159525734689446,48.344663097485586,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,osqp_qp,baseline_verified_trials,120,12,1.0,41.055697814452834,37.159525734689446,48.344663097485586,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,osqp_qp_v4_stop,all_trials,120,12,1.0,29.753355937543397,28.131194770176176,31.303303157503944,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,29.753355937543397,28.131194770176176,31.303303157503944,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,reject_only,all_trials,120,12,0.0,0.3009762208727671,0.28954547115183155,0.3249838451837582,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,1024,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,full_cyclic,all_trials,120,12,1.0,81.97334937990667,53.273579462882694,331.62520958819164,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,full_cyclic,baseline_verified_trials,120,12,1.0,81.97334937990667,53.273579462882694,331.62520958819164,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,osqp_qp,all_trials,120,12,1.0,79.3839721248712,73.73651872716806,117.87550617139594,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,osqp_qp,baseline_verified_trials,120,12,1.0,79.3839721248712,73.73651872716806,117.87550617139594,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,osqp_qp_v4_stop,all_trials,120,12,0.9166666666666666,56.030487367816384,50.22212120571855,68.46311834847452,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,osqp_qp_v4_stop,baseline_verified_trials,110,11,0.9166666666666666,55.44818705262473,49.182915194533436,66.60111507353797,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,reject_only,all_trials,120,12,0.0,0.3907311310859495,0.38322374223919037,0.4193248788918963,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,2048,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,full_cyclic,all_trials,120,12,1.0,142.00402263981724,69.76109725394112,545.5295618210537,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,full_cyclic,baseline_verified_trials,120,12,1.0,142.00402263981724,69.76109725394112,545.5295618210537,full_cyclic latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,osqp_qp,all_trials,120,12,1.0,142.0950417457551,124.67644073103739,149.9396022651752,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,osqp_qp,baseline_verified_trials,120,12,1.0,142.0950417457551,124.67644073103739,149.9396022651752,osqp_qp latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,osqp_qp_v4_stop,all_trials,120,12,0.8333333333333334,95.0819944803164,88.46470106633751,128.59645571708845,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,osqp_qp_v4_stop,baseline_verified_trials,100,10,0.8333333333333334,103.90997011523078,91.53243017876119,129.44324865265202,osqp_qp_v4_stop latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,reject_only,all_trials,120,12,0.0,0.49386111909218633,0.47305230349884186,0.5182177351927856,reject_only latency divided by arbiter_active latency
+NYC Taxi 2024-01,4096,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+TPC-H SF1,128,full_cyclic,all_trials,120,12,1.0,5.923434468545686,5.635312163173394,6.066608886533087,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,128,full_cyclic,baseline_verified_trials,120,12,1.0,5.923434468545686,5.635312163173394,6.066608886533087,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,128,osqp_qp,all_trials,120,12,1.0,9.862660538788507,9.273240731910171,10.419002503338906,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,128,osqp_qp,baseline_verified_trials,120,12,1.0,9.862660538788507,9.273240731910171,10.419002503338906,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,128,osqp_qp_v4_stop,all_trials,120,12,1.0,9.44311257358396,8.91098611242121,9.897476508107212,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,128,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,9.44311257358396,8.91098611242121,9.897476508107212,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,128,reject_only,all_trials,120,12,0.0,0.22395799748345202,0.2068282283647263,0.22775354802888859,reject_only latency divided by arbiter_active latency
+TPC-H SF1,128,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+TPC-H SF1,512,full_cyclic,all_trials,120,12,1.0,18.47311056880238,17.492414759175666,19.3199269544815,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,512,full_cyclic,baseline_verified_trials,120,12,1.0,18.47311056880238,17.492414759175666,19.3199269544815,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,512,osqp_qp,all_trials,120,12,1.0,24.155306389138534,18.697667198660696,25.106833555394015,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,512,osqp_qp,baseline_verified_trials,120,12,1.0,24.155306389138534,18.697667198660696,25.106833555394015,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,512,osqp_qp_v4_stop,all_trials,120,12,1.0,20.015632426167308,16.50169395526474,20.941232312752586,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,512,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,20.015632426167308,16.50169395526474,20.941232312752586,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,512,reject_only,all_trials,120,12,0.0,0.24483537428280852,0.24006942298948813,0.265254036495677,reject_only latency divided by arbiter_active latency
+TPC-H SF1,512,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+TPC-H SF1,1024,full_cyclic,all_trials,120,12,1.0,33.71393877437986,32.37146750216124,48.02617335791507,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,1024,full_cyclic,baseline_verified_trials,120,12,1.0,33.71393877437986,32.37146750216124,48.02617335791507,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,1024,osqp_qp,all_trials,120,12,1.0,48.38617111608271,29.19184438513218,51.559601904153695,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,1024,osqp_qp,baseline_verified_trials,120,12,1.0,48.38617111608271,29.19184438513218,51.559601904153695,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,1024,osqp_qp_v4_stop,all_trials,120,12,0.8333333333333334,39.40236740342497,26.628853600073654,42.292515341752804,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,1024,osqp_qp_v4_stop,baseline_verified_trials,100,10,0.8333333333333334,37.209815118497794,25.232452496494513,45.413197065155,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,1024,reject_only,all_trials,120,12,0.0,0.3102231917372805,0.29826826594974526,0.32560546881486296,reject_only latency divided by arbiter_active latency
+TPC-H SF1,1024,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+TPC-H SF1,2048,full_cyclic,all_trials,120,12,1.0,85.31787575937906,53.61080717816087,804.1516116583866,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,2048,full_cyclic,baseline_verified_trials,120,12,1.0,85.31787575937906,53.61080717816087,804.1516116583866,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,2048,osqp_qp,all_trials,120,12,1.0,102.46416399601792,69.48263487510428,136.67037389501712,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,2048,osqp_qp,baseline_verified_trials,120,12,1.0,102.46416399601792,69.48263487510428,136.67037389501712,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,2048,osqp_qp_v4_stop,all_trials,120,12,0.75,78.75028403451033,59.43376156176356,95.16623814350079,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,2048,osqp_qp_v4_stop,baseline_verified_trials,90,9,0.75,74.68850244598397,56.763625381646555,131.18208082675892,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,2048,reject_only,all_trials,120,12,0.0,0.422337160853903,0.4061628708408923,0.44125426298324644,reject_only latency divided by arbiter_active latency
+TPC-H SF1,2048,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+TPC-H SF1,4096,full_cyclic,all_trials,120,12,1.0,69.88855136764303,67.70964582978112,1085.2780251250704,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,4096,full_cyclic,baseline_verified_trials,120,12,1.0,69.88855136764303,67.70964582978112,1085.2780251250704,full_cyclic latency divided by arbiter_active latency
+TPC-H SF1,4096,osqp_qp,all_trials,120,12,1.0,149.70989843821565,107.32978285307178,277.8211348572556,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,4096,osqp_qp,baseline_verified_trials,120,12,1.0,149.70989843821565,107.32978285307178,277.8211348572556,osqp_qp latency divided by arbiter_active latency
+TPC-H SF1,4096,osqp_qp_v4_stop,all_trials,120,12,0.9166666666666666,114.81540622668642,108.45111946540959,186.67985794316246,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,4096,osqp_qp_v4_stop,baseline_verified_trials,110,11,0.9166666666666666,113.57064142080748,108.36686163439094,240.352270951791,osqp_qp_v4_stop latency divided by arbiter_active latency
+TPC-H SF1,4096,reject_only,all_trials,120,12,0.0,0.5029941315505717,0.4863950247688642,0.5140299750481346,reject_only latency divided by arbiter_active latency
+TPC-H SF1,4096,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+UCI Adult,128,full_cyclic,all_trials,120,12,1.0,5.545462472441564,5.322451506159185,5.7589097115035415,full_cyclic latency divided by arbiter_active latency
+UCI Adult,128,full_cyclic,baseline_verified_trials,120,12,1.0,5.545462472441564,5.322451506159185,5.7589097115035415,full_cyclic latency divided by arbiter_active latency
+UCI Adult,128,osqp_qp,all_trials,120,12,1.0,9.27844218144364,8.716064108491079,9.899885337520486,osqp_qp latency divided by arbiter_active latency
+UCI Adult,128,osqp_qp,baseline_verified_trials,120,12,1.0,9.27844218144364,8.716064108491079,9.899885337520486,osqp_qp latency divided by arbiter_active latency
+UCI Adult,128,osqp_qp_v4_stop,all_trials,120,12,1.0,8.641423074616881,8.41595494170058,9.095589088374172,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,128,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,8.641423074616881,8.41595494170058,9.095589088374172,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,128,reject_only,all_trials,120,12,0.0,0.2168165258365862,0.2096611544309278,0.22526984567643016,reject_only latency divided by arbiter_active latency
+UCI Adult,128,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+UCI Adult,512,full_cyclic,all_trials,120,12,1.0,18.851057426906785,18.039512219647616,86.37828077272519,full_cyclic latency divided by arbiter_active latency
+UCI Adult,512,full_cyclic,baseline_verified_trials,120,12,1.0,18.851057426906785,18.039512219647616,86.37828077272519,full_cyclic latency divided by arbiter_active latency
+UCI Adult,512,osqp_qp,all_trials,120,12,1.0,23.868472238405683,17.065544729484984,27.73184662894962,osqp_qp latency divided by arbiter_active latency
+UCI Adult,512,osqp_qp,baseline_verified_trials,120,12,1.0,23.868472238405683,17.065544729484984,27.73184662894962,osqp_qp latency divided by arbiter_active latency
+UCI Adult,512,osqp_qp_v4_stop,all_trials,120,12,1.0,18.408391439881477,15.110210956352228,19.390867694426035,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,512,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,18.408391439881477,15.110210956352228,19.390867694426035,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,512,reject_only,all_trials,120,12,0.0,0.2591674470933891,0.22984641175168163,0.2641027332697122,reject_only latency divided by arbiter_active latency
+UCI Adult,512,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+UCI Adult,1024,full_cyclic,all_trials,120,12,1.0,116.54569641786962,33.2456662736698,328.15758803844585,full_cyclic latency divided by arbiter_active latency
+UCI Adult,1024,full_cyclic,baseline_verified_trials,120,12,1.0,116.54569641786962,33.2456662736698,328.15758803844585,full_cyclic latency divided by arbiter_active latency
+UCI Adult,1024,osqp_qp,all_trials,120,12,1.0,41.62293046691744,38.487719710599585,66.159386737805,osqp_qp latency divided by arbiter_active latency
+UCI Adult,1024,osqp_qp,baseline_verified_trials,120,12,1.0,41.62293046691744,38.487719710599585,66.159386737805,osqp_qp latency divided by arbiter_active latency
+UCI Adult,1024,osqp_qp_v4_stop,all_trials,120,12,1.0,34.49532026768802,32.49354013450825,41.24841397637957,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,1024,osqp_qp_v4_stop,baseline_verified_trials,120,12,1.0,34.49532026768802,32.49354013450825,41.24841397637957,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,1024,reject_only,all_trials,120,12,0.0,0.28790516932915744,0.25343553409054076,0.30190263102990755,reject_only latency divided by arbiter_active latency
+UCI Adult,1024,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+UCI Adult,2048,full_cyclic,all_trials,120,12,1.0,58.67365962153922,51.32492580922279,431.6595669573484,full_cyclic latency divided by arbiter_active latency
+UCI Adult,2048,full_cyclic,baseline_verified_trials,120,12,1.0,58.67365962153922,51.32492580922279,431.6595669573484,full_cyclic latency divided by arbiter_active latency
+UCI Adult,2048,osqp_qp,all_trials,120,12,1.0,145.2588799315887,95.50847303172323,290.68848222390557,osqp_qp latency divided by arbiter_active latency
+UCI Adult,2048,osqp_qp,baseline_verified_trials,120,12,1.0,145.2588799315887,95.50847303172323,290.68848222390557,osqp_qp latency divided by arbiter_active latency
+UCI Adult,2048,osqp_qp_v4_stop,all_trials,120,12,0.9166666666666666,83.73055993806724,71.88253189937006,138.7878967325099,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,2048,osqp_qp_v4_stop,baseline_verified_trials,110,11,0.9166666666666666,80.93952767320825,71.79808005326393,134.82335079954032,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,2048,reject_only,all_trials,120,12,0.0,0.3983557838887364,0.3636188400699249,0.42313369014333646,reject_only latency divided by arbiter_active latency
+UCI Adult,2048,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency
+UCI Adult,4096,full_cyclic,all_trials,120,12,1.0,73.73333336981821,66.71126944798058,305.15572819560276,full_cyclic latency divided by arbiter_active latency
+UCI Adult,4096,full_cyclic,baseline_verified_trials,120,12,1.0,73.73333336981821,66.71126944798058,305.15572819560276,full_cyclic latency divided by arbiter_active latency
+UCI Adult,4096,osqp_qp,all_trials,120,12,1.0,179.5234807205369,159.3474999747221,594.5666768681629,osqp_qp latency divided by arbiter_active latency
+UCI Adult,4096,osqp_qp,baseline_verified_trials,120,12,1.0,179.5234807205369,159.3474999747221,594.5666768681629,osqp_qp latency divided by arbiter_active latency
+UCI Adult,4096,osqp_qp_v4_stop,all_trials,120,12,0.9166666666666666,144.1138586500278,122.85112320968216,265.65047046827203,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,4096,osqp_qp_v4_stop,baseline_verified_trials,110,11,0.9166666666666666,143.17542866331254,106.62549423033323,263.7249491990624,osqp_qp_v4_stop latency divided by arbiter_active latency
+UCI Adult,4096,reject_only,all_trials,120,12,0.0,0.4816066439798186,0.4554724860467546,0.5281304625496027,reject_only latency divided by arbiter_active latency
+UCI Adult,4096,reject_only,baseline_verified_trials,0,0,0.0,,,,reject_only latency divided by arbiter_active latency

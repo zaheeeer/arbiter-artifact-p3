@@ -1,0 +1,178 @@
+{
+  "mode": "full",
+  "protocol": [
+    {
+      "campaign": "v4_faults",
+      "pass_rate": 1.0,
+      "passed": 66,
+      "rows": 66
+    },
+    {
+      "campaign": "v4_concurrency",
+      "pass_rate": 1.0,
+      "passed": 600,
+      "rows": 600
+    },
+    {
+      "campaign": "closure_faults",
+      "pass_rate": 1.0,
+      "passed": 63,
+      "rows": 63
+    },
+    {
+      "campaign": "closure_concurrency",
+      "pass_rate": 1.0,
+      "passed": 300,
+      "rows": 300
+    },
+    {
+      "campaign": "closure_delivery",
+      "pass_rate": 1.0,
+      "passed": 6,
+      "rows": 6
+    }
+  ],
+  "revision_suite_version": "2026-10-22-revision-v1.0",
+  "scale_largest": [
+    {
+      "dataset": "NYC Taxi 2024-01",
+      "method": "arbiter_active",
+      "runtime_p50_ms": 0.823189,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "NYC Taxi 2024-01",
+      "method": "full_cyclic",
+      "runtime_p50_ms": 110.20968500000001,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "NYC Taxi 2024-01",
+      "method": "osqp_qp",
+      "runtime_p50_ms": 116.7066815,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "NYC Taxi 2024-01",
+      "method": "osqp_qp_v4_stop",
+      "runtime_p50_ms": 82.1576235,
+      "verified_rate": 0.8333333333333334
+    },
+    {
+      "dataset": "NYC Taxi 2024-01",
+      "method": "reject_only",
+      "runtime_p50_ms": 0.402715,
+      "verified_rate": 0.0
+    },
+    {
+      "dataset": "TPC-H SF1",
+      "method": "arbiter_active",
+      "runtime_p50_ms": 0.800473,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "TPC-H SF1",
+      "method": "full_cyclic",
+      "runtime_p50_ms": 56.038294,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "TPC-H SF1",
+      "method": "osqp_qp",
+      "runtime_p50_ms": 127.170992,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "TPC-H SF1",
+      "method": "osqp_qp_v4_stop",
+      "runtime_p50_ms": 93.272689,
+      "verified_rate": 0.9166666666666666
+    },
+    {
+      "dataset": "TPC-H SF1",
+      "method": "reject_only",
+      "runtime_p50_ms": 0.3997095,
+      "verified_rate": 0.0
+    },
+    {
+      "dataset": "UCI Adult",
+      "method": "arbiter_active",
+      "runtime_p50_ms": 0.8545645,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "UCI Adult",
+      "method": "full_cyclic",
+      "runtime_p50_ms": 58.273289500000004,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "UCI Adult",
+      "method": "osqp_qp",
+      "runtime_p50_ms": 155.80636049999998,
+      "verified_rate": 1.0
+    },
+    {
+      "dataset": "UCI Adult",
+      "method": "osqp_qp_v4_stop",
+      "runtime_p50_ms": 122.50408149999998,
+      "verified_rate": 0.9166666666666666
+    },
+    {
+      "dataset": "UCI Adult",
+      "method": "reject_only",
+      "runtime_p50_ms": 0.4146305,
+      "verified_rate": 0.0
+    }
+  ],
+  "tolerance_overall": [
+    {
+      "fallback": 0,
+      "gate_p50_ms": 37.570158,
+      "max_residual_after": 9.996805485055517e-08,
+      "max_saving_conservative": 0.395397052155972,
+      "max_saving_vs_list": 0.395397052155972,
+      "proposals": 45,
+      "rejected": 0,
+      "releases": 45,
+      "releases_with_conservative_gt_1pct": 25,
+      "releases_with_saving_gt_0p1pct": 45,
+      "releases_with_saving_gt_1pct": 30,
+      "sweeps_max": 29,
+      "tolerance": 1e-07,
+      "unsafe": 0
+    },
+    {
+      "fallback": 0,
+      "gate_p50_ms": 54.994243,
+      "max_residual_after": 9.998776633046713e-10,
+      "max_saving_conservative": 0.004055872200414905,
+      "max_saving_vs_list": 0.004196884522442178,
+      "proposals": 45,
+      "rejected": 0,
+      "releases": 45,
+      "releases_with_conservative_gt_1pct": 0,
+      "releases_with_saving_gt_0p1pct": 15,
+      "releases_with_saving_gt_1pct": 0,
+      "sweeps_max": 43,
+      "tolerance": 1e-09,
+      "unsafe": 0
+    },
+    {
+      "fallback": 0,
+      "gate_p50_ms": 73.043177,
+      "max_residual_after": 9.996517502663949e-13,
+      "max_saving_conservative": 3.4157754994753775e-06,
+      "max_saving_vs_list": 4.169124980903296e-06,
+      "proposals": 45,
+      "rejected": 0,
+      "releases": 45,
+      "releases_with_conservative_gt_1pct": 0,
+      "releases_with_saving_gt_0p1pct": 0,
+      "releases_with_saving_gt_1pct": 0,
+      "sweeps_max": 63,
+      "tolerance": 1e-12,
+      "unsafe": 0
+    }
+  ]
+}

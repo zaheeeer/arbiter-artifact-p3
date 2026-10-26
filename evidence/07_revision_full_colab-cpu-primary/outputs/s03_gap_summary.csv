@@ -1,0 +1,28 @@
+dataset,budget_fraction,relation_type,cases,distinct_relations,candidate_target_violation_rate,incomplete_release_rate,gap_survival_rate,gaps_survived,fallback_rate,gate_p50_ms
+NYC Taxi 2024-01,0.1,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.930491
+NYC Taxi 2024-01,0.1,filter_derivation,20,20,1.0,1.0,0.05,1,0.0,3.067426
+NYC Taxi 2024-01,0.1,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.0270235000000003
+NYC Taxi 2024-01,0.25,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.956291
+NYC Taxi 2024-01,0.25,filter_derivation,20,20,1.0,1.0,0.05,1,0.0,3.246454
+NYC Taxi 2024-01,0.25,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.1677435000000003
+NYC Taxi 2024-01,0.5,decomposition,20,20,1.0,1.0,1.0,20,0.0,4.28735
+NYC Taxi 2024-01,0.5,filter_derivation,20,20,1.0,1.0,0.05,1,0.0,3.3330075
+NYC Taxi 2024-01,0.5,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.2839185
+TPC-H SF1,0.1,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.8882905
+TPC-H SF1,0.1,filter_derivation,20,20,1.0,1.0,0.25,5,0.0,3.4609945
+TPC-H SF1,0.1,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,4.511674
+TPC-H SF1,0.25,decomposition,20,20,1.0,1.0,1.0,20,0.0,4.58876
+TPC-H SF1,0.25,filter_derivation,20,20,1.0,1.0,0.25,5,0.0,3.8211345
+TPC-H SF1,0.25,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,4.678223
+TPC-H SF1,0.5,decomposition,20,20,1.0,1.0,1.0,20,0.0,6.055538
+TPC-H SF1,0.5,filter_derivation,20,20,1.0,1.0,0.25,5,0.0,3.8698945
+TPC-H SF1,0.5,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,4.779039
+UCI Adult,0.1,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.9979305
+UCI Adult,0.1,filter_derivation,20,20,1.0,1.0,0.15,3,0.0,3.384029
+UCI Adult,0.1,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.7262115
+UCI Adult,0.25,decomposition,20,20,1.0,1.0,1.0,20,0.0,0.9885895
+UCI Adult,0.25,filter_derivation,20,20,1.0,1.0,0.15,3,0.0,3.461363
+UCI Adult,0.25,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.6996665
+UCI Adult,0.5,decomposition,20,20,1.0,1.0,1.0,20,0.0,4.3258779999999994
+UCI Adult,0.5,filter_derivation,20,20,1.0,1.0,0.15,3,0.0,3.5842225
+UCI Adult,0.5,projection_derivation,20,20,1.0,1.0,1.0,20,0.0,3.816898

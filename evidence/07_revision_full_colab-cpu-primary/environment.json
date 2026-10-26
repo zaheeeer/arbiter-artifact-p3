@@ -1,0 +1,40 @@
+{
+  "audited_input": {
+    "manifest_sha256": "72a3843ca0c99077a80b4971646d765b3d9373178591bab1a451814f88a2ba80",
+    "package_dir_name": "arbiter_icde_evidence_full_audited_v4",
+    "run_config_sha256": "0c47860511da377b438d60da5117b4b9ad5d3f183383b247d14ffb4c3f8d51f8"
+  },
+  "cpu_model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "environment_label": "colab_cpu_primary",
+  "host_digest": "add53b0d0975",
+  "logical_cpu_count": 8,
+  "memory_bytes": 54750404608,
+  "notebook": "07_Arbiter_Revision_Campaign_v1_0.ipynb",
+  "osqp_backend_loaded": true,
+  "osqp_module": "osqp",
+  "packages": {
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.3",
+    "osqp": "1.0.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3"
+  },
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "python": "3.13.16",
+  "session_id": "07fc692b8ab09d47",
+  "stage_wall_seconds": {
+    "s01": 1137.079744159,
+    "s02": 22.462073887000088,
+    "s03": 79.114733634,
+    "s04": 483.1026630629999,
+    "s05": 25.919290674999957,
+    "s06": 85.686665382,
+    "s07": 429.5648345560003,
+    "s08": 47.523094253999716,
+    "s09": 590.0068816470002,
+    "s10": 5.411682042000393,
+    "s11": 455.8103611669999,
+    "s12": 170.4062765509998
+  }
+}

@@ -1,0 +1,6 @@
+campaign,rows,passed,pass_rate
+v4_faults,66,66,1.0
+v4_concurrency,600,600,1.0
+closure_faults,63,63,1.0
+closure_concurrency,300,300,1.0
+closure_delivery,6,6,1.0
