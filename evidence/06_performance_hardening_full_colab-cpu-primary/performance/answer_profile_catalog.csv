@@ -1,0 +1,5 @@
+size_class,dataset,asset_id,min_rows,max_rows,expected_rows,query_digest,sql_sha256,answer_rows,payload_bytes,query_ms,source
+scalar,TPC-H SF1,asset_2567eb4af28fbdb4,1,1,1,ac1d5cae85ad88487af36ef8d25b4008111f2c0c35cbd91179297a1d4fee82d0,69ea81582a3e5c5e07a6be2efeff635b1d13216dcfc30667dbd1052edbc34036,1,66,3.078529,DuckDB execution over audited NYC/Adult/TPC-H database
+small,UCI Adult,asset_ac656b81b6c77c9e,8,255,21,1d799556313d1dc3b65ee6b479d6bf6c6b15c85ecbfa4b2c0f10621087ac3999,c271a0f9a4a224660d566957cd1fe69f69c5f300eb4e89f6b1c38b368deb0328,21,624,1.899069,DuckDB execution over audited NYC/Adult/TPC-H database
+medium,UCI Adult,asset_0009e06da018d508,1024,9999,3267,8f713df01e37a02e965b429a3cd30b7bc508ca6c9b5a5e1bd8c2133d47a35c40,311ee1157652d46416d1a9f950a8b426ee2e39610242be5d8b84504b1723af89,3267,99950,2.25146,DuckDB execution over audited NYC/Adult/TPC-H database
+large,TPC-H SF1,asset_000f7a1dcff309ce,50000,200000,93750,3580ea6b82537114826b2f7f006865f1e28eb104101597f5a12d2a8336339660,57c3ab2508d55a2144d8dfb6a9356df181de36f19046a2622375807782378677,93750,3468786,56.321521,DuckDB execution over audited NYC/Adult/TPC-H database

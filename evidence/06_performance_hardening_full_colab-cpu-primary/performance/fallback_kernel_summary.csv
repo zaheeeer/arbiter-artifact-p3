@@ -1,0 +1,9 @@
+dataset,relation_family,case_id,active_row_budget,method,timing_repetitions,runtime_p50_ms,runtime_p95_observed_ms,runtime_median_ci95_low_ms,runtime_median_ci95_high_ms,verified_rate,unsafe_release_rate,projected_rows_median,sweeps_median
+NYC Taxi 2024-01,decomposition,8280b5c80382cb671644e334,1,legacy_full_scan_cyclic,50,83.1155975,160.081667,79.64515850000001,131.094105,1.0,0.0,59.0,2.0
+NYC Taxi 2024-01,decomposition,8280b5c80382cb671644e334,1,optimized_violated_only_cyclic,50,1.2706345,2.568889,1.212949,1.6963545,1.0,0.0,53.0,3.0
+TPC-H SF1,decomposition,89e4dd58f1b979473be615b6,1,legacy_full_scan_cyclic,50,397.33531700000003,689.282076,389.926256,401.30636549999997,1.0,0.0,409.0,10.0
+TPC-H SF1,decomposition,89e4dd58f1b979473be615b6,1,optimized_violated_only_cyclic,50,4.494764,7.231909,4.422979,4.593808,1.0,0.0,309.0,15.0
+TPC-H SF1,decomposition,89e4dd58f1b979473be615b6,4,legacy_full_scan_cyclic,50,195.97656,334.219771,193.89740949999998,199.370104,1.0,0.0,76.0,5.0
+TPC-H SF1,decomposition,89e4dd58f1b979473be615b6,4,optimized_violated_only_cyclic,50,1.71439,3.007759,1.65565,1.8341349999999998,1.0,0.0,74.0,8.0
+UCI Adult,decomposition,bbc5f2faa2d1c5003dd1c462,1,legacy_full_scan_cyclic,50,121.85511600000001,143.765866,120.636157,122.8780465,1.0,0.0,34.0,3.0
+UCI Adult,decomposition,bbc5f2faa2d1c5003dd1c462,1,optimized_violated_only_cyclic,50,1.0179304999999998,1.593,0.9873978750000003,1.04533,1.0,0.0,32.0,4.0

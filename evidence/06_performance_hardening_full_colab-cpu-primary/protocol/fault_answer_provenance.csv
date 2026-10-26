@@ -1,0 +1,7 @@
+phase,dataset,sql_sha256,answer_rows,query_ms,source
+protocol_fault_regression,NYC Taxi 2024-01,0d5c461f81047a05624cca0a6fcb9e939f4a823e87a23499bc8bfbe3c16e1f5b,1,43.302934,DuckDB execution over audited NYC/Adult/TPC-H database
+protocol_fault_regression,NYC Taxi 2024-01,f84f4965f53e2c004fad6c0bf8841b4209786709cb9bb66283bcfd499bf1c39e,1,23.334447,DuckDB execution over audited NYC/Adult/TPC-H database
+protocol_fault_regression,TPC-H SF1,15ed2347560e7119fc96f76f31cd3c7b9d140a7eb0dbca50de6881a95b74d655,1,54.263041,DuckDB execution over audited NYC/Adult/TPC-H database
+protocol_fault_regression,TPC-H SF1,e2b97936981846929abef5a89c4daf2c6448483f0caf59226988060d7c27571e,1,108.791713,DuckDB execution over audited NYC/Adult/TPC-H database
+protocol_fault_regression,UCI Adult,13dc40450c5be08d7cdde9bdb67d54405e3b43bd881650b430b3b4f51edeed6c,1,1.514579,DuckDB execution over audited NYC/Adult/TPC-H database
+protocol_fault_regression,UCI Adult,711ed1bde2c2f2e919093f0ce41cde907b4c2db8380d94f17a461f9d2b59f52c,1,1.29582,DuckDB execution over audited NYC/Adult/TPC-H database

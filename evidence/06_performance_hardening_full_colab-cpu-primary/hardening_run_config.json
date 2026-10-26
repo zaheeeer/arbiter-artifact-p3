@@ -1,0 +1,39 @@
+{
+  "active_row_budgets": [
+    1,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "answer_size_classes": [
+    "scalar",
+    "small",
+    "medium",
+    "large"
+  ],
+  "audited_input_suite_version": "2026-08-01-audited-v4",
+  "base_closure_environment_label": "colab_cpu_primary",
+  "bootstrap_resamples": 10000,
+  "closure_input_suite_version": "2026-08-01-request-bound-closure-v1.1",
+  "concurrency_trials": 50,
+  "dense_target_violation_counts": [
+    8,
+    192
+  ],
+  "environment_label": "colab_cpu_primary",
+  "fallback_repetitions": 50,
+  "fallback_sweeps": 20,
+  "fallback_warmups": 5,
+  "hardening_mode": "full",
+  "hardening_suite_version": "2026-08-12-performance-hardening-v1.0",
+  "median_ci": "percentile bootstrap 95% CI with deterministic SHA-256-derived seeds",
+  "outlier_policy": "retain every measured repetition; discard declared warmups only",
+  "p95_rule": "empirical observed quantile using numpy method='higher'",
+  "protocol_repetitions": 30,
+  "protocol_scope": "fresh SQLite ledger per repetition; schema/store construction excluded",
+  "protocol_warmups": 5,
+  "timing_clock": "time.perf_counter_ns",
+  "verifier_tolerance": 1e-07
+}

@@ -1,0 +1,7 @@
+claim,status,required_wording
+The measured v1.1 protocol path performs exactly one durable answer stage before request-bound commit.,SUPPORTED,Limit to the four preregistered answer profiles and the recorded Colab environment.
+"Buffering, durable staging, authorization, commit, and delivery-integrity costs are separately measured for scalar, small, medium, and large actual DuckDB answers.",SUPPORTED,Report answer rows and serialized bytes; do not generalize beyond the four profiles.
+Violated-only cyclic fallback is faster than legacy full-row scanning on all four exercised Notebook 05 fallback conditions while preserving independent verification.,SUPPORTED,Describe paired kernel-only measurements; do not call them end-to-end speedups.
+P95 latency generalizes to other machines or workload distributions.,NOT_SUPPORTED,Treat observed P95 as descriptive for one controlled machine run; report n and the quantile rule.
+"Network delivery, crash recovery, payment settlement, or distributed atomicity is established.",NOT_SUPPORTED,The claim ends at a local SQLite authorization/outbox transaction and integrity-checked retrieval.
+General SQL or standard TPC-H benchmark-query coverage is established.,NOT_SUPPORTED,Retain the audited supported-fragment boundary.

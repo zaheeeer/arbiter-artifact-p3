@@ -1,0 +1,29 @@
+check,passed
+all audited-v4 input checks pass,True
+all Notebook 05 input checks pass,True
+observational source hashes and all ten database table counts pass,True
+four preregistered actual DuckDB answer profiles are present,True
+every answer profile satisfies its preregistered row band,True
+protocol raw rows have unique profile/repetition keys,True
+protocol raw answer rows and bytes match the executed profile catalog,True
+protocol timing uses the required repetitions per answer profile,True
+every measured issue performs exactly one durable stage,True
+every measured protocol path releases durably with matching delivery,True
+protocol summary reconciles raw repetition counts,True
+all 63 request-binding fault cases pass,True
+all cross-service concurrency regressions pass,True
+all delivery-authorization regressions pass,True
+the four Notebook 05 fallback conditions are reconstructed,True
+fallback timing rows have complete paired repetitions,True
+both fallback kernels independently verify every timing result,True
+fallback summary reconciles raw repetitions,True
+optimized fallback is faster in every paired condition,True
+optimized fail-safe grid has no unverified release,True
+optimized fail-safe retains OSQP-or-reject backstop semantics,True
+profile_catalog contains no NaN or infinite numeric evidence,True
+protocol_raw contains no NaN or infinite numeric evidence,True
+protocol_summary contains no NaN or infinite numeric evidence,True
+fallback_raw contains no NaN or infinite numeric evidence,True
+fallback_summary contains no NaN or infinite numeric evidence,True
+fallback_paired contains no NaN or infinite numeric evidence,True
+optimized_grid contains no NaN or infinite numeric evidence,True

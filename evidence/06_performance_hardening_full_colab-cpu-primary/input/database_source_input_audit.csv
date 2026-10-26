@@ -1,0 +1,13 @@
+scope,name,expected,observed,passed
+source_file,NYC Taxi 2024-01,c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510,c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510,True
+source_file,UCI Adult,7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb,7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb,True
+duckdb_table_cardinality,nyc_taxi,2964624,2964624,True
+duckdb_table_cardinality,uci_adult,48842,48842,True
+duckdb_table_cardinality,lineitem,6001215,6001215,True
+duckdb_table_cardinality,orders,1500000,1500000,True
+duckdb_table_cardinality,customer,150000,150000,True
+duckdb_table_cardinality,part,200000,200000,True
+duckdb_table_cardinality,supplier,10000,10000,True
+duckdb_table_cardinality,partsupp,800000,800000,True
+duckdb_table_cardinality,nation,25,25,True
+duckdb_table_cardinality,region,5,5,True
